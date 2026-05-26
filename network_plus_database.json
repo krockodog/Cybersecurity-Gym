@@ -1,0 +1,466 @@
+{
+  "metadata": {
+    "title": "CompTIA Network+ N10-009",
+    "total_questions": 30,
+    "domains": [
+      "Networking Concepts",
+      "Network Infrastructure",
+      "Network Operations",
+      "Network Security",
+      "Network Troubleshooting"
+    ],
+    "version": "1.0"
+  },
+  "questions": [
+    {
+      "id": "n10_1",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "Which layer of the OSI model is responsible for logical addressing and routing?",
+      "options": [
+        "A. Layer 2 - Data Link",
+        "B. Layer 3 - Network",
+        "C. Layer 4 - Transport",
+        "D. Layer 7 - Application"
+      ],
+      "correct_answer": "B",
+      "explanation": "Layer 3 (Network layer) handles logical addressing (IP) and routing between networks."
+    },
+    {
+      "id": "n10_2",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "What is the default subnet mask for a Class C network?",
+      "options": [
+        "A. 255.0.0.0",
+        "B. 255.255.0.0",
+        "C. 255.255.255.0",
+        "D. 255.255.255.255"
+      ],
+      "correct_answer": "C",
+      "explanation": "Class C networks use 255.255.255.0 (/24), providing 256 addresses with 254 usable hosts."
+    },
+    {
+      "id": "n10_3",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "Which protocol uses port 22 by default?",
+      "options": [
+        "A. Telnet",
+        "B. SSH",
+        "C. FTP",
+        "D. HTTP"
+      ],
+      "correct_answer": "B",
+      "explanation": "SSH (Secure Shell) uses port 22 for encrypted remote administration. Telnet uses port 23 (unencrypted)."
+    },
+    {
+      "id": "n10_4",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "What does the 'S' in HTTPS stand for?",
+      "options": [
+        "A. Standard",
+        "B. Secure",
+        "C. Simple",
+        "D. System"
+      ],
+      "correct_answer": "B",
+      "explanation": "HTTPS = HTTP Secure. It uses TLS/SSL encryption to protect data in transit."
+    },
+    {
+      "id": "n10_5",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "Which IP address range is reserved for private networks?",
+      "options": [
+        "A. 12.0.0.0 - 12.255.255.255",
+        "B. 172.16.0.0 - 172.31.255.255",
+        "C. 8.8.8.0 - 8.8.8.255",
+        "D. 1.0.0.0 - 9.255.255.255"
+      ],
+      "correct_answer": "B",
+      "explanation": "RFC 1918 defines private ranges: 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16."
+    },
+    {
+      "id": "n10_6",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "What is the purpose of a default gateway?",
+      "options": [
+        "A. Assign IP addresses automatically",
+        "B. Route traffic to different networks",
+        "C. Convert domain names to IP addresses",
+        "D. Filter network traffic"
+      ],
+      "correct_answer": "B",
+      "explanation": "The default gateway routes traffic from the local network to other networks, including the internet."
+    },
+    {
+      "id": "n10_7",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "Which DNS record type maps a domain name to an IPv4 address?",
+      "options": [
+        "A. AAAA record",
+        "B. MX record",
+        "C. A record",
+        "D. CNAME record"
+      ],
+      "correct_answer": "C",
+      "explanation": "A record maps hostname to IPv4. AAAA maps to IPv6, MX to mail servers, CNAME is an alias."
+    },
+    {
+      "id": "n10_8",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "What is the difference between TCP and UDP?",
+      "options": [
+        "A. TCP is faster than UDP",
+        "B. UDP is connection-oriented, TCP is connectionless",
+        "C. TCP provides reliable delivery, UDP does not",
+        "D. There is no difference"
+      ],
+      "correct_answer": "C",
+      "explanation": "TCP is connection-oriented with acknowledgments and retransmission (reliable). UDP is connectionless and faster but unreliable."
+    },
+    {
+      "id": "n10_9",
+      "exam": "N10-009",
+      "domain": "Network Infrastructure",
+      "type": "multiple_choice",
+      "question": "Which device operates at Layer 2 of the OSI model and uses MAC addresses?",
+      "options": [
+        "A. Router",
+        "B. Switch",
+        "C. Firewall",
+        "D. Hub"
+      ],
+      "correct_answer": "B",
+      "explanation": "Switches operate at Layer 2 (Data Link) using MAC addresses to forward frames. Routers use IP (Layer 3)."
+    },
+    {
+      "id": "n10_10",
+      "exam": "N10-009",
+      "domain": "Network Infrastructure",
+      "type": "multiple_choice",
+      "question": "What does VLAN stand for?",
+      "options": [
+        "A. Virtual Local Area Network",
+        "B. Virtual Long-Distance Area Network",
+        "C. Verified Local Access Network",
+        "D. Virtual Link Aggregation Network"
+      ],
+      "correct_answer": "A",
+      "explanation": "VLAN (Virtual LAN) logically segments a physical network into separate broadcast domains."
+    },
+    {
+      "id": "n10_11",
+      "exam": "N10-009",
+      "domain": "Network Infrastructure",
+      "type": "multiple_choice",
+      "question": "Which cable type is used to connect a PC to a switch?",
+      "options": [
+        "A. Crossover cable",
+        "B. Straight-through cable",
+        "C. Rollover cable",
+        "D. Fiber optic cable"
+      ],
+      "correct_answer": "B",
+      "explanation": "Straight-through cable connects different device types (PC to switch). Crossover connects similar devices."
+    },
+    {
+      "id": "n10_12",
+      "exam": "N10-009",
+      "domain": "Network Infrastructure",
+      "type": "multiple_choice",
+      "question": "What is the maximum speed of Cat6a Ethernet cable?",
+      "options": [
+        "A. 1 Gbps",
+        "B. 10 Gbps",
+        "C. 40 Gbps",
+        "D. 100 Gbps"
+      ],
+      "correct_answer": "B",
+      "explanation": "Cat6a supports 10 Gbps up to 100 meters. Cat5e supports 1 Gbps, Cat8 supports 25-40 Gbps."
+    },
+    {
+      "id": "n10_13",
+      "exam": "N10-009",
+      "domain": "Network Infrastructure",
+      "type": "multiple_choice",
+      "question": "Which wireless standard operates in the 5 GHz band?",
+      "options": [
+        "A. 802.11b",
+        "B. 802.11g",
+        "C. 802.11a",
+        "D. 802.11n only 2.4GHz"
+      ],
+      "correct_answer": "C",
+      "explanation": "802.11a and 802.11ac operate on 5 GHz. 802.11b/g use 2.4 GHz. 802.11n supports both bands."
+    },
+    {
+      "id": "n10_14",
+      "exam": "N10-009",
+      "domain": "Network Infrastructure",
+      "type": "multiple_choice",
+      "question": "What is the purpose of a load balancer?",
+      "options": [
+        "A. Block malicious traffic",
+        "B. Distribute traffic across multiple servers",
+        "C. Assign IP addresses",
+        "D. Encrypt network traffic"
+      ],
+      "correct_answer": "B",
+      "explanation": "Load balancers distribute incoming traffic across multiple backend servers for high availability and performance."
+    },
+    {
+      "id": "n10_15",
+      "exam": "N10-009",
+      "domain": "Network Infrastructure",
+      "type": "multiple_choice",
+      "question": "Which port does DNS use?",
+      "options": [
+        "A. 22",
+        "B. 53",
+        "C. 80",
+        "D. 443"
+      ],
+      "correct_answer": "B",
+      "explanation": "DNS uses UDP port 53 for queries and TCP port 53 for zone transfers."
+    },
+    {
+      "id": "n10_16",
+      "exam": "N10-009",
+      "domain": "Network Operations",
+      "type": "multiple_choice",
+      "question": "Which command displays the routing table on a Windows system?",
+      "options": [
+        "A. netstat -r",
+        "B. route print",
+        "C. Both A and B",
+        "D. ip route"
+      ],
+      "correct_answer": "C",
+      "explanation": "Both 'route print' and 'netstat -r' display the routing table on Windows. 'ip route' is for Linux."
+    },
+    {
+      "id": "n10_17",
+      "exam": "N10-009",
+      "domain": "Network Operations",
+      "type": "multiple_choice",
+      "question": "What does DHCP stand for?",
+      "options": [
+        "A. Dynamic Host Configuration Protocol",
+        "B. Domain Host Control Protocol",
+        "C. Distributed Host Connection Protocol",
+        "D. Dynamic Hardware Configuration Process"
+      ],
+      "correct_answer": "A",
+      "explanation": "DHCP automatically assigns IP addresses, subnet masks, gateways, and DNS servers to devices."
+    },
+    {
+      "id": "n10_18",
+      "exam": "N10-009",
+      "domain": "Network Operations",
+      "type": "multiple_choice",
+      "question": "Which tool is used to test connectivity between two network devices?",
+      "options": [
+        "A. nslookup",
+        "B. ping",
+        "C. traceroute",
+        "D. netstat"
+      ],
+      "correct_answer": "B",
+      "explanation": "ping tests basic connectivity using ICMP echo requests. traceroute shows the route/path taken."
+    },
+    {
+      "id": "n10_19",
+      "exam": "N10-009",
+      "domain": "Network Operations",
+      "type": "multiple_choice",
+      "question": "What is the purpose of SNMP?",
+      "options": [
+        "A. Encrypt network traffic",
+        "B. Monitor and manage network devices",
+        "C. Assign IP addresses",
+        "D. Block unauthorized access"
+      ],
+      "correct_answer": "B",
+      "explanation": "SNMP (Simple Network Management Protocol) monitors network devices like routers, switches, and servers."
+    },
+    {
+      "id": "n10_20",
+      "exam": "N10-009",
+      "domain": "Network Operations",
+      "type": "multiple_choice",
+      "question": "Which protocol is used for secure file transfer?",
+      "options": [
+        "A. FTP",
+        "B. TFTP",
+        "C. SFTP",
+        "D. HTTP"
+      ],
+      "correct_answer": "C",
+      "explanation": "SFTP (SSH File Transfer Protocol) encrypts file transfers over SSH. FTP and TFTP are unencrypted."
+    },
+    {
+      "id": "n10_21",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "What is the purpose of a firewall?",
+      "options": [
+        "A. Speed up network connections",
+        "B. Filter traffic based on rules",
+        "C. Assign IP addresses to devices",
+        "D. Monitor network bandwidth"
+      ],
+      "correct_answer": "B",
+      "explanation": "Firewalls filter network traffic based on configured rules, allowing or blocking specific connections."
+    },
+    {
+      "id": "n10_22",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "Which VPN protocol uses SSL/TLS for encryption?",
+      "options": [
+        "A. PPTP",
+        "B. L2TP/IPsec",
+        "C. OpenVPN",
+        "D. GRE"
+      ],
+      "correct_answer": "C",
+      "explanation": "OpenVPN uses SSL/TLS for encryption. PPTP is less secure. L2TP/IPsec uses IPsec for encryption."
+    },
+    {
+      "id": "n10_23",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "What does WPA3 improve over WPA2?",
+      "options": [
+        "A. Faster speeds",
+        "B. Stronger encryption and better authentication",
+        "C. Longer range",
+        "D. Compatibility with older devices"
+      ],
+      "correct_answer": "B",
+      "explanation": "WPA3 offers SAE (Simultaneous Authentication of Equals), individualized data encryption, and stronger brute-force protection."
+    },
+    {
+      "id": "n10_24",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "What is a DMZ in network security?",
+      "options": [
+        "A. A high-speed network zone",
+        "B. A demilitarized zone for publicly accessible servers",
+        "C. A wireless network",
+        "D. A backup network"
+      ],
+      "correct_answer": "B",
+      "explanation": "DMZ (Demilitarized Zone) hosts public-facing servers (web, mail, DNS) between the internet and internal network."
+    },
+    {
+      "id": "n10_25",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "Which authentication method is most secure for WiFi?",
+      "options": [
+        "A. WEP",
+        "B. WPA-Personal",
+        "C. WPA2-Enterprise with 802.1X",
+        "D. Open network"
+      ],
+      "correct_answer": "C",
+      "explanation": "WPA2/WPA3 Enterprise with 802.1X and RADIUS provides per-user authentication, the most secure WiFi option."
+    },
+    {
+      "id": "n10_26",
+      "exam": "N10-009",
+      "domain": "Network Troubleshooting",
+      "type": "multiple_choice",
+      "question": "A user cannot access the internet but can access local resources. What is the most likely cause?",
+      "options": [
+        "A. Faulty network cable",
+        "B. Incorrect default gateway",
+        "C. DNS server failure",
+        "D. Switch failure"
+      ],
+      "correct_answer": "B",
+      "explanation": "If local resources work but internet doesn't, the default gateway (router) is likely misconfigured or unreachable."
+    },
+    {
+      "id": "n10_27",
+      "exam": "N10-009",
+      "domain": "Network Troubleshooting",
+      "type": "multiple_choice",
+      "question": "Which command shows active network connections on Linux?",
+      "options": [
+        "A. ping",
+        "B. ss -tlnp",
+        "C. ipconfig",
+        "D. tracert"
+      ],
+      "correct_answer": "B",
+      "explanation": "ss -tlnp shows TCP listening sockets with process info. ipconfig is Windows. ping tests connectivity."
+    },
+    {
+      "id": "n10_28",
+      "exam": "N10-009",
+      "domain": "Network Troubleshooting",
+      "type": "multiple_choice",
+      "question": "What does 'Destination Host Unreachable' from ping indicate?",
+      "options": [
+        "A. The target host is down",
+        "B. No route exists to the destination network",
+        "C. The DNS resolution failed",
+        "D. The port is closed"
+      ],
+      "correct_answer": "B",
+      "explanation": "This error means the local router doesn't know how to reach the destination network (routing issue)."
+    },
+    {
+      "id": "n10_29",
+      "exam": "N10-009",
+      "domain": "Network Troubleshooting",
+      "type": "multiple_choice",
+      "question": "A network has intermittent connectivity issues. Which tool would best identify the problematic network segment?",
+      "options": [
+        "A. ping",
+        "B. traceroute",
+        "C. netstat",
+        "D. nslookup"
+      ],
+      "correct_answer": "B",
+      "explanation": "traceroute (tracert on Windows) shows each hop along the path, helping identify where packets are lost or delayed."
+    },
+    {
+      "id": "n10_30",
+      "exam": "N10-009",
+      "domain": "Network Troubleshooting",
+      "type": "multiple_choice",
+      "question": "Users report slow network performance during peak hours. What is the most likely cause?",
+      "options": [
+        "A. Broadcast storm",
+        "B. Bandwidth saturation",
+        "C. DNS poisoning",
+        "D. Cable break"
+      ],
+      "correct_answer": "B",
+      "explanation": "Slow performance during peak hours typically indicates bandwidth saturation — too much traffic for the available capacity."
+    }
+  ]
+}

@@ -1,0 +1,469 @@
+{
+  "metadata": {
+    "title": "CompTIA A+ 220-1201/220-1202",
+    "total_questions": 30,
+    "domains": [
+      "Mobile Devices",
+      "Networking",
+      "Hardware",
+      "Virtualization and Cloud",
+      "Operating Systems",
+      "Security",
+      "Software Troubleshooting",
+      "Operational Procedures"
+    ],
+    "version": "1.0"
+  },
+  "questions": [
+    {
+      "id": "aplus_1",
+      "exam": "A+ 220-1201",
+      "domain": "Mobile Devices",
+      "type": "multiple_choice",
+      "question": "Which wireless charging standard uses magnetic induction?",
+      "options": [
+        "A. Qi",
+        "B. PMA",
+        "C. NFC",
+        "D. Bluetooth"
+      ],
+      "correct_answer": "A",
+      "explanation": "Qi (pronounced 'chee') is the most common wireless charging standard, using magnetic induction to transfer power."
+    },
+    {
+      "id": "aplus_2",
+      "exam": "A+ 220-1201",
+      "domain": "Mobile Devices",
+      "type": "multiple_choice",
+      "question": "What does GPS stand for?",
+      "options": [
+        "A. Global Positioning System",
+        "B. General Packet Service",
+        "C. Global Phone System",
+        "D. Geographical Positioning Satellite"
+      ],
+      "correct_answer": "A",
+      "explanation": "GPS (Global Positioning System) uses satellites to determine precise geographic location."
+    },
+    {
+      "id": "aplus_3",
+      "exam": "A+ 220-1201",
+      "domain": "Mobile Devices",
+      "type": "multiple_choice",
+      "question": "Which display technology uses organic compounds that emit light when an electric current passes through?",
+      "options": [
+        "A. LCD",
+        "B. LED",
+        "C. OLED",
+        "D. Plasma"
+      ],
+      "correct_answer": "C",
+      "explanation": "OLED (Organic Light-Emitting Diode) uses organic compounds that emit light when current flows, providing better contrast than LCD."
+    },
+    {
+      "id": "aplus_4",
+      "exam": "A+ 220-1201",
+      "domain": "Mobile Devices",
+      "type": "multiple_choice",
+      "question": "What is the purpose of a digitizer in a touchscreen device?",
+      "options": [
+        "A. Display images on the screen",
+        "B. Convert touch input into digital signals",
+        "C. Provide haptic feedback",
+        "D. Adjust screen brightness"
+      ],
+      "correct_answer": "B",
+      "explanation": "The digitizer is a layer over the display that detects touch input and converts it into digital signals the device can process."
+    },
+    {
+      "id": "aplus_5",
+      "exam": "A+ 220-1201",
+      "domain": "Mobile Devices",
+      "type": "multiple_choice",
+      "question": "Which mobile device feature uses accelerometers and gyroscopes?",
+      "options": [
+        "A. Screen brightness",
+        "B. Auto-rotate and motion sensing",
+        "C. WiFi connectivity",
+        "D. Battery charging"
+      ],
+      "correct_answer": "B",
+      "explanation": "Accelerometers detect orientation/tilt, gyroscopes detect rotation. Together they enable auto-rotate, gaming motion controls, and step counting."
+    },
+    {
+      "id": "aplus_6",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "What is the maximum length of a Cat5e Ethernet cable run?",
+      "options": [
+        "A. 50 meters",
+        "B. 100 meters",
+        "C. 150 meters",
+        "D. 200 meters"
+      ],
+      "correct_answer": "B",
+      "explanation": "The maximum recommended length for Cat5e/Cat6 Ethernet cable is 100 meters (328 feet) per the IEEE 802.3 standard."
+    },
+    {
+      "id": "aplus_7",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "Which connector type is used for fiber optic cables?",
+      "options": [
+        "A. RJ-45",
+        "B. BNC",
+        "C. LC/SC",
+        "D. USB-C"
+      ],
+      "correct_answer": "C",
+      "explanation": "LC (Lucent Connector) and SC (Subscriber Connector) are standard fiber optic connectors. RJ-45 is for copper Ethernet."
+    },
+    {
+      "id": "aplus_8",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "What is the purpose of a MAC address?",
+      "options": [
+        "A. Identify a device on the internet",
+        "B. Uniquely identify a network interface card",
+        "C. Assign an IP address automatically",
+        "D. Encrypt network traffic"
+      ],
+      "correct_answer": "B",
+      "explanation": "MAC (Media Access Control) address is a unique hardware identifier burned into every network interface card (NIC)."
+    },
+    {
+      "id": "aplus_9",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "Which wireless standard provides the fastest speed?",
+      "options": [
+        "A. 802.11a",
+        "B. 802.11n",
+        "C. 802.11ac",
+        "D. 802.11ax (WiFi 6)"
+      ],
+      "correct_answer": "D",
+      "explanation": "802.11ax (WiFi 6) offers up to 9.6 Gbps theoretical speed, faster than 802.11ac (WiFi 5) at 3.5 Gbps."
+    },
+    {
+      "id": "aplus_10",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "What does DHCP dynamically assign to devices?",
+      "options": [
+        "A. MAC addresses",
+        "B. IP addresses",
+        "C. Domain names",
+        "D. Port numbers"
+      ],
+      "correct_answer": "B",
+      "explanation": "DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses, subnet masks, gateways, and DNS to devices on a network."
+    },
+    {
+      "id": "aplus_11",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "What does RAM stand for?",
+      "options": [
+        "A. Random Access Memory",
+        "B. Read-Only Memory",
+        "C. Remote Access Module",
+        "D. Rapid Application Memory"
+      ],
+      "correct_answer": "A",
+      "explanation": "RAM (Random Access Memory) is volatile memory used for temporary data storage while the computer is running."
+    },
+    {
+      "id": "aplus_12",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "Which CPU component performs arithmetic and logical operations?",
+      "options": [
+        "A. Control Unit",
+        "B. ALU (Arithmetic Logic Unit)",
+        "C. Cache",
+        "D. Registers"
+      ],
+      "correct_answer": "B",
+      "explanation": "The ALU performs arithmetic (add, subtract) and logical (AND, OR, NOT) operations. The Control Unit manages instruction execution."
+    },
+    {
+      "id": "aplus_13",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "What is the purpose of a UPS?",
+      "options": [
+        "A. Increase internet speed",
+        "B. Provide backup power during outages",
+        "C. Cool down the CPU",
+        "D. Connect multiple USB devices"
+      ],
+      "correct_answer": "B",
+      "explanation": "UPS (Uninterruptible Power Supply) provides battery backup power during electrical outages, allowing graceful shutdown."
+    },
+    {
+      "id": "aplus_14",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "Which storage type has no moving parts and uses flash memory?",
+      "options": [
+        "A. HDD",
+        "B. SSD",
+        "C. Optical drive",
+        "D. Tape drive"
+      ],
+      "correct_answer": "B",
+      "explanation": "SSD (Solid State Drive) uses flash memory with no moving parts, providing faster access and better durability than HDDs."
+    },
+    {
+      "id": "aplus_15",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "What does the PSU do in a computer?",
+      "options": [
+        "A. Process data",
+        "B. Convert AC power to DC power for components",
+        "C. Store files",
+        "D. Cool the system"
+      ],
+      "correct_answer": "B",
+      "explanation": "PSU (Power Supply Unit) converts AC wall power to various DC voltages (+12V, +5V, +3.3V) needed by computer components."
+    },
+    {
+      "id": "aplus_16",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "Which port is commonly used for modern video output on graphics cards?",
+      "options": [
+        "A. VGA",
+        "B. DVI",
+        "C. HDMI",
+        "D. All of the above"
+      ],
+      "correct_answer": "D",
+      "explanation": "Modern graphics cards typically include HDMI, DisplayPort, DVI, and sometimes VGA ports for video output."
+    },
+    {
+      "id": "aplus_17",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "What is the function of a heatsink?",
+      "options": [
+        "A. Store data temporarily",
+        "B. Dissipate heat from the CPU/GPU",
+        "C. Connect components",
+        "D. Filter dust"
+      ],
+      "correct_answer": "B",
+      "explanation": "A heatsink draws heat away from hot components (CPU, GPU) using metal fins that radiate heat into the air."
+    },
+    {
+      "id": "aplus_18",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "What does the POST sequence do?",
+      "options": [
+        "A. Start the operating system",
+        "B. Test hardware components before boot",
+        "C. Connect to the network",
+        "D. Load device drivers"
+      ],
+      "correct_answer": "B",
+      "explanation": "POST (Power-On Self Test) checks critical hardware (RAM, CPU, GPU) before the system boots. Beeps indicate errors."
+    },
+    {
+      "id": "aplus_19",
+      "exam": "A+ 220-1201",
+      "domain": "Virtualization and Cloud",
+      "type": "multiple_choice",
+      "question": "What is a virtual machine?",
+      "options": [
+        "A. A physical server",
+        "B. A software emulation of a computer system",
+        "C. A cloud storage service",
+        "D. A network router"
+      ],
+      "correct_answer": "B",
+      "explanation": "A VM is a software-based emulation of a physical computer, running an OS and applications like a real machine."
+    },
+    {
+      "id": "aplus_20",
+      "exam": "A+ 220-1201",
+      "domain": "Virtualization and Cloud",
+      "type": "multiple_choice",
+      "question": "Which cloud model provides services over the internet to the general public?",
+      "options": [
+        "A. Private cloud",
+        "B. Hybrid cloud",
+        "C. Public cloud",
+        "D. Community cloud"
+      ],
+      "correct_answer": "C",
+      "explanation": "Public cloud (AWS, Azure, GCP) provides services to anyone over the internet. Private cloud is for single organization use."
+    },
+    {
+      "id": "aplus_21",
+      "exam": "A+ 220-1201",
+      "domain": "Virtualization and Cloud",
+      "type": "multiple_choice",
+      "question": "What is the primary benefit of IaaS?",
+      "options": [
+        "A. Pre-built applications ready to use",
+        "B. Virtualized computing resources over the internet",
+        "C. Complete software development environment",
+        "D. Automatic software updates"
+      ],
+      "correct_answer": "B",
+      "explanation": "IaaS (Infrastructure as a Service) provides virtualized computing resources (servers, storage, networking) over the internet."
+    },
+    {
+      "id": "aplus_22",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "Which Windows command opens the System Configuration utility?",
+      "options": [
+        "A. cmd",
+        "B. msconfig",
+        "C. regedit",
+        "D. services.msc"
+      ],
+      "correct_answer": "B",
+      "explanation": "msconfig (System Configuration) manages startup programs, boot options, and services. regedit is for the registry."
+    },
+    {
+      "id": "aplus_23",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "What is the purpose of the Windows Task Manager?",
+      "options": [
+        "A. Edit system registry",
+        "B. View and manage running processes and performance",
+        "C. Configure network settings",
+        "D. Install device drivers"
+      ],
+      "correct_answer": "B",
+      "explanation": "Task Manager shows running processes, CPU/memory usage, startup programs, and allows terminating unresponsive applications."
+    },
+    {
+      "id": "aplus_24",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "Which Linux command displays disk usage of directories?",
+      "options": [
+        "A. df -h",
+        "B. du -sh",
+        "C. ls -lh",
+        "D. fdisk -l"
+      ],
+      "correct_answer": "B",
+      "explanation": "du -sh (disk usage, summarize, human-readable) shows the size of directories. df shows filesystem free space."
+    },
+    {
+      "id": "aplus_25",
+      "exam": "A+ 220-1202",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "What is the purpose of multifactor authentication?",
+      "options": [
+        "A. Speed up login",
+        "B. Add extra layers of security beyond passwords",
+        "C. Simplify password management",
+        "D. Encrypt all data"
+      ],
+      "correct_answer": "B",
+      "explanation": "MFA requires multiple verification factors (something you know, have, or are) for stronger security than passwords alone."
+    },
+    {
+      "id": "aplus_26",
+      "exam": "A+ 220-1202",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "Which malware type encrypts user files and demands payment for decryption?",
+      "options": [
+        "A. Virus",
+        "B. Worm",
+        "C. Ransomware",
+        "D. Spyware"
+      ],
+      "correct_answer": "C",
+      "explanation": "Ransomware encrypts victim's files and demands a ransom payment (usually cryptocurrency) for the decryption key."
+    },
+    {
+      "id": "aplus_27",
+      "exam": "A+ 220-1202",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "What does a firewall primarily do?",
+      "options": [
+        "A. Detect viruses",
+        "B. Block unauthorized network traffic",
+        "C. Back up data",
+        "D. Speed up internet"
+      ],
+      "correct_answer": "B",
+      "explanation": "Firewalls monitor and filter incoming/outgoing network traffic based on security rules, blocking unauthorized access."
+    },
+    {
+      "id": "aplus_28",
+      "exam": "A+ 220-1202",
+      "domain": "Software Troubleshooting",
+      "type": "multiple_choice",
+      "question": "A user reports that an application crashes on startup. What is the first troubleshooting step?",
+      "options": [
+        "A. Reinstall the operating system",
+        "B. Restart the application and check for error messages",
+        "C. Replace the hard drive",
+        "D. Upgrade RAM"
+      ],
+      "correct_answer": "B",
+      "explanation": "Always start with the simplest solution: restart the application, check error messages, and identify the specific issue before taking drastic measures."
+    },
+    {
+      "id": "aplus_29",
+      "exam": "A+ 220-1202",
+      "domain": "Software Troubleshooting",
+      "type": "multiple_choice",
+      "question": "Which Windows tool can be used to check for corrupted system files?",
+      "options": [
+        "A. chkdsk",
+        "B. sfc /scannow",
+        "C. defrag",
+        "D. ipconfig"
+      ],
+      "correct_answer": "B",
+      "explanation": "sfc /scannow (System File Checker) scans and repairs corrupted Windows system files. chkdsk checks disk integrity."
+    },
+    {
+      "id": "aplus_30",
+      "exam": "A+ 220-1202",
+      "domain": "Operational Procedures",
+      "type": "multiple_choice",
+      "question": "What is the purpose of Change Management in IT?",
+      "options": [
+        "A. Prevent all system changes",
+        "B. Control and document changes to minimize risk",
+        "C. Speed up software deployment",
+        "D. Train new employees"
+      ],
+      "correct_answer": "B",
+      "explanation": "Change Management processes ensure IT changes are planned, tested, approved, and documented to minimize service disruptions."
+    }
+  ]
+}

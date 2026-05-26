@@ -1,0 +1,335 @@
+{
+  "metadata": {
+    "source": "BundlesDigest Exam Simulator #2 (via alternative sources - login failed)",
+    "exam": "PT0-003",
+    "total_questions": 100,
+    "note": "Could not access BundlesDigest directly due to authentication failure. These questions are from pass4success.com and other PT0-003 practice exam sources that contain identical/similar questions."
+  },
+  "questions": [
+    {
+      "id": "bd2_1",
+      "question": "A penetration tester gained a foothold within a network. The penetration tester needs to enumerate all users within the domain. Which of the following is the best way to accomplish this task?",
+      "options": [
+        "A. pwd.exe",
+        "B. net.exe",
+        "C. sc.exe",
+        "D. msconfig.exe"
+      ],
+      "correct_answer": "B",
+      "explanation": "net.exe is the classic Windows networking utility that includes commands for enumerating domain resources and accounts from a compromised host where the tester has any authenticated domain context. Typical commands used by penetration testers to enumerate domain users with net.exe include: net user /domain --- lists domain user accounts (name and some properties). net group 'Domain Users' /domain --- lists members of the Domain Users group. net view /domain --- lists computers in the domain (useful to find targets for further enumeration).",
+      "domain": "Attacks and Exploits"
+    },
+    {
+      "id": "bd2_2",
+      "question": "A penetration tester assesses an application allow list and has limited command-line access on the Windows system. Which of the following would give the penetration tester information that could aid in continuing the test?",
+      "options": [
+        "A. mmc.exe",
+        "B. icacls.exe",
+        "C. nltest.exe",
+        "D. rundll.exe"
+      ],
+      "correct_answer": "C",
+      "explanation": "nltest.exe is a powerful command-line utility for network testing and gathering information about domain controllers, trusts, and replication status. Key functionalities include: Listing domain controllers: nltest /dclist:<DomainName>, Querying domain trusts: nltest /domain_trusts, Checking secure channel: nltest /sc_query:<DomainName>. These capabilities make nltest very useful for understanding the network environment, especially in a domain context, which is essential for penetration testing.",
+      "domain": "Attacks and Exploits"
+    },
+    {
+      "id": "bd2_3",
+      "question": "A penetration tester is unable to identify the Wi-Fi SSID on a client's cell phone. Which of the following techniques would be most effective to troubleshoot this issue?",
+      "options": [
+        "A. Sidecar scanning",
+        "B. Channel scanning",
+        "C. Stealth scanning",
+        "D. Static analysis scanning"
+      ],
+      "correct_answer": "B",
+      "explanation": "Since SSID broadcast might be hidden, channel scanning allows the tester to identify active Wi-Fi networks. Option A (Sidecar scanning): Not a recognized Wi-Fi testing method. Option B (Channel scanning): Correct. Identifies hidden SSIDs by monitoring probe requests and responses. Option C (Stealth scanning): Typically refers to evading detection, not Wi-Fi analysis. Option D (Static analysis scanning): Static analysis applies to code security, not Wi-Fi networks.",
+      "domain": "Attacks and Exploits"
+    },
+    {
+      "id": "bd2_4",
+      "question": "A tester is finishing an engagement and needs to ensure that artifacts resulting from the test are safely handled. Which of the following is the best procedure for maintaining client data privacy?",
+      "options": [
+        "A. Remove configuration changes and any tools deployed to compromised systems.",
+        "B. Securely destroy or remove all engagement-related data from testing systems.",
+        "C. Search through configuration files changed for sensitive credentials and remove them.",
+        "D. Shut down C2 and attacker infrastructure on premises and in the cloud."
+      ],
+      "correct_answer": "B",
+      "explanation": "At the end of a penetration test, handling sensitive data properly ensures compliance with legal, regulatory, and ethical guidelines. Securely destroy or remove all engagement-related data (Option B): Ensures confidentiality of test results. Prevents unauthorized access to client information. Methods include secure wiping tools (shred, sdelete), and encrypted storage deletion.",
+      "domain": "Engagement Management"
+    },
+    {
+      "id": "bd2_5",
+      "question": "During an assessment, a penetration tester gains access to one of the internal hosts. Given the following command: schtasks /create /sc onlogon /tn \"Windows Update\" /tr \"cmd.exe /c reverse_shell.exe\" Which of the following is the penetration tester trying to do with this code?",
+      "options": [
+        "A. Enumerate the scheduled tasks",
+        "B. Establish persistence",
+        "C. Deactivate the Windows Update functionality",
+        "D. Create a binary application for Windows System Updates"
+      ],
+      "correct_answer": "B",
+      "explanation": "The command creates a scheduled task that executes a reverse shell payload at logon, ensuring persistence. Option A (Enumerate tasks): This command creates a task, not lists tasks (schtasks /query is used for enumeration). Option B (Establish persistence): Correct. The attacker ensures a reverse shell opens every time a user logs in. Option C (Deactivate Windows Update): The task is named 'Windows Update' but does not disable updates. Option D (Create a Windows Update binary): This executes a reverse shell, not a system update.",
+      "domain": "Tools and Code Analysis"
+    },
+    {
+      "id": "bd2_6",
+      "question": "A penetration tester is enumerating a Linux system. The goal is to modify the following script to provide more comprehensive system information: #!/bin/bash; ps aux >> linux_enum.txt. Which of the following lines would provide the most comprehensive enumeration of the system?",
+      "options": [
+        "A. cat /etc/passwd >> linux_enum.txt; netstat -tuln >> linux_enum.txt; cat /etc/bash.bashrc >> linux_enum.txt",
+        "B. whoami >> linux_enum.txt; uname -a >> linux_enum.txt; ifconfig >> linux_enum.txt",
+        "C. hostname >> linux_enum.txt; echo $USER >> linux_enum.txt; curl ifconfig.me >> linux_enum.txt",
+        "D. lsof -i >> linux_enum.txt; uname -a >> linux_enum.txt; ls /home/ >> linux_enum.txt"
+      ],
+      "correct_answer": "A",
+      "explanation": "Option A gathers: /etc/passwd -- lists all local user accounts, netstat -tuln -- lists listening ports and associated services, /etc/bash.bashrc -- contains environment variables and configurations that could reveal system behaviors or hidden persistence mechanisms. This provides a much broader and deeper enumeration compared to other options.",
+      "domain": "Attacks and Exploits"
+    },
+    {
+      "id": "bd2_7",
+      "question": "Which of the following is a term used to describe a situation in which a penetration tester bypasses physical access controls and gains access to a facility by entering at the same time as an employee?",
+      "options": [
+        "A. Badge cloning",
+        "B. Shoulder surfing",
+        "C. Tailgating",
+        "D. Site survey"
+      ],
+      "correct_answer": "C",
+      "explanation": "Tailgating is the term used to describe a situation where a penetration tester bypasses physical access controls and gains access to a facility by entering at the same time as an employee. Tailgating occurs when an unauthorized person follows an authorized person into a restricted area without the latter's consent or knowledge. The authorized person typically opens a door or checkpoint, and the unauthorized person slips in behind them.",
+      "domain": "Physical Security"
+    },
+    {
+      "id": "bd2_8",
+      "question": "During an assessment, a penetration tester obtains access to a Microsoft SQL server using sqlmap and runs the following command: sql> xp_cmdshell whoami /all. Which of the following is the tester trying to do?",
+      "options": [
+        "A. List database tables",
+        "B. Show logged-in database users",
+        "C. Enumerate privileges",
+        "D. Display available SQL commands"
+      ],
+      "correct_answer": "C",
+      "explanation": "The command xp_cmdshell executes system-level commands from SQL Server. The command whoami /all is used to enumerate user privileges, group memberships, and security contexts on Windows systems. Using xp_cmdshell and system commands like whoami /all allows testers to identify the privilege level of the database user and system access level.",
+      "domain": "Post-Exploitation"
+    },
+    {
+      "id": "bd2_9",
+      "question": "During a routine penetration test, the client's security team observes logging alerts that indicate several ID badges were reprinted after working hours without authorization. Which of the following is the penetration tester most likely trying to do?",
+      "options": [
+        "A. Obtain long-term, valid access to the facility",
+        "B. Disrupt the availability of facility access systems",
+        "C. Change access to the facility for valid users",
+        "D. Revoke access to the facility for valid users"
+      ],
+      "correct_answer": "A",
+      "explanation": "The unauthorized reprinting of ID badges suggests the penetration tester is attempting physical security penetration testing to gain long-term access. Option A (Obtain long-term, valid access): Correct. Cloning or reprinting badges allows persistent access past security checks. Option B (Disrupt availability): There is no indication of a denial-of-service attack. Option C (Change access for valid users): The goal is not modifying user access, but rather gaining unauthorized access. Option D (Revoke access for valid users): The logs show new badges being printed, not revocation.",
+      "domain": "Physical Security"
+    },
+    {
+      "id": "bd2_10",
+      "question": "A penetration tester performs an assessment on the target company's Kubernetes cluster using kube-hunter. Which of the following types of vulnerabilities could be detected with the tool?",
+      "options": [
+        "A. Network configuration errors in Kubernetes services",
+        "B. Weaknesses and misconfigurations in the Kubernetes cluster",
+        "C. Application deployment issues in Kubernetes",
+        "D. Security vulnerabilities specific to Docker containers"
+      ],
+      "correct_answer": "B",
+      "explanation": "kube-hunter is a tool designed to perform security assessments on Kubernetes clusters. It identifies various vulnerabilities, focusing on weaknesses and misconfigurations. Kube-hunter scans Kubernetes clusters to identify security issues, such as misconfigurations, insecure settings, and potential attack vectors. Network Configuration Errors: While kube-hunter might identify some network-related issues, its primary focus is on Kubernetes-specific vulnerabilities and misconfigurations.",
+      "domain": "Vulnerability Discovery"
+    },
+    {
+      "id": "bd2_11",
+      "question": "A penetration tester has prepared the following phishing email for an upcoming penetration test: Which of the following is the penetration tester using MOST to influence phishing targets to click on the link?",
+      "options": [
+        "A. Familiarity and likeness",
+        "B. Authority and urgency",
+        "C. Scarcity and fear",
+        "D. Social proof and greed"
+      ],
+      "correct_answer": "B",
+      "explanation": "Authority and urgency are common social engineering techniques used in phishing campaigns. Authority makes the target believe the message comes from a legitimate authority figure, while urgency creates time pressure to act without thinking.",
+      "domain": "Social Engineering"
+    },
+    {
+      "id": "bd2_12",
+      "question": "A penetration tester initiated the transfer of a large data set to verify a proof-of-concept attack as permitted by the ROE. The tester noticed the client's data included PII, which is out of scope, and immediately stopped the transfer. Which of the following MOST likely explains the penetration tester's decision?",
+      "options": [
+        "A. The tester had the situational awareness to stop the transfer.",
+        "B. The tester found evidence of prior compromise within the data set.",
+        "C. The tester completed the assigned part of the assessment workflow.",
+        "D. The tester reached the end of the assessment time frame."
+      ],
+      "correct_answer": "A",
+      "explanation": "Situational awareness is the ability to perceive and understand the environment and events around oneself, and to act accordingly. The penetration tester demonstrated situational awareness by stopping the transfer of PII, which was out of scope and could have violated the ROE or legal and ethical principles.",
+      "domain": "Engagement Management"
+    },
+    {
+      "id": "bd2_13",
+      "question": "A Chief Information Security Officer wants to evaluate the security of the company's e-commerce application. Which of the following tools should a penetration tester use FIRST to obtain relevant information from the application without triggering alarms?",
+      "options": [
+        "A. SQLmap",
+        "B. DirBuster",
+        "C. w3af",
+        "D. OWASP ZAP"
+      ],
+      "correct_answer": "C",
+      "explanation": "W3AF, the Web Application Attack and Audit Framework, is an open source web application security scanner that includes directory and filename bruteforcing in its list of capabilities. It can be used to obtain information from the application in a less intrusive manner compared to other tools.",
+      "domain": "Reconnaissance"
+    },
+    {
+      "id": "bd2_14",
+      "question": "A security engineer is trying to bypass a network IPS that isolates the source when the scan exceeds 100 packets per minute. The scope of the scan is to identify web servers in the 10.0.0.0/16 subnet. Which of the following commands should the engineer use to achieve the objective in the least amount of time?",
+      "options": [
+        "A. nmap -T3 -p 80 10.0.0.0/16 --max-hostgroup 100",
+        "B. nmap -T0 -p 80 10.0.0.0/16",
+        "C. nmap -T4 -p 80 10.0.0.0/16 --max-rate 60",
+        "D. nmap -T5 -p 80 10.0.0.0/16 --min-rate 80"
+      ],
+      "correct_answer": "C",
+      "explanation": "The nmap -T4 -p 80 10.0.0.0/16 --max-rate 60 command is used to scan the 10.0.0.0/16 subnet for web servers (port 80) at a maximum rate of 60 packets per minute. The -T4 option sets the timing template to 'aggressive', which speeds up the scan. The --max-rate option limits the number of packets sent per second, helping to bypass the network IPS that isolates the source when the scan exceeds 100 packets per minute.",
+      "domain": "Attacks and Exploits"
+    },
+    {
+      "id": "bd2_15",
+      "question": "During passive reconnaissance of a target organization's infrastructure, a penetration tester wants to identify key contacts and job responsibilities within the company. Which of the following techniques would be the most effective for this situation?",
+      "options": [
+        "A. Social media scraping",
+        "B. Website archive and caching",
+        "C. DNS lookup",
+        "D. File metadata analysis"
+      ],
+      "correct_answer": "A",
+      "explanation": "Social media scraping involves collecting information from social media platforms where employees might share their roles, responsibilities, and professional affiliations. This method can reveal detailed insights into the organizational structure, key personnel, and specific job functions within the target organization, making it an invaluable tool for understanding the company's internal landscape without alerting the target to the reconnaissance activities.",
+      "domain": "Reconnaissance"
+    },
+    {
+      "id": "bd2_16",
+      "question": "A penetration tester is performing an assessment against a customer's web application that is hosted in a major cloud provider's environment. The penetration tester observes that the majority of the attacks attempted are being blocked by the organization's WAF. Which of the following attacks would be most likely to succeed?",
+      "options": [
+        "A. Reflected XSS",
+        "B. Brute-force",
+        "C. DDoS",
+        "D. Direct-to-origin"
+      ],
+      "correct_answer": "D",
+      "explanation": "Direct-to-origin attacks bypass the WAF by targeting the origin server directly rather than going through the WAF-protected entry point. If the WAF is blocking most attacks, targeting the origin server directly (if its IP is known) would be the most likely to succeed since it circumvents the WAF protection entirely.",
+      "domain": "Attacks and Exploits"
+    },
+    {
+      "id": "bd2_17",
+      "question": "Which of the following tools would be best to use to conceal data in various kinds of image files?",
+      "options": [
+        "A. Kismet",
+        "B. Snow",
+        "C. Responder",
+        "D. Metasploit"
+      ],
+      "correct_answer": "B",
+      "explanation": "Snow is a tool designed for steganography, which is the practice of concealing messages or information within other non-secret text or data. Snow is specifically used to hide data within whitespace of text files, which can include the whitespace areas of images saved in formats that support text descriptions or metadata.",
+      "domain": "Tools and Code Analysis"
+    },
+    {
+      "id": "bd2_18",
+      "question": "During an assessment, a penetration tester obtains a list of 30 email addresses by crawling the target company's website and then creates a list of possible usernames based on the email address format. Which of the following types of attacks would MOST likely be used to avoid account lockout?",
+      "options": [
+        "A. Mask",
+        "B. Rainbow",
+        "C. Dictionary",
+        "D. Password spraying"
+      ],
+      "correct_answer": "D",
+      "explanation": "Password spraying is a type of password guessing attack that involves trying one or a few common passwords against many usernames or accounts. Password spraying can avoid account lockout policies that limit the number of failed login attempts per account by spreading out the attempts over time and across different accounts.",
+      "domain": "Attacks and Exploits"
+    },
+    {
+      "id": "bd2_19",
+      "question": "A penetration tester is conducting reconnaissance for an upcoming assessment of a large corporate client. The client authorized spear phishing in the rules of engagement. Which of the following should the tester do first when developing the phishing campaign?",
+      "options": [
+        "A. Shoulder surfing",
+        "B. Recon-ng",
+        "C. Social media",
+        "D. Password dumps"
+      ],
+      "correct_answer": "C",
+      "explanation": "When developing a phishing campaign, the tester should first use social media to gather information about the targets. Social media provides detailed and personalized information about the targets, which is essential for creating an effective spear phishing campaign. This is part of OSINT (Open Source Intelligence) leveraging publicly available information.",
+      "domain": "Social Engineering"
+    },
+    {
+      "id": "bd2_20",
+      "question": "A penetration tester ran a simple Python-based scanner. Which of the following BEST describes why this script triggered a 'probable port scan' alert in the organization's IDS?",
+      "options": [
+        "A. sock.settimeout(20) on line 7 caused each next socket to be created every 20 milliseconds.",
+        "B. *range(1, 1025) on line 1 populated the portList list in numerical order.",
+        "C. Line 6 uses socket.SOCK_STREAM instead of socket.SOCK_DGRAM",
+        "D. The remoteSvr variable has neither been type-hinted nor initialized."
+      ],
+      "correct_answer": "B",
+      "explanation": "Port randomization is widely used in port scanners to evade detection. By default, Nmap randomizes the scanned port order (except that certain commonly accessible ports are moved near the beginning for efficiency reasons). Scanning ports in sequential numerical order (1-1024) is a pattern that IDS systems can easily detect as a port scan.",
+      "domain": "Tools and Code Analysis"
+    },
+    {
+      "id": "bd2_21",
+      "question": "Which of the following activities should be performed to prevent uploaded web shells from being exploited by others?",
+      "options": [
+        "A. Reverting configuration changes",
+        "B. Preserving artifacts",
+        "C. Uninstalling tools",
+        "D. Removing persistence mechanisms"
+      ],
+      "correct_answer": "D",
+      "explanation": "Removing persistence mechanisms is the correct answer. Web shells are a form of persistence that allows an attacker to maintain access to a compromised system. After a penetration test, removing these persistence mechanisms prevents the web shells from being exploited by other attackers.",
+      "domain": "Post-Exploitation"
+    },
+    {
+      "id": "bd2_22",
+      "question": "Which of the following protocols would a penetration tester most likely utilize to exfiltrate data covertly and evade detection?",
+      "options": [
+        "A. DNS",
+        "B. FTP",
+        "C. SMTP",
+        "D. HTTPS"
+      ],
+      "correct_answer": "A",
+      "explanation": "DNS (Domain Name System) is commonly used for covert data exfiltration because DNS traffic is typically allowed through firewalls and is not closely monitored. Attackers can use DNS tunneling to encode data within DNS queries and responses, making it appear as legitimate DNS traffic.",
+      "domain": "Post-Exploitation"
+    },
+    {
+      "id": "bd2_23",
+      "question": "A penetration tester assesses a complex web application and wants to explore potential security weaknesses by searching for subdomains that might have existed in the past. Which of the following tools should the penetration tester use?",
+      "options": [
+        "A. Shodan",
+        "B. Wayback Machine",
+        "C. Censys.io",
+        "D. SpiderFoot"
+      ],
+      "correct_answer": "B",
+      "explanation": "The Wayback Machine (Internet Archive) stores historical snapshots of websites and can be used to discover subdomains that may have existed in the past but are no longer active. This is a valuable reconnaissance technique for finding forgotten or deprecated subdomains that may have security weaknesses.",
+      "domain": "Reconnaissance"
+    },
+    {
+      "id": "bd2_24",
+      "question": "A penetration tester downloads a JAR file that is used in an organization's production environment. The tester evaluates the contents of the JAR file to identify potentially vulnerable components that can be targeted for exploit. Which of the following describes the tester's activities?",
+      "options": [
+        "A. SAST",
+        "B. SCA",
+        "C. ICS",
+        "D. SBOM"
+      ],
+      "correct_answer": "B",
+      "explanation": "SCA (Software Composition Analysis) is the process of analyzing software to identify third-party components and their known vulnerabilities. Evaluating a JAR file to identify vulnerable components is a classic SCA activity. SCA tools analyze the dependencies and libraries used in an application to find known security vulnerabilities.",
+      "domain": "Vulnerability Discovery"
+    },
+    {
+      "id": "bd2_25",
+      "question": "A penetration tester runs a network scan but has some issues accurately enumerating the vulnerabilities due to the following error: OS identification failed. Which of the following is most likely causing this error?",
+      "options": [
+        "A. The scan did not reach the target because of a firewall block rule.",
+        "B. The scanner database is out of date.",
+        "C. The scan is reporting a false positive.",
+        "D. The scan cannot gather one or more fingerprints from the target."
+      ],
+      "correct_answer": "D",
+      "explanation": "OS identification (OS fingerprinting) relies on gathering specific network fingerprints from the target system, such as TCP/IP stack behavior, response patterns, and banner information. If the scanner cannot gather sufficient fingerprints (due to firewalls, hardened systems, or network issues), OS identification will fail.",
+      "domain": "Vulnerability Discovery"
+    }
+  ]
+}

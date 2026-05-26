@@ -1,0 +1,1239 @@
+<!doctype html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="profile" href="https://gmpg.org/xfn/11">
+		<script type="text/html" id="tmpl-bb-link-preview">
+<% if ( link_scrapping ) { %>
+	<% if ( link_loading ) { %>
+		<span class="bb-url-scrapper-loading bb-ajax-loader"><i class="bb-icon-l bb-icon-spinner animate-spin"></i>Loading preview...</span>
+	<% } %>
+	<% if ( link_success || link_error ) { %>
+		<a title="Cancel Preview" href="#" id="bb-close-link-suggestion">Remove Preview</a>
+		<div class="bb-link-preview-container">
+
+			<% if ( link_images && link_images.length && link_success && ! link_error && '' !== link_image_index ) { %>
+				<div id="bb-url-scrapper-img-holder">
+					<div class="bb-link-preview-image">
+						<div class="bb-link-preview-image-cover">
+							<img src="<%= link_images[link_image_index] %>"/>
+						</div>
+						<div class="bb-link-preview-icons">
+							<%
+							if ( link_images.length > 1 ) { %>
+								<a data-bp-tooltip-pos="up" data-bp-tooltip="Change image" href="#" class="icon-exchange toolbar-button bp-tooltip" id="icon-exchange"><i class="bb-icon-l bb-icon-exchange"></i></a>
+							<% } %>
+							<% if ( link_images.length ) { %>
+								<a data-bp-tooltip-pos="up" data-bp-tooltip="Remove image" href="#" class="icon-image-slash toolbar-button bp-tooltip" id="bb-link-preview-remove-image"><i class="bb-icon-l bb-icon-image-slash"></i></a>
+							<% } %>
+							<a data-bp-tooltip-pos="up" data-bp-tooltip="Confirm" class="toolbar-button bp-tooltip" href="#" id="bb-link-preview-select-image">
+								<i class="bb-icon-check bb-icon-l"></i>
+							</a>
+						</div>
+					</div>
+					<% if ( link_images.length > 1 ) { %>
+						<div class="bb-url-thumb-nav">
+							<button type="button" id="bb-url-prevPicButton"><span class="bb-icon-l bb-icon-angle-left"></span></button>
+							<button type="button" id="bb-url-nextPicButton"><span class="bb-icon-l bb-icon-angle-right"></span></button>
+							<div id="bb-url-scrapper-img-count">
+								Image <%= link_image_index + 1 %>&nbsp;of&nbsp;<%= link_images.length %>
+							</div>
+						</div>
+					<% } %>
+				</div>
+			<% } %>
+
+			<% if ( link_success && ! link_error && link_url ) { %>
+				<div class="bb-link-preview-info">
+					<% var a = document.createElement('a');
+						a.href = link_url;
+						var hostname = a.hostname;
+						var domainName = hostname.replace('www.', '' );
+					%>
+
+					<% if ( 'undefined' !== typeof link_title && link_title.trim() && link_description ) { %>
+						<p class="bb-link-preview-link-name"><%= domainName %></p>
+					<% } %>
+
+					<% if ( link_success && ! link_error ) { %>
+						<p class="bb-link-preview-title"><%= link_title %></p>
+					<% } %>
+
+					<% if ( link_success && ! link_error ) { %>
+						<div class="bb-link-preview-excerpt"><p><%= link_description %></p></div>
+					<% } %>
+				</div>
+			<% } %>
+			<% if ( link_error && ! link_success ) { %>
+				<div id="bb-url-error" class="bb-url-error"><%= link_error_msg %></div>
+			<% } %>
+		</div>
+	<% } %>
+<% } %>
+</script>
+<script type="text/html" id="tmpl-profile-card-popup">
+	<div id="profile-card" class="bb-profile-card bb-popup-card" data-bp-item-id="" data-bp-item-component="members">
+
+		<div class="skeleton-card">
+			<div class="skeleton-card-body">
+				<div class="skeleton-card-avatar bb-loading-bg"></div>
+				<div class="skeleton-card-entity">
+					<div class="skeleton-card-type bb-loading-bg"></div>
+					<div class="skeleton-card-heading bb-loading-bg"></div>
+					<div class="skeleton-card-meta bb-loading-bg"></div>
+				</div>
+			</div>
+						<div class="skeleton-card-footer skeleton-footer-plain">
+				<div class="skeleton-card-button bb-loading-bg"></div>
+				<div class="skeleton-card-button bb-loading-bg"></div>
+				<div class="skeleton-card-button bb-loading-bg"></div>
+			</div>
+		</div>
+
+		<div class="bb-card-content">
+			<div class="bb-card-body">
+				<div class="bb-card-avatar">
+					<span class="card-profile-status"></span>
+					<img src="" alt="">
+				</div>
+				<div class="bb-card-entity">
+					<div class="bb-card-profile-type"></div>
+					<h4 class="bb-card-heading"></h4>
+					<div class="bb-card-meta">
+						<span class="card-meta-item card-meta-joined">Joined <span></span></span>
+						<span class="card-meta-item card-meta-last-active"></span>
+											</div>
+				</div>
+			</div>
+			<div class="bb-card-footer">
+								<div class="bb-card-action bb-card-action-outline">
+					<a href="" class="card-button card-button-profile">View Profile</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</script>
+
+            <style id="bb_learndash_30_custom_colors">
+
+                
+                
+                
+                .learndash-wrapper .ld-item-list .ld-item-list-item.ld-item-lesson-item .ld-item-name .ld-item-title .ld-item-components span.ld-status-waiting,
+                .learndash-wrapper .ld-item-list .ld-item-list-item.ld-item-lesson-item .ld-item-name .ld-item-title .ld-item-components span.ld-status-waiting span.ld-icon,
+                .learndash-wrapper .ld-status-waiting {
+                    background-color: #ffd200 !important;
+                }
+
+                
+            </style>
+
+			
+<!-- Search Engine Optimization by Rank Math PRO - https://rankmath.com/ -->
+<title>CompTIA PenTest+ PT0-002 Free Practice Exam Questions &amp; Tests</title><link rel="preload" data-rocket-preload as="image" href="https://bundlesdigest.com/wp-content/uploads/2021/05/CompTIA-PenTest-plus-Practice-Exam-Questions-Study-Guides-Performance-Based-Questions-and-Labs-624x351.jpg" imagesrcset="https://bundlesdigest.com/wp-content/uploads/2021/05/CompTIA-PenTest-plus-Practice-Exam-Questions-Study-Guides-Performance-Based-Questions-and-Labs-624x351.jpg 624w, https://bundlesdigest.com/wp-content/uploads/2021/05/CompTIA-PenTest-plus-Practice-Exam-Questions-Study-Guides-Performance-Based-Questions-and-Labs-300x169.jpg 300w, https://bundlesdigest.com/wp-content/uploads/2021/05/CompTIA-PenTest-plus-Practice-Exam-Questions-Study-Guides-Performance-Based-Questions-and-Labs-768x432.jpg 768w, https://bundlesdigest.com/wp-content/uploads/2021/05/CompTIA-PenTest-plus-Practice-Exam-Questions-Study-Guides-Performance-Based-Questions-and-Labs.jpg 1000w" imagesizes="(max-width: 624px) 100vw, 624px" fetchpriority="high">
+<meta name="description" content="CompTIA PenTest+ PT0-002 Free Practice Exam Question Tests, Study Guides, Performance-based Questions to Pass the Official CompTIA Exam"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://bundlesdigest.com/courses/comptia-pentest-plus-practice-exams/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="CompTIA PenTest+ PT0-002 Free Practice Exam Questions &amp; Tests" />
+<meta property="og:description" content="CompTIA PenTest+ PT0-002 Free Practice Exam Question Tests, Study Guides, Performance-based Questions to Pass the Official CompTIA Exam" />
+<meta property="og:url" content="https://bundlesdigest.com/courses/comptia-pentest-plus-practice-exams/" />
+<meta property="og:site_name" content="CompTIA PBQs &amp; Cisco Networking Labs, Linux Commands and Python" />
+<meta property="og:updated_time" content="2026-03-19T12:35:32+00:00" />
+<meta property="og:image" content="https://bundlesdigest.com/wp-content/uploads/2021/05/CompTIA-PenTest-plus-Practice-Exam-Questions-Study-Guides-Performance-Based-Questions-and-Labs.jpg" />
+<meta property="og:image:secure_url" content="https://bundlesdigest.com/wp-content/uploads/2021/05/CompTIA-PenTest-plus-Practice-Exam-Questions-Study-Guides-Performance-Based-Questions-and-Labs.jpg" />
+<meta property="og:image:width" content="1000" />
+<meta property="og:image:height" content="563" />
+<meta property="og:image:alt" content="comptia pentest+" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="CompTIA PenTest+ PT0-002 Free Practice Exam Questions &amp; Tests" />
+<meta name="twitter:description" content="CompTIA PenTest+ PT0-002 Free Practice Exam Question Tests, Study Guides, Performance-based Questions to Pass the Official CompTIA Exam" />
+<meta name="twitter:image" content="https://bundlesdigest.com/wp-content/uploads/2021/05/CompTIA-PenTest-plus-Practice-Exam-Questions-Study-Guides-Performance-Based-Questions-and-Labs.jpg" />
+<!-- /Rank Math WordPress SEO plugin -->
+
+
+<link rel="alternate" type="application/rss+xml" title="BundlesDigest Training &raquo; Feed" href="https://bundlesdigest.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="BundlesDigest Training &raquo; Comments Feed" href="https://bundlesdigest.com/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://bundlesdigest.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbundlesdigest.com%2Fcourses%2Fcomptia-pentest-plus-practice-exams%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://bundlesdigest.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbundlesdigest.com%2Fcourses%2Fcomptia-pentest-plus-practice-exams%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='bp-nouveau-icons-map-css' href='https://bundlesdigest.com/wp-content/plugins/buddyboss-platform/bp-templates/bp-nouveau/icons/css/icons-map.min.css?ver=2.14.4' media='all' />
+<link data-minify="1" rel='stylesheet' id='bp-nouveau-bb-icons-css' href='https://bundlesdigest.com/wp-content/cache/min/1/wp-content/plugins/buddyboss-platform/bp-templates/bp-nouveau/icons/css/bb-icons.min.css?ver=1779351825' media='all' />
+<link data-minify="1" rel='stylesheet' id='dashicons-css' href='https://bundlesdigest.com/wp-content/cache/min/1/wp-includes/css/dashicons.min.css?ver=1779351825' media='all' />
+<link rel='stylesheet' id='bp-nouveau-css' href='https://bundlesdigest.com/wp-content/plugins/buddyboss-platform/bp-templates/bp-nouveau/css/buddypress.min.css?ver=2.14.4' media='all' />
+<style id="bp-nouveau-inline-css">
+.list-wrap .bs-group-cover a:before{ background:unset; }
+/*# sourceURL=bp-nouveau-inline-css */
+</style>
+<link data-minify="1" rel='stylesheet' id='buddyboss_legacy-css' href='https://bundlesdigest.com/wp-content/cache/min/1/wp-content/themes/buddyboss-theme/inc/plugins/buddyboss-menu-icons/vendor/kucrut/icon-picker/css/types/buddyboss_legacy.css?ver=1779351826' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://bundlesdigest.com/wp-includes/css/dist/block-library/style.min.css?ver=7.0' media='all' />
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<link data-minify="1" rel='stylesheet' id='bb_theme_block-buddypanel-style-css-css' href='https://bundlesdigest.com/wp-content/cache/min/1/wp-content/themes/buddyboss-theme/blocks/buddypanel/build/style-buddypanel.css?ver=1779351826' media='all' />
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-icon svg){width: 24px;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-term-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-term-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link rel='stylesheet' id='bb-pro-enqueue-scripts-css' href='https://bundlesdigest.com/wp-content/plugins/buddyboss-platform-pro/assets/css/index.min.css?ver=2.10.1' media='all' />
+<link rel='stylesheet' id='bb-access-control-css' href='https://bundlesdigest.com/wp-content/plugins/buddyboss-platform-pro/includes/access-control/assets/css/bb-access-control.min.css?ver=2.10.1' media='all' />
+<link rel='stylesheet' id='bb-activity-post-feature-image-css' href='https://bundlesdigest.com/wp-content/plugins/buddyboss-platform-pro/includes/platform-settings/activity/post-feature-image/assets/css/bb-activity-post-feature-image.min.css?ver=2.10.1' media='all' />
+<link rel='stylesheet' id='bb-cropper-css-css' href='https://bundlesdigest.com/wp-content/plugins/buddyboss-platform/bp-core/css/vendor/cropper.min.css?ver=2.14.4' media='all' />
+<link rel='stylesheet' id='bb-meprlms-frontend-css' href='https://bundlesdigest.com/wp-content/plugins/buddyboss-platform-pro/includes/integrations/meprlms/assets/css/meprlms-frontend.min.css?ver=2.14.4' media='all' />
+<link rel='stylesheet' id='bb-tutorlms-admin-css' href='https://bundlesdigest.com/wp-content/plugins/buddyboss-platform-pro/includes/integrations/tutorlms/assets/css/bb-tutorlms-admin.min.css?ver=2.14.4' media='all' />
+<link data-minify="1" rel='stylesheet' id='pmpro_frontend_base-css' href='https://bundlesdigest.com/wp-content/cache/min/1/wp-content/plugins/paid-memberships-pro/css/frontend/base.css?ver=1779351826' media='all' />
+<link rel='stylesheet' id='learndash_quiz_front_css-css' href='//bundlesdigest.com/wp-content/plugins/sfwd-lms/themes/legacy/templates/learndash_quiz_front.min.css?ver=4.10.1' media='all' />
+<link rel='stylesheet' id='jquery-dropdown-css-css' href='//bundlesdigest.com/wp-content/plugins/sfwd-lms/assets/css/jquery.dropdown.min.css?ver=4.10.1' media='all' />
+<link rel='stylesheet' id='learndash_lesson_video-css' href='//bundlesdigest.com/wp-content/plugins/sfwd-lms/themes/legacy/templates/learndash_lesson_video.min.css?ver=4.10.1' media='all' />
+<link data-minify="1" rel='stylesheet' id='njt-nofi-css' href='https://bundlesdigest.com/wp-content/cache/min/1/wp-content/plugins/notibar/assets/frontend/css/notibar.css?ver=1779351826' media='all' />
+<link data-minify="1" rel='stylesheet' id='redux-extendify-styles-css' href='https://bundlesdigest.com/wp-content/cache/min/1/wp-content/themes/buddyboss-theme/inc/admin/framework/redux-core/assets/css/extendify-utilities.css?ver=1779351826' media='all' />
+<link data-minify="1" rel='stylesheet' id='buddyboss-theme-fonts-css' href='https://bundlesdigest.com/wp-content/cache/min/1/wp-content/themes/buddyboss-theme/assets/fonts/fonts.css?ver=1779351826' media='all' />
+<link data-minify="1" rel='stylesheet' id='learndash-front-css' href='https://bundlesdigest.com/wp-content/cache/min/1/wp-content/plugins/sfwd-lms/themes/ld30/assets/css/learndash.min.css?ver=1779351826' media='all' />
+<link rel='stylesheet' id='bp-zoom-css' href='https://bundlesdigest.com/wp-content/plugins/buddyboss-platform-pro/includes/integrations/zoom/assets/css/bp-zoom.min.css?ver=2.10.1' media='all' />
+<link rel='stylesheet' id='buddyboss-theme-magnific-popup-css-css' href='https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/css/vendors/magnific-popup.min.css?ver=2.14.4' media='all' />
+<link rel='stylesheet' id='buddyboss-theme-select2-css-css' href='https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/css/vendors/select2.min.css?ver=2.14.4' media='all' />
+<link rel='stylesheet' id='buddyboss-theme-css-css' href='https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/css/theme.min.css?ver=2.14.4' media='all' />
+<link rel='stylesheet' id='buddyboss-theme-template-css' href='https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/css/template-v1.min.css?ver=2.14.4' media='all' />
+<link rel='stylesheet' id='buddyboss-theme-buddypress-css' href='https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/css/buddypress.min.css?ver=2.14.4' media='all' />
+<link rel='stylesheet' id='buddyboss-theme-learndash-css' href='https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/css/learndash.min.css?ver=2.14.4' media='all' />
+<link rel='stylesheet' id='buddyboss-theme-elementor-css' href='https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/css/elementor.min.css?ver=2.14.4' media='all' />
+<link rel='stylesheet' id='buddyboss-theme-pmpro-css' href='https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/css/pmpro.min.css?ver=2.14.4' media='all' />
+<link rel='stylesheet' id='buddyboss-child-css-css' href='https://bundlesdigest.com/wp-content/themes/buddyboss-theme-child/assets/css/custom.css?ver=7.0' media='all' />
+<script type="text/javascript">
+            window._bbssoDOMReady = function (callback) {
+                if ( document.readyState === "complete" || document.readyState === "interactive" ) {
+                    callback();
+                } else {
+                    document.addEventListener( "DOMContentLoaded", callback );
+                }
+            };
+            </script><!--n2css--><!--n2js--><script id="bb-twemoji-js-extra">
+var bbemojiSettings = {"baseUrl":"https://s.w.org/images/core/emoji/14.0.0/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/14.0.0/svg/","svgExt":".svg"};
+//# sourceURL=bb-twemoji-js-extra
+</script>
+<script id="bb-twemoji-js" src="https://bundlesdigest.com/wp-includes/js/twemoji.min.js?ver=2.14.4"></script>
+<script id="bb-emoji-loader-js" src="https://bundlesdigest.com/wp-content/plugins/buddyboss-platform/bp-core/js/bb-emoji-loader.min.js?ver=2.14.4"></script>
+<script id="jquery-core-js" src="https://bundlesdigest.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://bundlesdigest.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="bb-reaction-js-extra">
+var bbReactionVars = {"ajax_url":"https://bundlesdigest.com/wp-admin/admin-ajax.php"};
+//# sourceURL=bb-reaction-js-extra
+</script>
+<script id="bb-reaction-js" src="https://bundlesdigest.com/wp-content/plugins/buddyboss-platform-pro/includes/reactions/assets/js/bb-reaction.min.js?ver=2.10.1"></script>
+<script id="bp-media-dropzone-js-extra">
+var bp_media_dropzone = {"dictDefaultMessage":"Drop files here to upload","dictFallbackMessage":"Your browser does not support drag'n'drop file uploads.","dictFallbackText":"Please use the fallback form below to upload your files like in the olden days.","dictFileTooBig":"Sorry, file size is too big ({{filesize}} MB). Max file size limit: {{maxFilesize}} MB.","dictInvalidFileType":"You can't upload files of this type.","dictResponseError":"Server responded with {{statusCode}} code.","dictCancelUpload":"Cancel upload","dictUploadCanceled":"Upload canceled.","dictCancelUploadConfirmation":"Are you sure you want to cancel this upload?","dictRemoveFile":"Remove file","dictMaxFilesExceeded":"You cannot upload more than 10 files at a time."};
+//# sourceURL=bp-media-dropzone-js-extra
+</script>
+<script id="bp-media-dropzone-js" src="https://bundlesdigest.com/wp-content/plugins/buddyboss-platform/bp-core/js/vendor/dropzone.min.js?ver=2.14.4"></script>
+<script id="bb-meprlms-frontend-js" src="https://bundlesdigest.com/wp-content/plugins/buddyboss-platform-pro/includes/integrations/meprlms/assets/js/bb-meprlms-frontend.min.js?ver=2.14.4"></script>
+<script id="bb-tutorlms-admin-js-extra">
+var bbTutorLMSVars = {"ajax_url":"https://bundlesdigest.com/wp-admin/admin-ajax.php","select_course_placeholder":"Start typing a course name to associate with this group."};
+//# sourceURL=bb-tutorlms-admin-js-extra
+</script>
+<script id="bb-tutorlms-admin-js" src="https://bundlesdigest.com/wp-content/plugins/buddyboss-platform-pro/includes/integrations/tutorlms/assets/js/bb-tutorlms-admin.min.js?ver=2.14.4"></script>
+<script id="bp-widget-members-js" src="https://bundlesdigest.com/wp-content/plugins/buddyboss-platform/bp-core/js/widget-members.min.js?ver=2.14.4"></script>
+<script id="bp-jquery-query-js" src="https://bundlesdigest.com/wp-content/plugins/buddyboss-platform/bp-core/js/jquery-query.min.js?ver=2.14.4"></script>
+<script id="bp-jquery-cookie-js" src="https://bundlesdigest.com/wp-content/plugins/buddyboss-platform/bp-core/js/vendor/jquery-cookie.min.js?ver=2.14.4"></script>
+<script id="bp-jquery-scroll-to-js" src="https://bundlesdigest.com/wp-content/plugins/buddyboss-platform/bp-core/js/vendor/jquery-scroll-to.min.js?ver=2.14.4"></script>
+<script id="buddyboss-child-js-js" src="https://bundlesdigest.com/wp-content/themes/buddyboss-theme-child/assets/js/custom.js?ver=7.0"></script>
+<link rel="https://api.w.org/" href="https://bundlesdigest.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://bundlesdigest.com/wp-json/wp/v2/sfwd-courses/31619" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://bundlesdigest.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.0" />
+<link rel='shortlink' href='https://bundlesdigest.com/?p=31619' />
+
+	<script>var ajaxurl = 'https://bundlesdigest.com/wp-admin/admin-ajax.php';</script>
+
+	<style id="pmpro_colors">:root {
+	--pmpro--color--base: #ffffff;
+	--pmpro--color--contrast: #222222;
+	--pmpro--color--accent: #0c3d54;
+	--pmpro--color--accent--variation: hsl( 199,75%,28.5% );
+	--pmpro--color--border--variation: hsl( 0,0%,0% );
+}</style>		<style>
+			.learndash-paidmemberships-notice.warning {
+				background-color: #f5e942;
+				border: 2px solid #f5da42;
+				border-radius: 5px;
+				padding: 10px 15px;
+			}
+		</style>
+		<meta name="generator" content="Redux 4.4.11" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1" /><meta name="generator" content="Elementor 3.33.4; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="https://bundlesdigest.com/wp-content/uploads/2024/04/bundlesdigest-icon-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://bundlesdigest.com/wp-content/uploads/2024/04/bundlesdigest-icon-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://bundlesdigest.com/wp-content/uploads/2024/04/bundlesdigest-icon-300x300.png" />
+<meta name="msapplication-TileImage" content="https://bundlesdigest.com/wp-content/uploads/2024/04/bundlesdigest-icon-300x300.png" />
+<style id="buddyboss_theme-style">:root{--bb-primary-color:#FF512F;--bb-primary-color-rgb:255, 81, 47;--bb-body-background-color:#FAFBFD;--bb-body-background-color-rgb:250, 251, 253;--bb-content-background-color:#FFFFFF;--bb-content-alternate-background-color:#FBFBFC;--bb-content-border-color:#E7E9EC;--bb-content-border-color-rgb:231, 233, 236;--bb-cover-image-background-color:#E2E9EF;--bb-headings-color:#121826;--bb-headings-color-rgb:18, 24, 38;--bb-body-text-color:#121826;--bb-body-text-color-rgb:18, 24, 38;--bb-alternate-text-color:#A3A5A9;--bb-alternate-text-color-rgb:163, 165, 169;--bb-primary-button-background-regular:#FF512F;--bb-primary-button-background-hover:#ED2F00;--bb-primary-button-border-regular:#FF512F;--bb-primary-button-border-hover:#ED2F00;--bb-primary-button-text-regular:#FFFFFF;--bb-primary-button-text-regular-rgb:255, 255, 255;--bb-primary-button-text-hover:#FFFFFF;--bb-primary-button-text-hover-rgb:255, 255, 255;--bb-secondary-button-background-regular:#F2F4F5;--bb-secondary-button-background-hover:#FF512F;--bb-secondary-button-border-regular:#F2F4F5;--bb-secondary-button-border-hover:#FF512F;--bb-secondary-button-text-regular:#121826;--bb-secondary-button-text-hover:#FFFFFF;--bb-header-background:#FFFFFF;--bb-header-alternate-background:#F2F4F5;--bb-header-links:#121826;--bb-header-links-hover:#FF512F;--bb-header-mobile-logo-size:180px;--bb-header-height:76px;--bb-sidenav-background:#FFFFFF;--bb-sidenav-text-regular:#121826;--bb-sidenav-text-hover:#121826;--bb-sidenav-text-active:#FFFFFF;--bb-sidenav-menu-background-color-regular:#FFFFFF;--bb-sidenav-menu-background-color-hover:#F2F4F5;--bb-sidenav-menu-background-color-active:#FF512F;--bb-sidenav-count-text-color-regular:#939597;--bb-sidenav-count-text-color-hover:#FFFFFF;--bb-sidenav-count-text-color-active:#FF512F;--bb-sidenav-count-background-color-regular:#F2F4F5;--bb-sidenav-count-background-color-hover:#FF512F;--bb-sidenav-count-background-color-active:#FFFFFF;--bb-footer-background:#FFFFFF;--bb-footer-widget-background:#FFFFFF;--bb-footer-text-color:#121826;--bb-footer-menu-link-color-regular:#121826;--bb-footer-menu-link-color-hover:#FF512F;--bb-footer-menu-link-color-active:#121826;--bb-admin-screen-bgr-color:#FAFBFD;--bb-admin-screen-txt-color:#121826;--bb-login-register-link-color-regular:#5A5A5A;--bb-login-register-link-color-hover:#FF512F;--bb-login-register-button-background-color-regular:#FF512F;--bb-login-register-button-background-color-hover:#ED2F00;--bb-login-register-button-border-color-regular:#FF512F;--bb-login-register-button-border-color-hover:#ED2F00;--bb-login-register-button-text-color-regular:#FFFFFF;--bb-login-register-button-text-color-hover:#FFFFFF;--bb-label-background-color:#D7DFFF;--bb-label-text-color:#385DFF;--bb-tooltip-background:#121826;--bb-tooltip-background-rgb:18, 24, 38;--bb-tooltip-color:#FFFFFF;--bb-default-notice-color:#007CFF;--bb-default-notice-color-rgb:0, 124, 255;--bb-success-color:#1CD991;--bb-success-color-rgb:28, 217, 145;--bb-warning-color:#F7BA45;--bb-warning-color-rgb:247, 186, 69;--bb-danger-color:#EF3E46;--bb-danger-color-rgb:239, 62, 70;--bb-login-custom-heading-color:#FFFFFF;--bb-button-radius:100px;--bb-block-radius:4px;--bb-option-radius:3px;--bb-block-radius-inner:4px;--bb-input-radius:4px;--bb-checkbox-radius:2.7px;--bb-primary-button-focus-shadow:none;--bb-secondary-button-focus-shadow:none;--bb-outline-button-focus-shadow:none;--bb-input-focus-shadow:none;--bb-input-focus-border-color:var(--bb-content-border-color);--bb-label-type-radius:100px;--bb-widget-title-text-transform:uppercase;}.bb-style-primary-bgr-color {background-color:#FF512F;}.bb-style-border-radius {border-radius:100px;}#site-logo .site-title img {max-height:inherit;}.site-header-container .site-branding {min-width:220px;}#site-logo .site-title .bb-logo img,#site-logo .site-title img.bb-logo,.buddypanel .site-title img {width:220px;}.site-title img.bb-mobile-logo {width:180px;}.site-header-container #site-logo .bb-logo img,.site-header-container #site-logo .site-title img.bb-logo,.site-title img.bb-mobile-logo {max-height:76px}.sticky-header .site-content,body.buddypress.sticky-header .site-content,.bb-buddypanel.sticky-header .site-content,.single-sfwd-quiz.bb-buddypanel.sticky-header .site-content,.single-sfwd-lessons.bb-buddypanel.sticky-header .site-content,.single-sfwd-topic.bb-buddypanel.sticky-header .site-content {padding-top:76px}.site-header .site-header-container,.header-search-wrap,.header-search-wrap input.search-field,.header-search-wrap form.search-form {height:76px;}.sticky-header .bp-feedback.bp-sitewide-notice {top:76px;}@media screen and (max-width:767px) {.bb-mobile-header {height:76px;}#learndash-content .lms-topic-sidebar-wrapper .lms-topic-sidebar-data,.lifter-topic-sidebar-wrapper .lifter-topic-sidebar-data {height:calc(90vh - 76px);}}[data-balloon]:after,[data-bp-tooltip]:after {background-color:rgba( 18,24,38,1 );box-shadow:none;}[data-balloon]:before,[data-bp-tooltip]:before {background:no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2236px%22%20height%3D%2212px%22%3E%3Cpath%20fill%3D%22rgba( 18,24,38,1 )%22%20transform%3D%22rotate(0)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");background-size:100% auto;}[data-bp-tooltip][data-bp-tooltip-pos="right"]:before,[data-balloon][data-balloon-pos='right']:before {background:no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2212px%22%20height%3D%2236px%22%3E%3Cpath%20fill%3D%22rgba( 18,24,38,1 )%22%20transform%3D%22rotate(90 6 6)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");background-size:100% auto;}[data-bp-tooltip][data-bp-tooltip-pos="left"]:before,[data-balloon][data-balloon-pos='left']:before {background:no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2212px%22%20height%3D%2236px%22%3E%3Cpath%20fill%3D%22rgba( 18,24,38,1 )%22%20transform%3D%22rotate(-90 18 18)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");background-size:100% auto;}[data-bp-tooltip][data-bp-tooltip-pos="down-left"]:before,[data-bp-tooltip][data-bp-tooltip-pos="down"]:before,[data-balloon][data-balloon-pos='down']:before {background:no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2236px%22%20height%3D%2212px%22%3E%3Cpath%20fill%3D%22rgba( 18,24,38,1 )%22%20transform%3D%22rotate(180 18 6)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");background-size:100% auto;}</style>
+            <style id="buddyboss_theme-bp-style">
+                #buddypress #header-cover-image.has-default,#buddypress #header-cover-image.has-default .guillotine-window img,.bs-group-cover.has-default a {background-color:#E2E9EF;}body.buddypress.register.login-split-page .login-split .split-overlay,body.buddypress.activation.login-split-page .login-split .split-overlay {opacity:0.3;}body.buddypress.register .register-section-logo img,body.buddypress.activation .activate-section-logo img {width:260px;}
+            </style>
+            
+            <style id="buddyboss_theme-learndash-style">
+                .learndash-wrapper .bb-ld-tabs #learndash-course-content {top:-86px;}html[dir="rtl"] .learndash_next_prev_link a.next-link,html[dir="rtl"] .learndash_next_prev_link span.next-link {border-radius:100px 0 0 100px;}html[dir="rtl"] .learndash_next_prev_link a.prev-link,html[dir="rtl"] .learndash_next_prev_link span.prev-link {border-radius:0 100px 100px 0;}
+            </style>
+            
+		<style id="buddyboss_theme-custom-style">
+
+		a.bb-close-panel i {top:21px;}
+		</style>
+		<style id="wp-custom-css">
+.learndash-wrapper .ld-item-list-item-quiz .ld-item-name .ld-item-title:before {
+    content: "\ef0c" !important;
+    font: normal normal normal 18px/1 bb-icons !important;
+	border:1px solid;
+	border-radius:250px;
+	padding:2px;
+	font-size:23px !important;
+	font-weight:200 !important;
+}
+</style>
+<style>@media (min-width: 799px){
+    #menu-item-5659, #menu-item-5658{display:none;}
+}
+.cky-btn-revisit-wrapper,.course-date,.meta-saperator{display:none !important;}
+.bb-course-volume,.pmpro-checkout .bb-left-panel-icon-wrap,.pmpro-checkout .header-aside,.pmpro-checkout #primary-navbar,.ld-quiz-status,.wpProQuiz_reviewButtons,.wpProQuiz_reviewLegend,.wpProQuiz_clozeCorrect,.ld-table-list-header.ld-primary-background,.ld-expand-button,.sfwd-quiz .lms-header-instructor,.single-sfwd-quiz #primary-navbar,#pmpro_actionlink-levels,#sfwd_prs-order-by,.grid-filters,.bb-cover-list-item .ld-status,.bb-card-course-details .bb-course-excerpt,.entry-header,.course-lesson-count{display:none !important;}
+.bb-lms-pagination {text-align: center;}
+.bb-course-banner-inner .avatar {
+    border: 2px solid #ff512f;
+    border-radius: 50%;
+    margin-right: 12px;
+    max-width: 45px;
+}
+
+.bb-footer .widget li, .widget_nav_menu li{margin:0px !important;}
+.bb-course-banner-inner .author-name{font-size:17px !important;}
+.bb-learndash-banner:before{opacity:1 !important; background-color: #000 !important;}
+.pmpro-checkout #site-logo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.bb-card-course-details{padding:15px !important;}
+.learndash-wrapper .ld-item-list.ld-lesson-list .ld-lesson-section-heading {
+    font-size: 13px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-top: 21px;
+}	
+.pmpro_confirmation_wrap{
+    text-align: center;
+    background: #fff;
+    padding: 25px;
+}
+.pmpro_confirmation_wrap ul{list-style: none !important;}
+#page .bb-course-title a{
+    max-height: 4em !important;
+    -webkit-line-clamp: 3 !important;
+}
+.menu-item .bb-icon-bulb{font-size:24px !important;}
+.primary-menu a {font-size: 16px !important;}
+#primary-navbar {justify-content: center !important;}
+.primary-menu>li{padding:0 12px !important;}
+.menu-item i._before, .rtl .menu-item i._after{margin-right:5px !important;}
+.site-branding{padding-right:0px !important;}
+    
+.bb-course-meta .item-avatar{max-width: 40px !important;}
+.bb-course-meta strong {font-size: 17px !important;font-weight: 400 !important;
+}
+.bb-course-items .bb-cover-wrap{padding-top: 57%;}
+.thumbnail-container {padding-bottom: 55%;}
+.bb-lms-pagination {
+    padding: 10px 0;
+    text-align: center;
+}
+.page-numbers.current{background: #cf2d0e;}
+.bb-lms-pagination a.next.page-numbers:before, .bb-lms-pagination a.prev.page-numbers:before {
+    font-size: 17px;
+}
+.bb-lms-pagination a:hover{color:#fff; background: #cf2d0e;}
+.bb-lms-pagination>* {
+    display: inline-block;
+    margin-right: 10px;
+    background: #fe5130;
+    padding: 7px 6px;
+    color: #fff;
+    border-radius: 250px;
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+}
+
+#btn-join, .btn-advance-start a{
+    padding: 17px 0px !important;
+    background-color: transparent !important;
+    background-image: linear-gradient(90deg, #FF512F 0%, #DD2476 100%) ;
+    border-radius: 6px !important;
+    color: #fff !important;
+    font-size: 18px !important;
+    font-weight: 800 !important;
+}
+#courses-dir-search{margin-right:auto;}				
+.bs-dir-search input[type=text]{height:40px !important;}
+.bs-search-form:before{
+    margin-left: 3px !important;
+    top: 11px !important;
+    font-size: 18px !important;
+    left: 9px !important;
+}				
+.learndash-wrapper .ld-status {
+    background-color: #e2e7ed36;
+    border-radius: 12px;
+    color: #de2574;
+}				
+.bb-course-banner-inner .bb-course-category .course-category-item a {
+    background: #ffffff3d !important;
+    border-radius: 250px !important;
+    padding: 5px 13px !important;
+}				
+
+.single-sfwd-lessons h3{
+    font-weight:800;
+}
+.background-code{
+    background: #fff9f7;
+    border-radius: 0px;
+    border-left: 4px solid #fe5131;
+    margin-bottom: 1.6875rem;
+    padding: 13px;
+}
+
+.notes{
+    padding: 10px;
+    background: #fffae9;
+    color: #866e17;
+    border-radius: 4px;
+}
+
+.comment-code{
+    font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+    font-size: 1rem;
+    color:#ff512e;
+}
+code{
+    background: #ffe9e5;
+    color: #fe5133;
+    border-color: #f23414;
+}
+ul{
+list-style: none;
+    margin: 0px;
+}
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_question {
+    padding: 30px;
+    background: #fafbfd;
+}
+
+
+.wpProQuiz_questionListItem{
+        margin: 0px !important;
+    border-radius: 6px;
+    padding: 30px !important;
+    display: block !important;
+    background: #fff !important;
+}
+
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem span.wpProQuiz_cloze {
+    margin: 3px 0px !important;
+}
+
+.wpProQuiz_cloze{ 
+    background: #fff2f0 !important;
+    border-radius: 0px !important;
+    border-left: 4px solid #ff5130 !important;}
+    
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem .wpProQuiz_cloze input{
+    border: 0 !important;
+    height: 37px !important;
+    background-color: transparent !important;
+    padding: 10px !important;   
+    }
+    
+    .wpProQuiz_questionListItem, .wpProQuiz_questionListItem p {
+    margin: 0px 10px 0px 0px !important;
+}
+
+.wpProQuiz_incorrect {
+    background: #fb7f7b; 
+}
+.wpProQuiz_correct {
+    background: #88db94;
+}
+.wpProQuiz_incorrect, .wpProQuiz_correct {
+    padding: 30px !important;
+    color: #fff !important;
+}
+
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_response {
+    text-align: left !important;
+    padding: 0px !important;
+    border-radius: 0px !important;
+    border: none !important;
+}
+
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionList[data-type=cloze_answer] .wpProQuiz_questionListItem .wpProQuiz_cloze .wpProQuiz_answerIncorrect {
+    background-color: #f11414 !important;
+}
+
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionList[data-type=cloze_answer] .wpProQuiz_questionListItem .wpProQuiz_cloze .wpProQuiz_answerCorrect {
+    background-color: #00c349 !important;
+}				
+
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionList[data-type=cloze_answer] .wpProQuiz_questionListItem .wpProQuiz_cloze .wpProQuiz_answerCorrect, .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionList[data-type=cloze_answer] .wpProQuiz_questionListItem .wpProQuiz_cloze .wpProQuiz_answerIncorrect{color:#fff !important;}
+
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem .wpProQuiz_cloze{padding:0px !important}
+.wpProQuiz_question_text p, .wpProQuiz_question_text li {
+    font-size: 20px;
+    font-weight: 600;
+}
+.wpProQuiz_reviewQuestion {
+    border-radius: 6px !important;
+        max-height: 65px !important;
+}
+
+.wpProQuiz_content .wpProQuiz_reviewDiv .wpProQuiz_reviewQuestion ol li.wpProQuiz_reviewQuestionTarget{border:none !important;}				
+.wpProQuiz_content .wpProQuiz_reviewDiv .wpProQuiz_reviewQuestion>ol li.wpProQuiz_reviewQuestionTarget{color: #121316 !important;}
+.wpProQuiz_button_restartQuiz, .wpProQuiz_button.wpProQuiz_QuestionButton{
+    font-size: 19px !important;
+    font-weight: 800 !important;
+    fill: #121316 !important;
+    color: #121316 !important;
+    background-color: #fe5130 !important;
+    border-radius: 6px 6px 6px 6px !important;
+    box-shadow: 9px 9px 0px 0px #781300 !important;
+    padding: 14px 30px 14px 30px !important;
+}
+.wpProQuiz_content .wpProQuiz_results>div>.wpProQuiz_button[name=restartQuiz]{background-image:none !important;}
+.wpProQuiz_button_reShowQuestion {
+    font-size: 19px !important;
+    font-weight: 800 !important;
+    border-radius: 6px 6px 6px 6px !important;
+    box-shadow: 9px 9px 0px 0px #781300 !important;
+    padding: 14px 30px 14px 30px !important;
+}
+.wpProQuiz_AnswerMessage{margin-top:20px;}
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_response p,.wpProQuiz_content .wpProQuiz_quiz .wpProQuiz_response span,.wpProQuiz_questionListItem,.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem .wpProQuiz_cloze input{font-size:19px !important;}
+.wpProQuiz_button_reShowQuestion:hover, .wpProQuiz_button_reShowQuestion:focus{background:#26292a !important;}
+.wpProQuiz_button_restartQuiz:hover, .wpProQuiz_button_restartQuiz:focus{background:#ff2d05 !important;}
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_button_reShowQuestion:focus, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button_restartQuiz:focus, .learndash-wrapper .wpProQuiz_content a#quiz_continue_link:focus,.learndash-wrapper .wpProQuiz_content .wpProQuiz_button_reShowQuestion:hover, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button_restartQuiz:hover, .learndash-wrapper .wpProQuiz_content a#quiz_continue_link:hover{opacity:1;}				
+.bb-footer .widget ul li a{font-size:14px !important; letter-spacing:0px !important;}				
+#page .footer-bottom {text-align: center;}				
+#menu-item-5522 a,#menu-item-5341 a, #menu-item-5341 i{color: #ff512e;}				
+.img-fam{margin-top:-7px;}				
+
+.pmpro_actions_nav-right{display:none !important;}
+.pmpro-confirmation #main {
+    padding: 2rem !important;
+    background: #fff !important;
+    box-shadow: 0 2px 1px 1px rgba(63, 63, 68, .05) !important;
+}				
+
+
+
+.bf-txt,.bf-txt.flash-txt {
+    font-size: 36px;
+    margin: 0px 8px;
+    color:#ffd602 ;
+}
+.njt-nofi-bgcolor-notification{background:#000000 !important; }
+
+/*.njt-nofi-container{*/
+/*    background: url(https://examsdigest.com/wp-content/uploads/2024/10/halloween-bar.png) no-repeat !important;*/
+/*    background-size: cover !important;*/
+/*}*/
+.njt-nofi-hide-admin-custom path{fill:#e40a9e;}
+.bf-outter.flash-txt{margin-top: 10px !important;}
+.njt-nofi-notification-bar .njt-nofi-hide .njt-nofi-close-icon{background: #e40a9e36;}
+
+.njt-nofi-button-text{padding: 9px 17px; line-height:42px; color:#fff !important;}
+.njt-nofi-notification-bar .njt-nofi-content{max-width:100% !important;}
+@media (min-width: 1080px){
+    
+    .njt-nofi-notification-bar .njt-nofi-text {
+       display: flex !important;
+           justify-content: center !important;
+    }
+}				
+
+#menu-item-5626 a:after{
+   position: absolute;
+    display: block;
+    height: 19px;
+    top: 7px;
+    margin: 0px !important;
+    line-height: 14px;
+    font-size: 8px !important;
+    right: 3px;
+}
+#menu-item-5626 a:after{content:'NEW!';
+background: linear-gradient(-45deg, #ee7752, #e40b9f, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 4s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}				
+
+#menu-item-5626 a:after{
+    margin-left: 5px;
+    font-size: 10px;
+    font-weight: 800;
+    border-radius: 250px;
+    color: #fff;
+    padding: 3px 10px;
+    letter-spacing: 0.4px;
+}</style>
+	<meta name="generator" content="WP Rocket 3.20.1.2" data-wpr-features="wpr_oci wpr_minify_css wpr_desktop" /></head>
+
+	<body class="pmpro-variation_minimal bp-nouveau wp-singular sfwd-courses-template-default single single-sfwd-courses postid-31619 wp-theme-buddyboss-theme wp-child-theme-buddyboss-theme-child pmpro-body-level-required pmpro-body-level-2 pmpro-body-level-3 pmpro-body-has-access buddyboss-theme bb-template-v1 buddypanel-logo-off bb-custom-typo default-fi  header-style-1  menu-style-standard sticky-header elementor-default elementor-kit-37 no-js learndash-cpt learndash-cpt-sfwd-courses learndash-template-ld30 learndash-embed-responsive learndash-theme">
+
+        
+		
+		<div  id="page" class="site">
+
+			
+			<header  id="masthead" class="site-header site-header--bb">
+				<div  class="container site-header-container flex default-header">
+	<a href="#" class="bb-toggle-panel">
+		<i class="bb-icon-l bb-icon-sidebar"></i>
+		<span class="screen-reader-text">Toggle Side Panel</span>
+	</a>
+    
+<div id="site-logo" class="site-branding buddypanel_logo_display_off">
+	<div class="site-title">
+		<a href="https://bundlesdigest.com/" rel="home" aria-label="Go to BundlesDigest Training homepage">
+			<img width="1" height="1" src="https://bundlesdigest.com/wp-content/uploads/2022/08/logo.svg" class="bb-logo" alt="BundlesDigest Training" decoding="async" />		</a>
+	</div>
+</div>	<nav id="site-navigation" class="main-navigation" data-menu-space="120">
+		<div id="primary-navbar">
+			<ul id="primary-menu" class="primary-menu bb-primary-overflow"><li id="menu-item-5626" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5626 no-icon"><a href="https://openpassai.com/"><span>🤖 AI Tools</span></a></li>
+<li id="menu-item-5340" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5340 icon-added"><a href="https://bundlesdigest.com/courses/"><i class="_mi _before bb-icon-l buddyboss bb-icon-bulb" aria-hidden="true"></i><span>Learn</span></a></li>
+<li id="menu-item-5415" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5415 icon-added"><a href="https://bundlesdigest.com/courses/?filter-categories=pbqs-labs"><i class="_mi _before bb-icon-l buddyboss bb-icon-tools" aria-hidden="true"></i><span>PBQs &#038; Labs</span></a></li>
+<li id="menu-item-5416" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5416 icon-added"><a href="https://bundlesdigest.com/courses/python-tutorials-for-beginners/"><i class="_mi _before bb-icon-l buddyboss bb-icon-codepen" aria-hidden="true"></i><span>Python</span></a></li>
+<li id="menu-item-5341" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5341 icon-added"><a href="https://bundlesdigest.com/checkout/"><i class="_mi _before bb-icon-l buddyboss bb-icon-unlock" aria-hidden="true"></i><span>UNLOCK ACCESS</span></a></li>
+<li id="menu-item-5659" class="bp-menu bp-login-nav menu-item menu-item-type-custom menu-item-object-custom menu-item-5659 icon-added"><a href="https://bundlesdigest.com/login/?redirect_to=https%3A%2F%2Fbundlesdigest.com%2Fcourses%2Fcomptia-pentest-plus-practice-exams%2F"><i class="_mi _before bb-icon-l buddyboss bb-icon-sign-in" aria-hidden="true"></i><span>Log In</span></a></li>
+<li id="menu-item-5660" class="bp-menu bp-register-nav menu-item menu-item-type-custom menu-item-object-custom menu-item-5660 icon-added"><a href="https://bundlesdigest.com/register/"><i class="_mi _before bb-icon-l buddyboss bb-icon-clipboard" aria-hidden="true"></i><span>Register</span></a></li>
+</ul>			<div id="navbar-collapse">
+				<a class="more-button" href="#">
+					<i class="bb-icon-f bb-icon-ellipsis-h"></i>
+					<span class="screen-reader-text">More options</span>
+				</a>
+				<div class="sub-menu">
+					<div class="wrapper">
+						<ul id="navbar-extend" class="sub-menu-inner"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+		
+<div id="header-aside" class="header-aside name_and_avatar">
+	<div class="header-aside-inner">
+
+		
+							<div class="bb-header-buttons">
+					<a href="https://bundlesdigest.com/login/" class="button small outline signin-button link">Sign in</a>
+
+											<a href="https://bundlesdigest.com/register/" class="button small signup">Sign up</a>
+									</div>
+			
+	</div><!-- .header-aside-inner -->
+</div><!-- #header-aside -->
+</div>
+
+<div  class="bb-mobile-header-wrapper bb-single-icon">
+	<div class="bb-mobile-header flex align-items-center">
+		<div class="bb-left-panel-icon-wrap">
+			<a href="#" class="push-left bb-left-panel-mobile" aria-label="Open Menu"><i class="bb-icon-l bb-icon-bars"></i></a>
+		</div>
+
+		<div class="flex-1 mobile-logo-wrapper">
+			
+			<div class="site-title">
+
+				<a href="https://bundlesdigest.com/" rel="home">
+					<img width="1" height="1" src="https://bundlesdigest.com/wp-content/uploads/2022/08/logo.svg" class="bb-mobile-logo" alt="" decoding="async" />				</a>
+
+			</div>
+		</div>
+		<div class="header-aside">
+					</div>
+	</div>
+
+	<div class="header-search-wrap">
+		<div  class="container">
+			
+<form role="search" method="get" class="search-form" action="https://bundlesdigest.com/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field-top" placeholder="Search" value="" name="s" />
+	</label>
+</form>
+			<a data-balloon-pos="left" data-balloon="Close" href="#" class="close-search"><i class="bb-icon-l bb-icon-times"></i></a>
+		</div>
+	</div>
+</div>
+
+<div  class="bb-mobile-panel-wrapper left light closed">
+	<div class="bb-mobile-panel-inner">
+		<div class="bb-mobile-panel-header">
+							<div class="logo-wrap">
+					<a href="https://bundlesdigest.com/" rel="home">
+						<img width="1" height="1" src="https://bundlesdigest.com/wp-content/uploads/2022/08/logo.svg" class="bb-mobile-logo" alt="" decoding="async" />					</a>
+				</div>
+						<a href="#" class="bb-close-panel" aria-label="Close Menu"><i class="bb-icon-l bb-icon-times"></i></a>
+		</div>
+
+		<nav class="main-navigation" data-menu-space="120">
+			<ul id="menu-titlebar" class="bb-primary-menu mobile-menu buddypanel-menu side-panel-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5626"><a href="https://openpassai.com/">🤖 AI Tools</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5340"><a href="https://bundlesdigest.com/courses/"><i class="_mi _before bb-icon-l buddyboss bb-icon-bulb" aria-hidden="true"></i><span>Learn</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5415"><a href="https://bundlesdigest.com/courses/?filter-categories=pbqs-labs"><i class="_mi _before bb-icon-l buddyboss bb-icon-tools" aria-hidden="true"></i><span>PBQs &#038; Labs</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5416"><a href="https://bundlesdigest.com/courses/python-tutorials-for-beginners/"><i class="_mi _before bb-icon-l buddyboss bb-icon-codepen" aria-hidden="true"></i><span>Python</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5341"><a href="https://bundlesdigest.com/checkout/"><i class="_mi _before bb-icon-l buddyboss bb-icon-unlock" aria-hidden="true"></i><span>UNLOCK ACCESS</span></a></li>
+<li class="bp-menu bp-login-nav menu-item menu-item-type-custom menu-item-object-custom menu-item-5659"><a href="https://bundlesdigest.com/login/?redirect_to=https%3A%2F%2Fbundlesdigest.com%2Fcourses%2Fcomptia-pentest-plus-practice-exams%2F"><i class="_mi _before bb-icon-l buddyboss bb-icon-sign-in" aria-hidden="true"></i><span>Log In</span></a></li>
+<li class="bp-menu bp-register-nav menu-item menu-item-type-custom menu-item-object-custom menu-item-5660"><a href="https://bundlesdigest.com/register/"><i class="_mi _before bb-icon-l buddyboss bb-icon-clipboard" aria-hidden="true"></i><span>Register</span></a></li>
+</ul>		</nav>
+
+	</div>
+</div>
+			</header>
+
+			
+			
+			<div  id="content" class="site-content">
+
+				
+				<div  class="container">
+					<div class="bb-grid site-content-grid">
+<div id="primary" class="content-area bb-grid-cell">
+	<main id="main" class="site-main">
+
+	<div class="learndash learndash_post_sfwd-courses user_has_no_access"  id="learndash_post_31619">
+<div class="learndash-wrapper">
+
+	<div class="bb-vw-container bb-learndash-banner">
+
+	
+	<div class="bb-course-banner-info container bb-learndash-side-area">
+		<div class="flex flex-wrap">
+			<div class="bb-course-banner-inner">
+								<h1 class="entry-title">CompTIA PenTest+ (PT0-003) Practice Exams 2026</h1>
+
+				
+				<div class="bb-course-points">
+					<a class="anchor-course-points" href="#learndash-course-content">
+						View Course details						<i class="bb-icon-l bb-icon-angle-down"></i>
+					</a>
+				</div>
+
+				
+				<div class="bb-course-single-meta flex align-items-center bb_single_meta_pfx">
+												<a href="https://bundlesdigest.com/members/cramwise/">
+							<img alt='' src='https://bundlesdigest.com/wp-content/uploads/avatars/2/631788f4463a4-bpthumb.jpg' srcset='https://bundlesdigest.com/wp-content/uploads/avatars/2/631788f4463a4-bpthumb.jpg 2x' class='avatar avatar-80 photo' height='80' width='80' />							<span class="author-name">CramWise</span>
+						</a>
+												<span class="meta-saperator">&middot;</span>
+						<span class="course-date">May 1, 2021</span>
+										</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="bb-grid">
+
+		<div class="bb-learndash-content-wrap">
+
+			<div class="bb-ld-tabs"><div id="learndash-course-content"></div>
+<div class="ld-tabs ld-tab-count-1">
+	
+	<div class="ld-tabs-content">
+		
+			<div role="tabpanel" tabindex="0" aria-labelledby="content" class="ld-tab-content ld-visible" id="ld-tab-content-31619">
+											</div>
+
+			
+	</div> <!--/.ld-tabs-content-->
+
+</div> <!--/.ld-tabs-->
+</div><div class="learndash-wrapper learndash-wrap learndash-shortcode-wrap learndash-shortcode-wrap-course_content-31619_31619_0"><div class="learndash user_has_no_access" id="learndash_post_31619">		<div class="learndash-wrapper">
+						<div class="ld-item-list ld-lesson-list ld-course-content-31619" data-shortcode_instance="{&quot;course_id&quot;:31619,&quot;post_id&quot;:31619,&quot;group_id&quot;:0,&quot;paged&quot;:1,&quot;num&quot;:20,&quot;wrapper&quot;:true,&quot;user_id&quot;:0}">
+			<div class="ld-section-heading">
+
+				
+				<h2>
+				Course Content				</h2>
+
+				
+				<div class="ld-item-list-actions" data-ld-expand-list="true">
+
+					
+					
+				</div> <!--/.ld-item-list-actions-->
+			</div> <!--/.ld-section-heading-->
+
+			
+	<div class="ld-item-list-items  ld-item-list-31619" id="ld-item-list-31619" data-ld-expand-id="ld-item-list-31619" data-ld-expand-list="true">
+			<div id="ld-table-list-item-36432" class="ld-item-list-item ld-item-list-item-quiz is_not_sample learndash-incomplete" data-balloon-pos="up" data-balloon="You don&#039;t currently have access to this content">
+		<div class="ld-item-list-item-preview">
+			<a class="ld-item-name ld-primary-color-hover" href="https://bundlesdigest.com/quizzes/comptia-pentest-pt0-003-exam-simulator-1-2/">
+				<div class="ld-status-icon ld-quiz-incomplete"><span class="ld-icon ld-icon-quiz"></span></div>
+				<div class="ld-item-title">
+					<span>CompTIA PenTest+ (PT0-003) Exam Simulator #1<span class="lms-is-locked-ico"><i class="bb-icon-f bb-icon-lock"></i></span></span>				</div>
+
+				
+							</a>
+		</div> <!--/.list-item-preview-->
+	</div>
+	<div id="ld-table-list-item-36331" class="ld-item-list-item ld-item-list-item-quiz is_not_sample learndash-incomplete" data-balloon-pos="up" data-balloon="You don&#039;t currently have access to this content">
+		<div class="ld-item-list-item-preview">
+			<a class="ld-item-name ld-primary-color-hover" href="https://bundlesdigest.com/quizzes/comptia-pentest-pt0-003-exam-simulator-2-2/">
+				<div class="ld-status-icon ld-quiz-incomplete"><span class="ld-icon ld-icon-quiz"></span></div>
+				<div class="ld-item-title">
+					<span>CompTIA PenTest+ (PT0-003) Exam Simulator #2<span class="lms-is-locked-ico"><i class="bb-icon-f bb-icon-lock"></i></span></span>				</div>
+
+				
+							</a>
+		</div> <!--/.list-item-preview-->
+	</div>
+	<div id="ld-table-list-item-36230" class="ld-item-list-item ld-item-list-item-quiz is_not_sample learndash-incomplete" data-balloon-pos="up" data-balloon="You don&#039;t currently have access to this content">
+		<div class="ld-item-list-item-preview">
+			<a class="ld-item-name ld-primary-color-hover" href="https://bundlesdigest.com/quizzes/comptia-pentest-pt0-003-exam-simulator-3-2/">
+				<div class="ld-status-icon ld-quiz-incomplete"><span class="ld-icon ld-icon-quiz"></span></div>
+				<div class="ld-item-title">
+					<span>CompTIA PenTest+ (PT0-003) Exam Simulator #3<span class="lms-is-locked-ico"><i class="bb-icon-f bb-icon-lock"></i></span></span>				</div>
+
+				
+							</a>
+		</div> <!--/.list-item-preview-->
+	</div>
+	</div> <!--/.ld-item-list-items-->
+
+		</div> <!--/.ld-item-list-->
+
+			</div> <!--/.learndash-wrapper-->
+		</div></div>
+	
+    		<div class="bb-about-instructor bb-about-instructor--no-info">
+		            <h3 class="bb-instructor-heading">About Instructor</h3>
+			
+		<div class="bb-grid">
+            <div class="bb-instructor-wrap flex">
+                <div class="bb-avatar-wrap">
+    				<div >
+												<a href="https://bundlesdigest.com/members/cramwise/" aria-label="CramWise">
+													<img alt='' src='https://bundlesdigest.com/wp-content/uploads/avatars/2/631788f436838-bpfull.jpg' srcset='https://bundlesdigest.com/wp-content/uploads/avatars/2/631788f436838-bpfull.jpg 2x' class='avatar avatar-300 photo round avatar' height='300' width='300' />						</a>
+    				</div>
+    			</div>
+    			<div class="bb-content-wrap">
+    				<h5>
+                                				<a href="https://bundlesdigest.com/members/cramwise/">
+            			                            CramWise                        </a>
+                    </h5>
+					    				<p class="bb-author-meta">15 Courses</p>
+    			</div>
+            </div>
+            <div class="bb-instructor-message">
+				            </div>
+		</div>
+	</div>
+    
+
+		</div>
+
+		
+<div class="bb-single-course-sidebar bb-preview-wrap">
+	<div class="bb-ld-sticky-sidebar">
+		<div class="widget bb-enroll-widget">
+			<div class="bb-enroll-widget flex-1 push-right">
+				<div class="bb-course-preview-wrap bb-thumbnail-preview">
+					<div class="bb-preview-course-link-wrap">
+						<div class="thumbnail-container thumbnail-container-img">
+							<div class="bb-course-video-overlay">
+								<div>
+									<span class="bb-course-play-btn-wrapper"><span class="bb-course-play-btn"></span></span>
+									<div>
+										Preview this Course									</div>
+								</div>
+							</div>
+							<img fetchpriority="high" width="624" height="351" src="https://bundlesdigest.com/wp-content/uploads/2021/05/CompTIA-PenTest-plus-Practice-Exam-Questions-Study-Guides-Performance-Based-Questions-and-Labs-624x351.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://bundlesdigest.com/wp-content/uploads/2021/05/CompTIA-PenTest-plus-Practice-Exam-Questions-Study-Guides-Performance-Based-Questions-and-Labs-624x351.jpg 624w, https://bundlesdigest.com/wp-content/uploads/2021/05/CompTIA-PenTest-plus-Practice-Exam-Questions-Study-Guides-Performance-Based-Questions-and-Labs-300x169.jpg 300w, https://bundlesdigest.com/wp-content/uploads/2021/05/CompTIA-PenTest-plus-Practice-Exam-Questions-Study-Guides-Performance-Based-Questions-and-Labs-768x432.jpg 768w, https://bundlesdigest.com/wp-content/uploads/2021/05/CompTIA-PenTest-plus-Practice-Exam-Questions-Study-Guides-Performance-Based-Questions-and-Labs.jpg 1000w" sizes="(max-width: 624px) 100vw, 624px" />						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="bb-course-preview-content">
+				
+				<div class="bb-course-status-wrap">
+					<div class="bb-course-status-content"><div class="ld-status ld-status-incomplete ld-third-background" data-ld-tooltip="Enroll in this course to get access">Not Enrolled </div></div>				</div>
+
+				<div class="bb-button-wrap">
+					<div class="learndash_join_button btn-advance-continue"><a class="btn-join learndash-button-closed" id="btn-join" href="https://bundlesdigest.com/checkout/">Unlock Full Access</a></div>				</div>
+
+									<div class="bb-course-volume">
+					<h4>Course Includes</h4>
+					<ul class="bb-course-volume-list">
+																									<li>
+								<i class="bb-icon-rl bb-icon-question"></i>3 Quizzes							</li>
+																	</ul>
+					</div>
+								</div>
+		</div>
+			</div>
+</div>
+
+<div class="bb-modal bb_course_video_details mfp-hide">
+	</div>
+	</div>
+
+	<div class="learndash-wrapper learndash-wrapper-login-modal">
+<div class="ld-modal ld-login-modal ld-can-register">
+
+	<span class="ld-modal-closer ld-icon ld-icon-delete"></span>
+
+	<div class="ld-login-modal-login">
+		<div class="ld-login-modal-wrapper">
+										<div class="ld-modal-heading">
+				Login			</div>
+							<div class="ld-modal-text">
+					Accessing this course requires a login. Please enter your credentials below!				</div>
+							<div class="ld-login-modal-form">
+
+				<form name="loginform" id="loginform" action="https://bundlesdigest.com/login/" method="post"><input id="learndash-login-form" type="hidden" name="learndash-login-form" value="571ff44b4c" /><p class="login-username">
+				<label for="user_login">Email Address</label>
+				<input type="text" name="log" id="user_login" autocomplete="username" class="input" value="" size="20" />
+			</p><p class="login-password">
+				<label for="user_pass">Password</label>
+				<input type="password" name="pwd" id="user_pass" autocomplete="current-password" spellcheck="false" class="input" value="" size="20" />
+			</p><p class="login-remember"><label><input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Remember Me</label></p><p class="login-submit">
+				<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary" value="Log In" />
+				<input type="hidden" name="redirect_to" value="/courses/comptia-pentest-plus-practice-exams/" />
+			</p></form>				<a class="ld-forgot-password-link" href="https://bundlesdigest.com/login/?action=lostpassword&#038;redirect_to=https%3A%2F%2Fbundlesdigest.com%2Fcourses%2Fcomptia-pentest-plus-practice-exams%2F%3Fld-resetpw%3Dtrue%23login">Lost Your Password?</a>
+
+				
+			</div> <!--/.ld-login-modal-form-->
+		</div> <!--/.ld-login-modal-wrapper-->
+	</div> <!--/.ld-login-modal-login-->
+
+			<div class="ld-login-modal-register">
+			<div class="ld-login-modal-wrapper">
+				<div class="ld-content">
+										<div class="ld-modal-heading">
+						Register					</div>
+					
+					<div class="ld-modal-text">Don&#039;t have an account? Register one!</div>
+					
+					<a href="#ld-user-register" class="ld-button ld-button-reverse ld-js-register-account">Register an Account</a>
+
+					
+				</div> <!--/.ld-content-->
+									<div id="ld-user-register" class="ld-hide">
+										<form name="registerform" id="registerform" action="https://bundlesdigest.com/login/?action=register" method="post" novalidate="novalidate">
+						<p>
+							<label for="user_reg_login">Username<br />
+							<input type="text" name="user_login" id="user_reg_login" class="input" value="" size="20" /></label>
+						</p>
+						<p>
+							<label for="user_reg_email">Email<br />
+							<input type="email" name="user_email" id="user_reg_email" class="input" value="" size="25" /></label>
+						</p>
+												<input name="learndash-registration-form" value="44ed2d48f5" type="hidden">
+						<input name="redirect_to" type="hidden" value="https://bundlesdigest.com/courses/comptia-pentest-plus-practice-exams/?ld-registered=true#login">
+						<p id="reg_passmail">Registration confirmation will be emailed to you.</p>
+						<br class="clear" />
+						<p class="submit"><input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Register" /></p>
+					</form>
+										</div> <!--/#ld-user-register-->
+								</div> <!--/.ld-login-modal-wrapper-->
+		</div> <!--/.ld-login-modal-register-->
+	
+</div> <!--/.ld-modal-->
+</div>
+</div>
+</div>
+	</main><!-- #main -->
+</div><!-- #primary -->
+
+
+
+</div><!-- .bb-grid -->
+</div><!-- .container -->
+</div><!-- #content -->
+
+
+
+		<div  class="footer-widget-area bb-footer">
+			<div class="container">
+				<div class="bb-grid">
+											<div class="footer-widget area-1">
+							<aside id="nav_menu-3" class="widget widget_nav_menu"><h2 class="widget-title">LEARN</h2><div class="menu-footer_1-container"><ul id="menu-footer_1" class="menu"><li id="menu-item-5625" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5625"><a href="https://www.openpassai.com/">AI Tools 🤖</a></li>
+<li id="menu-item-5516" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5516"><a href="https://bundlesdigest.com/courses/?filter-categories=pbqs-labs">PBQs &#038; Labs</a></li>
+<li id="menu-item-5517" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5517"><a href="https://bundlesdigest.com/courses/python-tutorials-for-beginners-codedirect/">Learn Python</a></li>
+<li id="menu-item-5617" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5617"><a href="https://bundlesdigest.com/courses/?current_page=1&#038;search=&#038;type=all&#038;order=desc&#038;orderby=alphabetical&#038;filter-categories=linux&#038;filter-instructors=all&#038;view=grid">Learn Linux</a></li>
+<li id="menu-item-5520" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5520"><a href="https://bundlesdigest.com/courses/">Browse All</a></li>
+<li id="menu-item-5618" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5618"><a href="https://bundlesdigest.com/checkout/">GET LIFETIME ALL-ACCESS</a></li>
+</ul></div></aside>						</div><!-- .footer-widget -->
+					
+											<div class="footer-widget area-2">
+							<aside id="nav_menu-4" class="widget widget_nav_menu"><h2 class="widget-title">Company</h2><div class="menu-footer_2-container"><ul id="menu-footer_2" class="menu"><li id="menu-item-5608" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5608"><a href="https://examsdigest.com/blog/">Blog</a></li>
+<li id="menu-item-5609" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5609"><a href="/cdn-cgi/l/email-protection#acc5c2cac3ecc9d4cdc1dfc8c5cbc9dfd882cfc3c1">Contact us</a></li>
+<li id="menu-item-5523" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5523"><a href="https://examsdigest.com/about-us/">About us</a></li>
+<li id="menu-item-5524" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5524"><a href="https://examsdigest.com/careers/">Careers</a></li>
+<li id="menu-item-5525" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5525"><a href="https://bundlesdigest.com/terms-of-service/">Terms of Service</a></li>
+<li id="menu-item-5540" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5540"><a href="https://examsdigest.com/marketplace/">Marketplace</a></li>
+</ul></div></aside>						</div><!-- .footer-widget -->
+					
+											<div class="footer-widget area-3">
+							<aside id="nav_menu-6" class="widget widget_nav_menu"><h2 class="widget-title">Our Brands</h2><div class="menu-footer_3-container"><ul id="menu-footer_3" class="menu"><li id="menu-item-5610" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5610"><a href="https://examsdigest.com/"><img width="500" height="500" src="https://bundlesdigest.com/wp-content/uploads/2024/04/examsdigest-icon.png" class="_mi _before _image" alt="" aria-hidden="true" decoding="async" srcset="https://bundlesdigest.com/wp-content/uploads/2024/04/examsdigest-icon.png 500w, https://bundlesdigest.com/wp-content/uploads/2024/04/examsdigest-icon-300x300.png 300w, https://bundlesdigest.com/wp-content/uploads/2024/04/examsdigest-icon-150x150.png 150w" sizes="(max-width: 500px) 100vw, 500px" /><span>ExamsDigest</span></a></li>
+<li id="menu-item-5611" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5611"><a href="https://labsdigest.com/"><img width="500" height="500" src="https://bundlesdigest.com/wp-content/uploads/2024/04/labsdigest-icon.png" class="_mi _before _image" alt="" aria-hidden="true" decoding="async" srcset="https://bundlesdigest.com/wp-content/uploads/2024/04/labsdigest-icon.png 500w, https://bundlesdigest.com/wp-content/uploads/2024/04/labsdigest-icon-300x300.png 300w, https://bundlesdigest.com/wp-content/uploads/2024/04/labsdigest-icon-150x150.png 150w" sizes="(max-width: 500px) 100vw, 500px" /><span>LabsDigest</span></a></li>
+<li id="menu-item-5613" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5613"><a href="https://forcedigest.com/"><img width="500" height="500" src="https://bundlesdigest.com/wp-content/uploads/2024/04/forcedigest-icon.png" class="_mi _before _image" alt="" aria-hidden="true" decoding="async" srcset="https://bundlesdigest.com/wp-content/uploads/2024/04/forcedigest-icon.png 500w, https://bundlesdigest.com/wp-content/uploads/2024/04/forcedigest-icon-300x300.png 300w, https://bundlesdigest.com/wp-content/uploads/2024/04/forcedigest-icon-150x150.png 150w" sizes="(max-width: 500px) 100vw, 500px" /><span>ForceDigest</span></a></li>
+<li id="menu-item-5614" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5614"><a href="https://guidesdigest.com/"><img width="500" height="500" src="https://bundlesdigest.com/wp-content/uploads/2024/04/guidesdigest-icon.png" class="_mi _before _image" alt="" aria-hidden="true" decoding="async" srcset="https://bundlesdigest.com/wp-content/uploads/2024/04/guidesdigest-icon.png 500w, https://bundlesdigest.com/wp-content/uploads/2024/04/guidesdigest-icon-300x300.png 300w, https://bundlesdigest.com/wp-content/uploads/2024/04/guidesdigest-icon-150x150.png 150w" sizes="(max-width: 500px) 100vw, 500px" /><span>GuidesDigest</span></a></li>
+<li id="menu-item-5612" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-5612"><a href="https://bundlesdigest.com/"><img width="500" height="500" src="https://bundlesdigest.com/wp-content/uploads/2024/04/bundlesdigest-icon.png" class="_mi _before _image" alt="" aria-hidden="true" decoding="async" srcset="https://bundlesdigest.com/wp-content/uploads/2024/04/bundlesdigest-icon.png 500w, https://bundlesdigest.com/wp-content/uploads/2024/04/bundlesdigest-icon-300x300.png 300w, https://bundlesdigest.com/wp-content/uploads/2024/04/bundlesdigest-icon-150x150.png 150w" sizes="(max-width: 500px) 100vw, 500px" /><span>BundlesDigest</span></a></li>
+<li id="menu-item-39667" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39667"><a href="https://routedigest.com/"><img width="500" height="500" src="https://bundlesdigest.com/wp-content/uploads/2024/04/routedigest-icon.png" class="_mi _before _image" alt="" aria-hidden="true" decoding="async" srcset="https://bundlesdigest.com/wp-content/uploads/2024/04/routedigest-icon.png 500w, https://bundlesdigest.com/wp-content/uploads/2024/04/routedigest-icon-300x300.png 300w, https://bundlesdigest.com/wp-content/uploads/2024/04/routedigest-icon-150x150.png 150w" sizes="(max-width: 500px) 100vw, 500px" /><span>RouteDigest</span></a></li>
+<li id="menu-item-39815" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39815"><a href="https://coursesdigest.com/"><img width="150" height="150" src="https://bundlesdigest.com/wp-content/uploads/2025/03/coursesdigest-logo-150x150.png" class="_mi _before _image" alt="" aria-hidden="true" decoding="async" srcset="https://bundlesdigest.com/wp-content/uploads/2025/03/coursesdigest-logo-150x150.png 150w, https://bundlesdigest.com/wp-content/uploads/2025/03/coursesdigest-logo-300x300.png 300w, https://bundlesdigest.com/wp-content/uploads/2025/03/coursesdigest-logo.png 500w" sizes="(max-width: 150px) 100vw, 150px" /><span>CoursesDigest</span></a></li>
+</ul></div></aside>						</div><!-- .footer-widget -->
+					
+											<div class="footer-widget area-4">
+							<aside id="nav_menu-8" class="widget widget_nav_menu"><h2 class="widget-title">Partners</h2></aside><aside id="block-8" class="widget widget_block widget_media_image">
+<figure class="wp-block-image size-full img-fam"><img fetchpriority="high" decoding="async" width="500" height="413" src="https://bundlesdigest.com/wp-content/uploads/2024/11/xDigest-logo-partners.png" alt="" class="wp-image-39743" srcset="https://bundlesdigest.com/wp-content/uploads/2024/11/xDigest-logo-partners.png 500w, https://bundlesdigest.com/wp-content/uploads/2024/11/xDigest-logo-partners-300x248.png 300w" sizes="(max-width: 500px) 100vw, 500px" /></figure>
+</aside>						</div><!-- .footer-widget -->
+					
+					
+									</div>
+			</div><!-- .widget-area -->
+		</div>
+		
+	<footer  class="footer-bottom bb-footer style-1">
+		<div  class="container flex">
+			<div class="footer-bottom-left">				<div class="copyright">© 2026 - BundlesDigest, LLC. All rights reserved. Powered by <img src="https://bundlesdigest.com/wp-content/uploads/2022/12/stripe-verified-badge.svg" width="200" /></div>
+				</div><div class="footer-bottom-right push-right"></div>		</div>
+	</footer>
+
+</div><!-- #page -->
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/buddyboss-theme-child/*","/wp-content/themes/buddyboss-theme/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+		<!-- Memberships powered by Paid Memberships Pro v3.6.1. -->
+				<script>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			      <style>
+        .njt-nofi-notification-bar .njt-nofi-hide-button {
+          display: none;
+        }
+        .njt-nofi-notification-bar .njt-nofi-content {
+          font-size : 19px;
+        }
+        /* body{
+          padding-top: 49px;
+        } */
+      </style>
+    <div  class="njt-nofi-container-content">
+<div class="njt-nofi-container" >
+  <div  class="njt-nofi-notification-bar njt-nofi-bgcolor-notification" style="background:#ffb92f">
+    <div class="njt-nofi-content njt-nofi-text-color njt-nofi-align-content njt-nofi-content-deskop njt-display-deskop" style="width:1200px">
+      <div class="njt-nofi-text njt-nofi-padding-text"><div style="margin-bottom:7px">
+<span style="font-size:23px;line-height:1.2em" class="bf-txt flash-txt"><strong>🚨 The BIGGEST certification bundle of all time!
+</strong></span>
+<div style="margin-bottom:14px" class="bf-outter flash-txt"> 
+17 platforms • 1 payment •  Lifetime access →</div>
+<a href="https://examsdigest.com/partnership-deal/" class="njt-nofi-button-text njt-nofi-padding-text" style="border-radius: 12px;background: linear-gradient(90deg, #E40B9F, #333399);color:#fff;padding:13px 40px"> Own All 17 Platforms for Life!</a>
+</div></div>
+      <div class="njt-nofi-button njt-nofi-padding-text " style="display: none">
+          <a target='_blank'  href="https://bundlesdigest.com/checkout/" class="njt-nofi-button-text njt-nofi-padding-text" style="">Save $60 now!</a>
+      </div> 
+    </div>
+
+    <div class="njt-nofi-content njt-nofi-text-color njt-nofi-align-content njt-display-none njt-nofi-content-mobile njt-display-mobile" style="width:1200px">
+      <div class="njt-nofi-text njt-nofi-padding-text"><span style="font-size:22px;line-height:1em" class="bf-txt flash-txt"><strong>The biggest IT training deal in history!</strong></span>
+<div style="margin-top:0px !important;margin-bottom:10px" class="bf-outter flash-txt"></div>
+<a href="https://examsdigest.com/partnership-deal/" class="njt-nofi-button-text njt-nofi-padding-text" style="border-radius: 12px;background: linear-gradient(90deg, #E40B9F, #333399);color:#fff;padding:13px 16px"> Unlock Access</a></div>
+      <div class="njt-nofi-button njt-nofi-padding-text " style="">
+          <a target='_blank'  href="" class="njt-nofi-button-text njt-nofi-padding-text" style="background:#000;border-radius:3px;font-weight:400">Learn more</a>
+      </div>
+    </div>
+
+    <div class="njt-nofi-toggle-button njt-nofi-hide njt-nofi-text-color njt-nofi-hide-admin-custom" style="cursor: pointer;">
+      <span class="njt-nofi-close-icon-container">
+        <svg class="njt-nofi-close-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 386.667 386.667" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path xmlns="http://www.w3.org/2000/svg" d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z" fill="#ffffff" data-original="#000000" style="" class=""/></g></svg>
+      </span>
+    </div>
+    <div class="njt-nofi-close-button njt-nofi-hide njt-nofi-text-color njt-nofi-hide-admin-custom" style="cursor: pointer;">
+      <span class="njt-nofi-close-icon-container">
+        <svg class="njt-nofi-close-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 386.667 386.667" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path xmlns="http://www.w3.org/2000/svg" d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z" fill="#ffffff" data-original="#000000" style="" class=""/></g></svg>
+      </span>
+    </div>  
+  </div>
+  <div>
+    <div class="njt-nofi-display-toggle njt-nofi-text-color njt-nofi-bgcolor-notification" style="background:#ffb92f; cursor: pointer;">
+      <span class="njt-nofi-close-icon-container">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 386.667 386.667" style="enable-background:new 0 0 512 512" xml:space="preserve" class="njt-nofi-display-toggle-icon"><g><path xmlns="http://www.w3.org/2000/svg" d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z" fill="#ffffff" data-original="#000000" style="" class=""/></g></svg>
+      </span>
+    </div>
+  </div>
+</div>
+</div>
+
+
+      <input type="hidden" id="njt_nofi_checkDisplayReview" name="njt_nofi_checkDisplayReview" value='{"is_home":false,"is_page":false,"is_single":true,"id_page":31619}'>
+    <script id="moment-js" src="https://bundlesdigest.com/wp-includes/js/dist/vendor/moment.min.js?ver=2.30.1"></script>
+<script id="moment-js-after">
+moment.updateLocale( 'en_US', {"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"week":{"dow":1},"longDateFormat":{"LT":"g:i a","LTS":null,"L":null,"LL":"F j, Y","LLL":"F j, Y g:i a","LLLL":null}} );
+moment.updateLocale( 'en_US', {"relativeTime":{"future":"in %s","past":"%s ago","s":"second","ss":"%d seconds","m":"a minute","mm":"%d minutes","h":"an hour","hh":"%d hours","d":"a day","dd":"%d days","w":"a week","ww":"%d weeks","M":"a month","MM":"%d months","y":"a year","yy":"%d years"}} );
+//# sourceURL=moment-js-after
+</script>
+<script id="bp-livestamp-js-extra">
+var bb_livestamp = {"year_in_seconds":"31536000","day_in_seconds":"86400","week_in_seconds":"604800","hour_in_seconds":"3600","minute_in_seconds":"60","chunks":[31536000,5256000,2592000,604800,86400,3600,60,1],"unknown_text":"sometime","right_now_text":"Just now","ago_text":"%s ago","second_text":"a second","seconds_text":"seconds","minute_text":"a minute","minutes_text":"minutes","hour_text":"an hour","hours_text":"hours","day_text":"a day","days_text":"days","week_text":"a week","weeks_text":"weeks","month_text":"a month","months_text":"months","year_text":"a year","years_text":"years"};
+//# sourceURL=bp-livestamp-js-extra
+</script>
+<script id="bp-livestamp-js" src="https://bundlesdigest.com/wp-content/plugins/buddyboss-platform/bp-core/js/livestamp.min.js?ver=2.14.4"></script>
+<script id="bb-cropper-js-js" src="https://bundlesdigest.com/wp-content/plugins/buddyboss-platform/bp-core/js/vendor/cropper.min.js?ver=2.14.4"></script>
+<script id="underscore-js" src="https://bundlesdigest.com/wp-includes/js/underscore.min.js?ver=1.13.8"></script>
+<script id="wp-util-js-extra">
+var _wpUtilSettings = {"ajax":{"url":"/wp-admin/admin-ajax.php"}};
+//# sourceURL=wp-util-js-extra
+</script>
+<script id="wp-util-js" src="https://bundlesdigest.com/wp-includes/js/wp-util.min.js?ver=7.0"></script>
+<script id="wp-hooks-js" src="https://bundlesdigest.com/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d"></script>
+<script id="wp-i18n-js" src="https://bundlesdigest.com/wp-includes/js/dist/i18n.min.js?ver=781d11515ad3d91786ec"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="bp-nouveau-js-extra">
+var BP_Nouveau = {"ajaxurl":"https://bundlesdigest.com/wp-admin/admin-ajax.php","only_admin_notice":"As you are the only organizer of this group, you cannot leave it. You can either delete the group or promote another member to be an organizer first and then leave the group.","is_friend_confirm":"Are you sure you want to remove your connection with this member?","confirm":"Are you sure?","confirm_delete_set":"Are you sure you want to delete this set? This cannot be undone.","show_x_comments":"View more comments","unsaved_changes":"Your profile has unsaved changes. If you leave the page, the changes will be lost.","object_nav_parent":"#buddypress","anchorPlaceholderText":"Paste or type a link","empty_field":"New Field","close":"Close","parent_group_leave_confirm":"By leaving this main group you will automatically be removed and unsubscribed to any subgroups relating to this group.","group_leave_confirm":"\u003Cp\u003EAre you sure you want to leave \u003Cspan class=\"bb-group-name\"\u003E\u003C/span\u003E?\u003C/p\u003E","wpTime":"2026-05-23 08:06:08","wpTimezone":"","dir_labels":{"members":{"singular":"Member","plural":"Members"},"followers":{"singular":"Follower","plural":"Followers"}},"rest_url":"https://bundlesdigest.com/wp-json/buddyboss/v1","rest_nonce":"38a6546c1d","member_label":"member","members_label":"members","objects":{"1":"members","4":"xprofile","10":"settings","11":"notifications"},"nonces":{"members":"04afa2a1a3","xprofile":"680b7b5e6e","settings":"e15b0ef1e7","notifications":"361f804689"},"is_send_ajax_request":"1","bb_enable_content_counts":"1","more_menu_items":"Menu Items","more_menu_text":"More"};
+var BB_Nouveau_Presence = {"heartbeat_enabled":"1","presence_interval":"60","presence_default_interval":"60","presence_time_span":"20","idle_inactive_span":"180","rest_nonce":"38a6546c1d","native_presence":"","native_presence_url":"https://bundlesdigest.com/wp-content/plugins/buddyboss-platform/bp-core/bb-core-native-presence.php","presence_rest_url":"https://bundlesdigest.com/wp-json/buddyboss/v1/members/presence"};
+//# sourceURL=bp-nouveau-js-extra
+</script>
+<script id="bp-nouveau-js" src="https://bundlesdigest.com/wp-content/plugins/buddyboss-platform/bp-templates/bp-nouveau/js/buddypress-nouveau.min.js?ver=2.14.4"></script>
+<script id="guillotine-js-js" src="https://bundlesdigest.com/wp-content/plugins/buddyboss-platform/bp-templates/bp-nouveau/js/jquery.guillotine.min.js?ver=2.14.4"></script>
+<script async data-wp-strategy="async" fetchpriority="low" id="comment-reply-js" src="https://bundlesdigest.com/wp-includes/js/comment-reply.min.js?ver=7.0"></script>
+<script id="heartbeat-js-extra">
+var heartbeatSettings = {"ajaxurl":"/wp-admin/admin-ajax.php","interval":"120","minimalInterval":"120"};
+//# sourceURL=heartbeat-js-extra
+</script>
+<script id="heartbeat-js" src="https://bundlesdigest.com/wp-includes/js/heartbeat.min.js?ver=7.0"></script>
+<script id="learndash_pager_js-js" src="//bundlesdigest.com/wp-content/plugins/sfwd-lms/themes/legacy/templates/learndash_pager.min.js?ver=4.10.1"></script>
+<script id="learndash_template_script_js-js-extra">
+var sfwd_data = {"json":"{\"ajaxurl\":\"https:\\/\\/bundlesdigest.com\\/wp-admin\\/admin-ajax.php\"}"};
+//# sourceURL=learndash_template_script_js-js-extra
+</script>
+<script id="learndash_template_script_js-js" src="//bundlesdigest.com/wp-content/plugins/sfwd-lms/themes/legacy/templates/learndash_template_script.min.js?ver=4.10.1"></script>
+<script id="jquery-dropdown-js-js" src="//bundlesdigest.com/wp-content/plugins/sfwd-lms/assets/js/jquery.dropdown.min.js?ver=4.10.1"></script>
+<script id="njt-nofi-js-extra">
+var njt_wp_data = {"admin_ajax":"https://bundlesdigest.com/wp-admin/admin-ajax.php","nonce":"e8ceee3c93","isPositionFix":"1","hideCloseButton":"close_button","isDisplayButton":"0","presetColor":"1","alignContent":"center","textColorNotification":"#fff","textButtonColor":"#ffffff","wp_is_mobile":"","is_customize_preview":"","wp_get_theme":"BuddyBoss Child","open_after_day":{"value":1,"is_new_update":false}};
+//# sourceURL=njt-nofi-js-extra
+</script>
+<script id="njt-nofi-js" src="https://bundlesdigest.com/wp-content/plugins/notibar/assets/frontend/js/notibar.js?ver=2.1.8"></script>
+<script id="learndash-front-js-extra">
+var ldVars = {"postID":"31619","videoReqMsg":"You must watch the video before accessing this content","ajaxurl":"https://bundlesdigest.com/wp-admin/admin-ajax.php"};
+//# sourceURL=learndash-front-js-extra
+</script>
+<script id="learndash-front-js" src="//bundlesdigest.com/wp-content/plugins/sfwd-lms/themes/ld30/assets/js/learndash.js?ver=4.10.1"></script>
+<script id="bp-nouveau-magnific-popup-js" src="https://bundlesdigest.com/wp-content/plugins/buddyboss-platform/bp-core/js/vendor/magnific-popup.js?ver=2.14.4"></script>
+<script id="bp-zoom-mask-js-js" src="https://bundlesdigest.com/wp-content/plugins/buddyboss-platform-pro/assets/js/vendor/jquery.mask.js?ver=5.0.4"></script>
+<script id="bp-zoom-js-js-extra">
+var bp_zoom_vars = {"ajax_url":"https://bundlesdigest.com/wp-admin/admin-ajax.php","home_url":"https://bundlesdigest.com/courses/comptia-pentest-plus-practice-exams","is_single_meeting":"","is_single_webinar":"","group_id":"","group_meetings_url":"","group_meetings_past_url":"","group_webinars_url":"","group_webinar_past_url":"","meeting_delete_nonce":"7f9b038a5f","meeting_confirm_msg":"Are you sure you want to delete this meeting?","webinar_delete_nonce":"0c2f5ce915","webinar_confirm_msg":"Are you sure you want to delete this webinar?","user":{"name":"Guest","email":"guest@domain.com"},"scripts":["https://bundlesdigest.com/wp-content/plugins/buddyboss-platform-pro/includes/integrations/zoom/assets/js/zoom-web-sdk/react.production.min.js","https://bundlesdigest.com/wp-content/plugins/buddyboss-platform-pro/includes/integrations/zoom/assets/js/zoom-web-sdk/react-dom.production.min.js","https://bundlesdigest.com/wp-content/plugins/buddyboss-platform-pro/includes/integrations/zoom/assets/js/zoom-web-sdk/redux.min.js","https://bundlesdigest.com/wp-content/plugins/buddyboss-platform-pro/includes/integrations/zoom/assets/js/zoom-web-sdk/redux-thunk.min.js","https://bundlesdigest.com/wp-content/plugins/buddyboss-platform-pro/includes/integrations/zoom/assets/js/zoom-web-sdk/lodash.min.js","https://bundlesdigest.com/wp-content/plugins/buddyboss-platform-pro/includes/integrations/zoom/assets/js/zoom-web-sdk/jquery.min.js"],"styles":["https://bundlesdigest.com/wp-content/plugins/buddyboss-platform-pro/includes/integrations/zoom/assets/js/zoom-web-sdk/bootstrap.css","https://bundlesdigest.com/wp-content/plugins/buddyboss-platform-pro/includes/integrations/zoom/assets/js/zoom-web-sdk/react-select.css"],"strings":{"day":"day","month":"month","week":"week"},"lang":"en-US","is_zoom_sdk":""};
+//# sourceURL=bp-zoom-js-js-extra
+</script>
+<script id="bp-zoom-js-js" src="https://bundlesdigest.com/wp-content/plugins/buddyboss-platform-pro/includes/integrations/zoom/assets/js/bp-zoom.min.js?ver=2.10.1"></script>
+<script id="bb-countdown-js-js-extra">
+var bb_countdown_vars = {"daysStr":"Days","hoursStr":"Hours","minutesStr":"Minutes","secondsStr":"Seconds"};
+//# sourceURL=bb-countdown-js-js-extra
+</script>
+<script id="bb-countdown-js-js" src="https://bundlesdigest.com/wp-content/plugins/buddyboss-platform-pro/assets/js/bb-countdown.min.js?ver=1.0.1"></script>
+<script id="imagesloaded-js" src="https://bundlesdigest.com/wp-includes/js/imagesloaded.min.js?ver=5.0.0"></script>
+<script id="masonry-js" src="https://bundlesdigest.com/wp-includes/js/masonry.min.js?ver=4.2.2"></script>
+<script id="boss-menu-js-js" src="https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/js/vendors/menu.js?ver=2.14.4"></script>
+<script id="boss-fitvids-js-js" src="https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/js/vendors/fitvids.js?ver=2.14.4"></script>
+<script id="boss-slick-js-js" src="https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/js/vendors/slick.min.js?ver=2.14.4"></script>
+<script id="boss-panelslider-js-js" src="https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/js/vendors/panelslider.min.js?ver=2.14.4"></script>
+<script id="boss-sticky-js-js" src="https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/js/vendors/sticky-kit.js?ver=2.14.4"></script>
+<script id="boss-jssocials-js-js" src="https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/js/vendors/jssocials.min.js?ver=2.14.4"></script>
+<script id="buddyboss-theme-main-js-js-extra">
+var bs_data = {"jm_ajax":"https://bundlesdigest.com/jm-ajax/","ajaxurl":"https://bundlesdigest.com/wp-admin/admin-ajax.php","show_notifications":"","show_messages":"","facebook_label":"Share on Facebook","twitter_label":"Post on X","more_menu_title":"Menu Items","more_menu_options":"More options","translation":{"comment_posted":"Your comment has been posted.","comment_btn_loading":"Please Wait...","choose_a_file_label":"Choose a file","email_validation":"Please enter a valid email address."},"gamipress_badge_label":"Badge","nonce_list_grid":"298d52c27d","learndash":{"nonce_get_courses":"0a1b0862fc","course_archive_url":"https://bundlesdigest.com/courses/"}};
+//# sourceURL=buddyboss-theme-main-js-js-extra
+</script>
+<script id="buddyboss-theme-main-js-js" src="https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/js/main.min.js?ver=2.14.4"></script>
+<script id="boss-validate-js-js" src="https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/js/vendors/validate.min.js?ver=2.14.4"></script>
+<script id="select2-js-js" src="https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/js/vendors/select2.full.min.js?ver=2.14.4"></script>
+<script id="progressbar-js-js" src="https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/js/vendors/progressbar.min.js?ver=2.14.4"></script>
+<script id="mousewheel-js-js" src="https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/js/vendors/mousewheel.min.js?ver=2.14.4"></script>
+<script id="buddyboss-theme-learndash-js-js-extra">
+var BBTHEME_LEARNDASH_FRONT_VIDEO = {"hide_wrapper":"show","video_progression_enabled":"off","video_type":""};
+//# sourceURL=buddyboss-theme-learndash-js-js-extra
+</script>
+<script id="buddyboss-theme-learndash-js-js" src="https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/js/plugins/learndash.min.js?ver=2.14.4"></script>
+<script id="buddyboss-theme-learndash-sidebar-js-js" src="https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/js/plugins/learndash-sidebar.min.js?ver=2.14.4"></script>
+<script id="buddyboss-theme-elementor-js-js" src="https://bundlesdigest.com/wp-content/themes/buddyboss-theme/assets/js/plugins/elementor.min.js?ver=2.14.4"></script>
+<script id="learndash-payments-js-extra">
+var learndash_payments = {"ajaxurl":"https://bundlesdigest.com/wp-admin/admin-ajax.php","messages":{"successful_transaction":"Your transaction was successful. Please log in to access your content."}};
+//# sourceURL=learndash-payments-js-extra
+</script>
+<script id="learndash-payments-js" src="//bundlesdigest.com/wp-content/plugins/sfwd-lms/assets/js/learndash-payments.min.js?ver=4.10.1"></script>
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a00454b1a8e6bd97',t:'MTc3OTU0MjE0MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1779523570 -->

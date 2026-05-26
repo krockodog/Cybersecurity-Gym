@@ -1,0 +1,249 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 40% 5%;
+    --foreground: 202 94% 94%;
+    --card: 220 35% 8%;
+    --card-foreground: 202 94% 94%;
+    --popover: 220 35% 8%;
+    --popover-foreground: 202 94% 94%;
+    --primary: 145 100% 50%;
+    --primary-foreground: 220 40% 5%;
+    --secondary: 193 100% 50%;
+    --secondary-foreground: 220 40% 5%;
+    --muted: 215 30% 15%;
+    --muted-foreground: 210 30% 55%;
+    --accent: 215 30% 15%;
+    --accent-foreground: 202 94% 94%;
+    --destructive: 345 100% 60%;
+    --destructive-foreground: 202 94% 94%;
+    --border: 213 35% 18%;
+    --input: 213 35% 18%;
+    --ring: 193 100% 50%;
+    --radius: 0.5rem;
+    --sidebar-background: 220 35% 8%;
+    --sidebar-foreground: 210 30% 55%;
+    --sidebar-primary: 145 100% 50%;
+    --sidebar-primary-foreground: 220 40% 5%;
+    --sidebar-accent: 215 30% 15%;
+    --sidebar-accent-foreground: 202 94% 94%;
+    --sidebar-border: 213 35% 18%;
+    --sidebar-ring: 193 100% 50%;
+
+    --bg-primary: #0a0e17;
+    --bg-secondary: #0d1526;
+    --bg-tertiary: #111d2e;
+    --bg-elevated: #162236;
+    --accent-green: #00ff41;
+    --accent-blue: #00d4ff;
+    --accent-purple: #8b5cf6;
+    --accent-orange: #ff7b00;
+    --accent-red: #ff3366;
+    --text-primary: #e0f2fe;
+    --text-secondary: #7da0c4;
+    --text-muted: #4a6682;
+    --border-subtle: #1a2d45;
+    --border-active: #00d4ff;
+    --border-green: #00ff41;
+    --ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --ease-expo-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #0a0e17;
+    color: #e0f2fe;
+    min-height: 100dvh;
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .font-body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  .font-terminal {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .font-decorative {
+    font-family: 'Share Tech Mono', monospace;
+  }
+
+  .text-display {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 800;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .text-h1 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .text-h2 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .text-h3 {
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
+    font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .text-h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  .text-body {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  .text-body-sm {
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  .text-caption {
+    font-size: 0.75rem;
+    font-weight: 500;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  .text-terminal {
+    font-size: 0.8125rem;
+    font-weight: 400;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .text-xp {
+    font-size: 0.875rem;
+    font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .text-badge {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .gradient-hero {
+    background: linear-gradient(135deg, #0a0e17 0%, #0d1f33 50%, #0a0e17 100%);
+  }
+
+  .gradient-green-glow {
+    background: radial-gradient(ellipse at center, rgba(0, 255, 65, 0.08) 0%, transparent 70%);
+  }
+
+  .gradient-blue-glow {
+    background: radial-gradient(ellipse at center, rgba(0, 212, 255, 0.08) 0%, transparent 70%);
+  }
+
+  .gradient-card {
+    background: linear-gradient(145deg, #0d1526 0%, #111d2e 100%);
+  }
+
+  .gradient-terminal {
+    background: linear-gradient(180deg, #0d1117 0%, #161b22 100%);
+  }
+
+  .gradient-progress {
+    background: linear-gradient(90deg, #00ff41 0%, #00d4ff 100%);
+  }
+
+  .gradient-rainbow {
+    background: linear-gradient(90deg, #ff3366, #ffaa00, #00e5ff, #a855f7, #10b981);
+  }
+
+  .stat-card {
+    background: linear-gradient(145deg, #0d1526, #111d2e);
+    border: 1px solid #1a2d45;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  .stat-card:hover {
+    border-color: rgba(0, 212, 255, 0.3);
+    transform: translateY(-2px);
+  }
+
+  .scanlines::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 255, 65, 0.03) 2px,
+      rgba(0, 255, 65, 0.03) 4px
+    );
+    pointer-events: none;
+    border-radius: inherit;
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(0, 212, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 212, 255, 0.04) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: #0a0e17;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #1a2d45;
+    border-radius: 3px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: #2a3d55;
+  }
+
+  .glitch-text:hover {
+    text-shadow: 2px 0 #ff3366, -2px 0 #00d4ff;
+    animation: glitch 0.3s ease-in-out;
+  }
+
+  @keyframes glitch {
+    0%, 100% { text-shadow: 2px 0 #ff3366, -2px 0 #00d4ff; }
+    25% { text-shadow: -2px 0 #ff3366, 2px 0 #00d4ff; }
+    50% { text-shadow: 2px 2px #ff3366, -2px -2px #00d4ff; }
+    75% { text-shadow: -2px 2px #ff3366, 2px -2px #00d4ff; }
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "metadata": {
+    "requested_url": "https://bundlesdigest.com/quizzes/comptia-pentest-pt0-003-exam-simulator-2-2/",
+    "requested_title": "CompTIA PenTest+ PT0-003 Exam Simulator 2",
+    "extraction_date": "2026-05-23",
+    "source_url": "https://crucialexams.com/study/tests/comptia/pt0-003/auto?DemoMode=True&ShowTest=True",
+    "source_title": "Crucial Exams Free PT0-003 Practice Test Demo",
+    "note": "The original bundlesdigest.com URL redirects to the course overview page (HTTP 302) because the content is behind a paywall requiring enrollment/login. The REST API requires authentication (401). No cached versions exist on Wayback Machine. These 20 questions were extracted from the Crucial Exams free demo test as the best publicly accessible alternative covering the same PT0-003 exam objectives.",
+    "total_questions": 20,
+    "domain_distribution": {
+      "Engagement Management": 5,
+      "Reconnaissance and Enumeration": 4,
+      "Vulnerability Discovery and Analysis": 6,
+      "Attacks and Exploits": 1,
+      "Post-exploitation and Lateral Movement": 4
+    }
+  },
+  "questions": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "question": "A firm with global clients wants to follow a broad legal requirement that enforces protections for individuals' personal data and privacy rights across multiple jurisdictions. Which regulation or standard best satisfies these obligations?",
+      "options": [
+        "A. Payment Card Industry Data Security Standard focusing on transaction oversight",
+        "B. Open Source Security Testing Methodology Manual targeting assessment strategies",
+        "C. GDPR reflecting various obligations for individual rights",
+        "D. NIST SP 800-53 emphasizing federal requirements"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": "Engagement Management",
+      "source": "Crucial Exams Free PT0-003 Demo Test"
+    },
+    {
+      "id": "2",
+      "type": "multiple_choice",
+      "question": "A security analyst is hired to assess a software company. The analyst plans to gather information from public sources as well as conduct a network probe. Which tactic is most likely to avoid detection by the company's internal monitoring systems?",
+      "options": [
+        "A. Sending crafted protocol requests to the organization's servers to retrieve banner details",
+        "B. Capturing network packets from internal systems at the company",
+        "C. Reviewing job boards for relevant postings about the company's technology stack",
+        "D. Using a network scanner to enumerate open services on the target"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": "Reconnaissance and Enumeration",
+      "source": "Crucial Exams Free PT0-003 Demo Test"
+    },
+    {
+      "id": "3",
+      "type": "multiple_choice",
+      "question": "Which approach is the BEST to discover credentials that were accidentally left in publicly accessible version control data?",
+      "options": [
+        "A. Search commit histories with specialized queries for strings that match potential secrets",
+        "B. Track changes in domain ownership records looking for newly registered variants",
+        "C. Monitor social media hashtags that reference the project or developer names",
+        "D. Check logs that reveal new subdomains associated with the project"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": "Reconnaissance and Enumeration",
+      "source": "Crucial Exams Free PT0-003 Demo Test"
+    },
+    {
+      "id": "4",
+      "type": "multiple_choice",
+      "question": "During a security assessment, you are asked to locate a ranking that reflects how soon a newly found weakness might be targeted. Which scoring method provides that measure?",
+      "options": [
+        "A. CWE",
+        "B. EPSS",
+        "C. CVSS",
+        "D. CVE"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": "Vulnerability Discovery and Analysis",
+      "source": "Crucial Exams Free PT0-003 Demo Test"
+    },
+    {
+      "id": "5",
+      "type": "multiple_choice",
+      "question": "A penetration tester's initial vulnerability scan of a client's network reveals three high-risk servers. The first is an end-of-life (EOL) file server with a CVSS score of 8.5. The second is a web server using default administrator credentials. The third is an internal database server using a vulnerable and weak encryption protocol. Which server should the tester prioritize for the initial attack?",
+      "options": [
+        "A. The web server with default administrator credentials",
+        "B. The EOL file server with the 8.5 CVSS score",
+        "C. All three servers, as they should be examined simultaneously to find a connecting attack path",
+        "D. The database server with the vulnerable encryption protocol"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": "Vulnerability Discovery and Analysis",
+      "source": "Crucial Exams Free PT0-003 Demo Test"
+    },
+    {
+      "id": "6",
+      "type": "multiple_choice",
+      "question": "An organization uses microservices with limited container lifecycles. The security team wants continuous visibility into each container's environment without changing the application code. The plan is to deploy an additional component that monitors what happens inside the main container as it runs. Which scanning approach is best for this scenario?",
+      "options": [
+        "A. Perform a code analysis that searches the entire codebase for unsafe calls",
+        "B. Examine container image layers before the service is started",
+        "C. Deploy a small companion container to capture real-time details in the running environment",
+        "D. Use an approach that attempts to identify open services through hidden port checks"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": "Vulnerability Discovery and Analysis",
+      "source": "Crucial Exams Free PT0-003 Demo Test"
+    },
+    {
+      "id": "7",
+      "type": "multiple_choice",
+      "question": "A consultant is preparing for an assessment of a web platform that stores real user details. The testing environment, scheduled for next week, has been found to contain user information. Which approach is recommended to maintain data protection requirements before starting the project?",
+      "options": [
+        "A. Proceed with testing after obtaining prior approval from the project sponsor",
+        "B. Encrypt sensitive details in the environment before testing begins",
+        "C. Anonymize user records before using the data in the test environment",
+        "D. Continue testing as is, relying on the development team for patching"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": "Engagement Management",
+      "source": "Crucial Exams Free PT0-003 Demo Test"
+    },
+    {
+      "id": "8",
+      "type": "multiple_choice",
+      "question": "A company's IT department has announced that its internal payroll and inventory applications are being re-architected as independent microservices. During external OSINT reconnaissance, which technique would most likely uncover previously unknown endpoints that host those microservices so you can plan deeper enumeration?",
+      "options": [
+        "A. Search leaked credential dumps for reused passwords",
+        "B. Social-engineer access to internal container logs",
+        "C. Enumerate DNS records and certificate-transparency logs for subdomains",
+        "D. Perform password-spray attacks against the corporate VPN"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": "Reconnaissance and Enumeration",
+      "source": "Crucial Exams Free PT0-003 Demo Test"
+    },
+    {
+      "id": "9",
+      "type": "multiple_choice",
+      "question": "A development team incorporates a container security approach featuring an extra component adjacent to each workload. They observe better performance across the environment after implementing this method. What explains this performance benefit?",
+      "options": [
+        "A. They delay the checks until the container ends to avoid impacting normal operations",
+        "B. They run code modifications in each container, overriding suspicious files as they appear",
+        "C. They place the checking tasks in a separate component, preventing main workloads from absorbing excessive resource usage",
+        "D. They tie the scanning process directly into the primary container to enhance kernel-level permissions"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": "Vulnerability Discovery and Analysis",
+      "source": "Crucial Exams Free PT0-003 Demo Test"
+    },
+    {
+      "id": "10",
+      "type": "multiple_choice",
+      "question": "After gaining initial access on a Windows host, you want interactive sessions on additional systems through the built-in graphical service. Which action is most likely to provide a stable connection to those systems?",
+      "options": [
+        "A. Leverage compromised credentials to sign in using the existing utility and navigate to other hosts",
+        "B. Create a new registry key to modify essential processes and bypass the login screen",
+        "C. Install a hidden application that records keystrokes and streams the desktop to your machine",
+        "D. Set regular automated tasks that execute a graphical client at certain intervals"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": "Attacks and Exploits",
+      "source": "Crucial Exams Free PT0-003 Demo Test"
+    },
+    {
+      "id": "11",
+      "type": "multiple_choice",
+      "question": "During an internal engagement, a vulnerability scan identifies critical issues on four different hosts: HR-SQL01 (Windows Server 2022) - production payroll database; CVSS 9.8 (CVE-2024-3910). LAB-WS19 (Windows Server 2019) - isolated lab server; CVSS 10.0 (CVE-2022-2452). LegacyBackupSrv - end-of-life FreeBSD 11 backup server; CVSS 8.6 (CVE-2019-5600). WebDev-Container01 - Docker host for staging web apps; CVSS 9.4 (CVE-2023-4103). The rules of engagement allow you to exploit only two additional hosts. According to best-practice target prioritization, which single factor should carry the most weight when deciding which host to attack next?",
+      "options": [
+        "A. Its software version appeared in an exploit database update last year",
+        "B. The host provides a daily-used business function essential to payroll processing",
+        "C. It lists the highest CVSS score of the remaining vulnerabilities",
+        "D. It is running an operating system that is no longer supported"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": "Vulnerability Discovery and Analysis",
+      "source": "Crucial Exams Free PT0-003 Demo Test"
+    },
+    {
+      "id": "12",
+      "type": "multiple_choice",
+      "question": "An operator has administrator rights on a Windows host and wants their script to run with system rights after every reboot. Which method provides that outcome?",
+      "options": [
+        "A. Add a run key for the script in the current user's registry hive",
+        "B. Copy the script to a user login folder to launch it on login",
+        "C. Rename the script to update.exe and place it in the system directory",
+        "D. Use a command to register a background process that starts at boot with full privileges"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": "Post-exploitation and Lateral Movement",
+      "source": "Crucial Exams Free PT0-003 Demo Test"
+    },
+    {
+      "id": "13",
+      "type": "multiple_choice",
+      "question": "Which method best clarifies the allowed and disallowed segments for an assessment?",
+      "options": [
+        "A. Including permitted network ranges and prohibited targets in a formal contract",
+        "B. Discussing relevant industry regulations before tests begin",
+        "C. Conducting a peer review to confirm the significance of each finding",
+        "D. Requiring higher-level executives to sign an agreement to protect classified information"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": "Engagement Management",
+      "source": "Crucial Exams Free PT0-003 Demo Test"
+    },
+    {
+      "id": "14",
+      "type": "multiple_choice",
+      "question": "During an assessment at a financial organization, you learn that the environment hosts core transaction servers and several support applications. Which approach helps you isolate the part of the environment that would cause the greatest operational disruption if targeted?",
+      "options": [
+        "A. Classify older servers based on their operating system age alongside other factors",
+        "B. Verify which systems handle vital data and list them by possible business harm",
+        "C. Use a third-party vulnerability scanner and consider its findings as part of your prioritization process",
+        "D. Search for any outdated login details to locate crucial infrastructure"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": "Engagement Management",
+      "source": "Crucial Exams Free PT0-003 Demo Test"
+    },
+    {
+      "id": "15",
+      "type": "multiple_choice",
+      "question": "While examining a company's presence on social media, an analyst wants to identify current job titles, email patterns, and areas of expertise. Which approach is best?",
+      "options": [
+        "A. Repeat scans of the organization's perimeter to see if staff data emerges",
+        "B. Build targeted queries using advanced search filters to highlight key words",
+        "C. Send requests to each user profile for a closer look",
+        "D. Attempt to bypass the platform's internal administrative features"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": "Reconnaissance and Enumeration",
+      "source": "Crucial Exams Free PT0-003 Demo Test"
+    },
+    {
+      "id": "16",
+      "type": "multiple_choice",
+      "question": "Which statement accurately reflects the capabilities of most modern container image-scanning tools?",
+      "options": [
+        "A. They isolate running containers inside a virtual machine to prevent any compromise of the host",
+        "B. They fully encrypt the container file system to protect it from offline tampering",
+        "C. They inspect each image layer to report known software vulnerabilities and can flag hard-coded secrets such as API tokens",
+        "D. They automatically sign container images with a trusted certificate whenever no vulnerabilities are found"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": "Vulnerability Discovery and Analysis",
+      "source": "Crucial Exams Free PT0-003 Demo Test"
+    },
+    {
+      "id": "17",
+      "type": "multiple_choice",
+      "question": "During a penetration test, a consultant gains administrative access to a critical Windows server. To ensure they can regain this level of access for further assessment even after a scheduled nightly reboot, the consultant needs to establish a persistent backdoor. Which of the following techniques would be most effective for automatically re-establishing a connection after the system restarts?",
+      "options": [
+        "A. Place injected code in memory for an active session",
+        "B. Modify user environment variables to load remote tools",
+        "C. Remove blocking rules from the local security filters",
+        "D. Set up a job that runs at system boot to launch a network listener"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": "Post-exploitation and Lateral Movement",
+      "source": "Crucial Exams Free PT0-003 Demo Test"
+    },
+    {
+      "id": "18",
+      "type": "multiple_choice",
+      "question": "A security team wants to catch insecure commands-such as adding root passwords or copying secrets-as early as possible in the CI/CD pipeline for new Docker images. Which assessment approach is most likely to expose these issues before the container is ever executed?",
+      "options": [
+        "A. Perform a static scan of the Dockerfile and its layered instructions during the build stage",
+        "B. Launch an authenticated vulnerability scan against the deployed image in a staging cluster",
+        "C. Capture live network traffic from the container and review external endpoints",
+        "D. Run dynamic application security testing (DAST) against the container after it starts"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": "Vulnerability Discovery and Analysis",
+      "source": "Crucial Exams Free PT0-003 Demo Test"
+    },
+    {
+      "id": "19",
+      "type": "multiple_choice",
+      "question": "Which detail is most important to finalize before starting an evaluation so that boundaries, constraints, and roles are clear? Choose the best answer.",
+      "options": [
+        "A. An agreement specifying permitted targets, prohibited zones, and how to handle unexpected findings",
+        "B. A plan for obtaining specialized scanning applications",
+        "C. A checklist capturing known vulnerabilities of all assets",
+        "D. A schedule of recurring status meetings after the first discovery phase"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": "Engagement Management",
+      "source": "Crucial Exams Free PT0-003 Demo Test"
+    },
+    {
+      "id": "20",
+      "type": "multiple_choice",
+      "question": "You have gained root access to a Linux server during a penetration test. Management wants proof that you can maintain persistence and cause repeated damage. Which technique will guarantee that a destructive script runs automatically every three hours even if no users ever log on?",
+      "options": [
+        "A. Enable repeated reconnections from a reverse shell invoked by the firewall administrative interface",
+        "B. Embed the code into a hardware driver to escalate privileges during user authentication",
+        "C. Store the malicious routine in a local browser extension so it triggers each time the application is launched",
+        "D. Add an entry in the system crontab to call the script every three hours"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": "Post-exploitation and Lateral Movement",
+      "source": "Crucial Exams Free PT0-003 Demo Test"
+    }
+  ]
+}

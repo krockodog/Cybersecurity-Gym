@@ -1,0 +1,496 @@
+{
+  "metadata": {
+    "title": "CompTIA Linux+ XK0-006",
+    "total_questions": 32,
+    "domains": [
+      "Security",
+      "Troubleshooting",
+      "Services",
+      "System Management",
+      "Automation"
+    ],
+    "version": "1.0"
+  },
+  "questions": [
+    {
+      "id": "xk006_1",
+      "exam": "XK0-006",
+      "domain": "System Management",
+      "type": "multiple_choice",
+      "question": "Which command displays the current systemd target?",
+      "options": [
+        "A. systemctl get-default",
+        "B. systemd-target",
+        "C. init-level",
+        "D. runlevel"
+      ],
+      "correct_answer": "A",
+      "explanation": "systemctl get-default shows the current systemd target (e.g., graphical.target, multi-user.target)."
+    },
+    {
+      "id": "xk006_2",
+      "exam": "XK0-006",
+      "domain": "System Management",
+      "type": "multiple_choice",
+      "question": "Which file stores the system's static hostname in systemd-based distributions?",
+      "options": [
+        "A. /etc/hostname",
+        "B. /etc/sysconfig/network",
+        "C. /etc/hosts",
+        "D. /proc/sys/kernel/hostname"
+      ],
+      "correct_answer": "A",
+      "explanation": "/etc/hostname stores the static hostname in systemd distributions. hostnamectl reads and writes this file."
+    },
+    {
+      "id": "xk006_3",
+      "exam": "XK0-006",
+      "domain": "System Management",
+      "type": "multiple_choice",
+      "question": "Which command creates a new LVM logical volume named 'data' of 10GB in volume group 'vg0'?",
+      "options": [
+        "A. lvcreate -L 10G -n data vg0",
+        "B. lvmcreate -s 10G data vg0",
+        "C. mkvol -G 10G data vg0",
+        "D. volumecreate -l 10G vg0/data"
+      ],
+      "correct_answer": "A",
+      "explanation": "lvcreate -L 10G sets size, -n data names it, vg0 is the volume group."
+    },
+    {
+      "id": "xk006_4",
+      "exam": "XK0-006",
+      "domain": "System Management",
+      "type": "multiple_choice",
+      "question": "Which command resizes an ext4 filesystem after extending its logical volume?",
+      "options": [
+        "A. resize2fs /dev/vg0/lv_data",
+        "B. fsresize /dev/vg0/lv_data",
+        "C. lvextend --resize /dev/vg0/lv_data",
+        "D. ext4resize /dev/vg0/lv_data"
+      ],
+      "correct_answer": "A",
+      "explanation": "resize2fs resizes ext2/3/4 filesystems. For online resizing, use resize2fs on a mounted filesystem."
+    },
+    {
+      "id": "xk006_5",
+      "exam": "XK0-006",
+      "domain": "System Management",
+      "type": "multiple_choice",
+      "question": "Where is the EFI system partition typically mounted?",
+      "options": [
+        "A. /boot/efi",
+        "B. /efi",
+        "C. /sys/efi",
+        "D. /var/efi"
+      ],
+      "correct_answer": "A",
+      "explanation": "The EFI System Partition (ESP) is typically mounted at /boot/efi in Linux systems."
+    },
+    {
+      "id": "xk006_6",
+      "exam": "XK0-006",
+      "domain": "System Management",
+      "type": "multiple_choice",
+      "question": "Which command shows the UUID of all block devices?",
+      "options": [
+        "A. blkid",
+        "B. uuidgen",
+        "C. lsblk -o UUID",
+        "D. Both A and C"
+      ],
+      "correct_answer": "D",
+      "explanation": "blkid shows UUIDs, filesystem types, and labels. lsblk -o UUID also shows UUIDs for block devices."
+    },
+    {
+      "id": "xk006_7",
+      "exam": "XK0-006",
+      "domain": "System Management",
+      "type": "multiple_choice",
+      "question": "Which GRUB2 configuration file should be edited to make persistent boot changes?",
+      "options": [
+        "A. /etc/default/grub",
+        "B. /boot/grub2/grub.cfg",
+        "C. /etc/grub.conf",
+        "D. /boot/grub/menu.lst"
+      ],
+      "correct_answer": "A",
+      "explanation": "/etc/default/grub is the configuration file. After editing, run grub2-mkconfig to regenerate grub.cfg."
+    },
+    {
+      "id": "xk006_8",
+      "exam": "XK0-006",
+      "domain": "System Management",
+      "type": "multiple_choice",
+      "question": "Which command regenerates the GRUB2 configuration after editing /etc/default/grub?",
+      "options": [
+        "A. grub2-mkconfig -o /boot/grub2/grub.cfg",
+        "B. update-grub",
+        "C. grub-update",
+        "D. Both A and B"
+      ],
+      "correct_answer": "D",
+      "explanation": "grub2-mkconfig (RHEL) and update-grub (Debian) both regenerate the GRUB configuration."
+    },
+    {
+      "id": "xk006_9",
+      "exam": "XK0-006",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "Which command sets SELinux to permissive mode?",
+      "options": [
+        "A. setenforce 0",
+        "B. selinux --permissive",
+        "C. echo 0 > /selinux/enforce",
+        "D. sestatus permissive"
+      ],
+      "correct_answer": "A",
+      "explanation": "setenforce 0 sets SELinux to permissive (1=enforcing). sestatus only shows the current status."
+    },
+    {
+      "id": "xk006_10",
+      "exam": "XK0-006",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "Which file contains the SELinux configuration for the permanent mode?",
+      "options": [
+        "A. /etc/selinux/config",
+        "B. /etc/sysconfig/selinux",
+        "C. /selinux/config",
+        "D. Both A and B"
+      ],
+      "correct_answer": "D",
+      "explanation": "/etc/selinux/config is the main config. /etc/sysconfig/selinux is often a symlink to it on RHEL."
+    },
+    {
+      "id": "xk006_11",
+      "exam": "XK0-006",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "Which command generates SSH key pairs?",
+      "options": [
+        "A. ssh-keygen",
+        "B. ssh-genkey",
+        "C. generate-ssh-key",
+        "D. ssh --generate-key"
+      ],
+      "correct_answer": "A",
+      "explanation": "ssh-keygen generates SSH public/private key pairs. Default location: ~/.ssh/id_rsa or id_ed25519."
+    },
+    {
+      "id": "xk006_12",
+      "exam": "XK0-006",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "Which command displays the status of AppArmor for all profiles?",
+      "options": [
+        "A. aa-status",
+        "B. apparmor-status",
+        "C. aa-complain",
+        "D. apparmor --list"
+      ],
+      "correct_answer": "A",
+      "explanation": "aa-status shows the status of all AppArmor profiles (enforce, complain, or disabled)."
+    },
+    {
+      "id": "xk006_13",
+      "exam": "XK0-006",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "Which nftables table family is used for IPv4 traffic?",
+      "options": [
+        "A. ip",
+        "B. inet",
+        "C. ipv4",
+        "D. net"
+      ],
+      "correct_answer": "A",
+      "explanation": "The 'ip' family in nftables handles IPv4. 'inet' handles both IPv4 and IPv6."
+    },
+    {
+      "id": "xk006_14",
+      "exam": "XK0-006",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "Which PAM module is used for password complexity requirements?",
+      "options": [
+        "A. pam_pwquality",
+        "B. pam_cracklib",
+        "C. pam_passwdqc",
+        "D. pam_complexity"
+      ],
+      "correct_answer": "A",
+      "explanation": "pam_pwquality (successor to pam_cracklib) enforces password quality requirements in PAM."
+    },
+    {
+      "id": "xk006_15",
+      "exam": "XK0-006",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "Which command shows the SELinux context of files?",
+      "options": [
+        "A. ls -Z",
+        "B. ls -C",
+        "C. selinux -l",
+        "D. sestatus -f"
+      ],
+      "correct_answer": "A",
+      "explanation": "ls -Z shows SELinux security contexts. -Z is the context flag for ls, ps, and other tools."
+    },
+    {
+      "id": "xk006_16",
+      "exam": "XK0-006",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "Where are the sudo privilege rules defined?",
+      "options": [
+        "A. /etc/sudoers",
+        "B. /etc/sudo.conf",
+        "C. /etc/security/sudo",
+        "D. /var/sudo/rules"
+      ],
+      "correct_answer": "A",
+      "explanation": "/etc/sudoers contains sudo rules. Edit with visudo to ensure syntax checking."
+    },
+    {
+      "id": "xk006_17",
+      "exam": "XK0-006",
+      "domain": "Services",
+      "type": "multiple_choice",
+      "question": "Which command reloads a systemd service configuration without restarting?",
+      "options": [
+        "A. systemctl reload servicename",
+        "B. systemctl restart servicename",
+        "C. systemctl refresh servicename",
+        "D. systemctl reconfigure servicename"
+      ],
+      "correct_answer": "A",
+      "explanation": "systemctl reload reloads configuration. restart stops and starts the service."
+    },
+    {
+      "id": "xk006_18",
+      "exam": "XK0-006",
+      "domain": "Services",
+      "type": "multiple_choice",
+      "question": "Which file configures the DNS resolver in modern systemd-based systems?",
+      "options": [
+        "A. /etc/resolv.conf",
+        "B. /etc/systemd/resolved.conf",
+        "C. /etc/nsswitch.conf",
+        "D. /etc/network/dns"
+      ],
+      "correct_answer": "B",
+      "explanation": "systemd-resolved manages DNS via /etc/systemd/resolved.conf. /etc/resolv.conf may be a symlink."
+    },
+    {
+      "id": "xk006_19",
+      "exam": "XK0-006",
+      "domain": "Services",
+      "type": "multiple_choice",
+      "question": "Which command shows listening TCP ports with process information?",
+      "options": [
+        "A. ss -tlnp",
+        "B. netstat -tlnp",
+        "C. lsof -i TCP -sTCP:LISTEN",
+        "D. All of the above"
+      ],
+      "correct_answer": "D",
+      "explanation": "ss (modern), netstat (traditional), and lsof can all show listening ports with process info."
+    },
+    {
+      "id": "xk006_20",
+      "exam": "XK0-006",
+      "domain": "Services",
+      "type": "multiple_choice",
+      "question": "Which Apache configuration directive defines the document root?",
+      "options": [
+        "A. DocumentRoot",
+        "B. ServerRoot",
+        "C. RootDirectory",
+        "D. WebRoot"
+      ],
+      "correct_answer": "A",
+      "explanation": "DocumentRoot in Apache defines the directory from which web content is served."
+    },
+    {
+      "id": "xk006_21",
+      "exam": "XK0-006",
+      "domain": "Services",
+      "type": "multiple_choice",
+      "question": "Which command creates a systemd timer unit that runs a service weekly?",
+      "options": [
+        "A. OnCalendar=weekly in the timer unit",
+        "B. * * * * 7 in crontab",
+        "C. Weekly=yes in the service unit",
+        "D. timer=weekly in systemctl"
+      ],
+      "correct_answer": "A",
+      "explanation": "OnCalendar=weekly in a .timer unit schedules weekly execution. systemd timers replace cron."
+    },
+    {
+      "id": "xk006_22",
+      "exam": "XK0-006",
+      "domain": "Services",
+      "type": "multiple_choice",
+      "question": "Which directive in nginx.conf defines the server name?",
+      "options": [
+        "A. server_name",
+        "B. ServerName",
+        "C. host_name",
+        "D. virtual_host"
+      ],
+      "correct_answer": "A",
+      "explanation": "server_name in nginx defines the hostname for a virtual server."
+    },
+    {
+      "id": "xk006_23",
+      "exam": "XK0-006",
+      "domain": "Services",
+      "type": "multiple_choice",
+      "question": "Which command shows the current mail queue in Postfix?",
+      "options": [
+        "A. mailq",
+        "B. postqueue -p",
+        "C. showq",
+        "D. Both A and B"
+      ],
+      "correct_answer": "D",
+      "explanation": "mailq and postqueue -p both display the Postfix mail queue."
+    },
+    {
+      "id": "xk006_24",
+      "exam": "XK0-006",
+      "domain": "Services",
+      "type": "multiple_choice",
+      "question": "Which DHCP server configuration file is used on Debian/Ubuntu?",
+      "options": [
+        "A. /etc/dhcp/dhcpd.conf",
+        "B. /etc/dhcpd.conf",
+        "C. /etc/dhcp3/dhcpd.conf",
+        "D. /var/lib/dhcp/dhcpd.conf"
+      ],
+      "correct_answer": "A",
+      "explanation": "/etc/dhcp/dhcpd.conf is the ISC DHCP server configuration file on Debian/Ubuntu systems."
+    },
+    {
+      "id": "xk006_25",
+      "exam": "XK0-006",
+      "domain": "Automation",
+      "type": "multiple_choice",
+      "question": "Which Ansible module is used to install packages?",
+      "options": [
+        "A. package",
+        "B. apt",
+        "C. yum",
+        "D. install"
+      ],
+      "correct_answer": "A",
+      "explanation": "The 'package' module is the generic module that works across distributions (apt, yum, dnf)."
+    },
+    {
+      "id": "xk006_26",
+      "exam": "XK0-006",
+      "domain": "Automation",
+      "type": "multiple_choice",
+      "question": "Which Ansible command runs a playbook?",
+      "options": [
+        "A. ansible-playbook playbook.yml",
+        "B. ansible -run playbook.yml",
+        "C. ansible-execute playbook.yml",
+        "D. ansible playbook.yml"
+      ],
+      "correct_answer": "A",
+      "explanation": "ansible-playbook executes Ansible playbooks. ansible runs ad-hoc commands."
+    },
+    {
+      "id": "xk006_27",
+      "exam": "XK0-006",
+      "domain": "Automation",
+      "type": "multiple_choice",
+      "question": "Which command traces system calls made by a process?",
+      "options": [
+        "A. strace",
+        "B. ltrace",
+        "C. ptrace",
+        "D. systrace"
+      ],
+      "correct_answer": "A",
+      "explanation": "strace traces system calls. ltrace traces library calls. Both are essential debugging tools."
+    },
+    {
+      "id": "xk006_28",
+      "exam": "XK0-006",
+      "domain": "Troubleshooting",
+      "type": "multiple_choice",
+      "question": "Which command shows the last 20 system boot messages?",
+      "options": [
+        "A. dmesg | tail -20",
+        "B. journalctl --boot",
+        "C. last boot",
+        "D. Both A and B"
+      ],
+      "correct_answer": "D",
+      "explanation": "dmesg shows kernel ring buffer messages. journalctl --boot shows boot logs from the current boot."
+    },
+    {
+      "id": "xk006_29",
+      "exam": "XK0-006",
+      "domain": "Troubleshooting",
+      "type": "multiple_choice",
+      "question": "Which command shows network interface statistics and errors?",
+      "options": [
+        "A. ip -s link",
+        "B. ifconfig -a",
+        "C. ethtool -S eth0",
+        "D. All of the above"
+      ],
+      "correct_answer": "D",
+      "explanation": "ip -s link, ifconfig, and ethtool can all display interface statistics and error counters."
+    },
+    {
+      "id": "xk006_30",
+      "exam": "XK0-006",
+      "domain": "Troubleshooting",
+      "type": "multiple_choice",
+      "question": "Which command shows the routing table?",
+      "options": [
+        "A. ip route",
+        "B. route -n",
+        "C. netstat -r",
+        "D. All of the above"
+      ],
+      "correct_answer": "D",
+      "explanation": "ip route (modern), route -n (traditional), and netstat -r all display the routing table."
+    },
+    {
+      "id": "xk006_31",
+      "exam": "XK0-006",
+      "domain": "Troubleshooting",
+      "type": "multiple_choice",
+      "question": "Which file contains the kernel messages log?",
+      "options": [
+        "A. /var/log/kern.log",
+        "B. /var/log/messages",
+        "C. /var/log/syslog",
+        "D. All of the above"
+      ],
+      "correct_answer": "D",
+      "explanation": "Kernel messages go to /var/log/kern.log, /var/log/messages (RHEL), or /var/log/syslog (Debian)."
+    },
+    {
+      "id": "xk006_32",
+      "exam": "XK0-006",
+      "domain": "Troubleshooting",
+      "type": "multiple_choice",
+      "question": "Which command shows the I/O statistics per block device?",
+      "options": [
+        "A. iostat",
+        "B. iotop",
+        "C. blktrace",
+        "D. All of the above"
+      ],
+      "correct_answer": "D",
+      "explanation": "iostat shows I/O statistics, iotop shows per-process I/O, blktrace traces block I/O operations."
+    }
+  ]
+}

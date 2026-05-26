@@ -1,0 +1,1218 @@
+{
+  "metadata": {
+    "title": "CompTIA Network+ N10-009",
+    "total_questions": 80,
+    "domains": [
+      "Networking Concepts",
+      "Network Infrastructure",
+      "Network Operations",
+      "Network Security",
+      "Network Troubleshooting"
+    ],
+    "version": "2.0",
+    "updated_for": "N10-009 (2024)",
+    "new_questions_added": 50
+  },
+  "questions": [
+    {
+      "id": "n10_1",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "Which layer of the OSI model is responsible for logical addressing and routing?",
+      "options": [
+        "A. Layer 2 - Data Link",
+        "B. Layer 3 - Network",
+        "C. Layer 4 - Transport",
+        "D. Layer 7 - Application"
+      ],
+      "correct_answer": "B",
+      "explanation": "Layer 3 (Network layer) handles logical addressing (IP) and routing between networks."
+    },
+    {
+      "id": "n10_2",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "What is the default subnet mask for a Class C network?",
+      "options": [
+        "A. 255.0.0.0",
+        "B. 255.255.0.0",
+        "C. 255.255.255.0",
+        "D. 255.255.255.255"
+      ],
+      "correct_answer": "C",
+      "explanation": "Class C networks use 255.255.255.0 (/24), providing 256 addresses with 254 usable hosts."
+    },
+    {
+      "id": "n10_3",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "Which protocol uses port 22 by default?",
+      "options": [
+        "A. Telnet",
+        "B. SSH",
+        "C. FTP",
+        "D. HTTP"
+      ],
+      "correct_answer": "B",
+      "explanation": "SSH (Secure Shell) uses port 22 for encrypted remote administration. Telnet uses port 23 (unencrypted)."
+    },
+    {
+      "id": "n10_4",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "What does the 'S' in HTTPS stand for?",
+      "options": [
+        "A. Standard",
+        "B. Secure",
+        "C. Simple",
+        "D. System"
+      ],
+      "correct_answer": "B",
+      "explanation": "HTTPS = HTTP Secure. It uses TLS/SSL encryption to protect data in transit."
+    },
+    {
+      "id": "n10_5",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "Which IP address range is reserved for private networks?",
+      "options": [
+        "A. 12.0.0.0 - 12.255.255.255",
+        "B. 172.16.0.0 - 172.31.255.255",
+        "C. 8.8.8.0 - 8.8.8.255",
+        "D. 1.0.0.0 - 9.255.255.255"
+      ],
+      "correct_answer": "B",
+      "explanation": "RFC 1918 defines private ranges: 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16."
+    },
+    {
+      "id": "n10_6",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "What is the purpose of a default gateway?",
+      "options": [
+        "A. Assign IP addresses automatically",
+        "B. Route traffic to different networks",
+        "C. Convert domain names to IP addresses",
+        "D. Filter network traffic"
+      ],
+      "correct_answer": "B",
+      "explanation": "The default gateway routes traffic from the local network to other networks, including the internet."
+    },
+    {
+      "id": "n10_7",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "Which DNS record type maps a domain name to an IPv4 address?",
+      "options": [
+        "A. AAAA record",
+        "B. MX record",
+        "C. A record",
+        "D. CNAME record"
+      ],
+      "correct_answer": "C",
+      "explanation": "A record maps hostname to IPv4. AAAA maps to IPv6, MX to mail servers, CNAME is an alias."
+    },
+    {
+      "id": "n10_8",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "What is the difference between TCP and UDP?",
+      "options": [
+        "A. TCP is faster than UDP",
+        "B. UDP is connection-oriented, TCP is connectionless",
+        "C. TCP provides reliable delivery, UDP does not",
+        "D. There is no difference"
+      ],
+      "correct_answer": "C",
+      "explanation": "TCP is connection-oriented with acknowledgments and retransmission (reliable). UDP is connectionless and faster but unreliable."
+    },
+    {
+      "id": "n10_9",
+      "exam": "N10-009",
+      "domain": "Network Infrastructure",
+      "type": "multiple_choice",
+      "question": "Which device operates at Layer 2 of the OSI model and uses MAC addresses?",
+      "options": [
+        "A. Router",
+        "B. Switch",
+        "C. Firewall",
+        "D. Hub"
+      ],
+      "correct_answer": "B",
+      "explanation": "Switches operate at Layer 2 (Data Link) using MAC addresses to forward frames. Routers use IP (Layer 3)."
+    },
+    {
+      "id": "n10_10",
+      "exam": "N10-009",
+      "domain": "Network Infrastructure",
+      "type": "multiple_choice",
+      "question": "What does VLAN stand for?",
+      "options": [
+        "A. Virtual Local Area Network",
+        "B. Virtual Long-Distance Area Network",
+        "C. Verified Local Access Network",
+        "D. Virtual Link Aggregation Network"
+      ],
+      "correct_answer": "A",
+      "explanation": "VLAN (Virtual LAN) logically segments a physical network into separate broadcast domains."
+    },
+    {
+      "id": "n10_11",
+      "exam": "N10-009",
+      "domain": "Network Infrastructure",
+      "type": "multiple_choice",
+      "question": "Which cable type is used to connect a PC to a switch?",
+      "options": [
+        "A. Crossover cable",
+        "B. Straight-through cable",
+        "C. Rollover cable",
+        "D. Fiber optic cable"
+      ],
+      "correct_answer": "B",
+      "explanation": "Straight-through cable connects different device types (PC to switch). Crossover connects similar devices."
+    },
+    {
+      "id": "n10_12",
+      "exam": "N10-009",
+      "domain": "Network Infrastructure",
+      "type": "multiple_choice",
+      "question": "What is the maximum speed of Cat6a Ethernet cable?",
+      "options": [
+        "A. 1 Gbps",
+        "B. 10 Gbps",
+        "C. 40 Gbps",
+        "D. 100 Gbps"
+      ],
+      "correct_answer": "B",
+      "explanation": "Cat6a supports 10 Gbps up to 100 meters. Cat5e supports 1 Gbps, Cat8 supports 25-40 Gbps."
+    },
+    {
+      "id": "n10_13",
+      "exam": "N10-009",
+      "domain": "Network Infrastructure",
+      "type": "multiple_choice",
+      "question": "Which wireless standard operates in the 5 GHz band?",
+      "options": [
+        "A. 802.11b",
+        "B. 802.11g",
+        "C. 802.11a",
+        "D. 802.11n only 2.4GHz"
+      ],
+      "correct_answer": "C",
+      "explanation": "802.11a and 802.11ac operate on 5 GHz. 802.11b/g use 2.4 GHz. 802.11n supports both bands."
+    },
+    {
+      "id": "n10_14",
+      "exam": "N10-009",
+      "domain": "Network Infrastructure",
+      "type": "multiple_choice",
+      "question": "What is the purpose of a load balancer?",
+      "options": [
+        "A. Block malicious traffic",
+        "B. Distribute traffic across multiple servers",
+        "C. Assign IP addresses",
+        "D. Encrypt network traffic"
+      ],
+      "correct_answer": "B",
+      "explanation": "Load balancers distribute incoming traffic across multiple backend servers for high availability and performance."
+    },
+    {
+      "id": "n10_15",
+      "exam": "N10-009",
+      "domain": "Network Infrastructure",
+      "type": "multiple_choice",
+      "question": "Which port does DNS use?",
+      "options": [
+        "A. 22",
+        "B. 53",
+        "C. 80",
+        "D. 443"
+      ],
+      "correct_answer": "B",
+      "explanation": "DNS uses UDP port 53 for queries and TCP port 53 for zone transfers."
+    },
+    {
+      "id": "n10_16",
+      "exam": "N10-009",
+      "domain": "Network Operations",
+      "type": "multiple_choice",
+      "question": "Which command displays the routing table on a Windows system?",
+      "options": [
+        "A. netstat -r",
+        "B. route print",
+        "C. Both A and B",
+        "D. ip route"
+      ],
+      "correct_answer": "C",
+      "explanation": "Both 'route print' and 'netstat -r' display the routing table on Windows. 'ip route' is for Linux."
+    },
+    {
+      "id": "n10_17",
+      "exam": "N10-009",
+      "domain": "Network Operations",
+      "type": "multiple_choice",
+      "question": "What does DHCP stand for?",
+      "options": [
+        "A. Dynamic Host Configuration Protocol",
+        "B. Domain Host Control Protocol",
+        "C. Distributed Host Connection Protocol",
+        "D. Dynamic Hardware Configuration Process"
+      ],
+      "correct_answer": "A",
+      "explanation": "DHCP automatically assigns IP addresses, subnet masks, gateways, and DNS servers to devices."
+    },
+    {
+      "id": "n10_18",
+      "exam": "N10-009",
+      "domain": "Network Operations",
+      "type": "multiple_choice",
+      "question": "Which tool is used to test connectivity between two network devices?",
+      "options": [
+        "A. nslookup",
+        "B. ping",
+        "C. traceroute",
+        "D. netstat"
+      ],
+      "correct_answer": "B",
+      "explanation": "ping tests basic connectivity using ICMP echo requests. traceroute shows the route/path taken."
+    },
+    {
+      "id": "n10_19",
+      "exam": "N10-009",
+      "domain": "Network Operations",
+      "type": "multiple_choice",
+      "question": "What is the purpose of SNMP?",
+      "options": [
+        "A. Encrypt network traffic",
+        "B. Monitor and manage network devices",
+        "C. Assign IP addresses",
+        "D. Block unauthorized access"
+      ],
+      "correct_answer": "B",
+      "explanation": "SNMP (Simple Network Management Protocol) monitors network devices like routers, switches, and servers."
+    },
+    {
+      "id": "n10_20",
+      "exam": "N10-009",
+      "domain": "Network Operations",
+      "type": "multiple_choice",
+      "question": "Which protocol is used for secure file transfer?",
+      "options": [
+        "A. FTP",
+        "B. TFTP",
+        "C. SFTP",
+        "D. HTTP"
+      ],
+      "correct_answer": "C",
+      "explanation": "SFTP (SSH File Transfer Protocol) encrypts file transfers over SSH. FTP and TFTP are unencrypted."
+    },
+    {
+      "id": "n10_21",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "What is the purpose of a firewall?",
+      "options": [
+        "A. Speed up network connections",
+        "B. Filter traffic based on rules",
+        "C. Assign IP addresses to devices",
+        "D. Monitor network bandwidth"
+      ],
+      "correct_answer": "B",
+      "explanation": "Firewalls filter network traffic based on configured rules, allowing or blocking specific connections."
+    },
+    {
+      "id": "n10_22",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "Which VPN protocol uses SSL/TLS for encryption?",
+      "options": [
+        "A. PPTP",
+        "B. L2TP/IPsec",
+        "C. OpenVPN",
+        "D. GRE"
+      ],
+      "correct_answer": "C",
+      "explanation": "OpenVPN uses SSL/TLS for encryption. PPTP is less secure. L2TP/IPsec uses IPsec for encryption."
+    },
+    {
+      "id": "n10_23",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "What does WPA3 improve over WPA2?",
+      "options": [
+        "A. Faster speeds",
+        "B. Stronger encryption and better authentication",
+        "C. Longer range",
+        "D. Compatibility with older devices"
+      ],
+      "correct_answer": "B",
+      "explanation": "WPA3 offers SAE (Simultaneous Authentication of Equals), individualized data encryption, and stronger brute-force protection."
+    },
+    {
+      "id": "n10_24",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "What is a DMZ in network security?",
+      "options": [
+        "A. A high-speed network zone",
+        "B. A demilitarized zone for publicly accessible servers",
+        "C. A wireless network",
+        "D. A backup network"
+      ],
+      "correct_answer": "B",
+      "explanation": "DMZ (Demilitarized Zone) hosts public-facing servers (web, mail, DNS) between the internet and internal network."
+    },
+    {
+      "id": "n10_25",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "Which authentication method is most secure for WiFi?",
+      "options": [
+        "A. WEP",
+        "B. WPA-Personal",
+        "C. WPA2-Enterprise with 802.1X",
+        "D. Open network"
+      ],
+      "correct_answer": "C",
+      "explanation": "WPA2/WPA3 Enterprise with 802.1X and RADIUS provides per-user authentication, the most secure WiFi option."
+    },
+    {
+      "id": "n10_26",
+      "exam": "N10-009",
+      "domain": "Network Troubleshooting",
+      "type": "multiple_choice",
+      "question": "A user cannot access the internet but can access local resources. What is the most likely cause?",
+      "options": [
+        "A. Faulty network cable",
+        "B. Incorrect default gateway",
+        "C. DNS server failure",
+        "D. Switch failure"
+      ],
+      "correct_answer": "B",
+      "explanation": "If local resources work but internet doesn't, the default gateway (router) is likely misconfigured or unreachable."
+    },
+    {
+      "id": "n10_27",
+      "exam": "N10-009",
+      "domain": "Network Troubleshooting",
+      "type": "multiple_choice",
+      "question": "Which command shows active network connections on Linux?",
+      "options": [
+        "A. ping",
+        "B. ss -tlnp",
+        "C. ipconfig",
+        "D. tracert"
+      ],
+      "correct_answer": "B",
+      "explanation": "ss -tlnp shows TCP listening sockets with process info. ipconfig is Windows. ping tests connectivity."
+    },
+    {
+      "id": "n10_28",
+      "exam": "N10-009",
+      "domain": "Network Troubleshooting",
+      "type": "multiple_choice",
+      "question": "What does 'Destination Host Unreachable' from ping indicate?",
+      "options": [
+        "A. The target host is down",
+        "B. No route exists to the destination network",
+        "C. The DNS resolution failed",
+        "D. The port is closed"
+      ],
+      "correct_answer": "B",
+      "explanation": "This error means the local router doesn't know how to reach the destination network (routing issue)."
+    },
+    {
+      "id": "n10_29",
+      "exam": "N10-009",
+      "domain": "Network Troubleshooting",
+      "type": "multiple_choice",
+      "question": "A network has intermittent connectivity issues. Which tool would best identify the problematic network segment?",
+      "options": [
+        "A. ping",
+        "B. traceroute",
+        "C. netstat",
+        "D. nslookup"
+      ],
+      "correct_answer": "B",
+      "explanation": "traceroute (tracert on Windows) shows each hop along the path, helping identify where packets are lost or delayed."
+    },
+    {
+      "id": "n10_30",
+      "exam": "N10-009",
+      "domain": "Network Troubleshooting",
+      "type": "multiple_choice",
+      "question": "Users report slow network performance during peak hours. What is the most likely cause?",
+      "options": [
+        "A. Broadcast storm",
+        "B. Bandwidth saturation",
+        "C. DNS poisoning",
+        "D. Cable break"
+      ],
+      "correct_answer": "B",
+      "explanation": "Slow performance during peak hours typically indicates bandwidth saturation \u2014 too much traffic for the available capacity."
+    },
+    {
+      "id": "net_151",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "What is the maximum theoretical data rate of Wi-Fi 6 (802.11ax) on a single stream?",
+      "options": [
+        "A. 600 Mbps",
+        "B. 1.2 Gbps",
+        "C. 9.6 Gbps",
+        "D. 30 Gbps"
+      ],
+      "correct_answer": "C",
+      "explanation": "Wi-Fi 6 (802.11ax) supports a maximum theoretical data rate of 9.6 Gbps across multiple streams, with up to 1.2 Gbps per stream under ideal conditions using 1024-QAM."
+    },
+    {
+      "id": "net_152",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "Which Wi-Fi 6 feature improves efficiency in high-density environments by allowing multiple devices to share a channel simultaneously?",
+      "options": [
+        "A. MU-MIMO",
+        "B. OFDMA",
+        "C. Beamforming",
+        "D. Channel bonding"
+      ],
+      "correct_answer": "B",
+      "explanation": "OFDMA (Orthogonal Frequency Division Multiple Access) divides channels into smaller resource units, allowing multiple devices to transmit simultaneously. MU-MIMO allows multiple devices but sequentially; OFDMA does it concurrently."
+    },
+    {
+      "id": "net_153",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "What is the primary advantage of Wi-Fi 6E over Wi-Fi 6?",
+      "options": [
+        "A. Higher maximum speed",
+        "B. Access to the 6 GHz band",
+        "C. Improved backward compatibility",
+        "D. Lower power consumption"
+      ],
+      "correct_answer": "B",
+      "explanation": "Wi-Fi 6E extends Wi-Fi 6 into the 6 GHz frequency band (5.925-7.125 GHz), providing up to 1,200 MHz of additional contiguous spectrum with less interference."
+    },
+    {
+      "id": "net_154",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "Wi-Fi 7 (802.11be) introduces which technology that allows simultaneous transmission and reception on multiple bands?",
+      "options": [
+        "A. OFDMA",
+        "B. MLO (Multi-Link Operation)",
+        "C. MU-MIMO",
+        "D. 1024-QAM"
+      ],
+      "correct_answer": "B",
+      "explanation": "Multi-Link Operation (MLO) in Wi-Fi 7 allows devices to simultaneously transmit and receive across multiple bands (2.4 GHz, 5 GHz, and 6 GHz), reducing latency and increasing throughput."
+    },
+    {
+      "id": "net_155",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "Which modulation technique does Wi-Fi 7 (802.11be) use to achieve higher data rates than Wi-Fi 6?",
+      "options": [
+        "A. 256-QAM",
+        "B. 1024-QAM",
+        "C. 4096-QAM",
+        "D. OFDM"
+      ],
+      "correct_answer": "C",
+      "explanation": "Wi-Fi 7 uses 4K-QAM (4096-QAM), which encodes 12 bits per symbol versus 10 bits in Wi-Fi 6's 1024-QAM, providing a 20% increase in data rate."
+    },
+    {
+      "id": "net_156",
+      "exam": "N10-009",
+      "domain": "Network Implementation",
+      "type": "multiple_choice",
+      "question": "What is the maximum channel width supported by Wi-Fi 7?",
+      "options": [
+        "A. 80 MHz",
+        "B. 160 MHz",
+        "C. 240 MHz",
+        "D. 320 MHz"
+      ],
+      "correct_answer": "D",
+      "explanation": "Wi-Fi 7 supports channel widths up to 320 MHz (double the 160 MHz max of Wi-Fi 6/6E), significantly increasing throughput potential."
+    },
+    {
+      "id": "net_157",
+      "exam": "N10-009",
+      "domain": "Network Implementation",
+      "type": "multiple_choice",
+      "question": "In Wi-Fi 6, what is the purpose of Target Wake Time (TWT)?",
+      "options": [
+        "A. To increase maximum transmission power",
+        "B. To schedule device wake times and reduce power consumption",
+        "C. To synchronize access point clocks",
+        "D. To enable faster roaming between APs"
+      ],
+      "correct_answer": "B",
+      "explanation": "Target Wake Time (TWT) allows APs to schedule when devices wake up to send/receive data, significantly improving battery life for IoT and mobile devices."
+    },
+    {
+      "id": "net_158",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "Which WPA3 feature provides individualized data encryption even on open networks?",
+      "options": [
+        "A. SAE (Simultaneous Authentication of Equals)",
+        "B. Opportunistic Wireless Encryption (OWE)",
+        "C. 802.1X authentication",
+        "D. PMF (Protected Management Frames)"
+      ],
+      "correct_answer": "B",
+      "explanation": "Opportunistic Wireless Encryption (OWE), part of WPA3, encrypts traffic on open networks without requiring a password, replacing the unencrypted traffic of traditional open networks."
+    },
+    {
+      "id": "net_159",
+      "exam": "N10-009",
+      "domain": "Network Implementation",
+      "type": "multiple_choice",
+      "question": "Which Wi-Fi 6 feature allows an access point to communicate with up to 8 devices simultaneously for both uplink and downlink?",
+      "options": [
+        "A. OFDMA",
+        "B. UL MU-MIMO",
+        "C. BSS Coloring",
+        "D. TWT"
+      ],
+      "correct_answer": "B",
+      "explanation": "Wi-Fi 6 supports 8x8 MU-MIMO for both uplink and downlink, allowing an AP to communicate with up to 8 devices simultaneously, compared to 4 in Wi-Fi 5."
+    },
+    {
+      "id": "net_160",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "What does BSS Coloring in Wi-Fi 6 help mitigate?",
+      "options": [
+        "A. Frequency interference from non-Wi-Fi sources",
+        "B. Co-channel interference from neighboring BSS networks",
+        "C. Security vulnerabilities in management frames",
+        "D. Power consumption in mobile devices"
+      ],
+      "correct_answer": "B",
+      "explanation": "BSS Coloring tags frames with a 'color' identifier. Devices can distinguish between their own BSS and neighboring networks, reducing contention and improving performance in dense deployments."
+    },
+    {
+      "id": "net_161",
+      "exam": "N10-009",
+      "domain": "Network Implementation",
+      "type": "multiple_choice",
+      "question": "What is the theoretical peak download speed of 5G NR (New Radio) in mmWave frequencies?",
+      "options": [
+        "A. 1 Gbps",
+        "B. 10 Gbps",
+        "C. 20 Gbps",
+        "D. 100 Gbps"
+      ],
+      "correct_answer": "C",
+      "explanation": "5G NR in mmWave (24-100 GHz) can achieve theoretical peak download speeds of up to 20 Gbps, though real-world speeds are typically lower."
+    },
+    {
+      "id": "net_162",
+      "exam": "N10-009",
+      "domain": "Network Implementation",
+      "type": "multiple_choice",
+      "question": "Which 5G frequency band offers the best balance of coverage and speed?",
+      "options": [
+        "A. mmWave (above 24 GHz)",
+        "B. Sub-6 GHz (mid-band)",
+        "C. Low-band (below 1 GHz)",
+        "D. Unlicensed spectrum (5-7 GHz)"
+      ],
+      "correct_answer": "B",
+      "explanation": "Sub-6 GHz mid-band (1-6 GHz) provides the best balance, offering significantly faster speeds than 4G LTE while maintaining broader coverage than mmWave."
+    },
+    {
+      "id": "net_163",
+      "exam": "N10-009",
+      "domain": "Network Implementation",
+      "type": "multiple_choice",
+      "question": "What is the primary use case for 5G network slicing?",
+      "options": [
+        "A. To increase battery life on mobile devices",
+        "B. To create virtual end-to-end networks optimized for specific applications",
+        "C. To share Wi-Fi passwords automatically",
+        "D. To compress data for faster transmission"
+      ],
+      "correct_answer": "B",
+      "explanation": "5G network slicing creates virtual, isolated network slices over a shared physical infrastructure, each optimized for specific use cases like URLLC (low latency) or eMBB (high bandwidth)."
+    },
+    {
+      "id": "net_164",
+      "exam": "N10-009",
+      "domain": "Network Implementation",
+      "type": "multiple_choice",
+      "question": "Which cellular technology generation introduced OFDMA for the downlink?",
+      "options": [
+        "A. 3G (UMTS)",
+        "B. 4G LTE",
+        "C. 5G NR",
+        "D. LTE-Advanced"
+      ],
+      "correct_answer": "B",
+      "explanation": "4G LTE was the first cellular generation to use OFDMA (Orthogonal Frequency Division Multiple Access) for the downlink, replacing the CDMA-based approach used in 3G."
+    },
+    {
+      "id": "net_165",
+      "exam": "N10-009",
+      "domain": "Network Implementation",
+      "type": "multiple_choice",
+      "question": "In 5G, what does the term 'mMTC' stand for and what does it enable?",
+      "options": [
+        "A. Massive Machine Type Communication for IoT devices",
+        "B. Mobile Multi-Target Connection for group calls",
+        "C. Managed Media Transfer Channel for streaming",
+        "D. Multi-Mode Transmission Control for roaming"
+      ],
+      "correct_answer": "A",
+      "explanation": "mMTC (massive Machine Type Communications) is a 5G use case designed to support a massive number of low-power IoT devices per square kilometer."
+    },
+    {
+      "id": "net_166",
+      "exam": "N10-009",
+      "domain": "Network Implementation",
+      "type": "multiple_choice",
+      "question": "Which 5G deployment mode uses the existing 4G LTE core network (EPC) with 5G NR radios?",
+      "options": [
+        "A. Standalone (SA)",
+        "B. Non-Standalone (NSA)",
+        "C. Independent Deployment",
+        "D. Hybrid Access Mode"
+      ],
+      "correct_answer": "B",
+      "explanation": "Non-Standalone (NSA) mode uses the existing 4G LTE Evolved Packet Core (EPC) while connecting via 5G NR radios, enabling faster initial deployment. Standalone (SA) uses a full 5G core."
+    },
+    {
+      "id": "net_167",
+      "exam": "N10-009",
+      "domain": "Network Implementation",
+      "type": "multiple_choice",
+      "question": "What is the latency target for 5G URLLC (Ultra-Reliable Low Latency Communications)?",
+      "options": [
+        "A. Less than 100 ms",
+        "B. Less than 10 ms",
+        "C. Less than 1 ms",
+        "D. Less than 0.1 ms"
+      ],
+      "correct_answer": "C",
+      "explanation": "5G URLLC targets sub-1 ms latency for mission-critical applications like autonomous driving, remote surgery, and industrial automation."
+    },
+    {
+      "id": "net_168",
+      "exam": "N10-009",
+      "domain": "Network Implementation",
+      "type": "multiple_choice",
+      "question": "Which technology allows seamless handover between cellular and Wi-Fi networks?",
+      "options": [
+        "A. MIMO",
+        "B. Hotspot 2.0 / Passpoint",
+        "C. OFDMA",
+        "D. Carrier aggregation"
+      ],
+      "correct_answer": "B",
+      "explanation": "Hotspot 2.0 (also known as Passpoint) enables automatic, seamless roaming between cellular and Wi-Fi networks without user intervention."
+    },
+    {
+      "id": "net_169",
+      "exam": "N10-009",
+      "domain": "Network Implementation",
+      "type": "multiple_choice",
+      "question": "What does 'carrier aggregation' in LTE-Advanced and 5G accomplish?",
+      "options": [
+        "A. Encrypts data across multiple towers",
+        "B. Combines multiple frequency bands to increase bandwidth",
+        "C. Shares the cellular load between carriers",
+        "D. Aggregates multiple SIM cards into one device"
+      ],
+      "correct_answer": "B",
+      "explanation": "Carrier aggregation combines multiple component carriers (frequency bands) to increase overall bandwidth and data rates for connected devices."
+    },
+    {
+      "id": "net_170",
+      "exam": "N10-009",
+      "domain": "Network Implementation",
+      "type": "multiple_choice",
+      "question": "Which 5G frequency range is most susceptible to signal blockage by buildings and trees?",
+      "options": [
+        "A. Low-band (sub-1 GHz)",
+        "B. Mid-band (1-6 GHz)",
+        "C. mmWave (24-100 GHz)",
+        "D. All bands equally"
+      ],
+      "correct_answer": "C",
+      "explanation": "mmWave signals (24-100 GHz) have very short wavelengths and are easily blocked by physical obstacles like buildings, trees, and even rain. They require line-of-sight or dense small cell deployments."
+    },
+    {
+      "id": "net_171",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "What is the primary benefit of SD-WAN compared to traditional MPLS WAN?",
+      "options": [
+        "A. SD-WAN requires dedicated private circuits only",
+        "B. SD-WAN can use multiple transport types (MPLS, broadband, LTE) with intelligent path selection",
+        "C. SD-WAN is exclusively a hardware-based solution",
+        "D. SD-WAN does not support encryption"
+      ],
+      "correct_answer": "B",
+      "explanation": "SD-WAN (Software-Defined WAN) abstracts the transport layer, allowing traffic to use any combination of MPLS, broadband internet, LTE/5G, with intelligent, application-aware path selection."
+    },
+    {
+      "id": "net_172",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "In SD-WAN, what is the function of the SD-WAN controller (orchestrator)?",
+      "options": [
+        "A. It physically connects network cables",
+        "B. It centrally manages policies, configurations, and traffic routing across all WAN edges",
+        "C. It only monitors network uptime",
+        "D. It acts as a DHCP server for the entire network"
+      ],
+      "correct_answer": "B",
+      "explanation": "The SD-WAN controller/orchestrator provides centralized management, pushing policies and configurations to all SD-WAN edge devices, and enabling application-aware routing decisions."
+    },
+    {
+      "id": "net_173",
+      "exam": "N10-009",
+      "domain": "Network Operations",
+      "type": "multiple_choice",
+      "question": "Which SD-WAN feature ensures critical application traffic is sent over the best available path based on real-time conditions?",
+      "options": [
+        "A. Static routing",
+        "B. Application-aware routing (dynamic path selection)",
+        "C. VLAN tagging",
+        "D. Port security"
+      ],
+      "correct_answer": "B",
+      "explanation": "Application-aware routing in SD-WAN continuously monitors path quality (latency, jitter, packet loss) and dynamically routes critical traffic over the best available path in real time."
+    },
+    {
+      "id": "net_174",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "How does SD-WAN typically secure traffic traveling over public internet connections?",
+      "options": [
+        "A. By using dedicated leased lines exclusively",
+        "B. Through encrypted tunnels (IPsec or SSL/TLS VPN)",
+        "C. By disabling all non-HTTPS traffic",
+        "D. SD-WAN does not support encryption over public links"
+      ],
+      "correct_answer": "B",
+      "explanation": "SD-WAN typically uses encrypted tunnels such as IPsec or SSL/TLS VPN to secure traffic over public internet links, ensuring data confidentiality and integrity."
+    },
+    {
+      "id": "net_175",
+      "exam": "N10-009",
+      "domain": "Network Operations",
+      "type": "multiple_choice",
+      "question": "What is 'local internet breakout' in the context of SD-WAN?",
+      "options": [
+        "A. A security vulnerability",
+        "B. Routing cloud/SaaS traffic directly to the internet at the branch instead of backhauling through the data center",
+        "C. A type of fiber optic cable break",
+        "D. A method of increasing internet bandwidth"
+      ],
+      "correct_answer": "B",
+      "explanation": "Local internet breakout allows branch offices to send cloud and SaaS traffic (like Microsoft 365, Zoom) directly to the internet rather than backhauling through a central data center, reducing latency."
+    },
+    {
+      "id": "net_176",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "Which protocol is commonly used as an overlay in SD-WAN to create virtual tunnels between branch locations?",
+      "options": [
+        "A. BGP",
+        "B. OSPF",
+        "C. VXLAN / IPsec / GRE",
+        "D. ARP"
+      ],
+      "correct_answer": "C",
+      "explanation": "SD-WAN commonly uses overlay protocols like VXLAN, IPsec, or GRE to create virtual tunnels over underlying transport networks (MPLS, broadband, LTE), abstracting the physical connectivity."
+    },
+    {
+      "id": "net_177",
+      "exam": "N10-009",
+      "domain": "Network Operations",
+      "type": "multiple_choice",
+      "question": "In SD-WAN, what does the term 'zero-touch provisioning' (ZTP) refer to?",
+      "options": [
+        "A. A security model requiring no authentication",
+        "B. Automatic configuration and deployment of new branch edge devices without on-site technician intervention",
+        "C. A backup power system",
+        "D. A type of wireless access point"
+      ],
+      "correct_answer": "B",
+      "explanation": "Zero-touch provisioning (ZTP) allows SD-WAN edge devices to be shipped to branch locations, automatically download their configuration from the controller, and join the network without manual setup."
+    },
+    {
+      "id": "net_178",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "Which security integration is commonly paired with SD-WAN to provide branch-level threat protection?",
+      "options": [
+        "A. BGP route filtering",
+        "B. SWG (Secure Web Gateway) / FWaaS (Firewall as a Service)",
+        "C. Physical door locks",
+        "D. Antivirus software on endpoints only"
+      ],
+      "correct_answer": "B",
+      "explanation": "SD-WAN is commonly integrated with cloud-delivered security services like SWG (Secure Web Gateway), FWaaS (Firewall as a Service), and CASB (Cloud Access Security Broker) \u2014 often called SASE."
+    },
+    {
+      "id": "net_179",
+      "exam": "N10-009",
+      "domain": "Network Operations",
+      "type": "multiple_choice",
+      "question": "What is SASE (Secure Access Service Edge) in relation to SD-WAN?",
+      "options": [
+        "A. A type of wireless encryption",
+        "B. A converged architecture combining SD-WAN with cloud-native security functions",
+        "C. A physical network topology",
+        "D. A legacy WAN protocol"
+      ],
+      "correct_answer": "B",
+      "explanation": "SASE (Secure Access Service Edge) converges SD-WAN capabilities with cloud-native security services (SWG, CASB, ZTNA, FWaaS) into a single cloud-delivered architecture."
+    },
+    {
+      "id": "net_180",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "Which key metric does an SD-WAN solution typically use to make real-time path selection decisions?",
+      "options": [
+        "A. Only hop count",
+        "B. Latency, jitter, and packet loss",
+        "C. Only bandwidth availability",
+        "D. Physical cable length"
+      ],
+      "correct_answer": "B",
+      "explanation": "SD-WAN solutions monitor real-time path metrics including latency, jitter, and packet loss to make intelligent, application-aware routing decisions across available WAN links."
+    },
+    {
+      "id": "net_181",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "What is the core principle of Zero Trust architecture?",
+      "options": [
+        "A. Trust all devices inside the corporate network",
+        "B. Never trust, always verify \u2014 every access request must be authenticated and authorized",
+        "C. Use firewalls to create a secure network perimeter",
+        "D. Encrypt all data at rest only"
+      ],
+      "correct_answer": "B",
+      "explanation": "Zero Trust operates on the principle of 'never trust, always verify' \u2014 assuming no trust based on network location and requiring continuous authentication and authorization for every access request."
+    },
+    {
+      "id": "net_182",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "In Zero Trust, what does the concept of 'microsegmentation' accomplish?",
+      "options": [
+        "A. Increases Wi-Fi signal strength",
+        "B. Divides the network into small, isolated zones to limit lateral movement",
+        "C. Combines multiple network segments into one",
+        "D. Encrypts data between data centers"
+      ],
+      "correct_answer": "B",
+      "explanation": "Microsegmentation divides the network into small, isolated security zones, restricting lateral movement by enforcing granular access controls between workloads, applications, and devices."
+    },
+    {
+      "id": "net_183",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "What does ZTNA (Zero Trust Network Access) replace in traditional network architecture?",
+      "options": [
+        "A. DNS servers",
+        "B. Traditional VPN for remote access",
+        "C. Network switches",
+        "D. DHCP servers"
+      ],
+      "correct_answer": "B",
+      "explanation": "ZTNA (Zero Trust Network Access) replaces traditional VPN by providing identity-based, granular access to specific applications rather than broad network-level access, reducing the attack surface."
+    },
+    {
+      "id": "net_184",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "Which of the following is a key component of the Zero Trust 'Assume Breach' mindset?",
+      "options": [
+        "A. Trusting internal network traffic",
+        "B. Continuous monitoring and assuming attackers may already be inside the network",
+        "C. Using only physical security controls",
+        "D. Disabling all remote access"
+      ],
+      "correct_answer": "B",
+      "explanation": "The 'Assume Breach' principle assumes attackers may already be present, driving the need for continuous monitoring, least-privilege access, and rapid detection and response capabilities."
+    },
+    {
+      "id": "net_185",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "In Zero Trust, what is the role of 'continuous validation'?",
+      "options": [
+        "A. One-time authentication at login is sufficient",
+        "B. User identity and device posture are continuously verified throughout the session",
+        "C. Data is validated only when written to disk",
+        "D. Network cables are tested for continuity"
+      ],
+      "correct_answer": "B",
+      "explanation": "Continuous validation in Zero Trust means user identity, device health, and compliance posture are continuously assessed throughout a session, not just at initial authentication."
+    },
+    {
+      "id": "net_186",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "Which identity protocol is commonly used in Zero Trust implementations for conditional access?",
+      "options": [
+        "A. FTP",
+        "B. SAML / OIDC (OpenID Connect)",
+        "C. SMTP",
+        "D. SNMP"
+      ],
+      "correct_answer": "B",
+      "explanation": "SAML and OIDC (OpenID Connect) are identity federation protocols commonly used in Zero Trust to enable single sign-on (SSO) and conditional access based on user identity and device posture."
+    },
+    {
+      "id": "net_187",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "What is the principle of 'least privilege' in Zero Trust?",
+      "options": [
+        "A. Granting all users administrator access",
+        "B. Providing users and devices only the minimum access necessary to perform their function",
+        "C. Disabling all network ports by default",
+        "D. Using the weakest encryption possible"
+      ],
+      "correct_answer": "B",
+      "explanation": "Least privilege grants users and devices only the minimum permissions and access necessary to perform their specific functions, limiting the potential damage from compromised credentials."
+    },
+    {
+      "id": "net_188",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "Which NIST publication provides a framework for Zero Trust Architecture?",
+      "options": [
+        "A. NIST SP 800-53",
+        "B. NIST SP 800-207",
+        "C. NIST SP 800-171",
+        "D. NIST SP 800-30"
+      ],
+      "correct_answer": "B",
+      "explanation": "NIST SP 800-207 is the 'Zero Trust Architecture' publication that provides a framework and guidance for designing and implementing Zero Trust systems."
+    },
+    {
+      "id": "net_189",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "In a Zero Trust model, what replaces the traditional network perimeter-based security approach?",
+      "options": [
+        "A. Identity-based perimeter",
+        "B. No security controls",
+        "C. Physical security only",
+        "D. Open network access"
+      ],
+      "correct_answer": "A",
+      "explanation": "Zero Trust replaces the traditional network perimeter with an identity-based perimeter, where identity (user, device, application) becomes the primary control plane for security decisions."
+    },
+    {
+      "id": "net_190",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "What is the purpose of a PEP (Policy Enforcement Point) in Zero Trust Architecture?",
+      "options": [
+        "A. To generate encryption keys",
+        "B. To enforce access decisions made by the Policy Decision Point (PDP)",
+        "C. To manage IP address assignment",
+        "D. To monitor weather conditions"
+      ],
+      "correct_answer": "B",
+      "explanation": "The Policy Enforcement Point (PEP) enforces the access decisions made by the Policy Decision Point (PDP) in a Zero Trust Architecture, acting as the gatekeeper for resource access."
+    },
+    {
+      "id": "net_191",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "What is the primary difference between a VPC (Virtual Private Cloud) and a traditional on-premises network?",
+      "options": [
+        "A. VPC does not support IP addressing",
+        "B. VPC is a logically isolated network hosted in a public cloud provider's infrastructure",
+        "C. VPC requires physical routers",
+        "D. VPC cannot use private IP addresses"
+      ],
+      "correct_answer": "B",
+      "explanation": "A VPC (Virtual Private Cloud) is a logically isolated network that exists within a public cloud provider's infrastructure, giving users control over IP addressing, subnets, routing, and security while leveraging cloud resources."
+    },
+    {
+      "id": "net_192",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "Which AWS service provides a dedicated private network connection from an on-premises data center to AWS?",
+      "options": [
+        "A. AWS VPN",
+        "B. AWS Direct Connect",
+        "C. AWS Transit Gateway",
+        "D. AWS Route 53"
+      ],
+      "correct_answer": "B",
+      "explanation": "AWS Direct Connect provides a dedicated, private network connection from an on-premises data center to AWS, bypassing the public internet for improved reliability and lower latency."
+    },
+    {
+      "id": "net_193",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "In cloud networking, what is the purpose of a VPN gateway?",
+      "options": [
+        "A. To provide public internet access",
+        "B. To establish encrypted tunnels between on-premises networks and cloud VPCs",
+        "C. To replace DNS servers",
+        "D. To assign public IP addresses automatically"
+      ],
+      "correct_answer": "B",
+      "explanation": "A VPN gateway establishes encrypted IPsec tunnels between on-premises networks and cloud VPCs, enabling secure communication over the public internet."
+    },
+    {
+      "id": "net_194",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "What is 'cloud bursting' in a hybrid cloud networking context?",
+      "options": [
+        "A. A type of DDoS attack on cloud services",
+        "B. Automatically shifting workload from on-premises to public cloud when demand exceeds local capacity",
+        "C. A method of encrypting cloud data",
+        "D. Physically moving servers to a cloud data center"
+      ],
+      "correct_answer": "B",
+      "explanation": "Cloud bursting is a hybrid cloud configuration where applications run in a private cloud/on-premises data center and 'burst' into the public cloud when computing demand exceeds local capacity."
+    },
+    {
+      "id": "net_195",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "Which protocol is commonly used to establish site-to-site VPN tunnels between cloud providers and on-premises networks?",
+      "options": [
+        "A. HTTP",
+        "B. IPsec IKEv2",
+        "C. FTP",
+        "D. Telnet"
+      ],
+      "correct_answer": "B",
+      "explanation": "IPsec IKEv2 (Internet Key Exchange v2) is the most commonly used protocol for establishing encrypted site-to-site VPN tunnels between cloud environments and on-premises networks."
+    },
+    {
+      "id": "net_196",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "What is the purpose of a cloud transit gateway (e.g., AWS Transit Gateway, Azure Virtual WAN)?",
+      "options": [
+        "A. To replace internet service providers",
+        "B. To centrally connect multiple VPCs/VNETs and on-premises networks through a single hub",
+        "C. To provide wireless connectivity",
+        "D. To manage DNS records"
+      ],
+      "correct_answer": "B",
+      "explanation": "A cloud transit gateway acts as a network transit hub, allowing multiple VPCs/VNETs and on-premises networks to connect through a single centralized gateway, simplifying network architecture."
+    },
+    {
+      "id": "net_197",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "In a multi-cloud environment, what challenge does 'egress traffic' cost present?",
+      "options": [
+        "A. Data entering the cloud is expensive",
+        "B. Data leaving the cloud (to on-premises or another cloud) incurs fees charged by cloud providers",
+        "C. Internal data transfer between regions is free",
+        "D. Upload speeds are always slower than download speeds"
+      ],
+      "correct_answer": "B",
+      "explanation": "Cloud providers typically charge egress fees for data leaving their network (to the internet, on-premises, or another cloud), which can become a significant cost in multi-cloud or hybrid architectures."
+    },
+    {
+      "id": "net_198",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "What is a 'cloud-native load balancer' primarily responsible for?",
+      "options": [
+        "A. Cooling cloud data center servers",
+        "B. Distributing incoming application traffic across multiple backend instances",
+        "C. Encrypting data at rest",
+        "D. Assigning IP addresses to virtual machines"
+      ],
+      "correct_answer": "B",
+      "explanation": "A cloud-native load balancer distributes incoming application traffic across multiple backend compute instances, improving availability, fault tolerance, and scalability of cloud applications."
+    },
+    {
+      "id": "net_199",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "Which term describes a private, dedicated connection between two cloud providers' networks without traversing the public internet?",
+      "options": [
+        "A. VPN gateway",
+        "B. Cloud interconnect / Direct connect",
+        "C. NAT gateway",
+        "D. DNS resolver"
+      ],
+      "correct_answer": "B",
+      "explanation": "Cloud interconnect or direct connect services provide private, dedicated network connections between cloud providers or between on-premises and cloud, bypassing the public internet entirely."
+    },
+    {
+      "id": "net_200",
+      "exam": "N10-009",
+      "domain": "Network Operations",
+      "type": "multiple_choice",
+      "question": "What monitoring metric is most critical for evaluating the health of a site-to-site VPN tunnel between on-premises and cloud?",
+      "options": [
+        "A. CPU utilization of the local switch",
+        "B. Tunnel status, latency, and packet loss across the VPN connection",
+        "C. Number of DNS queries",
+        "D. Wi-Fi signal strength"
+      ],
+      "correct_answer": "B",
+      "explanation": "For site-to-site VPN tunnels, the most critical monitoring metrics are tunnel status (up/down), latency, and packet loss, as these directly impact the reliability and performance of hybrid cloud connectivity."
+    }
+  ]
+}

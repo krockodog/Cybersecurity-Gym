@@ -1,0 +1,362 @@
+{
+  "extraction_metadata": {
+    "extraction_date": "2026-03-19",
+    "source_urls": [
+      "https://bundlesdigest.com/courses/comptia-pentest-plus-practice-exams/",
+      "https://examsdigest.com/courses/comptia-pentest-pt0-003-v3-practice-exam/"
+    ],
+    "extraction_status": "COURSE_PAGE_ONLY",
+    "notes": "All exam questions are behind a paywall/login. No questions are publicly accessible. This file contains complete course structure and metadata."
+  },
+  "course_title": "CompTIA PenTest+ (PT0-003) Practice Exams 2026",
+  "course_alternative_title": "CompTIA PenTest+ PT0-003 (V3) Practice Exam",
+  "exam_code": "PT0-003",
+  "exam_version": "V3",
+  "certification_body": "CompTIA",
+  "certification_name": "CompTIA PenTest+",
+  "instructor": {
+    "name": "CramWise",
+    "profile_url": "https://bundlesdigest.com/members/cramwise/",
+    "total_courses": 15
+  },
+  "platforms": {
+    "bundlesdigest": {
+      "url": "https://bundlesdigest.com/courses/comptia-pentest-plus-practice-exams/",
+      "enrollment_status": "Not Enrolled",
+      "last_updated": "2026-03-19T12:35:32+00:00"
+    },
+    "examsdigest": {
+      "url": "https://examsdigest.com/courses/comptia-pentest-pt0-003-v3-practice-exam/",
+      "enrolled_students": "52259+",
+      "price": {
+        "current": "$15",
+        "original": "$30",
+        "discount": "50% off"
+      },
+      "guarantee": "30-Day Money-Back Guarantee",
+      "comptia_partner_status": "CompTIA Authorized Delivery Partner"
+    }
+  },
+  "course_description": "The CompTIA PenTest+ certification verifies that successful candidates have the knowledge and skills required to plan and scope an assessment, understand legal and compliance requirements, perform vulnerability scanning and penetration testing, analyze data, and effectively report and communicate results.",
+  "course_includes": {
+    "practice_exam_questions": "1200+",
+    "performance_based_questions": "120+",
+    "interactive_flashcards": "400+",
+    "study_guide": "Digestible Study Guide",
+    "cheatsheets": "Printable Cheatsheets",
+    "resources": "Downloadable Resources",
+    "certificate": "Certificate of Completion"
+  },
+  "course_structure": {
+    "bundlesdigest_version": {
+      "title": "CompTIA PenTest+ (PT0-003) Practice Exams 2026",
+      "total_exam_simulators": 3,
+      "simulators": [
+        {
+          "id": "sim-1",
+          "name": "CompTIA PenTest+ (PT0-003) Exam Simulator #1",
+          "type": "exam_simulator",
+          "url": "https://bundlesdigest.com/quizzes/comptia-pentest-pt0-003-exam-simulator-1-2/",
+          "access": "locked"
+        },
+        {
+          "id": "sim-2",
+          "name": "CompTIA PenTest+ (PT0-003) Exam Simulator #2",
+          "type": "exam_simulator",
+          "url": "https://bundlesdigest.com/quizzes/comptia-pentest-pt0-003-exam-simulator-2-2/",
+          "access": "locked"
+        },
+        {
+          "id": "sim-3",
+          "name": "CompTIA PenTest+ (PT0-003) Exam Simulator #3",
+          "type": "exam_simulator",
+          "url": "https://bundlesdigest.com/quizzes/comptia-pentest-pt0-003-exam-simulator-3-2/",
+          "access": "locked"
+        }
+      ]
+    },
+    "examsdigest_version": {
+      "title": "CompTIA PenTest+ PT0-003 (V3) Practice Exam",
+      "sections": [
+        {
+          "section_name": "PRACTICE EXAMS - DOMAIN-BASED",
+          "items": [
+            {
+              "id": "domain-1",
+              "domain": "Domain 1 – Engagement Management",
+              "name": "Domain-Based – Engagement Management",
+              "type": "domain_simulator",
+              "lesson_url": "https://examsdigest.com/lessons/domain-1-engagement-management/",
+              "quiz_url": "https://examsdigest.com/quizzes/domain-based-engagement-management/",
+              "access": "locked",
+              "comptia_objectives": [
+                "Plan and scope penetration tests",
+                "Understand legal and compliance requirements",
+                "Perform vulnerability scanning",
+                "Analyze data",
+                "Report and communicate results"
+              ]
+            },
+            {
+              "id": "domain-2",
+              "domain": "Domain 2 – Reconnaissance and Enumeration",
+              "name": "Domain-Based – Reconnaissance and Enumeration",
+              "type": "domain_simulator",
+              "lesson_url": "https://examsdigest.com/lessons/domain-2-reconnaissance-and-enumeration/",
+              "quiz_url": "https://examsdigest.com/quizzes/domain-based-reconnaissance-and-enumeration/",
+              "access": "locked"
+            },
+            {
+              "id": "domain-3",
+              "domain": "Domain 3 – Vulnerability Discovery and Analysis",
+              "name": "Domain-Based – Vulnerability Discovery and Analysis",
+              "type": "domain_simulator",
+              "lesson_url": "https://examsdigest.com/lessons/domain-3-vulnerability-discovery-and-analysis/",
+              "quiz_url": "https://examsdigest.com/quizzes/domain-based-vulnerability-discovery-and-analysis/",
+              "access": "locked"
+            },
+            {
+              "id": "domain-4",
+              "domain": "Domain 4 – Attacks and Exploits",
+              "name": "Domain-Based – Attacks and Exploits",
+              "type": "domain_simulator",
+              "lesson_url": "https://examsdigest.com/lessons/domain-4-attacks-and-exploits/",
+              "quiz_url": "https://examsdigest.com/quizzes/domain-based-attacks-and-exploits/",
+              "access": "locked"
+            },
+            {
+              "id": "domain-5",
+              "domain": "Domain 5 – Post-exploitation and Lateral Movement",
+              "name": "Domain-Based – Post-exploitation and Lateral Movement",
+              "type": "domain_simulator",
+              "lesson_url": "https://examsdigest.com/lessons/domain-5-post-exploitation-and-lateral-movement/",
+              "quiz_url": "https://examsdigest.com/quizzes/domain-based-post-exploitation-and-lateral-movement/",
+              "access": "locked"
+            }
+          ]
+        },
+        {
+          "section_name": "FINAL EXAM SIMULATORS - TIMED-MODE",
+          "total_simulators": 5,
+          "items": [
+            {
+              "id": "timed-1",
+              "name": "Timed-Mode Set 1 – CompTIA PenTest+ Simulator",
+              "type": "timed_exam",
+              "quiz_url": "https://examsdigest.com/quizzes/timed-mode-set-1-comptia-pentest-simulator/",
+              "access": "locked"
+            },
+            {
+              "id": "timed-2",
+              "name": "Timed-Mode Set 2 – CompTIA PenTest+ Simulator",
+              "type": "timed_exam",
+              "quiz_url": "https://examsdigest.com/quizzes/timed-mode-set-2-comptia-pentest-simulator/",
+              "access": "locked"
+            },
+            {
+              "id": "timed-3",
+              "name": "Timed-Mode Set 3 – CompTIA PenTest+ Simulator",
+              "type": "timed_exam",
+              "quiz_url": "https://examsdigest.com/quizzes/timed-mode-set-3-comptia-pentest-simulator/",
+              "access": "locked"
+            },
+            {
+              "id": "timed-4",
+              "name": "Timed-Mode Set 4 – CompTIA PenTest+ Simulator",
+              "type": "timed_exam",
+              "quiz_url": "https://examsdigest.com/quizzes/timed-mode-set-4-comptia-pentest-simulator/",
+              "access": "locked"
+            },
+            {
+              "id": "timed-5",
+              "name": "Timed-Mode Set 5 – CompTIA PenTest+ Simulator",
+              "type": "timed_exam",
+              "quiz_url": "https://examsdigest.com/quizzes/timed-mode-set-5-comptia-pentest-simulator/",
+              "access": "locked"
+            }
+          ]
+        },
+        {
+          "section_name": "BONUS RESOURCES",
+          "items": [
+            {
+              "id": "study-guide",
+              "name": "Study Exam Guide",
+              "type": "study_guide",
+              "total_topics": 5,
+              "completion": "0%",
+              "chapters": [
+                {
+                  "id": "ch-1",
+                  "name": "Chapter 1 – Engagement Management",
+                  "topic_url": "https://examsdigest.com/topic/chapter-1-engagement-management/"
+                },
+                {
+                  "id": "ch-2",
+                  "name": "Chapter 2 – Reconnaissance and Enumeration",
+                  "topic_url": "https://examsdigest.com/topic/chapter-2-reconnaissance-and-enumeration/"
+                },
+                {
+                  "id": "ch-3",
+                  "name": "Chapter 3 – Vulnerability Discovery and Analysis",
+                  "topic_url": "https://examsdigest.com/topic/chapter-3-vulnerability-discovery-and-analysis/"
+                },
+                {
+                  "id": "ch-4",
+                  "name": "Chapter 4 – Attacks and Exploits",
+                  "topic_url": "https://examsdigest.com/topic/chapter-4-attacks-and-exploits-2/"
+                },
+                {
+                  "id": "ch-5",
+                  "name": "Chapter 5 – Post-exploitation and Lateral Movement",
+                  "topic_url": "https://examsdigest.com/topic/chapter-5-post-exploitation-and-lateral-movement/"
+                }
+              ]
+            },
+            {
+              "id": "flashcards",
+              "name": "Interactive Flashcards",
+              "type": "flashcards",
+              "total_topics": 5,
+              "completion": "0%",
+              "sets": [
+                {
+                  "id": "fc-1",
+                  "name": "Flashcard Set 1",
+                  "topic_url": "https://examsdigest.com/topic/flashcard-set-1-30/"
+                },
+                {
+                  "id": "fc-2",
+                  "name": "Flashcard Set 2",
+                  "topic_url": "https://examsdigest.com/topic/flashcard-set-2-30/"
+                },
+                {
+                  "id": "fc-3",
+                  "name": "Flashcard Set 3",
+                  "topic_url": "https://examsdigest.com/topic/flashcard-set-3-30/"
+                },
+                {
+                  "id": "fc-4",
+                  "name": "Flashcard Set 4",
+                  "topic_url": "https://examsdigest.com/topic/flashcard-set-4-29/"
+                },
+                {
+                  "id": "fc-5",
+                  "name": "Flashcard Set 5",
+                  "topic_url": "https://examsdigest.com/topic/flashcard-set-5-29/"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "exam_info": {
+    "exam_code": "PT0-003",
+    "certification": "CompTIA PenTest+",
+    "certification_version": "V3",
+    "exam_domains": [
+      {
+        "domain_number": 1,
+        "domain_name": "Engagement Management",
+        "topics": [
+          "Plan and scope penetration tests",
+          "Understand legal and compliance requirements"
+        ]
+      },
+      {
+        "domain_number": 2,
+        "domain_name": "Reconnaissance and Enumeration",
+        "topics": [
+          "Information gathering",
+          "Network and system enumeration"
+        ]
+      },
+      {
+        "domain_number": 3,
+        "domain_name": "Vulnerability Discovery and Analysis",
+        "topics": [
+          "Vulnerability scanning",
+          "Data analysis"
+        ]
+      },
+      {
+        "domain_number": 4,
+        "domain_name": "Attacks and Exploits",
+        "topics": [
+          "Exploitation techniques",
+          "Attack execution"
+        ]
+      },
+      {
+        "domain_number": 5,
+        "domain_name": "Post-exploitation and Lateral Movement",
+        "topics": [
+          "Post-exploitation activities",
+          "Lateral movement techniques",
+          "Reporting and communication"
+        ]
+      }
+    ],
+    "question_types": [
+      "Multiple Choice",
+      "Performance-Based Questions (PBQs)",
+      "Drag-and-Drop",
+      "Simulation-based"
+    ],
+    "total_questions_available": "1200+",
+    "total_pbqs": "120+",
+    "total_flashcards": "400+",
+    "total_exam_simulators": 8,
+    "total_domain_simulators": 5,
+    "total_timed_simulators": 5
+  },
+  "pricing": {
+    "bundlesdigest": {
+      "access_type": "Lifetime All-Access",
+      "note": "Requires UNLOCK ACCESS purchase"
+    },
+    "examsdigest": {
+      "individual_course": {
+        "original_price": "$30",
+        "discounted_price": "$15",
+        "discount": "50% off"
+      },
+      "lifetime_access": {
+        "description": "Buy lifetime all-access",
+        "url": "https://examsdigest.com/lifetime-access/"
+      },
+      "guarantee": "30-Day Money-Back Guarantee"
+    }
+  },
+  "questions": [],
+  "questions_extraction_note": "NO QUESTIONS WERE EXTRACTED. All exam questions are behind a login/paywall. The course requires purchase ($15) or lifetime subscription to access the actual exam questions. The course structure has been fully documented instead.",
+  "related_platforms": [
+    {
+      "name": "ExamsDigest",
+      "url": "https://examsdigest.com/",
+      "description": "Primary certification exam platform"
+    },
+    {
+      "name": "LabsDigest",
+      "url": "https://labsdigest.com/",
+      "description": "Hands-on labs platform"
+    },
+    {
+      "name": "ForceDigest",
+      "url": "https://forcedigest.com/",
+      "description": "Salesforce certification platform"
+    },
+    {
+      "name": "GuidesDigest",
+      "url": "https://guidesdigest.com/",
+      "description": "Study guides platform"
+    },
+    {
+      "name": "BundlesDigest",
+      "url": "https://bundlesdigest.com/",
+      "description": "Course bundles platform"
+    }
+  ]
+}

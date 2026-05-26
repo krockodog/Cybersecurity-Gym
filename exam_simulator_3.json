@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "source_url": "https://bundlesdigest.com/quizzes/comptia-pentest-pt0-003-exam-simulator-3-2/",
+    "course_url": "https://bundlesdigest.com/courses/comptia-pentest-plus-practice-exams/",
+    "exam_code": "CompTIA PenTest+ PT0-003",
+    "simulator_number": 3,
+    "title": "CompTIA PenTest+ (PT0-003) Exam Simulator #3",
+    "extraction_date": "2026-05-23",
+    "platform": "BundlesDigest / CramWise",
+    "status": "PROTECTED - Content requires authentication/payment",
+    "note": "The quiz page redirects (HTTP 302) to the course overview page. All attempts to access the questions directly failed due to access restrictions."
+  },
+  "access_status": {
+    "quiz_direct_url": "https://bundlesdigest.com/quizzes/comptia-pentest-pt0-003-exam-simulator-3-2/",
+    "redirect_target": "https://bundlesdigest.com/courses/comptia-pentest-plus-practice-exams/",
+    "redirect_type": "HTTP 302 (WordPress redirect)",
+    "access_required": "Paid Memberships Pro subscription or course enrollment",
+    "tooltip_message": "You don't currently have access to this content",
+    "quiz_post_id": "36230",
+    "quiz_css_classes": ["sfwd-quiz", "is_not_sample", "learndash-incomplete"]
+  },
+  "attempts_made": [
+    {
+      "method": "Direct browser_visit",
+      "result": "Redirected to course overview page"
+    },
+    {
+      "method": "CURL with follow redirects (-L)",
+      "result": "HTTP 302 redirect to course page"
+    },
+    {
+      "method": "CURL without redirects",
+      "result": "Empty response (server-side redirect)"
+    },
+    {
+      "method": "WordPress REST API (wp/v2/sfwd-quiz)",
+      "result": "HTTP 401 - bb_rest_authorization_required"
+    },
+    {
+      "method": "LearnDash REST API (ldlms/v1/sfwd-quiz)",
+      "result": "HTTP 401 - bb_rest_authorization_required"
+    },
+    {
+      "method": "WordPress AJAX endpoint (admin-ajax.php)",
+      "result": "Empty response or no quiz data"
+    },
+    {
+      "method": "Google Web Cache",
+      "result": "Request timeout"
+    },
+    {
+      "method": "Wayback Machine (archive.org)",
+      "result": "Request timeout"
+    },
+    {
+      "method": "Alternative domain (examsdigest.com)",
+      "result": "404 Not Found"
+    },
+    {
+      "method": "Direct post ID access (?p=36230)",
+      "result": "Redirected to course overview page"
+    },
+    {
+      "method": "CURL with cookies",
+      "result": "Same 302 redirect"
+    },
+    {
+      "method": "CURL with browser User-Agent headers",
+      "result": "Same 302 redirect"
+    },
+    {
+      "method": "CURL with Googlebot User-Agent",
+      "result": "Same 302 redirect"
+    },
+    {
+      "method": "Preview parameter (?preview=true)",
+      "result": "Same redirect, no preview access"
+    },
+    {
+      "method": "Click on Exam Simulator #3 in course list",
+      "result": "Redirected to membership checkout page"
+    },
+    {
+      "method": "WordPress Heartbeat API",
+      "result": "wp-auth-check:false (not authenticated)"
+    }
+  ],
+  "course_structure": {
+    "total_simulators": 3,
+    "simulators": [
+      {
+        "number": 1,
+        "title": "CompTIA PenTest+ (PT0-003) Exam Simulator #1",
+        "post_id": "36432",
+        "status": "locked"
+      },
+      {
+        "number": 2,
+        "title": "CompTIA PenTest+ (PT0-003) Exam Simulator #2",
+        "post_id": "36331",
+        "status": "locked"
+      },
+      {
+        "number": 3,
+        "title": "CompTIA PenTest+ (PT0-003) Exam Simulator #3",
+        "post_id": "36230",
+        "status": "locked"
+      }
+    ]
+  },
+  "questions": [],
+  "summary": {
+    "questions_extracted": 0,
+    "reason": "The quiz content is protected by Paid Memberships Pro access control. All questions require a paid subscription or course enrollment. The quiz page performs a server-side HTTP 302 redirect to the course overview page for non-authenticated/non-subscribed users. No questions were accessible through any attempted method.",
+    "recommendation": "To extract questions from this source, valid login credentials with an active subscription would be required."
+  }
+}
