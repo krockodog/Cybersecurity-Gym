@@ -1,0 +1,487 @@
+{
+  "metadata": {
+    "source": "BundlesDigest / trygit.me Cybersecurity Gymnasium",
+    "total_courses": 8,
+    "last_updated": "2026-07-30"
+  },
+  "courses": [
+    {
+      "id": "pentest-plus",
+      "title": "CompTIA PenTest+ (PT0-003) Practice Exams 2026",
+      "short_title": "PenTest+ PT0-003",
+      "exam_code": "PT0-003",
+      "certification_body": "CompTIA",
+      "wing_id": "pentest",
+      "color": "#ff3366",
+      "icon": "Crosshair",
+      "instructor": "CramWise",
+      "description": "Master penetration testing with 1200+ practice questions, interactive PBQs, and AI-powered tutoring. Covers all 5 PT0-003 domains from engagement management to post-exploitation.",
+      "level": "Intermediate",
+      "category": "Offensive Security",
+      "enrolled_students": 52259,
+      "rating": 4.8,
+      "total_questions": 1161,
+      "total_pbqs": 8,
+      "total_flashcards": 400,
+      "passing_score": "750/900 (83%)",
+      "exam_duration": "165 minutes",
+      "status": "active",
+      "database_file": "/exam_database.json",
+      "quiz_cert_key": "pentest",
+      "domains": [
+        { "name": "Engagement Management", "weight": "13-15%", "chapters": 1 },
+        { "name": "Reconnaissance and Enumeration", "weight": "21-22%", "chapters": 1 },
+        { "name": "Vulnerability Discovery and Analysis", "weight": "15-17%", "chapters": 1 },
+        { "name": "Attacks and Exploits", "weight": "30-33%", "chapters": 1 },
+        { "name": "Post-exploitation and Lateral Movement", "weight": "18%", "chapters": 1 }
+      ],
+      "modules": {
+        "exam_simulators": [
+          { "id": "sim-1", "name": "Exam Simulator #1", "questions": 90, "time_limit": 90, "type": "simulator" },
+          { "id": "sim-2", "name": "Exam Simulator #2", "questions": 90, "time_limit": 90, "type": "simulator" },
+          { "id": "sim-3", "name": "Exam Simulator #3", "questions": 90, "time_limit": 90, "type": "simulator" }
+        ],
+        "domain_practice": [
+          { "id": "dom-1", "name": "Domain 1: Engagement Management", "domain_filter": "Planning and Scoping" },
+          { "id": "dom-2", "name": "Domain 2: Reconnaissance & Enumeration", "domain_filter": "Information Gathering and Vulnerability Scanning" },
+          { "id": "dom-3", "name": "Domain 3: Vulnerability Discovery", "domain_filter": "Tools and Code Analysis" },
+          { "id": "dom-4", "name": "Domain 4: Attacks & Exploits", "domain_filter": "Attacks and Exploits" },
+          { "id": "dom-5", "name": "Domain 5: Post-exploitation & Reporting", "domain_filter": "Reporting and Communication" }
+        ],
+        "study_guide": [
+          { "id": "ch-1", "title": "Chapter 1: Engagement Management", "topics": ["Plan and scope penetration tests", "Legal and compliance requirements", "SOW and Rules of Engagement", "Communication and escalation"] },
+          { "id": "ch-2", "title": "Chapter 2: Reconnaissance and Enumeration", "topics": ["Passive reconnaissance (OSINT, WHOIS, Shodan)", "Active reconnaissance (Nmap, DNS enum)", "Network and system enumeration", "Vulnerability scanning (Nessus, OpenVAS)"] },
+          { "id": "ch-3", "title": "Chapter 3: Vulnerability Discovery and Analysis", "topics": ["Vulnerability scanning techniques", "Data analysis and correlation", "CVSS scoring", "Web application scanning (Burp Suite, ZAP)"] },
+          { "id": "ch-4", "title": "Chapter 4: Attacks and Exploits", "topics": ["SQL injection, XSS, command injection", "Password attacks and credential harvesting", "Network attacks and wireless exploitation", "Social engineering and phishing", "Privilege escalation techniques"] },
+          { "id": "ch-5", "title": "Chapter 5: Post-exploitation and Lateral Movement", "topics": ["Post-exploitation activities", "Lateral movement (Pass-the-Hash, PsExec)", "Persistence mechanisms", "Reporting and communication", "Executive summary writing"] }
+        ],
+        "flashcard_sets": [
+          { "id": "fc-1", "name": "Flashcard Set 1: Tools & Commands", "count": 80 },
+          { "id": "fc-2", "name": "Flashcard Set 2: Attack Techniques", "count": 80 },
+          { "id": "fc-3", "name": "Flashcard Set 3: Protocols & Ports", "count": 80 },
+          { "id": "fc-4", "name": "Flashcard Set 4: Compliance & Legal", "count": 80 },
+          { "id": "fc-5", "name": "Flashcard Set 5: Reporting & Analysis", "count": 80 }
+        ],
+        "pbqs": [
+          { "id": "network-topology", "name": "Network Topology Analyzer" },
+          { "id": "terminal", "name": "Interactive Terminal (Nmap)" },
+          { "id": "web-vuln", "name": "Web Vulnerability Scanner" },
+          { "id": "firewall", "name": "Firewall Rule Architect" },
+          { "id": "cert-chain", "name": "Certificate Chain Validator" },
+          { "id": "log-radar", "name": "Log Analysis Radar" },
+          { "id": "wireless", "name": "Wireless Attack Visualizer" },
+          { "id": "exploit-chain", "name": "Exploit Chain Builder" }
+        ],
+        "cheatsheets": [
+          { "id": "cs-nmap", "title": "Nmap Cheatsheet", "content": "## Nmap Essential Flags\n\n| Flag | Description |\n|------|-------------|\n| `-sS` | SYN scan (stealth) |\n| `-sT` | TCP connect scan |\n| `-sU` | UDP scan |\n| `-sV` | Version detection |\n| `-O` | OS detection |\n| `-A` | Aggressive (OS + version + scripts + traceroute) |\n| `-sn` | Ping sweep (no port scan) |\n| `-Pn` | Skip host discovery |\n| `-p-` | All 65535 ports |\n| `--script vuln` | Run vulnerability scripts |\n| `-oN/-oX/-oG` | Output: Normal/XML/Grepable |\n\n## Common Scans\n```bash\nnmap -sS -sV -O -p- target\nnmap --script=http-enum target\nnmap -sU --top-ports 20 target\n```" },
+          { "id": "cs-metasploit", "title": "Metasploit Cheatsheet", "content": "## Metasploit Framework\n\n| Command | Description |\n|---------|-------------|\n| `msfconsole` | Start Metasploit |\n| `search <term>` | Search for exploits |\n| `use <module>` | Select a module |\n| `show options` | Display module options |\n| `set RHOSTS <ip>` | Set target IP |\n| `set PAYLOAD <payload>` | Set payload |\n| `exploit` / `run` | Execute the exploit |\n| `sessions -l` | List active sessions |\n| `sessions -i <id>` | Interact with session |\n\n## Post-Exploitation\n```\nmeterpreter > sysinfo\nmeterpreter > hashdump\nmeterpreter > upload/download\nmeterpreter > shell\n```" },
+          { "id": "cs-webapp", "title": "Web App Testing Cheatsheet", "content": "## OWASP Top 10 Quick Reference\n\n1. **Broken Access Control** - IDOR, privilege escalation\n2. **Cryptographic Failures** - Weak encryption, plaintext storage\n3. **Injection** - SQLi, XSS, Command Injection\n4. **Insecure Design** - Missing threat modeling\n5. **Security Misconfiguration** - Default creds, verbose errors\n6. **Vulnerable Components** - Outdated libraries\n7. **Auth Failures** - Weak passwords, session fixation\n8. **Data Integrity** - Insecure deserialization\n9. **Logging Failures** - Missing audit trails\n10. **SSRF** - Server-Side Request Forgery\n\n## SQLi Payloads\n```\n' OR 1=1 --\n' UNION SELECT null,null,null --\n'; DROP TABLE users; --\n```\n\n## XSS Payloads\n```\n<script>alert(1)</script>\n<img src=x onerror=alert(1)>\n```" }
+        ]
+      },
+      "professors": ["cipher", "shield", "recon", "code", "sage", "viper"],
+      "includes": ["1200+ Practice Questions", "8 Interactive PBQs", "400+ Flashcards", "Study Guide", "Cheatsheets", "AI Tutoring", "Certificate of Completion"]
+    },
+    {
+      "id": "security-plus",
+      "title": "CompTIA Security+ (SY0-701) Practice Exams 2026",
+      "short_title": "Security+ SY0-701",
+      "exam_code": "SY0-701",
+      "certification_body": "CompTIA",
+      "wing_id": "security",
+      "color": "#0066ff",
+      "icon": "Shield",
+      "instructor": "CramWise",
+      "description": "Build your cybersecurity defense foundation with 200+ practice questions covering all SY0-701 domains. From threat analysis to security architecture.",
+      "level": "Entry-Level",
+      "category": "Defensive Security",
+      "enrolled_students": 89420,
+      "rating": 4.9,
+      "total_questions": 204,
+      "total_pbqs": 0,
+      "total_flashcards": 200,
+      "passing_score": "750/900 (83%)",
+      "exam_duration": "90 minutes",
+      "status": "active",
+      "database_file": "/security_plus_database.json",
+      "quiz_cert_key": "security",
+      "domains": [
+        { "name": "General Security Concepts", "weight": "12%", "chapters": 1 },
+        { "name": "Threats, Vulnerabilities, and Mitigations", "weight": "22%", "chapters": 1 },
+        { "name": "Security Architecture", "weight": "18%", "chapters": 1 },
+        { "name": "Security Operations", "weight": "28%", "chapters": 1 },
+        { "name": "Security Program Management and Oversight", "weight": "20%", "chapters": 1 }
+      ],
+      "modules": {
+        "exam_simulators": [
+          { "id": "sim-1", "name": "Security+ Exam Simulator #1", "questions": 90, "time_limit": 90, "type": "simulator" },
+          { "id": "sim-2", "name": "Security+ Exam Simulator #2", "questions": 90, "time_limit": 90, "type": "simulator" }
+        ],
+        "domain_practice": [
+          { "id": "dom-1", "name": "General Security Concepts", "domain_filter": "General Security Concepts" },
+          { "id": "dom-2", "name": "Threats & Vulnerabilities", "domain_filter": "Threats, Vulnerabilities, and Mitigations" },
+          { "id": "dom-3", "name": "Security Architecture", "domain_filter": "Security Architecture" },
+          { "id": "dom-4", "name": "Security Operations", "domain_filter": "Security Operations" },
+          { "id": "dom-5", "name": "Program Management", "domain_filter": "Security Program Management and Oversight" }
+        ],
+        "study_guide": [
+          { "id": "ch-1", "title": "Chapter 1: General Security Concepts", "topics": ["CIA Triad", "Authentication types (MFA, SSO)", "Authorization models (RBAC, ABAC)", "Zero Trust architecture", "Encryption basics"] },
+          { "id": "ch-2", "title": "Chapter 2: Threats and Vulnerabilities", "topics": ["Malware types (ransomware, trojans, rootkits)", "Social engineering attacks", "Application attacks (SQLi, XSS, CSRF)", "Network attacks (DoS, MitM, DNS poisoning)", "Vulnerability scanning and management"] },
+          { "id": "ch-3", "title": "Chapter 3: Security Architecture", "topics": ["Network security design", "Cloud security models (IaaS, PaaS, SaaS)", "Infrastructure security", "Data protection strategies", "Resilience and redundancy"] },
+          { "id": "ch-4", "title": "Chapter 4: Security Operations", "topics": ["Incident response lifecycle", "Digital forensics", "Log management and SIEM", "Endpoint detection and response", "Vulnerability management"] },
+          { "id": "ch-5", "title": "Chapter 5: Security Program Management", "topics": ["Risk management frameworks", "Compliance (GDPR, HIPAA, PCI-DSS)", "Security policies and procedures", "Security awareness training", "Third-party risk management"] }
+        ],
+        "flashcard_sets": [
+          { "id": "fc-1", "name": "Security Concepts & Terminology", "count": 50 },
+          { "id": "fc-2", "name": "Threats & Attack Vectors", "count": 50 },
+          { "id": "fc-3", "name": "Cryptography & PKI", "count": 50 },
+          { "id": "fc-4", "name": "Security Operations", "count": 50 }
+        ],
+        "pbqs": [],
+        "cheatsheets": [
+          { "id": "cs-ports", "title": "Common Ports & Protocols", "content": "## Essential Ports\n\n| Port | Protocol | Service |\n|------|----------|--------|\n| 20/21 | TCP | FTP |\n| 22 | TCP | SSH/SCP/SFTP |\n| 23 | TCP | Telnet |\n| 25 | TCP | SMTP |\n| 53 | TCP/UDP | DNS |\n| 67/68 | UDP | DHCP |\n| 80 | TCP | HTTP |\n| 110 | TCP | POP3 |\n| 143 | TCP | IMAP |\n| 389 | TCP | LDAP |\n| 443 | TCP | HTTPS |\n| 445 | TCP | SMB |\n| 636 | TCP | LDAPS |\n| 993 | TCP | IMAPS |\n| 995 | TCP | POP3S |\n| 1433 | TCP | MSSQL |\n| 3306 | TCP | MySQL |\n| 3389 | TCP | RDP |\n| 5060 | TCP/UDP | SIP |\n| 8080 | TCP | HTTP Proxy |" },
+          { "id": "cs-crypto", "title": "Cryptography Cheatsheet", "content": "## Symmetric vs Asymmetric\n\n| Type | Algorithms | Key Size | Use Case |\n|------|-----------|----------|----------|\n| Symmetric | AES, 3DES, Blowfish | 128/192/256 | Bulk encryption |\n| Asymmetric | RSA, ECC, DSA | 2048/4096 | Key exchange, signatures |\n| Hashing | SHA-256, SHA-3, MD5 | N/A | Integrity verification |\n\n## PKI Components\n- **CA** - Certificate Authority\n- **RA** - Registration Authority\n- **CRL** - Certificate Revocation List\n- **OCSP** - Online Certificate Status Protocol\n- **CSR** - Certificate Signing Request" }
+        ]
+      },
+      "professors": ["guardian", "harden"],
+      "includes": ["200+ Practice Questions", "Study Guide", "200+ Flashcards", "Cheatsheets", "AI Tutoring", "Certificate of Completion"]
+    },
+    {
+      "id": "cysa-plus",
+      "title": "CompTIA CySA+ (CS0-003) Practice Exams 2026",
+      "short_title": "CySA+ CS0-003",
+      "exam_code": "CS0-003",
+      "certification_body": "CompTIA",
+      "wing_id": "cybersecurity-analyst",
+      "color": "#ec4899",
+      "icon": "Search",
+      "instructor": "CramWise",
+      "description": "Master cybersecurity analytics, threat detection, and incident response. 150+ questions covering SOC operations, vulnerability management, and threat intelligence.",
+      "level": "Intermediate",
+      "category": "Blue Team / SOC",
+      "enrolled_students": 31200,
+      "rating": 4.7,
+      "total_questions": 150,
+      "total_pbqs": 0,
+      "total_flashcards": 150,
+      "passing_score": "750/900 (83%)",
+      "exam_duration": "165 minutes",
+      "status": "active",
+      "database_file": "/cysa_database.json",
+      "quiz_cert_key": "cysa",
+      "domains": [
+        { "name": "Security Operations", "weight": "33%", "chapters": 1 },
+        { "name": "Vulnerability Management", "weight": "30%", "chapters": 1 },
+        { "name": "Incident Response and Management", "weight": "20%", "chapters": 1 },
+        { "name": "Reporting and Communication", "weight": "17%", "chapters": 1 }
+      ],
+      "modules": {
+        "exam_simulators": [
+          { "id": "sim-1", "name": "CySA+ Exam Simulator #1", "questions": 85, "time_limit": 90, "type": "simulator" }
+        ],
+        "domain_practice": [
+          { "id": "dom-1", "name": "Security Operations", "domain_filter": "Security Operations" },
+          { "id": "dom-2", "name": "Vulnerability Management", "domain_filter": "Vulnerability Management" },
+          { "id": "dom-3", "name": "Incident Response", "domain_filter": "Incident Response and Management" },
+          { "id": "dom-4", "name": "Reporting & Communication", "domain_filter": "Reporting and Communication" }
+        ],
+        "study_guide": [
+          { "id": "ch-1", "title": "Chapter 1: Security Operations", "topics": ["SIEM configuration and log analysis", "Threat intelligence lifecycle", "Detection engineering and rules", "Network traffic analysis", "Endpoint detection and response (EDR)"] },
+          { "id": "ch-2", "title": "Chapter 2: Vulnerability Management", "topics": ["Vulnerability scanning tools (Nessus, Qualys)", "CVSS scoring and prioritization", "Patch management lifecycle", "Asset inventory and classification", "Remediation strategies"] },
+          { "id": "ch-3", "title": "Chapter 3: Incident Response", "topics": ["IR lifecycle (Preparation, Detection, Containment, Eradication, Recovery)", "Digital forensics fundamentals", "Chain of custody", "Malware analysis basics", "Threat hunting methodologies"] },
+          { "id": "ch-4", "title": "Chapter 4: Reporting and Communication", "topics": ["Metrics and KPIs for security", "Executive reporting", "Compliance reporting", "Root cause analysis", "Lessons learned documentation"] }
+        ],
+        "flashcard_sets": [
+          { "id": "fc-1", "name": "SOC Tools & Techniques", "count": 50 },
+          { "id": "fc-2", "name": "Threat Intelligence", "count": 50 },
+          { "id": "fc-3", "name": "Incident Response", "count": 50 }
+        ],
+        "pbqs": [],
+        "cheatsheets": [
+          { "id": "cs-siem", "title": "SIEM & Log Analysis", "content": "## Common Log Sources\n\n| Source | Key Fields |\n|--------|------------|\n| Firewall | src/dst IP, port, action |\n| IDS/IPS | signature, severity, action |\n| Web Server | URI, status code, user-agent |\n| Auth Logs | username, result, source IP |\n| DNS | query, response, client IP |\n\n## Splunk Queries\n```\nindex=firewall action=blocked | stats count by src_ip\nindex=auth result=failure | stats count by user | where count>5\nindex=web status=500 | timechart count\n```" }
+        ]
+      },
+      "professors": ["ghost", "hunter_x"],
+      "includes": ["150+ Practice Questions", "Study Guide", "150+ Flashcards", "Cheatsheets", "AI Tutoring"]
+    },
+    {
+      "id": "casp-plus",
+      "title": "CompTIA CASP+ (CAS-004) Practice Exams 2026",
+      "short_title": "CASP+ CAS-004",
+      "exam_code": "CAS-004",
+      "certification_body": "CompTIA",
+      "wing_id": "advanced-security",
+      "color": "#14b8a6",
+      "icon": "Lock",
+      "instructor": "CramWise",
+      "description": "Enterprise security architecture and advanced practitioner skills. 100+ questions covering enterprise architecture, security engineering, and governance.",
+      "level": "Advanced",
+      "category": "Enterprise Security",
+      "enrolled_students": 18500,
+      "rating": 4.6,
+      "total_questions": 100,
+      "total_pbqs": 0,
+      "total_flashcards": 100,
+      "passing_score": "Pass/Fail",
+      "exam_duration": "165 minutes",
+      "status": "active",
+      "database_file": "/casp_database.json",
+      "quiz_cert_key": "casp",
+      "domains": [
+        { "name": "Security Architecture", "weight": "29%", "chapters": 1 },
+        { "name": "Security Operations", "weight": "30%", "chapters": 1 },
+        { "name": "Security Engineering and Cryptography", "weight": "25%", "chapters": 1 },
+        { "name": "Governance, Risk, and Compliance", "weight": "16%", "chapters": 1 }
+      ],
+      "modules": {
+        "exam_simulators": [
+          { "id": "sim-1", "name": "CASP+ Exam Simulator #1", "questions": 90, "time_limit": 165, "type": "simulator" }
+        ],
+        "domain_practice": [
+          { "id": "dom-1", "name": "Security Architecture", "domain_filter": "Security Architecture" },
+          { "id": "dom-2", "name": "Security Operations", "domain_filter": "Security Operations" },
+          { "id": "dom-3", "name": "Security Engineering", "domain_filter": "Security Engineering and Cryptography" },
+          { "id": "dom-4", "name": "GRC", "domain_filter": "Governance, Risk, and Compliance" }
+        ],
+        "study_guide": [
+          { "id": "ch-1", "title": "Chapter 1: Security Architecture", "topics": ["Enterprise architecture frameworks (TOGAF, SABSA)", "Zero Trust implementation", "Cloud-native security architecture", "Microservices and API security", "Secure network design patterns"] },
+          { "id": "ch-2", "title": "Chapter 2: Security Operations", "topics": ["Advanced threat hunting", "SOAR platforms", "Purple team operations", "Digital forensics and e-discovery", "Business continuity planning"] },
+          { "id": "ch-3", "title": "Chapter 3: Security Engineering", "topics": ["Advanced cryptographic implementations", "PKI at enterprise scale", "Hardware security modules (HSM)", "Secure software development lifecycle", "Code signing and integrity"] },
+          { "id": "ch-4", "title": "Chapter 4: GRC", "topics": ["Enterprise risk management", "Regulatory compliance (SOX, HIPAA, GDPR)", "Privacy impact assessments", "Third-party risk management", "Security metrics and reporting to board"] }
+        ],
+        "flashcard_sets": [
+          { "id": "fc-1", "name": "Enterprise Architecture", "count": 50 },
+          { "id": "fc-2", "name": "Advanced Cryptography", "count": 50 }
+        ],
+        "pbqs": [],
+        "cheatsheets": []
+      },
+      "professors": ["phantom", "ciso_nova"],
+      "includes": ["100+ Practice Questions", "Study Guide", "100+ Flashcards", "AI Tutoring"]
+    },
+    {
+      "id": "network-plus",
+      "title": "CompTIA Network+ (N10-009) Practice Exams 2026",
+      "short_title": "Network+ N10-009",
+      "exam_code": "N10-009",
+      "certification_body": "CompTIA",
+      "wing_id": "network",
+      "color": "#00d4ff",
+      "icon": "Wifi",
+      "instructor": "CramWise",
+      "description": "Master network architecture, troubleshooting, and security. 80+ questions covering networking concepts, infrastructure, operations, and security.",
+      "level": "Entry-Level",
+      "category": "Networking",
+      "enrolled_students": 67800,
+      "rating": 4.8,
+      "total_questions": 80,
+      "total_pbqs": 0,
+      "total_flashcards": 150,
+      "passing_score": "720/900 (80%)",
+      "exam_duration": "90 minutes",
+      "status": "active",
+      "database_file": "/network_plus_database.json",
+      "quiz_cert_key": "network",
+      "domains": [
+        { "name": "Networking Concepts", "weight": "23%", "chapters": 1 },
+        { "name": "Network Infrastructure", "weight": "20%", "chapters": 1 },
+        { "name": "Network Operations", "weight": "20%", "chapters": 1 },
+        { "name": "Network Security", "weight": "19%", "chapters": 1 },
+        { "name": "Network Troubleshooting", "weight": "18%", "chapters": 1 }
+      ],
+      "modules": {
+        "exam_simulators": [
+          { "id": "sim-1", "name": "Network+ Exam Simulator #1", "questions": 80, "time_limit": 90, "type": "simulator" }
+        ],
+        "domain_practice": [
+          { "id": "dom-1", "name": "Networking Concepts", "domain_filter": "Networking Concepts" },
+          { "id": "dom-2", "name": "Network Infrastructure", "domain_filter": "Network Infrastructure" },
+          { "id": "dom-3", "name": "Network Operations", "domain_filter": "Network Operations" },
+          { "id": "dom-4", "name": "Network Security", "domain_filter": "Network Security" },
+          { "id": "dom-5", "name": "Network Troubleshooting", "domain_filter": "Network Troubleshooting" }
+        ],
+        "study_guide": [
+          { "id": "ch-1", "title": "Chapter 1: Networking Concepts", "topics": ["OSI and TCP/IP models", "Subnetting and CIDR", "IPv4 vs IPv6", "Routing protocols (OSPF, BGP, EIGRP)", "DNS, DHCP, NTP"] },
+          { "id": "ch-2", "title": "Chapter 2: Network Infrastructure", "topics": ["Switches, routers, firewalls", "Wireless standards (802.11ax/WiFi 6)", "Cable types and connectors", "VLANs and trunking", "WAN technologies (MPLS, SD-WAN)"] },
+          { "id": "ch-3", "title": "Chapter 3: Network Operations", "topics": ["Network monitoring (SNMP, NetFlow)", "Documentation and diagrams", "High availability (clustering, load balancing)", "Disaster recovery", "Change management"] },
+          { "id": "ch-4", "title": "Chapter 4: Network Security", "topics": ["Firewall types and configurations", "VPN technologies (IPSec, SSL/TLS)", "Network access control (NAC, 802.1X)", "Intrusion detection/prevention", "Wireless security (WPA3)"] },
+          { "id": "ch-5", "title": "Chapter 5: Network Troubleshooting", "topics": ["Troubleshooting methodology", "Command-line tools (ping, tracert, nslookup, netstat)", "Cable testing", "Wireless troubleshooting", "Network performance optimization"] }
+        ],
+        "flashcard_sets": [
+          { "id": "fc-1", "name": "Protocols & Ports", "count": 50 },
+          { "id": "fc-2", "name": "Subnetting & Addressing", "count": 50 },
+          { "id": "fc-3", "name": "Network Tools & Commands", "count": 50 }
+        ],
+        "pbqs": [],
+        "cheatsheets": [
+          { "id": "cs-subnet", "title": "Subnetting Cheatsheet", "content": "## Quick Subnetting Reference\n\n| CIDR | Subnet Mask | Hosts | Block Size |\n|------|------------|-------|------------|\n| /24 | 255.255.255.0 | 254 | 256 |\n| /25 | 255.255.255.128 | 126 | 128 |\n| /26 | 255.255.255.192 | 62 | 64 |\n| /27 | 255.255.255.224 | 30 | 32 |\n| /28 | 255.255.255.240 | 14 | 16 |\n| /29 | 255.255.255.248 | 6 | 8 |\n| /30 | 255.255.255.252 | 2 | 4 |\n\n## Binary Trick\nSubnet hosts = 2^(32-CIDR) - 2" }
+        ]
+      },
+      "professors": ["netrunner", "cisco_kate"],
+      "includes": ["80+ Practice Questions", "Study Guide", "150+ Flashcards", "Cheatsheets", "AI Tutoring"]
+    },
+    {
+      "id": "a-plus",
+      "title": "CompTIA A+ (220-1201/1202) Practice Exams 2026",
+      "short_title": "A+ Core 1 & 2",
+      "exam_code": "220-1201/1202",
+      "certification_body": "CompTIA",
+      "wing_id": "aplus",
+      "color": "#ffaa00",
+      "icon": "Wrench",
+      "instructor": "CramWise",
+      "description": "Start your IT career with hardware, software, and troubleshooting fundamentals. 100+ questions covering mobile devices, networking, hardware, and operating systems.",
+      "level": "Beginner",
+      "category": "IT Fundamentals",
+      "enrolled_students": 124000,
+      "rating": 4.9,
+      "total_questions": 100,
+      "total_pbqs": 0,
+      "total_flashcards": 100,
+      "passing_score": "675/900 (75%)",
+      "exam_duration": "90 minutes",
+      "status": "active",
+      "database_file": "/aplus_database.json",
+      "quiz_cert_key": "aplus",
+      "domains": [
+        { "name": "Mobile Devices", "weight": "15%", "chapters": 1 },
+        { "name": "Networking", "weight": "20%", "chapters": 1 },
+        { "name": "Hardware", "weight": "25%", "chapters": 1 },
+        { "name": "Virtualization and Cloud", "weight": "11%", "chapters": 1 },
+        { "name": "Operating Systems", "weight": "29%", "chapters": 1 }
+      ],
+      "modules": {
+        "exam_simulators": [
+          { "id": "sim-1", "name": "A+ Core 1 Simulator", "questions": 90, "time_limit": 90, "type": "simulator" }
+        ],
+        "domain_practice": [
+          { "id": "dom-1", "name": "Mobile Devices", "domain_filter": "Mobile Devices" },
+          { "id": "dom-2", "name": "Networking", "domain_filter": "Networking" },
+          { "id": "dom-3", "name": "Hardware", "domain_filter": "Hardware" },
+          { "id": "dom-4", "name": "Virtualization & Cloud", "domain_filter": "Virtualization and Cloud" },
+          { "id": "dom-5", "name": "Operating Systems", "domain_filter": "Operating Systems" }
+        ],
+        "study_guide": [
+          { "id": "ch-1", "title": "Chapter 1: Mobile Devices", "topics": ["Laptop hardware components", "Mobile device displays", "Mobile device connectivity (Bluetooth, NFC, WiFi)", "Mobile device accessories"] },
+          { "id": "ch-2", "title": "Chapter 2: Networking", "topics": ["TCP/IP basics", "Network hardware (switches, routers, APs)", "Wireless networking standards", "Network services (DNS, DHCP)", "Network troubleshooting"] },
+          { "id": "ch-3", "title": "Chapter 3: Hardware", "topics": ["Motherboard components", "RAM types and installation", "Storage devices (SSD, HDD, NVMe)", "Power supplies", "Peripherals and connectors"] },
+          { "id": "ch-4", "title": "Chapter 4: Virtualization and Cloud", "topics": ["Virtual machines vs containers", "Cloud service models (IaaS, PaaS, SaaS)", "Cloud deployment models", "Hypervisor types"] },
+          { "id": "ch-5", "title": "Chapter 5: Operating Systems", "topics": ["Windows editions and features", "Linux distributions", "macOS basics", "OS installation and configuration", "Command-line tools"] }
+        ],
+        "flashcard_sets": [
+          { "id": "fc-1", "name": "Hardware Components", "count": 50 },
+          { "id": "fc-2", "name": "Networking Basics", "count": 50 }
+        ],
+        "pbqs": [],
+        "cheatsheets": []
+      },
+      "professors": ["fixit", "tech_mom"],
+      "includes": ["100+ Practice Questions", "Study Guide", "100+ Flashcards", "AI Tutoring"]
+    },
+    {
+      "id": "linux-lpi1",
+      "title": "Linux LPI 1 (101-500/102-500) Practice Exams 2026",
+      "short_title": "LPI 1",
+      "exam_code": "101-500/102-500",
+      "certification_body": "LPI",
+      "wing_id": "linux",
+      "color": "#ff9500",
+      "icon": "Terminal",
+      "instructor": "Benny",
+      "description": "Von Linux-Grundlagen bis zur Systemadministration. 64+ Fragen mit interaktivem Terminal-Simulator und deutschsprachigem KI-Tutor Benny.",
+      "level": "Beginner",
+      "category": "Linux Administration",
+      "enrolled_students": 42000,
+      "rating": 4.8,
+      "total_questions": 64,
+      "total_pbqs": 0,
+      "total_flashcards": 80,
+      "passing_score": "500/800 (62.5%)",
+      "exam_duration": "90 minutes",
+      "status": "active",
+      "database_file": "/lpi1_database.json",
+      "quiz_cert_key": "lpi1",
+      "domains": [
+        { "name": "System Architecture", "weight": "15%", "chapters": 1 },
+        { "name": "Linux Installation & Package Management", "weight": "15%", "chapters": 1 },
+        { "name": "GNU & Unix Commands", "weight": "25%", "chapters": 1 },
+        { "name": "Devices, Filesystems, FHS", "weight": "15%", "chapters": 1 },
+        { "name": "Shells & Shell Scripting", "weight": "15%", "chapters": 1 },
+        { "name": "User Interfaces & Desktops", "weight": "15%", "chapters": 1 }
+      ],
+      "modules": {
+        "exam_simulators": [
+          { "id": "sim-1", "name": "LPI 1 Exam Simulator", "questions": 60, "time_limit": 90, "type": "simulator" }
+        ],
+        "domain_practice": [
+          { "id": "dom-1", "name": "System Architecture", "domain_filter": "System Architecture" },
+          { "id": "dom-2", "name": "Installation & Packages", "domain_filter": "Installation" },
+          { "id": "dom-3", "name": "GNU Commands", "domain_filter": "GNU Commands" },
+          { "id": "dom-4", "name": "Filesystems", "domain_filter": "Filesystems" },
+          { "id": "dom-5", "name": "Shell Scripting", "domain_filter": "Shell Scripting" }
+        ],
+        "study_guide": [
+          { "id": "ch-1", "title": "Kapitel 1: Systemarchitektur", "topics": ["Hardware-Einstellungen bestimmen und konfigurieren", "Das System booten", "Runlevels / Boot-Targets wechseln", "Das System herunterfahren und neu starten"] },
+          { "id": "ch-2", "title": "Kapitel 2: Linux-Installation", "topics": ["Festplattenpartitionierung", "Boot-Manager installieren (GRUB2)", "Shared Libraries verwalten", "Debian- und RPM-Paketverwaltung"] },
+          { "id": "ch-3", "title": "Kapitel 3: GNU & Unix Befehle", "topics": ["Arbeiten auf der Kommandozeile", "Textdateien verarbeiten (grep, sed, awk)", "Dateiverwaltung (cp, mv, rm, find)", "Pipes und Umleitung", "Prozessverwaltung (ps, top, kill)"] },
+          { "id": "ch-4", "title": "Kapitel 4: Dateisysteme", "topics": ["Partitionen und Dateisysteme erstellen", "Dateisystem-Integrität sicherstellen", "Ein- und Aushängen von Dateisystemen", "Dateiberechtigungen verwalten", "Filesystem Hierarchy Standard (FHS)"] },
+          { "id": "ch-5", "title": "Kapitel 5: Shell Scripting", "topics": ["Shell-Umgebung anpassen", "Einfache Shell-Skripte schreiben", "Variablen, Schleifen, Bedingungen", "Reguläre Ausdrücke", "vi/vim Editor"] }
+        ],
+        "flashcard_sets": [
+          { "id": "fc-1", "name": "Linux-Befehle A-Z", "count": 40 },
+          { "id": "fc-2", "name": "Dateisystem & Berechtigungen", "count": 40 }
+        ],
+        "pbqs": [],
+        "cheatsheets": [
+          { "id": "cs-linux", "title": "Linux Befehle Cheatsheet", "content": "## Wichtigste Befehle\n\n| Befehl | Funktion |\n|--------|----------|\n| `ls -la` | Alle Dateien auflisten |\n| `cd /path` | Verzeichnis wechseln |\n| `pwd` | Aktuelles Verzeichnis |\n| `cp -r src dst` | Rekursiv kopieren |\n| `mv old new` | Verschieben/Umbenennen |\n| `rm -rf dir` | Rekursiv löschen |\n| `chmod 755 file` | Berechtigungen setzen |\n| `chown user:group file` | Eigentümer ändern |\n| `grep -r pattern dir` | Rekursiv suchen |\n| `find / -name file` | Datei finden |\n| `ps aux` | Prozesse anzeigen |\n| `kill -9 PID` | Prozess beenden |\n| `df -h` | Festplattennutzung |\n| `du -sh dir` | Verzeichnisgröße |\n| `tar -czf a.tgz dir` | Archiv erstellen |" }
+        ]
+      },
+      "professors": ["benny", "tux_tina"],
+      "includes": ["64+ Fragen", "Terminal-Simulator", "Study Guide", "80+ Lernkarten", "Cheatsheets", "KI-Tutor (Deutsch)"],
+      "special_route": "/lpi1"
+    },
+    {
+      "id": "cloud-plus",
+      "title": "CompTIA Cloud+ & Multi-Cloud Security 2026",
+      "short_title": "Cloud+",
+      "exam_code": "CV0-004",
+      "certification_body": "CompTIA",
+      "wing_id": "cloud",
+      "color": "#0284c7",
+      "icon": "Globe",
+      "instructor": "CramWise",
+      "description": "Secure cloud architecture across AWS, Azure, and GCP. Cloud deployment models, security controls, and multi-cloud governance.",
+      "level": "Intermediate",
+      "category": "Cloud Security",
+      "enrolled_students": 28000,
+      "rating": 4.5,
+      "total_questions": 0,
+      "total_pbqs": 0,
+      "total_flashcards": 0,
+      "passing_score": "750/900 (83%)",
+      "exam_duration": "90 minutes",
+      "status": "coming_soon",
+      "database_file": null,
+      "quiz_cert_key": null,
+      "domains": [
+        { "name": "Cloud Architecture", "weight": "25%", "chapters": 1 },
+        { "name": "Security", "weight": "25%", "chapters": 1 },
+        { "name": "Deployment", "weight": "20%", "chapters": 1 },
+        { "name": "Operations and Support", "weight": "18%", "chapters": 1 },
+        { "name": "Troubleshooting", "weight": "12%", "chapters": 1 }
+      ],
+      "modules": {
+        "exam_simulators": [],
+        "domain_practice": [],
+        "study_guide": [
+          { "id": "ch-1", "title": "Chapter 1: Cloud Architecture", "topics": ["Cloud service models (IaaS, PaaS, SaaS)", "Cloud deployment models (Public, Private, Hybrid)", "Hypervisor types", "Cloud design principles"] },
+          { "id": "ch-2", "title": "Chapter 2: Cloud Security", "topics": ["Identity and Access Management (IAM)", "Data encryption at rest and in transit", "Network security groups and firewalls", "Compliance in the cloud", "Shared responsibility model"] }
+        ],
+        "flashcard_sets": [],
+        "pbqs": [],
+        "cheatsheets": []
+      },
+      "professors": ["cloud_native_nate"],
+      "includes": ["Study Guide", "AI Tutoring", "Coming Soon: Practice Questions"]
+    }
+  ]
+}
