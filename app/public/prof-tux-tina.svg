@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="ttBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#100a17"/>
+      <stop offset="100%" stop-color="#0a0e17"/>
+    </radialGradient>
+    <filter id="ttBlur">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="ttGlowF">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="ttCircle"><circle cx="256" cy="256" r="250"/></clipPath>
+  </defs>
+  <rect width="512" height="512" fill="url(#ttBg)"/>
+  <!-- Terminal window in background -->
+  <g opacity="0.12" clip-path="url(#ttCircle)">
+    <!-- Terminal frame -->
+    <rect x="60" y="60" width="392" height="280" rx="6" fill="none" stroke="#7c3aed" stroke-width="1.5"/>
+    <!-- Title bar -->
+    <rect x="60" y="60" width="392" height="20" rx="6" fill="#7c3aed" opacity="0.15"/>
+    <circle cx="78" cy="70" r="4" fill="#ff5f57" opacity="0.4"/>
+    <circle cx="92" cy="70" r="4" fill="#febc2e" opacity="0.4"/>
+    <circle cx="106" cy="70" r="4" fill="#28c840" opacity="0.4"/>
+    <!-- Terminal text lines -->
+    <text x="75" y="100" font-family="monospace" font-size="9" fill="#7c3aed" opacity="0.5">$ whoami</text>
+    <text x="75" y="115" font-family="monospace" font-size="9" fill="#a78bfa" opacity="0.4">tux_tina</text>
+    <text x="75" y="135" font-family="monospace" font-size="9" fill="#7c3aed" opacity="0.5">$ uname -a</text>
+    <text x="75" y="150" font-family="monospace" font-size="9" fill="#a78bfa" opacity="0.3">Linux academy 6.1.0</text>
+    <text x="75" y="170" font-family="monospace" font-size="9" fill="#7c3aed" opacity="0.5">$ sudo apt update</text>
+    <text x="75" y="190" font-family="monospace" font-size="9" fill="#7c3aed" opacity="0.4">$_</text>
+  </g>
+  <!-- Tux penguin outline subtle in background -->
+  <g opacity="0.08" transform="translate(350, 320) scale(0.5)">
+    <!-- Simplified Tux body -->
+    <ellipse cx="0" cy="40" rx="55" ry="70" fill="none" stroke="#7c3aed" stroke-width="2"/>
+    <!-- Tux belly -->
+    <ellipse cx="0" cy="50" rx="35" ry="45" fill="none" stroke="#7c3aed" stroke-width="1"/>
+    <!-- Tux head -->
+    <circle cx="0" cy="-40" r="30" fill="none" stroke="#7c3aed" stroke-width="2"/>
+    <!-- Tux eyes -->
+    <circle cx="-10" cy="-45" r="5" fill="#7c3aed" opacity="0.3"/>
+    <circle cx="10" cy="-45" r="5" fill="#7c3aed" opacity="0.3"/>
+    <!-- Tux beak -->
+    <path d="M-8,-32 L0,-26 L8,-32" fill="none" stroke="#7c3aed" stroke-width="1.5"/>
+    <!-- Tux feet -->
+    <path d="M-30,108 L-50,118 L-25,115 L-15,108" fill="none" stroke="#7c3aed" stroke-width="1"/>
+    <path d="M30,108 L50,118 L25,115 L15,108" fill="none" stroke="#7c3aed" stroke-width="1"/>
+  </g>
+  <!-- Purple glow behind head -->
+  <ellipse cx="256" cy="220" rx="100" ry="110" fill="#7c3aed" opacity="0.07" filter="url(#ttBlur)"/>
+  <!-- Female head silhouette -->
+  <g>
+    <path d="M256,115 Q212,115 198,148 Q186,178 183,208 L181,243 Q179,273 190,293 Q200,312 215,325 L225,348 Q221,378 216,402 L200,435 L178,465 L334,465 L312,435 L296,402 Q291,378 287,348 L297,325 Q312,312 322,293 Q333,273 331,243 L329,208 Q326,178 314,148 Q300,115 256,115Z" fill="#0d1117" stroke="#7c3aed" stroke-width="0.5" opacity="0.9"/>
+    <!-- Ponytail / tied up hair hint -->
+    <path d="M256,115 Q240,100 245,85 Q250,70 265,72 Q280,74 278,90 Q276,105 270,115" fill="#0d1117" stroke="#7c3aed" stroke-width="0.5" opacity="0.5"/>
+  </g>
+  <!-- Eyes with terminal cursor aesthetic -->
+  <g filter="url(#ttGlowF)">
+    <!-- Left eye - like a cursor block -->
+    <rect x="224" y="210" width="20" height="10" rx="2" fill="#7c3aed" opacity="0.7"/>
+    <rect x="232" y="212" width="8" height="6" rx="1" fill="#0a0e17"/>
+    <rect x="234" y="213" width="3" height="4" fill="#a78bfa"/>
+    <!-- Right eye -->
+    <rect x="268" y="210" width="20" height="10" rx="2" fill="#7c3aed" opacity="0.7"/>
+    <rect x="276" y="212" width="8" height="6" rx="1" fill="#0a0e17"/>
+    <rect x="278" y="213" width="3" height="4" fill="#a78bfa"/>
+  </g>
+  <!-- Terminal cursor blinking near face -->
+  <g filter="url(#ttGlowF)" opacity="0.4">
+    <rect x="248" y="270" width="8" height="2" fill="#7c3aed"/>
+    <rect x="258" y="270" width="2" height="10" fill="#a78bfa" opacity="0.8"/>
+  </g>
+  <!-- Terminal prompt lines floating -->
+  <g opacity="0.1">
+    <text x="80" y="400" font-family="monospace" font-size="8" fill="#7c3aed">chmod +x</text>
+    <text x="370" y="180" font-family="monospace" font-size="8" fill="#7c3aed">grep -r</text>
+    <text x="90" y="250" font-family="monospace" font-size="7" fill="#7c3aed">#!/bin/bash</text>
+  </g>
+  <!-- Scan lines -->
+  <g opacity="0.04">
+    <line x1="0" y1="130" x2="512" y2="130" stroke="#7c3aed" stroke-width="1"/>
+    <line x1="0" y1="195" x2="512" y2="195" stroke="#7c3aed" stroke-width="1"/>
+    <line x1="0" y1="260" x2="512" y2="260" stroke="#7c3aed" stroke-width="1"/>
+    <line x1="0" y1="325" x2="512" y2="325" stroke="#7c3aed" stroke-width="1"/>
+    <line x1="0" y1="390" x2="512" y2="390" stroke="#7c3aed" stroke-width="1"/>
+  </g>
+  <!-- Name -->
+  <text x="256" y="490" text-anchor="middle" font-family="monospace" font-size="11" fill="#7c3aed" opacity="0.3" letter-spacing="4">TUX TINA</text>
+</svg>

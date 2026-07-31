@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="tmBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#170a10"/>
+      <stop offset="100%" stop-color="#0a0e17"/>
+    </radialGradient>
+    <radialGradient id="tmWarm" cx="50%" cy="45%" r="40%">
+      <stop offset="0%" stop-color="#e11d48" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#e11d48" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="tmBlur">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <filter id="tmGlowF">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="tmCircle"><circle cx="256" cy="256" r="250"/></clipPath>
+  </defs>
+  <rect width="512" height="512" fill="url(#tmBg)"/>
+  <!-- Warm glow -->
+  <rect width="512" height="512" fill="url(#tmWarm)"/>
+  <!-- Circuit board pattern with heart motif -->
+  <g opacity="0.1" clip-path="url(#tmCircle)">
+    <!-- Circuit traces -->
+    <path d="M60,420 L120,420 L120,380 L180,380 L180,340 L220,340" stroke="#e11d48" stroke-width="1.5" fill="none"/>
+    <path d="M452,420 L392,420 L392,380 L332,380 L332,340 L292,340" stroke="#e11d48" stroke-width="1.5" fill="none"/>
+    <path d="M60,320 L100,320 L100,280 L140,280" stroke="#e11d48" stroke-width="1" fill="none"/>
+    <path d="M452,320 L412,320 L412,280 L372,280" stroke="#e11d48" stroke-width="1" fill="none"/>
+    <!-- Circuit nodes -->
+    <circle cx="120" cy="420" r="3" fill="#e11d48"/>
+    <circle cx="180" cy="380" r="3" fill="#e11d48"/>
+    <circle cx="392" cy="420" r="3" fill="#e11d48"/>
+    <circle cx="332" cy="380" r="3" fill="#e11d48"/>
+    <circle cx="100" cy="320" r="2" fill="#e11d48"/>
+    <circle cx="412" cy="320" r="2" fill="#e11d48"/>
+    <!-- Small chip components -->
+    <rect x="130" y="275" width="12" height="8" rx="1" fill="none" stroke="#e11d48" stroke-width="0.8"/>
+    <rect x="370" y="275" width="12" height="8" rx="1" fill="none" stroke="#e11d48" stroke-width="0.8"/>
+  </g>
+  <!-- Heart circuit motif -->
+  <g opacity="0.15" filter="url(#tmGlowF)">
+    <path d="M256,130 Q256,105 240,95 Q224,85 210,100 Q196,115 210,135 L256,175 L302,135 Q316,115 302,100 Q288,85 272,95 Q256,105 256,130Z" fill="none" stroke="#e11d48" stroke-width="1.5"/>
+    <!-- Circuit lines from heart -->
+    <line x1="210" y1="100" x2="180" y2="90" stroke="#e11d48" stroke-width="1"/>
+    <line x1="302" y1="100" x2="332" y2="90" stroke="#e11d48" stroke-width="1"/>
+    <circle cx="180" cy="90" r="2" fill="#e11d48"/>
+    <circle cx="332" cy="90" r="2" fill="#e11d48"/>
+  </g>
+  <!-- Warm aura behind head -->
+  <ellipse cx="256" cy="230" rx="110" ry="120" fill="#e11d48" opacity="0.07" filter="url(#tmBlur)"/>
+  <!-- Female head silhouette - warm, approachable -->
+  <g>
+    <path d="M256,120 Q210,120 195,155 Q183,185 180,215 L178,250 Q176,280 188,300 Q198,318 212,330 L222,350 Q218,380 212,405 L195,440 L170,470 L342,470 L317,440 L300,405 Q294,380 290,350 L300,330 Q314,318 324,300 Q336,280 334,250 L332,215 Q329,185 317,155 Q302,120 256,120Z" fill="#0d1117" stroke="#e11d48" stroke-width="0.5" opacity="0.9"/>
+    <!-- Soft curving hair -->
+    <path d="M195,155 Q178,170 170,200 Q165,230 168,255 Q170,265 175,275" fill="none" stroke="#0d1117" stroke-width="10"/>
+    <path d="M317,155 Q334,170 342,200 Q347,230 344,255 Q342,265 337,275" fill="none" stroke="#0d1117" stroke-width="10"/>
+  </g>
+  <!-- Eyes - warm, kind -->
+  <g filter="url(#tmGlowF)">
+    <ellipse cx="235" cy="218" rx="14" ry="8" fill="#e11d48" opacity="0.6"/>
+    <circle cx="237" cy="218" r="4" fill="#0a0e17"/>
+    <circle cx="238" cy="217" r="1.5" fill="#fb7185"/>
+    <ellipse cx="277" cy="218" rx="14" ry="8" fill="#e11d48" opacity="0.6"/>
+    <circle cx="279" cy="218" r="4" fill="#0a0e17"/>
+    <circle cx="280" cy="217" r="1.5" fill="#fb7185"/>
+  </g>
+  <!-- Subtle smile -->
+  <path d="M240,260 Q256,272 272,260" fill="none" stroke="#e11d48" stroke-width="1" opacity="0.3"/>
+  <!-- Hardware component accents floating around -->
+  <g opacity="0.12">
+    <!-- RAM stick shape -->
+    <rect x="70" y="180" width="30" height="6" rx="1" fill="none" stroke="#e11d48" stroke-width="0.8"/>
+    <line x1="75" y1="180" x2="75" y2="186" stroke="#e11d48" stroke-width="0.5"/>
+    <line x1="80" y1="180" x2="80" y2="186" stroke="#e11d48" stroke-width="0.5"/>
+    <line x1="85" y1="180" x2="85" y2="186" stroke="#e11d48" stroke-width="0.5"/>
+    <line x1="90" y1="180" x2="90" y2="186" stroke="#e11d48" stroke-width="0.5"/>
+    <line x1="95" y1="180" x2="95" y2="186" stroke="#e11d48" stroke-width="0.5"/>
+    <!-- Chip shape -->
+    <rect x="400" y="300" width="16" height="16" rx="1" fill="none" stroke="#e11d48" stroke-width="0.8"/>
+    <line x1="404" y1="300" x2="404" y2="296" stroke="#e11d48" stroke-width="0.5"/>
+    <line x1="408" y1="300" x2="408" y2="296" stroke="#e11d48" stroke-width="0.5"/>
+    <line x1="412" y1="300" x2="412" y2="296" stroke="#e11d48" stroke-width="0.5"/>
+    <line x1="404" y1="316" x2="404" y2="320" stroke="#e11d48" stroke-width="0.5"/>
+    <line x1="408" y1="316" x2="408" y2="320" stroke="#e11d48" stroke-width="0.5"/>
+    <line x1="412" y1="316" x2="412" y2="320" stroke="#e11d48" stroke-width="0.5"/>
+  </g>
+  <!-- Scan lines -->
+  <g opacity="0.03">
+    <line x1="0" y1="140" x2="512" y2="140" stroke="#e11d48" stroke-width="1"/>
+    <line x1="0" y1="210" x2="512" y2="210" stroke="#e11d48" stroke-width="1"/>
+    <line x1="0" y1="280" x2="512" y2="280" stroke="#e11d48" stroke-width="1"/>
+    <line x1="0" y1="350" x2="512" y2="350" stroke="#e11d48" stroke-width="1"/>
+    <line x1="0" y1="420" x2="512" y2="420" stroke="#e11d48" stroke-width="1"/>
+  </g>
+  <!-- Name -->
+  <text x="256" y="490" text-anchor="middle" font-family="monospace" font-size="11" fill="#e11d48" opacity="0.3" letter-spacing="4">TECH MOM</text>
+</svg>

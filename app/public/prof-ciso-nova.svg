@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="cnBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#0a1412"/>
+      <stop offset="100%" stop-color="#0a0e17"/>
+    </radialGradient>
+    <radialGradient id="cnNova" cx="50%" cy="35%" r="35%">
+      <stop offset="0%" stop-color="#0f766e" stop-opacity="0.15"/>
+      <stop offset="60%" stop-color="#0f766e" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0f766e" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="cnBlur">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="cnGlowF">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="cnCircle"><circle cx="256" cy="256" r="250"/></clipPath>
+  </defs>
+  <rect width="512" height="512" fill="url(#cnBg)"/>
+  <rect width="512" height="512" fill="url(#cnNova)"/>
+  <!-- Star / Nova burst -->
+  <g opacity="0.12" filter="url(#cnGlowF)" clip-path="url(#cnCircle)">
+    <!-- Major rays -->
+    <line x1="256" y1="40" x2="256" y2="130" stroke="#0f766e" stroke-width="2"/>
+    <line x1="380" y1="90" x2="310" y2="155" stroke="#0f766e" stroke-width="1.5"/>
+    <line x1="132" y1="90" x2="202" y2="155" stroke="#0f766e" stroke-width="1.5"/>
+    <line x1="420" y1="200" x2="330" y2="210" stroke="#0f766e" stroke-width="1"/>
+    <line x1="92" y1="200" x2="182" y2="210" stroke="#0f766e" stroke-width="1"/>
+    <!-- Minor rays -->
+    <line x1="320" y1="60" x2="290" y2="140" stroke="#0f766e" stroke-width="0.8"/>
+    <line x1="192" y1="60" x2="222" y2="140" stroke="#0f766e" stroke-width="0.8"/>
+    <!-- Nova center point -->
+    <circle cx="256" cy="155" r="5" fill="#0f766e" opacity="0.4"/>
+    <circle cx="256" cy="155" r="12" fill="none" stroke="#0f766e" stroke-width="0.8"/>
+  </g>
+  <!-- Governance framework / org chart elements -->
+  <g opacity="0.1" clip-path="url(#cnCircle)">
+    <!-- Top level -->
+    <rect x="226" y="380" width="60" height="25" rx="3" fill="none" stroke="#0f766e" stroke-width="1.2"/>
+    <!-- Second level -->
+    <rect x="130" y="420" width="50" height="20" rx="2" fill="none" stroke="#0f766e" stroke-width="0.8"/>
+    <rect x="231" y="420" width="50" height="20" rx="2" fill="none" stroke="#0f766e" stroke-width="0.8"/>
+    <rect x="332" y="420" width="50" height="20" rx="2" fill="none" stroke="#0f766e" stroke-width="0.8"/>
+    <!-- Connecting lines -->
+    <line x1="256" y1="405" x2="256" y2="420" stroke="#0f766e" stroke-width="0.8"/>
+    <line x1="256" y1="412" x2="155" y2="412" stroke="#0f766e" stroke-width="0.8"/>
+    <line x1="155" y1="412" x2="155" y2="420" stroke="#0f766e" stroke-width="0.8"/>
+    <line x1="256" y1="412" x2="357" y2="412" stroke="#0f766e" stroke-width="0.8"/>
+    <line x1="357" y1="412" x2="357" y2="420" stroke="#0f766e" stroke-width="0.8"/>
+    <!-- Third level nodes -->
+    <rect x="95" y="450" width="35" height="14" rx="2" fill="none" stroke="#0f766e" stroke-width="0.6"/>
+    <rect x="150" y="450" width="35" height="14" rx="2" fill="none" stroke="#0f766e" stroke-width="0.6"/>
+    <rect x="238" y="450" width="35" height="14" rx="2" fill="none" stroke="#0f766e" stroke-width="0.6"/>
+    <rect x="326" y="450" width="35" height="14" rx="2" fill="none" stroke="#0f766e" stroke-width="0.6"/>
+    <rect x="381" y="450" width="35" height="14" rx="2" fill="none" stroke="#0f766e" stroke-width="0.6"/>
+    <line x1="155" y1="440" x2="112" y2="450" stroke="#0f766e" stroke-width="0.6"/>
+    <line x1="155" y1="440" x2="167" y2="450" stroke="#0f766e" stroke-width="0.6"/>
+    <line x1="357" y1="440" x2="343" y2="450" stroke="#0f766e" stroke-width="0.6"/>
+    <line x1="357" y1="440" x2="398" y2="450" stroke="#0f766e" stroke-width="0.6"/>
+    <line x1="256" y1="440" x2="256" y2="450" stroke="#0f766e" stroke-width="0.6"/>
+  </g>
+  <!-- Teal glow behind head -->
+  <ellipse cx="256" cy="220" rx="100" ry="110" fill="#0f766e" opacity="0.07" filter="url(#cnBlur)"/>
+  <!-- Head silhouette - professional, authoritative -->
+  <g>
+    <path d="M256,115 Q215,118 202,148 Q192,175 188,205 L186,240 Q184,270 195,290 Q205,310 218,322 L228,345 Q224,370 218,395 L202,425 L185,455 L327,455 L310,425 L294,395 Q288,370 284,345 L294,322 Q307,310 317,290 Q328,270 326,240 L324,205 Q320,175 310,148 Q297,118 256,115Z" fill="#0d1117" stroke="#0f766e" stroke-width="0.5" opacity="0.9"/>
+    <!-- Executive collar / suit hint -->
+    <path d="M228,345 L210,380 L185,455" fill="none" stroke="#0f766e" stroke-width="0.8" opacity="0.3"/>
+    <path d="M284,345 L302,380 L327,455" fill="none" stroke="#0f766e" stroke-width="0.8" opacity="0.3"/>
+    <line x1="256" y1="345" x2="256" y2="400" stroke="#0f766e" stroke-width="0.5" opacity="0.2"/>
+  </g>
+  <!-- Eyes - authoritative, strategic -->
+  <g filter="url(#cnGlowF)">
+    <ellipse cx="237" cy="215" rx="13" ry="7" fill="#0f766e" opacity="0.7"/>
+    <circle cx="239" cy="215" r="4" fill="#0a0e17"/>
+    <circle cx="240" cy="214" r="1.5" fill="#2dd4bf"/>
+    <ellipse cx="275" cy="215" rx="13" ry="7" fill="#0f766e" opacity="0.7"/>
+    <circle cx="277" cy="215" r="4" fill="#0a0e17"/>
+    <circle cx="278" cy="214" r="1.5" fill="#2dd4bf"/>
+  </g>
+  <!-- Star points on head like a crown/halo -->
+  <g opacity="0.2" filter="url(#cnGlowF)">
+    <polygon points="256,95 259,105 269,105 261,111 264,121 256,115 248,121 251,111 243,105 253,105" fill="#0f766e"/>
+    <polygon points="215,108 217,114 223,114 218,118 220,124 215,120 210,124 212,118 207,114 213,114" fill="#0f766e" opacity="0.6" transform="scale(0.7) translate(82,48)"/>
+    <polygon points="297,108 299,114 305,114 300,118 302,124 297,120 292,124 294,118 289,114 295,114" fill="#0f766e" opacity="0.6" transform="scale(0.7) translate(-82,48)"/>
+  </g>
+  <!-- Scan lines -->
+  <g opacity="0.04">
+    <line x1="0" y1="130" x2="512" y2="130" stroke="#0f766e" stroke-width="1"/>
+    <line x1="0" y1="200" x2="512" y2="200" stroke="#0f766e" stroke-width="1"/>
+    <line x1="0" y1="270" x2="512" y2="270" stroke="#0f766e" stroke-width="1"/>
+    <line x1="0" y1="340" x2="512" y2="340" stroke="#0f766e" stroke-width="1"/>
+  </g>
+  <!-- Name -->
+  <text x="256" y="488" text-anchor="middle" font-family="monospace" font-size="11" fill="#0f766e" opacity="0.3" letter-spacing="4">CISO NOVA</text>
+</svg>

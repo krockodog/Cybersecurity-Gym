@@ -32,7 +32,7 @@ export const tutors: TutorData[] = [
   },
   {
     id: 'tutor-practice-pentest',
-    name: 'Kyle Hackwright',
+    name: 'You-did',
     title: 'Lab Tutor — PenTest+',
     type: 'practice',
     certification: 'PT0-003',

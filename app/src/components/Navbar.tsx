@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
@@ -47,20 +47,11 @@ const linuxNavItems: NavItem[] = [
 export default function Navbar() {
   const [expanded, setExpanded] = useState(false);
   const [linuxExpanded, setLinuxExpanded] = useState(false);
-  const [linuxPlusUnlocked, setLinuxPlusUnlocked] = useState(false);
-  const [lpi1Mastery, setLpi1Mastery] = useState(0);
   const location = useLocation();
   const navigate = useNavigate();
 
   /* Check if we're on a Linux route */
   const isLinuxRoute = location.pathname === '/lpi1' || location.pathname === '/linux-plus';
-
-  /* Check unlock state from localStorage */
-  useEffect(() => {
-    const mastery = parseInt(localStorage.getItem('lpi1_mastery') || '0', 10);
-    setLpi1Mastery(mastery);
-    setLinuxPlusUnlocked(mastery >= 80);
-  }, [location.pathname]);
 
   const isActive = (route: string) => {
     if (route === '/profile') return location.pathname === '/profile' || location.pathname === '/';
@@ -243,34 +234,25 @@ export default function Navbar() {
               >
                 {linuxNavItems.map((item) => {
                   const active = isActive(item.route);
-                  const isLocked = item.route === '/linux-plus' && !linuxPlusUnlocked;
 
                   return (
                     <button
                       key={item.route}
-                      onClick={() => !isLocked && navigate(item.route)}
+                      onClick={() => navigate(item.route)}
                       className={`
                         relative flex items-center gap-3 h-11 px-4 mx-2 rounded-lg w-full
                         transition-all duration-200
-                        ${isLocked
-                          ? 'opacity-50 cursor-not-allowed text-[#4a6682]'
-                          : active
-                            ? 'text-[#ff9500]'
-                            : 'text-[#7da0c4] hover:text-[#e0f2fe] hover:bg-[rgba(0,212,255,0.05)]'
+                        ${active
+                          ? 'text-[#ff9500]'
+                          : 'text-[#7da0c4] hover:text-[#e0f2fe] hover:bg-[rgba(0,212,255,0.05)]'
                         }
                       `}
-                      title={isLocked ? `Linux+ XK0-006: 80% LPI 1 Mastery benoetigt (aktuell: ${lpi1Mastery}%)` : item.label}
+                      title={item.label}
                     >
                       <span className="flex-shrink-0 ml-2">{item.icon}</span>
                       <span className="font-body text-sm whitespace-nowrap overflow-hidden flex-1 text-left">
                         {item.label}
                       </span>
-                      {isLocked && (
-                        <span className="flex-shrink-0 flex items-center gap-1" title={`${lpi1Mastery}% / 80% benoetigt`}>
-                          <Lock size={12} className="text-[#4a6682]" />
-                          <span className="text-[10px] text-[#4a6682] font-terminal">80%</span>
-                        </span>
-                      )}
                     </button>
                   );
                 })}
@@ -283,23 +265,20 @@ export default function Navbar() {
             <>
               {linuxNavItems.map((item) => {
                 const active = isActive(item.route);
-                const isLocked = item.route === '/linux-plus' && !linuxPlusUnlocked;
 
                 return (
                   <button
                     key={item.route}
-                    onClick={() => !isLocked && navigate(item.route)}
+                    onClick={() => navigate(item.route)}
                     className={`
                       relative flex items-center justify-center h-10 mx-2 rounded-lg w-auto
                       transition-all duration-200
-                      ${isLocked
-                        ? 'opacity-40 cursor-not-allowed'
-                        : active
-                          ? 'text-[#ff9500]'
-                          : 'text-[#7da0c4] hover:text-[#e0f2fe] hover:bg-[rgba(0,212,255,0.05)]'
+                      ${active
+                        ? 'text-[#ff9500]'
+                        : 'text-[#7da0c4] hover:text-[#e0f2fe] hover:bg-[rgba(0,212,255,0.05)]'
                       }
                     `}
-                    title={isLocked ? `Linux+ Locked: 80% LPI 1 required (${lpi1Mastery}%)` : item.label}
+                    title={item.label}
                   >
                     {active && (
                       <motion.div
@@ -309,9 +288,6 @@ export default function Navbar() {
                     )}
                     <span className="flex-shrink-0 relative">
                       {item.icon}
-                      {isLocked && (
-                        <Lock size={8} className="absolute -bottom-0.5 -right-0.5 text-[#4a6682]" />
-                      )}
                     </span>
                   </button>
                 );

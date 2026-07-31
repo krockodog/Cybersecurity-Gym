@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="hxBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#0a0a1f"/>
+      <stop offset="100%" stop-color="#0a0e17"/>
+    </radialGradient>
+    <filter id="hxBlur">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="hxGlowF">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="hxCircle"><circle cx="256" cy="256" r="250"/></clipPath>
+  </defs>
+  <rect width="512" height="512" fill="url(#hxBg)"/>
+  <!-- Analytical grid pattern -->
+  <g opacity="0.06" clip-path="url(#hxCircle)">
+    <line x1="128" y1="0" x2="128" y2="512" stroke="#4f46e5" stroke-width="0.5"/>
+    <line x1="192" y1="0" x2="192" y2="512" stroke="#4f46e5" stroke-width="0.5"/>
+    <line x1="256" y1="0" x2="256" y2="512" stroke="#4f46e5" stroke-width="0.8"/>
+    <line x1="320" y1="0" x2="320" y2="512" stroke="#4f46e5" stroke-width="0.5"/>
+    <line x1="384" y1="0" x2="384" y2="512" stroke="#4f46e5" stroke-width="0.5"/>
+    <line x1="0" y1="128" x2="512" y2="128" stroke="#4f46e5" stroke-width="0.5"/>
+    <line x1="0" y1="192" x2="512" y2="192" stroke="#4f46e5" stroke-width="0.5"/>
+    <line x1="0" y1="256" x2="512" y2="256" stroke="#4f46e5" stroke-width="0.8"/>
+    <line x1="0" y1="320" x2="512" y2="320" stroke="#4f46e5" stroke-width="0.5"/>
+    <line x1="0" y1="384" x2="512" y2="384" stroke="#4f46e5" stroke-width="0.5"/>
+  </g>
+  <!-- Crosshair / targeting overlay -->
+  <g filter="url(#hxGlowF)" opacity="0.25" clip-path="url(#hxCircle)">
+    <!-- Main crosshair -->
+    <circle cx="256" cy="220" r="80" fill="none" stroke="#4f46e5" stroke-width="1.5"/>
+    <circle cx="256" cy="220" r="60" fill="none" stroke="#4f46e5" stroke-width="1" stroke-dasharray="4,4"/>
+    <circle cx="256" cy="220" r="40" fill="none" stroke="#4f46e5" stroke-width="0.8"/>
+    <!-- Crosshair lines with gaps -->
+    <line x1="256" y1="100" x2="256" y2="175" stroke="#4f46e5" stroke-width="1"/>
+    <line x1="256" y1="265" x2="256" y2="340" stroke="#4f46e5" stroke-width="1"/>
+    <line x1="136" y1="220" x2="211" y2="220" stroke="#4f46e5" stroke-width="1"/>
+    <line x1="301" y1="220" x2="376" y2="220" stroke="#4f46e5" stroke-width="1"/>
+    <!-- Corner brackets -->
+    <path d="M176,140 L176,160 L196,160" fill="none" stroke="#4f46e5" stroke-width="1.5"/>
+    <path d="M336,140 L336,160 L316,160" fill="none" stroke="#4f46e5" stroke-width="1.5"/>
+    <path d="M176,300 L176,280 L196,280" fill="none" stroke="#4f46e5" stroke-width="1.5"/>
+    <path d="M336,300 L336,280 L316,280" fill="none" stroke="#4f46e5" stroke-width="1.5"/>
+  </g>
+  <!-- Tracking data readouts -->
+  <g opacity="0.15" font-family="monospace" font-size="7" fill="#4f46e5">
+    <text x="350" y="145">TGT: ACTIVE</text>
+    <text x="350" y="157">DST: 0.42km</text>
+    <text x="350" y="169">BRG: 247.3</text>
+    <text x="100" y="300">HUNT MODE</text>
+    <text x="100" y="312">SCAN: 360</text>
+    <text x="100" y="324">LOCK: TRUE</text>
+  </g>
+  <!-- Indigo glow behind head -->
+  <ellipse cx="256" cy="220" rx="95" ry="105" fill="#4f46e5" opacity="0.06" filter="url(#hxBlur)"/>
+  <!-- Head silhouette - sharp, focused -->
+  <g>
+    <path d="M256,110 L218,125 L205,150 L198,180 L195,215 L198,250 L205,275 L215,295 L225,320 L222,355 L215,390 L195,430 L180,460 L332,460 L317,430 L297,390 L290,355 L287,320 L297,295 L307,275 L314,250 L317,215 L314,180 L307,150 L294,125Z" fill="#0d1117" stroke="#4f46e5" stroke-width="0.5" opacity="0.9"/>
+  </g>
+  <!-- Eyes - hunter's intense gaze -->
+  <g filter="url(#hxGlowF)">
+    <path d="M220,212 Q237,202 254,212 Q237,220 220,212Z" fill="#4f46e5" opacity="0.8"/>
+    <circle cx="239" cy="212" r="5" fill="#0a0e17"/>
+    <circle cx="240" cy="211" r="2" fill="#818cf8"/>
+    <!-- Targeting dot in eye -->
+    <circle cx="240" cy="211" r="0.8" fill="#ffffff"/>
+    <path d="M258,212 Q275,202 292,212 Q275,220 258,212Z" fill="#4f46e5" opacity="0.8"/>
+    <circle cx="273" cy="212" r="5" fill="#0a0e17"/>
+    <circle cx="274" cy="211" r="2" fill="#818cf8"/>
+    <circle cx="274" cy="211" r="0.8" fill="#ffffff"/>
+  </g>
+  <!-- Scope tick marks around head -->
+  <g opacity="0.2" stroke="#4f46e5" stroke-width="1">
+    <line x1="256" y1="105" x2="256" y2="115"/>
+    <line x1="256" y1="325" x2="256" y2="335"/>
+    <line x1="185" y1="220" x2="195" y2="220"/>
+    <line x1="317" y1="220" x2="327" y2="220"/>
+    <!-- Diagonal ticks -->
+    <line x1="200" y1="145" x2="207" y2="152"/>
+    <line x1="312" y1="145" x2="305" y2="152"/>
+    <line x1="200" y1="295" x2="207" y2="288"/>
+    <line x1="312" y1="295" x2="305" y2="288"/>
+  </g>
+  <!-- Name -->
+  <text x="256" y="480" text-anchor="middle" font-family="monospace" font-size="11" fill="#4f46e5" opacity="0.3" letter-spacing="4">HUNTER X</text>
+</svg>

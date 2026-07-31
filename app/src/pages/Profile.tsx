@@ -360,7 +360,7 @@ function StudentHeader() {
             </div>
           </div>
 
-          {/* JARVIS + Professor Status */}
+          {/* krockodog + Professor Status */}
           <motion.div
             className="flex flex-col items-end gap-2"
             initial={{ opacity: 0, x: 20 }}
@@ -372,7 +372,7 @@ function StudentHeader() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00ff41] opacity-75" />
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#00ff41]" />
               </span>
-              <span className="text-caption font-display text-[#00ff41]">JARVIS Online</span>
+              <span className="text-caption font-display text-[#00ff41]">krockodog Online</span>
             </div>
             {assignment && (
               <div className="flex items-center gap-2 px-3 py-1 rounded-full border border-[#1a2d45] bg-[#0d1526]">
@@ -1378,10 +1378,10 @@ function WingNavigation({
 const initialAgentMessages: AgentMessage[] = [
   { id: 1, time: '10:23', agent: 'Professor Cipher', agentColor: '#ff3366', message: 'Preparing your SQL Injection lesson...' },
   { id: 2, time: '10:24', agent: 'Benny', agentColor: '#ff9500', message: 'Your bash skills improved 15% this week!' },
-  { id: 3, time: '10:25', agent: 'JARVIS', agentColor: '#00ff41', message: 'Daily challenge available — earn 50 XP' },
+  { id: 3, time: '10:25', agent: 'krockodog', agentColor: '#00ff41', message: 'Daily challenge available — earn 50 XP' },
   { id: 4, time: '10:26', agent: 'Guardian', agentColor: '#0066ff', message: 'I noticed you struggled with cryptography. Extra practice added.' },
   { id: 5, time: '10:27', agent: 'Dr. Recon', agentColor: '#00e5ff', message: 'New OSINT challenge unlocked in Information Gathering.' },
-  { id: 6, time: '10:28', agent: 'JARVIS', agentColor: '#00ff41', message: 'Your PenTest+ exam readiness is now 62%. Keep pushing!' },
+  { id: 6, time: '10:28', agent: 'krockodog', agentColor: '#00ff41', message: 'Your PenTest+ exam readiness is now 62%. Keep pushing!' },
   { id: 7, time: '10:29', agent: 'Director Sage', agentColor: '#10b981', message: 'Remember: a finding without a fix is just complaining.' },
   { id: 8, time: '10:30', agent: 'Code Master', agentColor: '#a855f7', message: 'New Python scripting lab available in Tools & Code.' },
 ];
@@ -1389,12 +1389,12 @@ const initialAgentMessages: AgentMessage[] = [
 const extraMessages: AgentMessage[] = [
   { id: 101, time: '10:31', agent: 'Agent Shield', agentColor: '#ffaa00', message: 'Compliance framework quiz updated with new GDPR questions.' },
   { id: 102, time: '10:32', agent: 'Benny', agentColor: '#ff9500', message: 'rm -rf / ist keine Lösung. Aber manchmal fühlt es sich so an.' },
-  { id: 103, time: '10:33', agent: 'JARVIS', agentColor: '#00ff41', message: 'Streak bonus activated: +25% XP on all completed lessons.' },
+  { id: 103, time: '10:33', agent: 'krockodog', agentColor: '#00ff41', message: 'Streak bonus activated: +25% XP on all completed lessons.' },
   { id: 104, time: '10:34', agent: 'NetRunner', agentColor: '#00d4ff', message: 'Network+ Wing will be available next week. Stay tuned!' },
   { id: 105, time: '10:35', agent: 'Guardian', agentColor: '#0066ff', message: 'Threat detection simulation ready. Are you prepared?' },
   { id: 106, time: '10:36', agent: 'FixIt', agentColor: '#ffaa00', message: 'Have you tried turning it off and on again? No, seriously.' },
   { id: 107, time: '10:37', agent: 'Professor Cipher', agentColor: '#ff3366', message: 'In the dark web, knowledge is your only flashlight.' },
-  { id: 108, time: '10:38', agent: 'JARVIS', agentColor: '#00ff41', message: 'Weekly report: 42 questions answered, 78% accuracy.' },
+  { id: 108, time: '10:38', agent: 'krockodog', agentColor: '#00ff41', message: 'Weekly report: 42 questions answered, 78% accuracy.' },
 ];
 
 function AgentCommunicationFeed() {

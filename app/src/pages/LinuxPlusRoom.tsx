@@ -1,7 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  Lock,
   Server,
   CheckCircle,
   XCircle,
@@ -17,11 +16,9 @@ import {
   Star,
   ShieldCheck,
   Unlock,
-  ChevronLeft,
   Volume2,
   VolumeX,
 } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
 import { useTTS } from '../hooks/useTTS';
 
 /* ────────────────────── DATA TYPES ────────────────────── */
@@ -162,10 +159,7 @@ function SpeakerButton({ text, label }: { text: string; label?: string }) {
 
 export default function LinuxPlusRoom() {
   const { speaking, speak, stop } = useTTS();
-  const navigate = useNavigate();
-  const [lpi1Mastery, setLpi1Mastery] = useState(0);
   const [quizData, setQuizData] = useState<QuizData | null>(null);
-  const [unlocked, setUnlocked] = useState(false);
   const [showCelebration, setShowCelebration] = useState(false);
 
   /* Quiz state */
@@ -186,20 +180,6 @@ export default function LinuxPlusRoom() {
 
   /* ── load data ── */
   useEffect(() => {
-    const lpiM = getStorageNum('lpi1_mastery', 0);
-    setLpi1Mastery(lpiM);
-    const isUnlocked = lpiM >= 80;
-    setUnlocked(isUnlocked);
-
-    if (isUnlocked) {
-      const hasSeenCelebration = localStorage.getItem('xk006_celebration_seen');
-      if (!hasSeenCelebration) {
-        setShowCelebration(true);
-        localStorage.setItem('xk006_celebration_seen', '1');
-        setTimeout(() => setShowCelebration(false), 4000);
-      }
-    }
-
     setAnswered(getStorageNum('xk006_answered', 0));
     setMastery(getStorageNum('xk006_mastery', 0));
     setStreak(getStorageNum('xk006_streak', 0));
@@ -279,156 +259,7 @@ export default function LinuxPlusRoom() {
 
   const activeDomainInfo = DOMAINS.find((d) => d.id === activeDomain);
 
-  /* ═══════════════════════ LOCKED STATE ═══════════════════════ */
-
-  if (!unlocked) {
-    return (
-      <div className="min-h-[100dvh] bg-[#0a0e17] text-[#e0f2fe] relative overflow-hidden">
-        {/* Server rack background visualization */}
-        <div className="absolute inset-0 overflow-hidden opacity-20 pointer-events-none">
-          {Array.from({ length: 12 }).map((_, col) => (
-            <div key={col} className="absolute flex flex-col gap-4" style={{ left: `${8 + col * 8}%`, top: 0, bottom: 0 }}>
-              {Array.from({ length: 20 }).map((_, row) => (
-                <motion.div
-                  key={row}
-                  className="w-6 h-1 rounded-full"
-                  style={{
-                    backgroundColor: (col + row) % 3 === 0 ? '#00d4ff' : '#1a2d45',
-                    boxShadow: (col + row) % 3 === 0 ? '0 0 8px #00d4ff' : 'none',
-                  }}
-                  animate={{ opacity: (col + row) % 3 === 0 ? [0.4, 1, 0.4] : 0.3 }}
-                  transition={{ duration: 2 + (col % 3), repeat: Infinity, delay: col * 0.2 }}
-                />
-              ))}
-            </div>
-          ))}
-        </div>
-
-        {/* Unlock animation particles */}
-        <div className="absolute inset-0 pointer-events-none">
-          {Array.from({ length: 15 }).map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute w-1 h-1 rounded-full bg-[#00d4ff]"
-              style={{ left: `${Math.random() * 100}%`, top: `${30 + Math.random() * 40}%` }}
-              animate={{
-                opacity: [0, 0.8, 0],
-                scale: [0, 1.5, 0],
-              }}
-              transition={{ duration: 3, repeat: Infinity, delay: i * 0.4 }}
-            />
-          ))}
-        </div>
-
-        <div className="relative z-10 flex items-center justify-center min-h-[100dvh] px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-center max-w-lg"
-          >
-            {/* Lock Icon */}
-            <motion.div
-              animate={{ scale: [1, 1.02, 1] }}
-              transition={{ duration: 3, repeat: Infinity }}
-              className="mb-6 inline-block"
-            >
-              <div className="w-24 h-24 rounded-2xl bg-[#162236] border-2 border-[#1a2d45] flex items-center justify-center mx-auto shadow-[0_0_40px_rgba(0,212,255,0.15)]">
-                <Lock size={44} className="text-[#00d4ff]" />
-              </div>
-            </motion.div>
-
-            <motion.h1
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              className="font-display text-3xl font-bold mb-3"
-            >
-              <span className="text-[#00d4ff]">Linux+ XK0-006</span>
-              <span className="block text-lg text-[#7da0c4] font-medium mt-1">Locked</span>
-            </motion.h1>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
-              className="mb-6"
-            >
-              <div className="flex items-start gap-3">
-                <p className="text-sm text-[#7da0c4] font-body">
-                  Complete LPI 1 with 80% mastery to unlock this room.
-                  <br />
-                  Enterprise Linux, Security, Automation & Troubleshooting await.
-                </p>
-                <SpeakerButton text="Complete LPI 1 with 80% mastery to unlock this room. Enterprise Linux, Security, Automation and Troubleshooting await." label="Welcome" />
-              </div>
-            </motion.div>
-
-            {/* Progress bar showing LPI 1 progress */}
-            <motion.div
-              initial={{ opacity: 0, scaleX: 0 }}
-              animate={{ opacity: 1, scaleX: 1 }}
-              transition={{ delay: 0.4, duration: 0.5 }}
-              className="bg-[#0d1526] border border-[#1a2d45] rounded-xl p-5 mb-6"
-            >
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-xs text-[#7da0c4]">Dein LPI 1 Fortschritt</span>
-                <span className="font-display text-sm font-bold" style={{ color: lpi1Mastery >= 80 ? '#00ff41' : '#ffaa00' }}>
-                  {lpi1Mastery}% / 80%
-                </span>
-              </div>
-              <div className="h-3 bg-[#162236] rounded-full overflow-hidden mb-2">
-                <motion.div
-                  initial={{ width: 0 }}
-                  animate={{ width: `${Math.min(100, lpi1Mastery)}%` }}
-                  transition={{ duration: 1.5, delay: 0.5, ease: 'easeOut' }}
-                  className="h-full rounded-full"
-                  style={{
-                    backgroundColor: lpi1Mastery >= 80 ? '#00ff41' : '#ffaa00',
-                    boxShadow: lpi1Mastery >= 80 ? '0 0 10px rgba(0,255,65,0.5)' : '0 0 10px rgba(255,170,0,0.3)',
-                  }}
-                />
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-[10px] text-[#4a6682]">{80 - Math.min(80, lpi1Mastery)}% bis zum Unlock</span>
-                {lpi1Mastery >= 60 && lpi1Mastery < 80 && (
-                  <span className="text-[10px] text-[#ffaa00]">Fast geschafft!</span>
-                )}
-              </div>
-            </motion.div>
-
-            {/* Preview of what awaits */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.6 }}
-              className="flex flex-wrap justify-center gap-2 mb-6"
-            >
-              {['Enterprise Linux', 'Security Hardening', 'Automation', 'Troubleshooting'].map((tag) => (
-                <span key={tag} className="text-[10px] px-2.5 py-1 rounded-full bg-[#162236] text-[#00d4ff] border border-[#00d4ff]/20 opacity-50">
-                  {tag}
-                </span>
-              ))}
-            </motion.div>
-
-            <motion.button
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.7 }}
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.98 }}
-              onClick={() => navigate('/lpi1')}
-              className="px-6 py-3 rounded-lg bg-[#00d4ff] text-[#0a0e17] font-bold text-sm hover:brightness-110 transition-all flex items-center gap-2 mx-auto"
-            >
-              <ChevronLeft size={16} /> Zurueck zu LPI 1
-            </motion.button>
-          </motion.div>
-        </div>
-      </div>
-    );
-  }
-
-  /* ═══════════════════════ UNLOCKED STATE ═══════════════════════ */
+  /* ═══════════════════════ MAIN CONTENT ═══════════════════════ */
 
   return (
     <div className="min-h-[100dvh] bg-[#0a0e17] text-[#e0f2fe] relative">

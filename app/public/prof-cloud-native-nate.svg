@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="cnnBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#0a1017"/>
+      <stop offset="100%" stop-color="#0a0e17"/>
+    </radialGradient>
+    <filter id="cnnBlur">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="cnnGlowF">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="cnnCircle"><circle cx="256" cy="256" r="250"/></clipPath>
+  </defs>
+  <rect width="512" height="512" fill="url(#cnnBg)"/>
+  <!-- Cloud shapes with circuit patterns -->
+  <g opacity="0.12" clip-path="url(#cnnCircle)">
+    <!-- Large cloud top-right -->
+    <path d="M350,100 Q330,70 300,80 Q280,60 255,75 Q240,65 225,80 Q205,75 200,95 Q180,95 180,115 Q180,135 200,140 L360,140 Q380,140 380,120 Q380,100 360,100 Q355,90 350,100Z" fill="none" stroke="#0284c7" stroke-width="1.5"/>
+    <!-- Small cloud left -->
+    <path d="M120,160 Q110,140 95,150 Q85,135 70,145 Q55,140 55,155 Q45,155 45,170 Q45,185 60,185 L130,185 Q145,185 145,170 Q145,155 130,155 Q125,148 120,160Z" fill="none" stroke="#0284c7" stroke-width="1"/>
+    <!-- Cloud bottom-left -->
+    <path d="M150,370 Q140,350 125,360 Q115,345 100,355 Q85,350 85,365 Q75,365 75,380 Q75,395 90,395 L160,395 Q175,395 175,380 Q175,365 160,365 Q155,358 150,370Z" fill="none" stroke="#0284c7" stroke-width="1"/>
+    <!-- Circuit lines from clouds -->
+    <line x1="270" y1="140" x2="270" y2="170" stroke="#0284c7" stroke-width="0.8"/>
+    <circle cx="270" cy="170" r="2" fill="#0284c7"/>
+    <line x1="90" y1="185" x2="90" y2="210" stroke="#0284c7" stroke-width="0.8"/>
+    <circle cx="90" cy="210" r="2" fill="#0284c7"/>
+    <line x1="350" y1="140" x2="370" y2="180" stroke="#0284c7" stroke-width="0.8"/>
+    <circle cx="370" cy="180" r="2" fill="#0284c7"/>
+  </g>
+  <!-- Cloud architecture elements floating around -->
+  <g opacity="0.15" filter="url(#cnnGlowF)">
+    <!-- Server/container boxes -->
+    <rect x="80" y="240" width="24" height="18" rx="2" fill="none" stroke="#0284c7" stroke-width="1"/>
+    <line x1="84" y1="248" x2="100" y2="248" stroke="#0284c7" stroke-width="0.5"/>
+    <circle cx="87" cy="244" r="1.5" fill="#0284c7"/>
+    <rect x="408" y="220" width="24" height="18" rx="2" fill="none" stroke="#0284c7" stroke-width="1"/>
+    <line x1="412" y1="228" x2="428" y2="228" stroke="#0284c7" stroke-width="0.5"/>
+    <circle cx="415" cy="224" r="1.5" fill="#0284c7"/>
+    <rect x="390" y="320" width="24" height="18" rx="2" fill="none" stroke="#0284c7" stroke-width="1"/>
+    <line x1="394" y1="328" x2="410" y2="328" stroke="#0284c7" stroke-width="0.5"/>
+    <circle cx="397" cy="324" r="1.5" fill="#0284c7"/>
+    <!-- Connection lines between elements -->
+    <line x1="104" y1="249" x2="180" y2="230" stroke="#0284c7" stroke-width="0.5" stroke-dasharray="3,3"/>
+    <line x1="408" y1="229" x2="340" y2="220" stroke="#0284c7" stroke-width="0.5" stroke-dasharray="3,3"/>
+    <line x1="390" y1="329" x2="320" y2="300" stroke="#0284c7" stroke-width="0.5" stroke-dasharray="3,3"/>
+    <!-- Kubernetes wheel hint -->
+    <g transform="translate(420, 140)" opacity="0.5">
+      <circle cx="0" cy="0" r="12" fill="none" stroke="#0284c7" stroke-width="1"/>
+      <circle cx="0" cy="0" r="4" fill="none" stroke="#0284c7" stroke-width="0.8"/>
+      <line x1="0" y1="-12" x2="0" y2="-4" stroke="#0284c7" stroke-width="0.8"/>
+      <line x1="0" y1="4" x2="0" y2="12" stroke="#0284c7" stroke-width="0.8"/>
+      <line x1="-12" y1="0" x2="-4" y2="0" stroke="#0284c7" stroke-width="0.8"/>
+      <line x1="4" y1="0" x2="12" y2="0" stroke="#0284c7" stroke-width="0.8"/>
+      <line x1="-8.5" y1="-8.5" x2="-2.8" y2="-2.8" stroke="#0284c7" stroke-width="0.8"/>
+      <line x1="2.8" y1="2.8" x2="8.5" y2="8.5" stroke="#0284c7" stroke-width="0.8"/>
+    </g>
+  </g>
+  <!-- Sky blue glow behind head -->
+  <ellipse cx="256" cy="225" rx="100" ry="110" fill="#0284c7" opacity="0.07" filter="url(#cnnBlur)"/>
+  <!-- Head silhouette - modern, technical -->
+  <g>
+    <path d="M256,115 L220,128 L208,152 L200,182 L197,218 L200,252 L208,278 L218,298 L228,322 L224,358 L218,392 L200,432 L182,462 L330,462 L312,432 L294,392 L288,358 L284,322 L294,298 L304,278 L312,252 L315,218 L312,182 L304,152 L292,128Z" fill="#0d1117" stroke="#0284c7" stroke-width="0.5" opacity="0.9"/>
+    <!-- Modern haircut lines -->
+    <line x1="220" y1="128" x2="215" y2="145" stroke="#0d1117" stroke-width="4"/>
+    <line x1="292" y1="128" x2="297" y2="145" stroke="#0d1117" stroke-width="4"/>
+  </g>
+  <!-- Eyes - modern, bright -->
+  <g filter="url(#cnnGlowF)">
+    <path d="M222,215 Q238,205 254,215 Q238,223 222,215Z" fill="#0284c7" opacity="0.8"/>
+    <circle cx="240" cy="215" r="5" fill="#0a0e17"/>
+    <circle cx="241" cy="214" r="2" fill="#38bdf8"/>
+    <path d="M258,215 Q274,205 290,215 Q274,223 258,215Z" fill="#0284c7" opacity="0.8"/>
+    <circle cx="272" cy="215" r="5" fill="#0a0e17"/>
+    <circle cx="273" cy="214" r="2" fill="#38bdf8"/>
+  </g>
+  <!-- Upload/download arrows near shoulders -->
+  <g opacity="0.15" stroke="#0284c7" stroke-width="1.2">
+    <path d="M170,380 L170,360 M164,366 L170,360 L176,366" fill="none"/>
+    <path d="M342,360 L342,380 M336,374 L342,380 L348,374" fill="none"/>
+  </g>
+  <!-- Data flow dots -->
+  <g opacity="0.1">
+    <circle cx="150" cy="300" r="1.5" fill="#38bdf8"/>
+    <circle cx="155" cy="310" r="1" fill="#38bdf8"/>
+    <circle cx="360" cy="280" r="1.5" fill="#38bdf8"/>
+    <circle cx="365" cy="290" r="1" fill="#38bdf8"/>
+    <circle cx="100" cy="340" r="1" fill="#38bdf8"/>
+    <circle cx="410" cy="360" r="1" fill="#38bdf8"/>
+  </g>
+  <!-- Scan lines -->
+  <g opacity="0.04">
+    <line x1="0" y1="128" x2="512" y2="128" stroke="#0284c7" stroke-width="1"/>
+    <line x1="0" y1="192" x2="512" y2="192" stroke="#0284c7" stroke-width="1"/>
+    <line x1="0" y1="256" x2="512" y2="256" stroke="#0284c7" stroke-width="1"/>
+    <line x1="0" y1="320" x2="512" y2="320" stroke="#0284c7" stroke-width="1"/>
+    <line x1="0" y1="384" x2="512" y2="384" stroke="#0284c7" stroke-width="1"/>
+  </g>
+  <!-- Name -->
+  <text x="256" y="488" text-anchor="middle" font-family="monospace" font-size="10" fill="#0284c7" opacity="0.3" letter-spacing="2">CLOUD NATIVE NATE</text>
+</svg>
