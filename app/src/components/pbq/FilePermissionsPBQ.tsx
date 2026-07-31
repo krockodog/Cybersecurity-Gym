@@ -123,6 +123,15 @@ export default function FilePermissionsPBQ({ onComplete }: Props) {
     if (e.key === 'Enter') handleSubmit();
   };
 
+  // Permission reference table
+  const permRefOctal = [
+    { bits: '7', perm: 'rwx', desc: 'Read, write, execute' },
+    { bits: '6', perm: 'rw-', desc: 'Read, write' },
+    { bits: '5', perm: 'r-x', desc: 'Read, execute' },
+    { bits: '4', perm: 'r--', desc: 'Read only' },
+    { bits: '0', perm: '---', desc: 'No access' },
+  ];
+
   return (
     <div className="w-full">
       <div className="flex items-center justify-between mb-4">
@@ -131,6 +140,20 @@ export default function FilePermissionsPBQ({ onComplete }: Props) {
           <span className="text-sm text-[#7da0c4]">File Permissions</span>
         </div>
         <ProgressTracker current={currentStep + (submitted ? 1 : 0)} total={SCENARIOS.length} score={score} streak={streak} />
+      </div>
+
+      {/* Quick reference bar */}
+      <div className="flex gap-1 mb-4 overflow-x-auto">
+        {permRefOctal.map(ref => (
+          <div key={ref.bits} className="bg-[#0d1526] border border-[#1a2d45] rounded px-2 py-1 text-center flex-shrink-0">
+            <span className="text-xs font-mono text-[#fb8500] block">{ref.bits}</span>
+            <span className="text-[10px] font-mono text-[#00ff41] block">{ref.perm}</span>
+          </div>
+        ))}
+        <div className="bg-[#0d1526] border border-[#ffaa00] rounded px-2 py-1 text-center flex-shrink-0">
+          <span className="text-xs font-mono text-[#ffaa00] block">4/2/1</span>
+          <span className="text-[10px] font-mono text-[#c8dce8] block">s/u/g/o</span>
+        </div>
       </div>
 
       <AnimatePresence mode="wait">

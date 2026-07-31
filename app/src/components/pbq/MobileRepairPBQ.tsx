@@ -162,6 +162,31 @@ export default function MobileRepairPBQ({ onComplete }: Props) {
         <ProgressTracker current={currentStep + (answered ? 1 : 0)} total={SCENARIOS.length} score={score} streak={streak} />
       </div>
 
+      {/* Device status bar */}
+      <div className="grid grid-cols-5 gap-2 mb-4">
+        {SCENARIOS.map((s, i) => {
+          const status = i < currentStep ? 'fixed' : i === currentStep ? 'active' : 'pending';
+          const icons = [
+            <BatteryWarning key="b" size={14} />,
+            <Wifi key="w" size={14} />,
+            <MonitorSmartphone key="m" size={14} />,
+            <Bug key="bg" size={14} />,
+            <RefreshCw key="r" size={14} />,
+          ];
+          return (
+            <motion.div key={s.id} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: i * 0.05 }}
+              className={`bg-[#0d1526] border rounded-lg p-2 flex flex-col items-center gap-1 ${
+                status === 'active' ? 'border-[#ffaa00]' : status === 'fixed' ? 'border-[#00ff41]' : 'border-[#1a2d45]'
+              }`}>
+              <span className={status === 'active' ? 'text-[#ffaa00]' : status === 'fixed' ? 'text-[#00ff41]' : 'text-[#4a6682]'}>
+                {icons[i]}
+              </span>
+              <span className="text-[8px] text-[#7da0c4]">{status === 'fixed' ? 'FIXED' : status === 'active' ? 'ACTIVE' : 'QUEUE'}</span>
+            </motion.div>
+          );
+        })}
+      </div>
+
       <AnimatePresence mode="wait">
         {!completed ? (
           <motion.div key={scenario.id} initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -30 }} transition={{ duration: 0.3 }}>

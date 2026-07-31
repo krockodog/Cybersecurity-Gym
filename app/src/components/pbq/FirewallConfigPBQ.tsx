@@ -131,8 +131,13 @@ export default function FirewallConfigPBQ({ onComplete }: Props) {
   }, [step]);
 
   const handleReset = useCallback(() => {
-    setStep(0); setScore(0); setSelected(null); setAnswered(false);
-    setStreak(0); setCompleted(false); setResults([]);
+    setStep(0);
+    setScore(0);
+    setSelected(null);
+    setAnswered(false);
+    setStreak(0);
+    setCompleted(false);
+    setResults([]);
   }, []);
 
   return (
@@ -211,17 +216,49 @@ export default function FirewallConfigPBQ({ onComplete }: Props) {
             )}
           </AnimatePresence>
 
+          {completed && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="bg-[#0d1526] border border-[#1a2d45] rounded-xl p-4 mb-4"
+            >
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm text-[#e0f2fe] font-semibold">Lab Complete</p>
+                  <p className="text-xs text-[#7da0c4]">
+                    You scored {score}% ({results.filter(Boolean).length}/{SCENARIOS.length} correct)
+                  </p>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-lg font-semibold" style={{ color: score >= 80 ? '#00ff41' : score >= 60 ? '#ffaa00' : '#ff3366' }}>
+                    {score}%
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+          )}
+
           <div className="flex justify-end gap-3">
             {completed && (
-              <motion.button initial={{ opacity: 0 }} animate={{ opacity: 1 }} onClick={handleReset}
-                className="flex items-center gap-2 px-4 py-2 rounded-lg border border-[#1a2d45] text-[#7da0c4] text-sm hover:border-[#ff9500] transition-colors">
-                <RotateCcw size={14} /> Retry
+              <motion.button
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                onClick={handleReset}
+                className="flex items-center gap-2 px-4 py-2 rounded-lg border border-[#1a2d45] text-[#7da0c4] text-sm hover:border-[#ff9500] transition-colors"
+              >
+                <RotateCcw size={14} />
+                Retry
               </motion.button>
             )}
             {answered && !completed && (
-              <motion.button initial={{ opacity: 0 }} animate={{ opacity: 1 }} onClick={handleNext}
-                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#ff9500] text-[#0a1628] text-sm font-semibold hover:brightness-110 transition-all">
-                Next <ChevronRight size={14} />
+              <motion.button
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                onClick={handleNext}
+                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#ff9500] text-[#0a1628] text-sm font-semibold hover:brightness-110 transition-all"
+              >
+                Next
+                <ChevronRight size={14} />
               </motion.button>
             )}
           </div>

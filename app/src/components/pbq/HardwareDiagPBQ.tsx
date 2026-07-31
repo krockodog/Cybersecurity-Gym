@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Cpu, ThermometerSun, Monitor, MemoryStick, HardDrive, CheckCircle2, XCircle, ChevronRight } from 'lucide-react';
+import { Cpu, ThermometerSun, Monitor, MemoryStick, HardDrive, CheckCircle2, XCircle, ChevronRight, AlertTriangle } from 'lucide-react';
 import { ProgressTracker } from './shared/ProgressTracker';
 import type { PBQMetadata } from './shared/types';
 
@@ -96,6 +96,14 @@ export default function HardwareDiagPBQ({ onComplete }: Props) {
   const scenario = SCENARIOS[currentStep];
   const score = Math.round((correctCount / SCENARIOS.length) * 100);
 
+  const componentLabels = ['CPU', 'RAM', 'GPU', 'PSU', 'DISK'];
+  const componentStatus = SCENARIOS.map((s, i) => {
+    if (i > currentStep) return 'pending';
+    if (i === currentStep && !answered) return 'testing';
+    const wasCorrect = i < currentStep ? true : (answered && selected !== null && s.options[selected].correct);
+    return wasCorrect ? 'pass' : 'fail';
+  });
+
   const handleSelect = useCallback((idx: number) => {
     if (answered) return;
     setSelected(idx);
@@ -131,6 +139,30 @@ export default function HardwareDiagPBQ({ onComplete }: Props) {
         <ProgressTracker current={currentStep + (answered ? 1 : 0)} total={SCENARIOS.length} score={score} streak={streak} />
       </div>
 
+      {/* Component status indicators */}
+      <div className="flex gap-2 mb-4">
+        {componentLabels.map((label, i) => {
+          const status = componentStatus[i];
+          const statusColor = status === 'pass' ? '#00ff41' : status === 'fail' ? '#ff3366' : status === 'testing' ? '#ffaa00' : '#1a2d45';
+          return (
+            <motion.div
+              key={label}
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.05 }}
+              className="flex-1 bg-[#0d1526] border rounded-lg p-2 text-center"
+              style={{ borderColor: statusColor }}
+            >
+              <div className="w-3 h-3 rounded-full mx-auto mb-1" style={{ backgroundColor: statusColor, boxShadow: status === 'testing' ? `0 0 8px ${statusColor}` : 'none' }} />
+              <span className="text-[10px] text-[#7da0c4] font-mono">{label}</span>
+              {status === 'testing' && (
+                <motion.div animate={{ opacity: [1, 0.3, 1] }} transition={{ duration: 1.5, repeat: Infinity }} className="text-[8px] text-[#ffaa00] mt-0.5">DIAG</motion.div>
+              )}
+            </motion.div>
+          );
+        })}
+      </div>
+
       <AnimatePresence mode="wait">
         {!completed ? (
           <motion.div key={scenario.id} initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -30 }} transition={{ duration: 0.3 }}>
@@ -140,6 +172,13 @@ export default function HardwareDiagPBQ({ onComplete }: Props) {
                 <h3 className="text-base font-semibold text-[#e0f2fe]">{scenario.title}</h3>
                 <span className="ml-auto text-xs text-[#4a6682]">Scenario {currentStep + 1}/{SCENARIOS.length}</span>
               </div>
+
+              {/* Symptom alert banner */}
+              <div className="flex items-center gap-2 mb-3 px-3 py-2 bg-[rgba(255,170,0,0.05)] border border-[#ffaa00] rounded-lg">
+                <AlertTriangle size={14} className="text-[#ffaa00] flex-shrink-0" />
+                <span className="text-xs text-[#ffaa00]">User-reported symptoms:</span>
+              </div>
+
               <div className="space-y-2 mb-4">
                 {scenario.symptoms.map((s, i) => (
                   <motion.div key={i} initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.1 }}
@@ -194,7 +233,17 @@ export default function HardwareDiagPBQ({ onComplete }: Props) {
             <Cpu size={40} className="text-[#00ff41] mx-auto mb-3" />
             <h3 className="text-lg font-semibold text-[#e0f2fe] mb-2">Diagnostics Complete</h3>
             <p className="text-2xl font-bold text-[#00ff41] mb-2">{score}%</p>
-            <p className="text-sm text-[#7da0c4]">{correctCount}/{SCENARIOS.length} hardware issues correctly diagnosed</p>
+            <p className="text-sm text-[#7da0c4] mb-4">{correctCount}/{SCENARIOS.length} hardware issues correctly diagnosed</p>
+            <div className="flex justify-center gap-3">
+              {componentLabels.map((label, i) => (
+                <div key={label} className="text-center">
+                  <div className={`w-8 h-8 rounded-lg flex items-center justify-center mx-auto mb-1 ${i < correctCount ? 'bg-[rgba(0,255,65,0.15)]' : 'bg-[rgba(255,51,102,0.15)]'}`}>
+                    {i < correctCount ? <CheckCircle2 size={14} className="text-[#00ff41]" /> : <XCircle size={14} className="text-[#ff3366]" />}
+                  </div>
+                  <span className="text-[10px] text-[#7da0c4]">{label}</span>
+                </div>
+              ))}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

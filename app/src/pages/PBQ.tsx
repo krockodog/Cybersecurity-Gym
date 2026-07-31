@@ -3,7 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Network, Terminal, Globe, ShieldCheck, Lock, Activity, Wifi, Target,
   Star, Clock, Zap, Trophy, CheckCircle, RotateCcw, ChevronLeft,
-  Filter, TrendingUp, Award, Cpu
+  Filter, TrendingUp, Award, Cpu, HardDrive, Settings, Shield, Container,
+  BarChart3, Crosshair, Bug, Scan, Search, Database, Mail, AlertTriangle,
+  Key, Monitor, Smartphone, Printer, Package, Users, FileText,
+  Eye, Box, ArrowUpDown, Calculator, Layers, Cable, GitBranch, Cloud
 } from 'lucide-react';
 import { PBQ_COMPONENT_MAP } from '../components/pbq';
 import { PBQ_METADATA, CATEGORY_CONFIG, PBQ_ACCENT_COLORS } from '../components/pbq/metadata';
@@ -13,7 +16,7 @@ import { easeExpoOut } from '../components/pbq/shared/animations';
 
 // ── Types ───────────────────────────────────────────────────────────
 
-type CategoryFilter = 'All' | 'PenTest+' | 'Security+' | 'Network+';
+type CategoryFilter = 'All' | 'PenTest+' | 'Security+' | 'Network+' | 'A+' | 'Linux LPI-1' | 'Linux+' | 'CySA+' | 'CASP+' | 'Cloud+';
 type DifficultyFilter = 'All' | '1' | '2' | '3' | '4' | '5';
 
 interface PBQHistoryRecord {
@@ -27,12 +30,22 @@ interface PBQHistoryRecord {
 
 const ICON_MAP: Record<string, React.ComponentType<{ size?: number }>> = {
   Network, Terminal, Globe, ShieldCheck, Lock, Activity, Wifi, Target,
+  Cpu, HardDrive, Settings, Shield, Container, BarChart3, Crosshair,
+  Bug, Scan, Clock, Search, Database, Mail, AlertTriangle, Key,
+  Monitor, Smartphone, Printer, Package, Users, FileText, Eye, Box,
+  ArrowUpDown, Calculator, Layers, Cable, GitBranch, Cloud,
 };
 
 const CATEGORY_BG: Record<string, string> = {
   'PenTest+': 'rgba(255, 51, 102, 0.08)',
   'Security+': 'rgba(0, 255, 65, 0.08)',
   'Network+': 'rgba(0, 212, 255, 0.08)',
+  'A+': 'rgba(46, 196, 182, 0.08)',
+  'Linux LPI-1': 'rgba(251, 133, 0, 0.08)',
+  'Linux+': 'rgba(255, 149, 0, 0.08)',
+  'CySA+': 'rgba(230, 57, 70, 0.08)',
+  'CASP+': 'rgba(6, 214, 160, 0.08)',
+  'Cloud+': 'rgba(0, 180, 216, 0.08)',
 };
 
 // ── localStorage helpers ────────────────────────────────────────────
@@ -173,7 +186,7 @@ export default function PBQ() {
                   >
                     All ({PBQ_METADATA.length})
                   </button>
-                  {(['PenTest+', 'Security+', 'Network+'] as const).map(cat => {
+                  {(['PenTest+', 'Security+', 'Network+', 'A+', 'Linux LPI-1', 'Linux+', 'CySA+', 'CASP+', 'Cloud+'] as const).map(cat => {
                     const count = PBQ_METADATA.filter(p => p.category === cat).length;
                     return (
                       <button

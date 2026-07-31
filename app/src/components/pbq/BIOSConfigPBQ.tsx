@@ -131,6 +131,9 @@ export default function BIOSConfigPBQ({ onComplete }: Props) {
     }
   }, [currentStep, correctCount, onComplete]);
 
+  const tabLabels = ['Boot', 'Security', 'Advanced', 'Power', 'Exit'];
+  const activeTabIdx = Math.min(currentStep, tabLabels.length - 1);
+
   return (
     <div className="w-full">
       <div className="flex items-center justify-between mb-4">
@@ -139,6 +142,25 @@ export default function BIOSConfigPBQ({ onComplete }: Props) {
           <span className="text-sm text-[#7da0c4]">BIOS/UEFI Configuration</span>
         </div>
         <ProgressTracker current={currentStep + (submitted ? 1 : 0)} total={SCENARIOS.length} score={score} streak={streak} />
+      </div>
+
+      {/* BIOS tab bar */}
+      <div className="flex border-b border-[#1a2d45] mb-4">
+        {tabLabels.map((tab, i) => (
+          <div
+            key={tab}
+            className={`px-4 py-2 text-xs font-mono transition-colors ${
+              i === activeTabIdx
+                ? 'text-[#00d4ff] border-b-2 border-[#00d4ff] bg-[rgba(0,212,255,0.05)]'
+                : i < currentStep
+                ? 'text-[#00ff41]'
+                : 'text-[#4a6682]'
+            }`}
+          >
+            {tab}
+            {i < currentStep && <CheckCircle2 size={10} className="inline ml-1 text-[#00ff41]" />}
+          </div>
+        ))}
       </div>
 
       <AnimatePresence mode="wait">
