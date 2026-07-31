@@ -15,16 +15,16 @@
 
 <p align="center">
   <strong>KI-gestuetztes Lernlabor fuer IT-Sicherheitszertifizierungen</strong><br>
-  <em>8 Kurse &bull; 5.000+ Pruefungsfragen &bull; 9 KI-Dozenten &bull; 8 PBQ-Typen &bull; Lokales KI-Tutoring &bull; Gamification</em>
+  <em>8 aktive Kurse + 1 Coming Soon &bull; 5.000+ Pruefungsfragen &bull; 44 KI-Agenten &bull; 8 PBQ-Typen &bull; Lokales KI-Tutoring &bull; Gamification</em>
 </p>
 
 <p align="center">
+  <a href="#klassenraeume--wings">Klassenraeume</a> &bull;
+  <a href="#ki-dozenten-19">KI-Dozenten</a> &bull;
+  <a href="#ki-tutoren-16">KI-Tutoren</a> &bull;
+  <a href="#ki-organizer-8">KI-Organizer</a> &bull;
   <a href="#raeume--features">Raeume</a> &bull;
   <a href="#kurse">Kurse</a> &bull;
-  <a href="#ki-dozenten">KI-Dozenten</a> &bull;
-  <a href="#quiz-lab">Quiz Lab</a> &bull;
-  <a href="#pbq-arena">PBQ Arena</a> &bull;
-  <a href="#ki-tutor">KI-Tutor</a> &bull;
   <a href="#tech-stack">Tech Stack</a> &bull;
   <a href="#installation">Installation</a>
 </p>
@@ -33,7 +33,7 @@
 
 ## Was ist das Cybersecurity Gymnasium?
 
-Eine vollstaendige **Single-Page-Application** fuer die Vorbereitung auf CompTIA- und Linux-Zertifizierungen. Die Plattform kombiniert echte Pruefungsfragen mit lokalem KI-Tutoring (Ollama), interaktiven Labs, Sprachausgabe und einem vollstaendigen Gamification-System — alles im Browser.
+Eine vollstaendige **Single-Page-Application** fuer die Vorbereitung auf CompTIA- und Linux-Zertifizierungen. Die Plattform kombiniert echte Pruefungsfragen mit lokalem KI-Tutoring (Ollama), interaktiven Labs, Sprachausgabe und einem vollstaendigen Gamification-System — alles im Browser, ohne Backend.
 
 ```text
  +-----------+     +-------------+     +-----------+     +-------------+
@@ -42,13 +42,13 @@ Eine vollstaendige **Single-Page-Application** fuer die Vorbereitung auf CompTIA
  +-----------+     +-------------+     +-----------+     +-------------+
        |                  |                  |                  |
        v                  v                  v                  v
-  Profil &           9 Dozenten        5.000+ Fragen     Ollama Lokal
+  Profil &           19 Dozenten       5.000+ Fragen     Ollama Lokal
   Skill-Tree         8 Wings           7 Datenbanken     Voice I/O
        |                  |                  |                  |
        v                  v                  v                  v
  +-----------+     +-------------+     +-----------+     +-------------+
  | Flashcard | --> | PBQ Arena   | --> | Progress  | --> | Kurskatalog |
- | SM-2      |     | 8 Typen     |     | Heatmap   |     | 8 Kurse     |
+ | SM-2      |     | 8 Typen     |     | Heatmap   |     | 9 Eintraege |
  +-----------+     +-------------+     +-----------+     +-------------+
        |                  |                  |                  |
        v                  v                  v                  v
@@ -58,24 +58,314 @@ Eine vollstaendige **Single-Page-Application** fuer die Vorbereitung auf CompTIA
 
 ---
 
+## KI-Agenten-Architektur
+
+Das Gymnasium nutzt ein dreischichtiges KI-System mit insgesamt **44 Agenten**:
+
+```text
+                    ┌──────────────┐
+                    │    JARVIS    │  Academy AI — Zentralsteuerung
+                    │   "The AI"   │  Status-Monitoring, Begruessung
+                    └──────┬───────┘
+                           │
+         ┌─────────────────┼─────────────────┐
+         │                 │                 │
+    ┌────▼────┐      ┌─────▼────┐      ┌─────▼────┐
+    │ 19 PROF │      │ 16 TUTOR │      │ 8 ORGAN. │
+    │ Dozenten│      │ Tutoren  │      │ Organizer│
+    └─────────┘      └──────────┘      └──────────┘
+    Fachexperten     Je 2 pro Kurs     Klassenmanager
+    800+ Woerter     Theorie+Praxis    Progress-Tracking
+    System-Prompt    Socratic/Labs     Trigger-basiert
+```
+
+---
+
+## Klassenraeume / Wings
+
+Jeder **Wing** ist ein eigenstaendiger Klassenraum mit eigenen Dozenten, Tutoren, einem Organizer, Pruefungsfragen und Domaenen.
+
+### Wing 1: PenTest+ Wing
+
+| | |
+|:--|:--|
+| **Zertifizierung** | CompTIA PenTest+ PT0-003 |
+| **Status** | Aktiv |
+| **Farbe** | `#ff3366` |
+| **Fragen** | 1.161+ |
+| **Datenbank** | `pt003_full_database.json` |
+
+**Dozenten (6):**
+
+| Dozent | Spitzname | Domaene | Farbe |
+|:-------|:----------|:--------|:------|
+| Professor Cipher | The Ghost | Attacks & Exploits | `#ff3366` |
+| Agent Shield | The Architect | Planning & Scoping | `#ffaa00` |
+| Dr. Recon | The Invisible Eye | Information Gathering | `#00e5ff` |
+| Code Master | The Builder | Tools & Code Analysis | `#a855f7` |
+| Director Sage | The Diplomat | Reporting & Communication | `#10b981` |
+| Viper | The Red Specter | Red Team Operations | `#dc2626` |
+
+**Tutoren:** Iris Thinkwell (Theorie) + Kyle Hackwright (Praxis)
+**Organizer:** Oracle Pentest
+
+**Domaenen:** Planning and Scoping, Information Gathering, Attacks and Exploits, Tools and Code, Reporting, Red Team Operations
+
+---
+
+### Wing 2: Linux Wing
+
+| | |
+|:--|:--|
+| **Zertifizierung** | LPI 1 & CompTIA Linux+ XK0-006 |
+| **Status** | Aktiv (Linux+ ab 80% LPI-1-Mastery) |
+| **Farbe** | `#ff9500` |
+| **Fragen** | 450 (LPI 1) |
+| **Datenbanken** | `lpi1_database.json`, `xk006_database.json` |
+
+**Dozenten (2):**
+
+| Dozent | Spitzname | Domaene | Farbe |
+|:-------|:----------|:--------|:------|
+| Benny | Robbenklopper | Linux Administration (LPI 1) | `#ff9500` |
+| Tux Tina | The Terminal Wizard | Linux Administration / DevOps / Shell Scripting | `#7c3aed` |
+
+**Tutoren:** Yuki Shellborn (Theorie) + Bash Brody (Praxis)
+**Organizer:** Daemon Linux
+
+**Domaenen:** System Architecture, Installation, GNU Commands, Filesystems, Shells, Users, Administration, DevOps
+
+---
+
+### Wing 3: Security+ Wing
+
+| | |
+|:--|:--|
+| **Zertifizierung** | CompTIA Security+ SY0-701 |
+| **Status** | Aktiv |
+| **Farbe** | `#0066ff` |
+| **Fragen** | 850 |
+| **Datenbank** | `security_plus_database.json` |
+
+**Dozenten (2):**
+
+| Dozent | Spitzname | Domaene | Farbe |
+|:-------|:----------|:--------|:------|
+| Guardian | The Watchtower | Security+ SY0-701 | `#0066ff` |
+| Sergeant Harden | The Fortress | Blue Team / Defensive Operations | `#1e40af` |
+
+**Tutoren:** Maya Clearview (Theorie) + Dex Lockhart (Praxis)
+**Organizer:** Sentinel Security
+
+**Domaenen:** Threats and Attacks, Cryptography, Network Security, Identity, IR, Blue Team Operations
+
+---
+
+### Wing 4: Network+ Wing
+
+| | |
+|:--|:--|
+| **Zertifizierung** | CompTIA Network+ N10-009 |
+| **Status** | Aktiv |
+| **Farbe** | `#00d4ff` |
+| **Fragen** | 900 |
+| **Datenbank** | `network_plus_database.json` |
+
+**Dozenten (2):**
+
+| Dozent | Spitzname | Domaene | Farbe |
+|:-------|:----------|:--------|:------|
+| NetRunner | The Weave | Network+ N10-009 | `#00d4ff` |
+| Cisco Kate | The Packet Surgeon | Cisco Enterprise Networking | `#059669` |
+
+**Tutoren:** Lena Flowstate (Theorie) + Rex Cablesmith (Praxis)
+**Organizer:** Navigator Network
+
+**Domaenen:** Networking Concepts, Infrastructure, Network Operations, Security, Troubleshooting, Cisco Technologies
+
+---
+
+### Wing 5: A+ Wing
+
+| | |
+|:--|:--|
+| **Zertifizierung** | CompTIA A+ 220-1201/1202 |
+| **Status** | Aktiv |
+| **Farbe** | `#ffaa00` |
+| **Fragen** | 700 |
+| **Datenbank** | `aplus_database.json` |
+
+**Dozenten (2):**
+
+| Dozent | Spitzname | Domaene | Farbe |
+|:-------|:----------|:--------|:------|
+| FixIt | The Mechanic | A+ 220-1201/1202 | `#ffaa00` |
+| Tech Mom | The Fixer | A+ Hardware / Software / Support | `#e11d48` |
+
+**Tutoren:** Sophia Brightmind (Theorie) + Max Fixitall (Praxis)
+**Organizer:** Atlas A+
+
+**Domaenen:** Mobile Devices, Networking, Hardware, Virtualization, Troubleshooting, OS
+
+---
+
+### Wing 6: CySA+ Wing
+
+| | |
+|:--|:--|
+| **Zertifizierung** | CompTIA CySA+ CS0-003 |
+| **Status** | Aktiv |
+| **Farbe** | `#ec4899` |
+| **Fragen** | 750 |
+| **Datenbank** | `cysa_database.json` |
+
+**Dozenten (2):**
+
+| Dozent | Spitzname | Domaene | Farbe |
+|:-------|:----------|:--------|:------|
+| Analyst Ghost | The Silent Watcher | CySA+ | `#ec4899` |
+| Hunter X | The Tracker | Advanced Threat Hunting | `#4f46e5` |
+
+**Tutoren:** Vera Insight (Theorie) + Trace Huntley (Praxis)
+**Organizer:** Chronicle CySA
+
+**Domaenen:** Threat Intelligence, Vulnerability Management, Incident Response, Security Architecture, Reporting and Communication, Threat Hunting
+
+---
+
+### Wing 7: CASP+ Wing
+
+| | |
+|:--|:--|
+| **Zertifizierung** | CompTIA CASP+ CAS-004 |
+| **Status** | Aktiv |
+| **Farbe** | `#14b8a6` |
+| **Fragen** | 600 |
+| **Datenbank** | `casp_database.json` |
+
+**Dozenten (2):**
+
+| Dozent | Spitzname | Domaene | Farbe |
+|:-------|:----------|:--------|:------|
+| Architect Phantom | The Invisible Shield | CASP+ | `#14b8a6` |
+| CISO Nova | The Strategist | Executive Security Leadership | `#0f766e` |
+
+**Tutoren:** Elena Stratagem (Theorie) + Archer Enterprise (Praxis)
+**Organizer:** Cipher CASP
+
+**Domaenen:** Enterprise Security Architecture, Security Engineering, Governance Risk Compliance, Security Operations, Executive Leadership
+
+---
+
+### Wing 8: Cloud+ Wing
+
+| | |
+|:--|:--|
+| **Zertifizierung** | CompTIA Cloud+ CV0-004 & Multi-Cloud Security |
+| **Status** | Coming Soon |
+| **Farbe** | `#0284c7` |
+| **Fragen** | -- |
+
+**Dozenten (1):**
+
+| Dozent | Spitzname | Domaene | Farbe |
+|:-------|:----------|:--------|:------|
+| Cloud Native Nate | The Sky Builder | Cloud+ / AWS / Azure / GCP / Kubernetes Security | `#0284c7` |
+
+**Tutoren:** Nova Skywise (Theorie) + Stratos Gearhart (Praxis)
+**Organizer:** Cumulus Cloud
+
+**Domaenen:** Cloud Architecture, AWS Security, Azure Security, GCP Security, Kubernetes Security, DevSecOps
+
+---
+
+## KI-Dozenten (19)
+
+19 Dozenten mit einzigartiger Persoenlichkeit, 20+ Jahre Fachexpertise und eigenem Kommunikationsstil. Jeder hat einen individuellen **800+ Woerter System-Prompt** fuer das KI-Tutoring mit vollstaendigem Domain-Wissen, Tools, Techniken und Persoenlichkeit.
+
+| # | Dozent | Spitzname | Wing | Domaene | Farbe |
+|:-:|:-------|:----------|:-----|:--------|:------|
+| 1 | Professor Cipher | The Ghost | PenTest+ | Attacks & Exploits | `#ff3366` |
+| 2 | Agent Shield | The Architect | PenTest+ | Planning & Scoping | `#ffaa00` |
+| 3 | Dr. Recon | The Invisible Eye | PenTest+ | Information Gathering | `#00e5ff` |
+| 4 | Code Master | The Builder | PenTest+ | Tools & Code Analysis | `#a855f7` |
+| 5 | Director Sage | The Diplomat | PenTest+ | Reporting & Communication | `#10b981` |
+| 6 | Viper | The Red Specter | PenTest+ | Red Team Operations | `#dc2626` |
+| 7 | Benny | Robbenklopper | Linux | Linux Administration (LPI 1) | `#ff9500` |
+| 8 | Tux Tina | The Terminal Wizard | Linux | Linux / DevOps / Shell Scripting | `#7c3aed` |
+| 9 | Guardian | The Watchtower | Security+ | Security+ SY0-701 | `#0066ff` |
+| 10 | Sergeant Harden | The Fortress | Security+ | Blue Team / Defensive Ops | `#1e40af` |
+| 11 | NetRunner | The Weave | Network+ | Network+ N10-009 | `#00d4ff` |
+| 12 | Cisco Kate | The Packet Surgeon | Network+ | Cisco Enterprise Networking | `#059669` |
+| 13 | FixIt | The Mechanic | A+ | A+ 220-1201/1202 | `#ffaa00` |
+| 14 | Tech Mom | The Fixer | A+ | A+ Hardware / Software / Support | `#e11d48` |
+| 15 | Analyst Ghost | The Silent Watcher | CySA+ | CySA+ CS0-003 | `#ec4899` |
+| 16 | Hunter X | The Tracker | CySA+ | Advanced Threat Hunting | `#4f46e5` |
+| 17 | Architect Phantom | The Invisible Shield | CASP+ | CASP+ CAS-004 | `#14b8a6` |
+| 18 | CISO Nova | The Strategist | CASP+ | Executive Security Leadership | `#0f766e` |
+| 19 | Cloud Native Nate | The Sky Builder | Cloud+ | Cloud+ / AWS / Azure / GCP | `#0284c7` |
+
+---
+
+## KI-Tutoren (16)
+
+Jede Zertifizierung hat **zwei dedizierte Tutoren** — einen fuer Theorie (Socratic Method, Konzeptaufbau) und einen fuer Praxis (Hands-on Labs, sofortiges Feedback).
+
+| Zertifizierung | Theorie-Tutor | Praxis-Tutor |
+|:---------------|:-------------|:-------------|
+| **PenTest+ PT0-003** | Iris Thinkwell — "Understand the concept, and the tool becomes obvious." | Kyle Hackwright — "Type it. Break it. Fix it. That is how you learn." |
+| **Security+ SY0-701** | Maya Clearview — "Security is not magic — it is methodical thinking." | Dex Lockhart — "Configure it once, understand it forever." |
+| **Network+ N10-009** | Lena Flowstate — "Every packet tells a story. Learn to read them." | Rex Cablesmith — "Wire it, ping it, trace it — that is the way." |
+| **A+ 220-1201** | Sophia Brightmind — "Hardware and software are just puzzles waiting to be solved." | Max Fixitall — "If it is broken, we fix it. If it works, we optimize it." |
+| **Linux LPI-1** | Yuki Shellborn — "The command line is not scary — it is your superpower." | Bash Brody — "Type. Tab. Complete. That is the Linux way." |
+| **CySA+ CS0-003** | Vera Insight — "The alert is just the beginning. The analysis tells the story." | Trace Huntley — "Follow the breadcrumbs. Every log tells a tale." |
+| **CASP+ CAS-004** | Elena Stratagem — "Strategy without execution is fantasy." | Archer Enterprise — "Architect the solution. Then build it." |
+| **Cloud+ CV0-003** | Nova Skywise — "The cloud is just someone else's datacenter — with better APIs." | Stratos Gearhart — "Spin up an instance. Break it. Fix it. Learn." |
+
+---
+
+## KI-Organizer (8)
+
+Jeder Klassenraum hat einen **KI-Organizer** der den Lernfortschritt ueberwacht, bei Inaktivitaet eingreift und den Studienplan anpasst.
+
+| Organizer | Zertifizierung | Triggers | Aufgaben |
+|:----------|:---------------|:---------|:---------|
+| **Oracle Pentest** | PT0-003 | Low domain score, Inactive 3+ days, Streak at risk | Daily targets, PBQ scheduling, Professor reassignment |
+| **Sentinel Security** | SY0-701 | Weak domain, Score drop, Study gap | Domain balance, Flashcard scheduling, Weakness alerts |
+| **Navigator Network** | N10-009 | Subnetting missed, Troubleshooting low, Lab incomplete | Concept-lab balance, Troubleshooting drills |
+| **Atlas A+** | 220-1201 | Hardware <60%, OS weak, Practice test failed | Hardware/software balance, Lab scheduling |
+| **Daemon Linux** | LPI-1 | Command practice missed, Scripting low, Permissions weak | Command practice schedule, Terminal time tracking |
+| **Chronicle CySA** | CS0-003 | Log analysis low, SIEM missed, IR playbook incomplete | Log analysis scheduling, Threat intel updates |
+| **Cipher CASP** | CAS-004 | Architecture low, Risk weak, Governance missed | Case studies, Risk assessment drills |
+| **Cumulus Cloud** | CV0-003 | Cloud concepts weak, Security missed, Architecture low | Multi-cloud lab rotation, Provider comparison drills |
+
+---
+
 ## Raeume & Features
 
 ### Onboarding (`/onboarding`)
 
-Vollbild-Wizard ausserhalb des Layouts. Sammelt initiale Profildaten und schaltet nach Abschluss den Zugang zum Gymnasium frei. Kein Zugriff auf Dashboard oder Classroom ohne abgeschlossenes Onboarding.
+Vollbild-Wizard ausserhalb des Layouts (3 Schritte). Kein Zugriff auf Dashboard oder Classroom ohne abgeschlossenes Onboarding.
+
+| Schritt | Beschreibung |
+|:--------|:-------------|
+| **1. Name** | Namenseingabe, gespeichert in localStorage |
+| **2. Academy Guidelines** | 5 aufklappbare Richtlinien (Learning, AI Content, Ethical Use, Privacy, No Guarantee) + Consent-Checkbox |
+| **3. AI Orchestrator** | Typing-Effekt-Begruessung, JARVIS-Vorstellung, "Enter the Academy"-Button |
 
 ---
 
 ### Classroom — Grand Hall (`/classroom`)
 
-Das Herzstück der App. Zeigt alle 9 KI-Dozenten, organisiert in 8 Wings (Abteilungen).
+Das Herzstueck der App. Zeigt alle 19 KI-Dozenten, organisiert in 8 Wings (Klassenraeume).
 
 | Feature | Beschreibung |
 |:--------|:-------------|
-| **Welcome Header** | Animierter Typing-Effekt, Echtzeit-Uhr, personalisierte Begruessung |
-| **Quick Stats Row** | Beantwortete Fragen, Streak, XP, Level auf einen Blick |
+| **Welcome Header** | Animierter Typing-Effekt, JARVIS-Status ("Online"), personalisierte Begruessung |
+| **Quick Stats Row** | Beantwortete Fragen, Streak, XP, Level auf einen Blick mit CountUp-Animation |
+| **JARVIS Status** | Pulsierende gruene LED mit "JARVIS Online"-Anzeige |
 | **Skill Assessment** | Diagnostischer Kompetenztest als Modal — bestimmt Staerken/Schwaechen ueber alle Domaenen |
-| **Professor Cards** | 9 Dozenten mit Avatar, Bio, Fachgebiet, Catchphrase — Direktlinks zu Quiz und 1-on-1 Tutoring |
+| **Professor Cards** | 19 Dozenten mit Avatar, Bio, Fachgebiet, Catchphrase — Direktlinks zu Quiz und 1-on-1 Tutoring |
 | **Wing Filter** | 8 Tabs: All, PenTest+, Linux, Security+, Network+, A+, CySA+, CASP+ |
 | **Wing Overview Cards** | Ueberblickskarten pro Wing mit Zertifizierungs-Infos |
 | **Classroom Team** | 5-Agenten-Team zugewiesen fuer den gewaehlten Zertifizierungspfad |
@@ -107,14 +397,14 @@ Das Herzstück der App. Zeigt alle 9 KI-Dozenten, organisiert in 8 Wings (Abteil
 | Level | Titel |
 |:-----:|:------|
 | 1 | Script Kiddie |
-| 2 | Packet Monkey |
-| 3 | Code Breaker |
-| 4 | Crypto Punk |
-| 5 | Net Ninja |
-| 6 | Shell Warrior |
-| 7 | Root Raider |
-| 8 | Zero Day Hunter |
-| 9 | Kernel King |
+| 2 | N00b |
+| 3 | Recon Ranger |
+| 4 | Exploit Enthusiast |
+| 5 | Vuln Hunter |
+| 6 | Payload Artisan |
+| 7 | Shell Shocker |
+| 8 | Lateral Legend |
+| 9 | Pivot Master |
 | 10 | Elite Pentester |
 
 ---
@@ -173,16 +463,17 @@ Stats-Hero, PBQ-Historie (max. 50 Eintraege), Bestleistungs-Tracking, XP pro PBQ
 
 | Feature | Beschreibung |
 |:--------|:-------------|
-| **Lokale KI** | Streaming-Antworten von Ollama (Token fuer Token) |
+| **Lokale KI** | Streaming-Antworten von Ollama (Token fuer Token) ueber `http://localhost:11434` |
+| **Cloud-Fallback** | OpenRouter als alternativer LLM-Provider (Cloud) |
 | **Model Selector** | Dropdown zur Auswahl des Ollama-Modells |
 | **Pull Model** | Neue Modelle direkt in der App herunterladen |
+| **19 System-Prompts** | Jeder Dozent hat einen 800+ Woerter System-Prompt mit Domain-Wissen, Tools und Persoenlichkeit |
 | **Markdown Rendering** | Vollstaendiges Markdown mit Syntax-Highlighting und Code-Copy-Button |
 | **5 Quick Actions** | 80/20 Rule, Practice Weakness, Code Example, Exam Tip, Explain Topic |
 | **Voice Input** | Spracheingabe per Web Speech API (Mikrofon) |
 | **TTS Output** | Sprachausgabe der KI-Antworten |
 | **Weakness Sidebar** | Mastery-Kreise pro Domaene, Focus-Modus-Toggle |
 | **Chat Persistence** | Gespraeche pro Professor in localStorage gespeichert |
-| **Professor-Persoenlichkeiten** | Jeder Dozent hat eigenen System-Prompt mit Stil und Fachgebiet |
 
 ---
 
@@ -234,7 +525,7 @@ Dedizierter Raum fuer LPI Linux Essentials mit integriertem Terminal-Emulator.
 
 ### Kurskatalog (`/courses`)
 
-Filterbarer Katalog aller 8 Zertifizierungskurse.
+Filterbarer Katalog aller 9 Kurseintraege (8 aktive + 1 Coming Soon).
 
 | Feature | Beschreibung |
 |:--------|:-------------|
@@ -368,24 +659,6 @@ Filterbarer Katalog aller 8 Zertifizierungskurse.
 
 ---
 
-## KI-Dozenten
-
-9 Dozenten mit einzigartiger Persoenlichkeit, 20+ Jahre Fachexpertise und eigenem Kommunikationsstil. Jeder hat einen individuellen System-Prompt fuer das KI-Tutoring.
-
-| Dozent | Spezialgebiet | Stil |
-|:-------|:-------------|:-----|
-| **Professor Cipher** "The Ghost" | Attacks & Exploits, Red Teaming | Mysterioes, nutzt echte Breach-Storys |
-| **Agent Shield** "The Architect" | Planning & Scoping, Compliance | Professionell, methodisch |
-| **Dr. Recon** "The Invisible Eye" | OSINT, Reconnaissance | Analytisch, denkt 3 Schritte voraus |
-| **Commander Patch** "The Fixer" | Vulnerability Management | Ruhig unter Druck, pragmatisch |
-| **Sentinel Nova** "The Watcher" | Reporting & Communication | Empathisch, strukturiert |
-| **Professor Phoenix** | Security+, Enterprise Security | Erfahren, geduldig |
-| **Agent Bluefield** | CySA+, SOC Operations | Detailorientiert, wachsam |
-| **Commander Bastion** | CASP+, Enterprise Architecture | Strategisch, visionaer |
-| **Benny "The Penguin"** | Linux, Shell, Systemadministration | Locker, humorvoll, hands-on |
-
----
-
 ## Querschnitts-Features
 
 ### Gamification
@@ -404,6 +677,10 @@ Filterbarer Katalog aller 8 Zertifizierungskurse.
 
 | Feature | Beschreibung |
 |:--------|:-------------|
+| **JARVIS** | Academy AI — Zentralsteuerung, Status-Monitoring, Begruessung |
+| **19 Dozenten** | Fachexperten mit 800+ Woerter System-Prompts |
+| **16 Tutoren** | Je 2 pro Zertifizierung (Theorie + Praxis) |
+| **8 Organizer** | Klassenmanager mit Trigger-basiertem Progress-Tracking |
 | **Ollama (Lokal)** | Streaming-Chat mit lokalen LLMs — keine Cloud, volle Privatsphaere |
 | **OpenRouter** | Alternativer LLM-Provider (Cloud) |
 | **RAG** | Retrieval-Augmented Generation fuer kontextbasierte Antworten |
@@ -439,7 +716,7 @@ Styling           Tailwind CSS 3.4 + shadcn/ui (Radix Primitives)
 Animationen       Framer Motion 12
 Routing           React Router DOM 7.15 (HashRouter)
 State             localStorage (kein Backend)
-KI                Ollama (lokal) + OpenRouter (Cloud)
+KI                Ollama (lokal, localhost:11434) + OpenRouter (Cloud)
 Markdown          react-markdown 10 + remark-gfm
 Charts            Recharts 2.15
 Icons             Lucide React
@@ -462,15 +739,21 @@ Die App laeuft dann unter `http://localhost:5173`.
 
 ### Mit KI-Tutoring (optional)
 
+Fuer lokales KI-Tutoring muss Ollama auf dem gleichen Rechner laufen. Die App verbindet sich mit `http://localhost:11434`.
+
 ```bash
-# Ollama installieren (https://ollama.ai)
+# 1. Ollama installieren (https://ollama.ai)
+# 2. Ollama starten
 ollama serve
 
-# Ein Modell herunterladen
+# 3. Ein Modell herunterladen (z.B. llama3.1)
 ollama pull llama3.1
 
-# Dann in der App den Tutor oeffnen — Ollama wird automatisch erkannt
+# 4. In der App: Tutor oeffnen → Modell aus dem Dropdown waehlen
+#    Neue Modelle koennen auch direkt in der App per "Pull Model" geladen werden
 ```
+
+Alternativ kann OpenRouter als Cloud-Backend verwendet werden — die Konfiguration erfolgt in der App.
 
 ### Production Build
 
@@ -487,8 +770,8 @@ npm run preview
 Cybersecurity-Gym/
 ├── app/
 │   ├── public/
-│   │   ├── courses.json              # Kurskatalog (8 Kurse)
-│   │   ├── professors.json           # 9 Dozenten + Wings + JARVIS
+│   │   ├── courses.json              # Kurskatalog (9 Eintraege)
+│   │   ├── professors.json           # 19 Dozenten + 8 Wings + JARVIS
 │   │   ├── pt003_full_database.json  # PenTest+ PT0-003
 │   │   ├── security_plus_database.json
 │   │   ├── cysa_database.json
@@ -501,10 +784,11 @@ Cybersecurity-Gym/
 │   ├── src/
 │   │   ├── components/
 │   │   │   ├── ui/                   # shadcn/ui Basiskomponenten
-│   │   │   ├── onboarding/           # Onboarding-Wizard
+│   │   │   ├── onboarding/           # Onboarding-Wizard (3 Schritte)
 │   │   │   ├── pbq/                  # 8 PBQ-Typen + Shared
 │   │   │   ├── Navbar.tsx            # Seitennavigation mit Wings
 │   │   │   ├── Layout.tsx            # App-Layout (Navbar + Outlet)
+│   │   │   ├── Footer.tsx            # App-Footer
 │   │   │   ├── SkillAssessment.tsx   # Diagnostischer Kompetenztest
 │   │   │   ├── AdaptiveLearningPanel.tsx  # Lernempfehlungen
 │   │   │   ├── ExamStrategist.tsx    # Pruefungsstrategie-KI
@@ -526,13 +810,15 @@ Cybersecurity-Gym/
 │   │   │   ├── LPI1Room.tsx          # Linux LPI 1 + Terminal
 │   │   │   └── LinuxPlusRoom.tsx     # Linux+ (ab 80% LPI 1)
 │   │   ├── services/
-│   │   │   ├── ollama.ts             # Ollama LLM-Integration
-│   │   │   ├── openrouter.ts         # OpenRouter API
+│   │   │   ├── ollama.ts             # Ollama LLM + 19 System-Prompts
+│   │   │   ├── openrouter.ts         # OpenRouter Cloud-API
 │   │   │   ├── llm.ts               # LLM-Abstraktionsschicht
 │   │   │   ├── rag.ts               # Retrieval-Augmented Generation
 │   │   │   ├── adaptive-learning.ts  # Adaptiver Lernalgorithmus
-│   │   │   ├── orchestrator.ts       # KI-Orchestrator
-│   │   │   └── professor-data.ts     # Dozenten-Definitionen
+│   │   │   ├── orchestrator.ts       # KI-Orchestrator (JARVIS)
+│   │   │   ├── professor-data.ts     # Dozenten-Definitionen
+│   │   │   ├── tutor-data.ts         # 16 Tutoren (Theorie + Praxis)
+│   │   │   └── organizer-data.ts     # 8 KI-Organizer
 │   │   ├── hooks/
 │   │   │   ├── useTTS.ts            # Text-to-Speech Hook
 │   │   │   └── use-mobile.ts        # Mobile-Erkennung
@@ -550,10 +836,10 @@ Cybersecurity-Gym/
 | Route | Seite | Beschreibung |
 |:------|:------|:-------------|
 | `/onboarding` | Onboarding | Vollbild-Wizard (ausserhalb Layout) |
-| `/` | Grand Hall | Dashboard mit Dozenten, Streak, Adaptive Learning |
+| `/` | Grand Hall | Dashboard mit 19 Dozenten, Streak, Adaptive Learning |
 | `/classroom` | Classroom | Grand Hall (Alias) |
 | `/profile` | Profil | XP, Level, Badges, Skill Tree, Daily Challenge, Agent Feed |
-| `/courses` | Kurskatalog | 8 Kurse mit Suche, Filter, Sortierung |
+| `/courses` | Kurskatalog | 9 Kurseintraege mit Suche, Filter, Sortierung |
 | `/courses/:courseId` | Kursdetails | 7 Tabs: Overview, Simulators, Practice, Guide, Cards, PBQs, Cheatsheets |
 | `/quiz` | Quiz Lab | 3 Modi, 7 Datenbanken, 5.000+ Fragen |
 | `/pbq` | PBQ Arena | 8 interaktive PBQ-Typen |
@@ -584,17 +870,44 @@ Alle Nutzerdaten werden clientseitig in `localStorage` gespeichert — kein Back
 
 ```text
 localStorage Keys:
-├── trygit_onboarding_complete     # Onboarding-Status
-├── trygit-quiz-progress-{cert}    # Quiz-Fortschritt pro Kurs
-├── trygit-quiz-history            # Quiz-Historie (max. 20)
-├── trygit-flashcards-{cert}       # Flashcard SM-2 Daten
-├── trygit-streak-data             # Study Streak Kalender
-├── trygit-xp                      # XP und Level
-├── trygit-badges                  # Freigeschaltete Badges
-├── trygit-skill-assessment        # Kompetenztest-Ergebnisse
-├── trygit-tutor-chat-{prof}       # Chat-Historie pro Professor
-├── lpi1_mastery                   # LPI-1 Mastery (Unlock-Gate)
-└── trygit-pbq-history             # PBQ-Verlauf und Bestleistungen
+├── Onboarding
+│   ├── trygit_onboarding_complete     # Onboarding abgeschlossen (boolean)
+│   ├── trygit_student_name            # Name des Studenten
+│   └── trygit_consent_given           # Academy Guidelines akzeptiert
+├── Fortschritt
+│   ├── trygit_xp                      # XP-Punkte
+│   ├── trygit_level                   # Aktuelles Level (1-10)
+│   ├── trygit_streak                  # Study Streak (Tage)
+│   ├── trygit_questions_answered      # Gesamt beantwortete Fragen
+│   ├── trygit_user_state              # Profil-Dashboard State (JSON)
+│   └── trygit_daily_progress          # Taeglicher Fortschritt
+├── Quiz & Flashcards
+│   ├── trygit-quiz-progress-{cert}    # Quiz-Fortschritt pro Kurs
+│   ├── trygit-quiz-history            # Quiz-Historie (max. 20)
+│   ├── quiz_results                   # Quiz-Ergebnisse (Tutor-Kontext)
+│   └── trygit-flashcards-{cert}       # Flashcard SM-2 Daten
+├── PBQ
+│   ├── trygit-pbq-history-v2          # PBQ-Verlauf
+│   └── trygit-pbq-progress            # PBQ-Fortschritt
+├── KI & Assessment
+│   ├── trygit_skill_assessment        # Kompetenztest-Ergebnisse
+│   ├── trygit_difficulty              # Schwierigkeitseinstellung
+│   ├── trygit_selected_professor      # Ausgewaehlter Dozent
+│   ├── trygit_orchestrator_assignment # KI-Orchestrator Zuweisung
+│   └── trygit-tutor-chat-{prof}       # Chat-Historie pro Professor
+├── Linux
+│   ├── lpi1_mastery                   # LPI-1 Mastery (Unlock-Gate)
+│   ├── lpi1_results                   # LPI-1 Ergebnisse
+│   ├── xk006_mastery                  # Linux+ Mastery
+│   ├── xk006_answered                 # Linux+ beantwortete Fragen
+│   ├── xk006_streak                   # Linux+ Streak
+│   └── xk006_celebration_seen         # Freischaltungs-Animation gesehen
+├── Exam Strategist
+│   ├── trygit_exam_date               # Pruefungsdatum
+│   ├── trygit_quote_index             # Motivations-Zitat Index
+│   └── trygit_quote_date              # Letztes Zitat-Datum
+└── Badges
+    └── trygit-badges                  # Freigeschaltete Badges
 ```
 
 ---
