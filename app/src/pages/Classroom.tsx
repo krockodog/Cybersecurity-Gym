@@ -429,7 +429,7 @@ function QuickStatsRow() {
   const stats = [
     { icon: <Target size={22} className="text-[#00d4ff]" />, value: answered || 0, label: 'Questions', color: '#00d4ff' },
     { icon: <TrendingUp size={22} className="text-[#00ff41]" />, value: 70, label: 'Correct Rate', suffix: '%', color: '#00ff41' },
-    { icon: <BookOpen size={22} className="text-[#ffaa00]" />, value: 9, label: 'Wings Active', color: '#ffaa00' },
+    { icon: <BookOpen size={22} className="text-[#ffaa00]" />, value: 8, label: 'Wings Active', color: '#ffaa00' },
     { icon: <Users size={22} className="text-[#8b5cf6]" />, value: 19, label: 'Professors', color: '#8b5cf6' },
   ];
 
@@ -1265,7 +1265,7 @@ export default function Classroom() {
             <h2 className="text-2xl md:text-3xl font-bold text-[#e0f2fe]">Wing Overview</h2>
           </div>
           <p className="text-sm text-[#5a7a9a] ml-4">
-            Nine specialized wings. Each leads to a different certification path.
+            Eight specialized wings. Each leads to a different certification path.
           </p>
         </motion.div>
 
