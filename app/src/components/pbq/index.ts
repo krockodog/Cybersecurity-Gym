@@ -11,6 +11,12 @@ export const CertChainPBQ = lazy(() => import('./CertChainPBQ'));
 export const LogRadarPBQ = lazy(() => import('./LogRadarPBQ'));
 export const WirelessAttackPBQ = lazy(() => import('./WirelessAttackPBQ'));
 export const ExploitChainPBQ = lazy(() => import('./ExploitChainPBQ'));
+export const SubnetCalculatorPBQ = lazy(() => import('./SubnetCalculatorPBQ'));
+export const ProtocolAnalyzerPBQ = lazy(() => import('./ProtocolAnalyzerPBQ'));
+export const DNSResolutionPBQ = lazy(() => import('./DNSResolutionPBQ'));
+export const VLANConfigPBQ = lazy(() => import('./VLANConfigPBQ'));
+export const CableTesterPBQ = lazy(() => import('./CableTesterPBQ'));
+export const RoutingTablePBQ = lazy(() => import('./RoutingTablePBQ'));
 
 export const PBQ_COMPONENT_MAP: Record<string, React.ComponentType<{ onComplete?: (score: number) => void }>> = {
   'network-topology': NetworkTopologyPBQ,
@@ -21,4 +27,10 @@ export const PBQ_COMPONENT_MAP: Record<string, React.ComponentType<{ onComplete?
   'log-radar': LogRadarPBQ,
   'wireless-attack': WirelessAttackPBQ,
   'exploit-chain': ExploitChainPBQ,
+  'subnet-calculator': SubnetCalculatorPBQ,
+  'protocol-analyzer': ProtocolAnalyzerPBQ,
+  'dns-resolution': DNSResolutionPBQ,
+  'vlan-config': VLANConfigPBQ,
+  'cable-tester': CableTesterPBQ,
+  'routing-table': RoutingTablePBQ,
 };
