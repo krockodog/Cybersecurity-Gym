@@ -90,6 +90,12 @@ export const CATEGORY_CONFIG: Record<string, { color: string; icon: string }> = 
   'PenTest+': { color: '#ff3366', icon: 'Target' },
   'Security+': { color: '#00ff41', icon: 'Shield' },
   'Network+': { color: '#00d4ff', icon: 'Network' },
+  'A+': { color: '#2ec4b6', icon: 'Cpu' },
+  'Linux LPI-1': { color: '#fb8500', icon: 'Terminal' },
+  'Linux+': { color: '#ff9500', icon: 'Monitor' },
+  'CySA+': { color: '#e63946', icon: 'Search' },
+  'CASP+': { color: '#06d6a0', icon: 'Building' },
+  'Cloud+': { color: '#00b4d8', icon: 'Cloud' },
 };
 
 export const PBQ_ACCENT_COLORS: Record<string, string> = {

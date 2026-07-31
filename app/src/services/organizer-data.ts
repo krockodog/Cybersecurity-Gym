@@ -78,6 +78,15 @@ export const organizers: OrganizerData[] = [
     responsibilities: ['Architecture case studies', 'Risk assessment drills', 'Governance review', 'Enterprise scenario rotation'],
   },
   {
+    id: 'organizer-linuxplus',
+    name: 'Kernel Keeper',
+    certification: 'XK0-006',
+    color: '#ff9500',
+    description: 'Orchestrates your Linux+ XK0-006 preparation with focus on system management, security, and automation.',
+    triggers: ['System management score low', 'Security concepts weak', 'Scripting practice missed', 'Container labs incomplete'],
+    responsibilities: ['Domain balance monitoring', 'Lab scheduling', 'Scripting progression', 'Container practice rotation', 'Exam readiness tracking'],
+  },
+  {
     id: 'organizer-cloud',
     name: 'Cumulus Cloud',
     certification: 'CV0-003',

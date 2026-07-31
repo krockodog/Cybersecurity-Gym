@@ -36,6 +36,10 @@ const DOMAIN_PROFESSOR_MAP: Record<string, string[]> = {
   'Networking': ['recon', 'ciscokate'],
   'Hardware/Software': ['codemaster', 'techmom'],
   'Linux': ['benny', 'tuxtina'],
+  'System Management': ['benny', 'tuxtina'],
+  'Scripting and Automation': ['benny', 'codemaster'],
+  'Troubleshooting': ['tuxtina', 'fixit'],
+  'Storage': ['benny', 'tuxtina'],
   'Cybersecurity Analyst': ['ghost', 'hunterx'],
   'Advanced Security': ['phantom', 'cisonova'],
   'Cloud Security': ['guardian', 'cloudnate']
@@ -290,6 +294,14 @@ const CLASSROOM_STAFF: Record<string, ClassroomStaff> = {
     professor2: 'cloudnate',
     tutor1: 'tutor-theory-cloud',
     tutor2: 'tutor-practice-cloud',
+    organizer: 'auto'
+  },
+  'XK0-006': {
+    certification: 'Linux+',
+    professor1: 'benny',
+    professor2: 'tuxtina',
+    tutor1: 'tutor-theory-linuxplus',
+    tutor2: 'tutor-practice-linuxplus',
     organizer: 'auto'
   }
 };
