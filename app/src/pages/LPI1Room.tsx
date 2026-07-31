@@ -63,7 +63,7 @@ const DOMAINS: DomainInfo[] = [
     id: '101',
     title: 'Systemarchitektur',
     color: '#ff3366',
-    questionCount: 8,
+    questionCount: 12,
     hints: ['lspci/lsusb/lscpu → Hardware-Info', '/proc & /sys → Kernel-Interfaces', 'Runlevels 0-6 + systemd targets', 'shutdown/reboot/halt → System anhalten'],
     mastery: 0,
   },
@@ -71,7 +71,7 @@ const DOMAINS: DomainInfo[] = [
     id: '102',
     title: 'Linux-Installation',
     color: '#ffaa00',
-    questionCount: 8,
+    questionCount: 12,
     hints: ['fdisk/gdisk/parted → Partitionierung', 'LVM: pvcreate→vgcreate→lvcreate', 'mkfs.ext4/mount/fstab', 'apt/yum/rpm/dpkg → Paketverwaltung'],
     mastery: 0,
   },
@@ -79,7 +79,7 @@ const DOMAINS: DomainInfo[] = [
     id: '103',
     title: 'GNU-Unix-Befehle',
     color: '#00ff41',
-    questionCount: 16,
+    questionCount: 20,
     hints: ['ls/cd/pwd/cp/mv/rm/find', 'grep/sed/awk/cut/sort/uniq', 'tar/gzip/zip → Archivierung', 'ps/top/kill → Prozesse', 'chmod/chown/umask → Rechte'],
     mastery: 0,
   },
@@ -87,7 +87,7 @@ const DOMAINS: DomainInfo[] = [
     id: '104',
     title: 'Dateisysteme',
     color: '#00d4ff',
-    questionCount: 8,
+    questionCount: 12,
     hints: ['FHS: /etc/var/usr/home/tmp/opt', 'fsck/df/du/mount', 'ext4/XFS/Btrfs → Journaling-FS'],
     mastery: 0,
   },
@@ -95,7 +95,7 @@ const DOMAINS: DomainInfo[] = [
     id: '105',
     title: 'Shells & Skripte',
     color: '#a855f7',
-    questionCount: 8,
+    questionCount: 12,
     hints: ['#!/bin/bash Shebang', 'if/for/while/case', '$?$#@ → Parameter', 'export/source/alias'],
     mastery: 0,
   },
@@ -103,7 +103,7 @@ const DOMAINS: DomainInfo[] = [
     id: '106',
     title: 'Benutzerverwaltung',
     color: '#ff7b00',
-    questionCount: 8,
+    questionCount: 12,
     hints: ['useradd/usermod/userdel', '/etc/passwd/shadow/group', 'passwd/chage', 'sudo/su'],
     mastery: 0,
   },
@@ -111,7 +111,7 @@ const DOMAINS: DomainInfo[] = [
     id: '107',
     title: 'Systemadministration',
     color: '#10b981',
-    questionCount: 8,
+    questionCount: 10,
     hints: ['systemctl/journalctl/cron/at', 'ip/ss/ping/traceroute', 'date/timedatectl', 'mail/apache/nginx'],
     mastery: 0,
   },
@@ -212,9 +212,36 @@ export default function LPI1Room() {
 
   /* ── load quiz data ── */
   useEffect(() => {
+    const DOMAIN_NAME_TO_ID: Record<string, string> = {
+      'Systemarchitektur': '101',
+      'Linux-Installation': '102',
+      'GNU-Unix-Befehle': '103',
+      'Dateisysteme': '104',
+      'Shells und Skripte': '105',
+      'Benutzerverwaltung': '106',
+      'Systemadministration': '107',
+    };
+    const LETTER_TO_INDEX: Record<string, number> = { A: 0, B: 1, C: 2, D: 3, E: 4 };
+
     fetch('/lpi1_database.json')
       .then((r) => r.json())
-      .then((d: QuizData) => setQuizData(d))
+      .then((raw: any) => {
+        const questions: Question[] = (raw.questions || []).map((q: any, idx: number) => ({
+          id: idx + 1,
+          domain: DOMAIN_NAME_TO_ID[q.domain] || q.domain,
+          question: q.question,
+          options: (q.options || []).map((o: string) => o.replace(/^[A-E]\.\s*/, '')),
+          answer: typeof q.answer === 'number' ? q.answer : LETTER_TO_INDEX[q.correct_answer] ?? 0,
+          explanation: q.explanation || '',
+          hint8020: q.hint8020 || q.eighty_twenty_hint || q.explanation || '',
+        }));
+        setQuizData({
+          version: '1.0',
+          exam: raw.metadata?.exam || 'LPI-1',
+          domains: DOMAINS.map((d) => ({ id: d.id, title: d.title, weight: '' })),
+          questions,
+        });
+      })
       .catch(() => null);
   }, []);
 

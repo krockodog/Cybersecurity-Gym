@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "CompTIA Network+ N10-009",
-    "total_questions": 80,
+    "total_questions": 90,
     "domains": [
       "Networking Concepts",
       "Network Infrastructure",
@@ -1213,6 +1213,156 @@
       ],
       "correct_answer": "B",
       "explanation": "For site-to-site VPN tunnels, the most critical monitoring metrics are tunnel status (up/down), latency, and packet loss, as these directly impact the reliability and performance of hybrid cloud connectivity."
+    },
+    {
+      "id": "net_201",
+      "exam": "N10-009",
+      "domain": "Network Troubleshooting",
+      "type": "multiple_choice",
+      "question": "A technician is troubleshooting intermittent connectivity. Which command provides continuous latency and packet loss statistics to each hop?",
+      "options": [
+        "A. mtr",
+        "B. tracert",
+        "C. ping -t",
+        "D. netstat"
+      ],
+      "correct_answer": "A",
+      "explanation": "mtr (My Traceroute) combines ping and traceroute, displaying continuous statistics including latency and packet loss for each hop along the path."
+    },
+    {
+      "id": "net_202",
+      "exam": "N10-009",
+      "domain": "Network Troubleshooting",
+      "type": "multiple_choice",
+      "question": "A switch port LED is amber. What does this typically indicate?",
+      "options": [
+        "A. The port is disabled or has an error",
+        "B. The port is operating at 1 Gbps",
+        "C. The port is receiving power via PoE",
+        "D. The port is in monitoring mode"
+      ],
+      "correct_answer": "A",
+      "explanation": "An amber LED on a switch port typically indicates the port is disabled, blocked by STP, or experiencing an error condition such as a duplex mismatch."
+    },
+    {
+      "id": "net_203",
+      "exam": "N10-009",
+      "domain": "Network Infrastructure",
+      "type": "multiple_choice",
+      "question": "Which wireless standard operates exclusively in the 6 GHz frequency band?",
+      "options": [
+        "A. Wi-Fi 6E (802.11ax)",
+        "B. Wi-Fi 6 (802.11ax)",
+        "C. Wi-Fi 5 (802.11ac)",
+        "D. Wi-Fi 7 (802.11be)"
+      ],
+      "correct_answer": "A",
+      "explanation": "Wi-Fi 6E extends 802.11ax to the 6 GHz band, providing additional channels with less interference. Wi-Fi 7 also uses 6 GHz but is not exclusive to it."
+    },
+    {
+      "id": "net_204",
+      "exam": "N10-009",
+      "domain": "Network Infrastructure",
+      "type": "multiple_choice",
+      "question": "What is the maximum cable length for a single run of Cat 6a Ethernet cable?",
+      "options": [
+        "A. 100 meters",
+        "B. 55 meters",
+        "C. 150 meters",
+        "D. 300 meters"
+      ],
+      "correct_answer": "A",
+      "explanation": "Cat 6a supports 10 Gbps at up to 100 meters. Cat 6 supports 10 Gbps only up to 55 meters, falling back to 1 Gbps beyond that."
+    },
+    {
+      "id": "net_205",
+      "exam": "N10-009",
+      "domain": "Network Troubleshooting",
+      "type": "multiple_choice",
+      "question": "Users report slow network performance during peak hours. Which tool should be used first to identify bandwidth consumption by host?",
+      "options": [
+        "A. NetFlow/sFlow analyzer",
+        "B. Protocol analyzer (Wireshark)",
+        "C. Cable tester",
+        "D. Tone generator"
+      ],
+      "correct_answer": "A",
+      "explanation": "NetFlow/sFlow analysis shows bandwidth usage per host and application, making it ideal for identifying top talkers during congestion."
+    },
+    {
+      "id": "net_206",
+      "exam": "N10-009",
+      "domain": "Network Operations",
+      "type": "multiple_choice",
+      "question": "Which protocol provides automatic failover for the default gateway in a network?",
+      "options": [
+        "A. VRRP",
+        "B. LACP",
+        "C. STP",
+        "D. LLDP"
+      ],
+      "correct_answer": "A",
+      "explanation": "VRRP (Virtual Router Redundancy Protocol) allows multiple routers to share a virtual IP, providing automatic gateway failover if the primary fails."
+    },
+    {
+      "id": "net_207",
+      "exam": "N10-009",
+      "domain": "Network Operations",
+      "type": "multiple_choice",
+      "question": "Which SNMP version provides encryption and authentication?",
+      "options": [
+        "A. SNMPv3",
+        "B. SNMPv2c",
+        "C. SNMPv1",
+        "D. SNMPv2"
+      ],
+      "correct_answer": "A",
+      "explanation": "SNMPv3 adds authentication (AuthNoPriv) and encryption (AuthPriv). SNMPv1 and v2c use community strings transmitted in cleartext."
+    },
+    {
+      "id": "net_208",
+      "exam": "N10-009",
+      "domain": "Network Troubleshooting",
+      "type": "multiple_choice",
+      "question": "A server has an IP address of 169.254.x.x. What does this indicate?",
+      "options": [
+        "A. DHCP failed and APIPA assigned an address",
+        "B. The server is using a static multicast address",
+        "C. The DNS server is unreachable",
+        "D. The server is configured for IPv6 only"
+      ],
+      "correct_answer": "A",
+      "explanation": "169.254.0.0/16 is the APIPA (Automatic Private IP Addressing) range, assigned when a DHCP client cannot reach a DHCP server."
+    },
+    {
+      "id": "net_209",
+      "exam": "N10-009",
+      "domain": "Network Security",
+      "type": "multiple_choice",
+      "question": "Which attack intercepts communication between two parties without their knowledge?",
+      "options": [
+        "A. On-path attack (man-in-the-middle)",
+        "B. Denial of service",
+        "C. Brute force",
+        "D. Social engineering"
+      ],
+      "correct_answer": "A",
+      "explanation": "An on-path attack (formerly man-in-the-middle) intercepts and potentially modifies traffic between two parties who believe they are communicating directly."
+    },
+    {
+      "id": "net_210",
+      "exam": "N10-009",
+      "domain": "Networking Concepts",
+      "type": "multiple_choice",
+      "question": "What is the purpose of the 802.1Q protocol?",
+      "options": [
+        "A. VLAN tagging on trunk ports",
+        "B. Wireless authentication",
+        "C. Link aggregation",
+        "D. Spanning tree protocol"
+      ],
+      "correct_answer": "A",
+      "explanation": "802.1Q adds a VLAN tag to Ethernet frames on trunk links, allowing switches to carry traffic for multiple VLANs over a single connection."
     }
   ]
 }

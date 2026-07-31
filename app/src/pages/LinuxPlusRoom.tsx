@@ -60,7 +60,7 @@ const DOMAINS: DomainInfo[] = [
     title: 'System Management',
     color: '#00d4ff',
     weight: '23%',
-    questionCount: 12,
+    questionCount: 21,
     hints: ['LVM/RAID/Storage', 'Kernel modules & params', 'Networking config (ip, nmcli)', 'Boot process & GRUB'],
   },
   {
@@ -68,7 +68,7 @@ const DOMAINS: DomainInfo[] = [
     title: 'Security',
     color: '#ff3366',
     weight: '18%',
-    questionCount: 10,
+    questionCount: 16,
     hints: ['SELinux/AppArmor', 'Firewall (nftables/ufw)', 'SSH hardening', 'Encryption (LUKS/GPG)'],
   },
   {
@@ -76,7 +76,7 @@ const DOMAINS: DomainInfo[] = [
     title: 'Services & Users',
     color: '#10b981',
     weight: '20%',
-    questionCount: 10,
+    questionCount: 18,
     hints: ['systemd units', 'LDAP/SSSD auth', 'Mail services (Postfix)', 'Web (Apache/Nginx)'],
   },
   {
@@ -84,7 +84,7 @@ const DOMAINS: DomainInfo[] = [
     title: 'Automation & Scripting',
     color: '#a855f7',
     weight: '17%',
-    questionCount: 8,
+    questionCount: 15,
     hints: ['Bash/Perl/Python', 'Cron/systemd timers', 'CI/CD basics', 'Infrastructure as Code'],
   },
   {
@@ -92,7 +92,7 @@ const DOMAINS: DomainInfo[] = [
     title: 'Troubleshooting',
     color: '#ffaa00',
     weight: '22%',
-    questionCount: 10,
+    questionCount: 20,
     hints: ['Network diag (ss, nmap)', 'Performance (sar, iostat)', 'Log analysis (journalctl)', 'Boot rescue mode'],
   },
 ];
