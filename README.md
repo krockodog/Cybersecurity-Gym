@@ -688,13 +688,170 @@ Filterbarer Katalog aller 9 Kurseintraege (8 aktive + 1 Coming Soon).
 | **Adaptive Learning** | Algorithmus analysiert Performance und empfiehlt Lernpfade |
 | **Exam Strategist** | Score-Prognose, Studienplan, Zeitverteilung pro Domaene |
 
+---
+
+### Dual-LLM-Backend (`llm.ts`)
+
+Einheitliche Abstraktionsschicht die Ollama und OpenRouter zu einem Backend verschmilzt — mit automatischem Failover.
+
+```text
+                          ┌───────────────┐
+                          │    llm.ts     │   Unified Streaming API
+                          │  streamLLM()  │   Backend + Fallback Config
+                          └───────┬───────┘
+                                  │
+                    ┌─────────────┴─────────────┐
+                    │                           │
+             ┌──────▼──────┐             ┌──────▼──────┐
+             │   Ollama    │             │ OpenRouter  │
+             │ localhost:  │  Fallback   │ 6 kostenlose│
+             │   11434     │ ◄─────────► │   Modelle   │
+             └─────────────┘             └─────────────┘
+```
+
+**OpenRouter Free-Modelle (6):**
+
+| Modell | Qualitaet | Speed | Kontext |
+|:-------|:---------:|:-----:|:-------:|
+| **Nemotron 70B** | 10 | 6 | 128K |
+| **DeepSeek V3** | 9 | 7 | 64K |
+| **Llama 3.1 8B** | 7 | 9 | 128K |
+| **Mistral 7B** | 7 | 10 | 32K |
+| **Gemma 2 9B** | 6 | 9 | 8K |
+| **Qwen 2.5 7B** | 6 | 9 | 32K |
+
+Default-Backend ist OpenRouter (kein lokales Setup noetig). Ollama dient als Fallback oder kann manuell als primaeres Backend gesetzt werden.
+
+---
+
+### RAG — Retrieval-Augmented Generation (`rag.ts`)
+
+TF-IDF-aehnliches Keyword-Scoring das Pruefungsfragen aus allen Datenbanken kontextgenau in Professor-Antworten einbettet.
+
+| Feature | Beschreibung |
+|:--------|:-------------|
+| **Keyword-Scoring** | Gewichtete Suche: Question (10), Domain (8), Explanation (5), Options (3) |
+| **Domain-Keywords** | 15+ domainspezifische Keyword-Listen (PenTest+, Security+, Linux) |
+| **Domain-Boost** | +15 Punkte wenn Frage und Keyword aus gleicher Domaene stammen |
+| **Kontext-Injektion** | Top-3 relevante Fragen werden dem System-Prompt angehaengt |
+| **Weakness-Context** | Schwaechen-basierte Fragen fuer personalisiertes Tutoring |
+| **Preloading** | Fragendatenbanken werden beim App-Start vorgeladen |
+
+---
+
+### Adaptive Learning Engine (`adaptive-learning.ts`)
+
+Vollstaendige Lern-Intelligenz die Studentenleistung analysiert und personalisierte Lernpfade generiert.
+
+| Feature | Beschreibung |
+|:--------|:-------------|
+| **Domain-Gewichtung** | CompTIA-offizielle Gewichtung: Attacks 30%, Info Gathering 22%, Planning 14%, etc. |
+| **Subdomain-Mapping** | 30+ Subdomains (SQL Injection, Nmap Scanning, CVSS Scoring, etc.) |
+| **Priority Queue** | Urgency-sortierte Lernpfade mit geschaetzter Studienzeit pro Thema |
+| **Exam Readiness** | Gewichteter Score (0-100%) ueber alle Domaenen |
+| **Learning Rate** | Fragen/Stunde — passt sich automatisch an Lerngeschwindigkeit an |
+| **Daily Targets** | 15-50 Fragen/Tag, basierend auf Schwaechen-Anzahl |
+| **Milestone-System** | 4 Meilensteine: Foundation → Attack Mastery → Vuln Ready → Exam Ready |
+| **Streak-Tracking** | Current/Longest Streak mit automatischer Tages-Erkennung |
+| **5-Minuten-Refresh** | State aktualisiert sich alle 300 Sekunden automatisch |
+
+---
+
+### KI-Orchestrator (`orchestrator.ts`)
+
+JARVIS weist jedem Studenten basierend auf dem Skill Assessment ein optimales 5-Agenten-Team zu.
+
+```text
+ Assessment → schwachste Domaene → Professor-Mapping → Team-Zuweisung
+
+ Beispiel (PenTest+):
+ ┌─────────────────────────────────────────────────────┐
+ │  Professor 1:  Professor Cipher (Lead)              │
+ │  Professor 2:  Red Viper (Support)                  │
+ │  Tutor 1:      Iris Thinkwell (Theorie)             │
+ │  Tutor 2:      Kyle Hackwright (Praxis)             │
+ │  Organizer:    Oracle Pentest (automatisch)          │
+ └─────────────────────────────────────────────────────┘
+```
+
+| Feature | Beschreibung |
+|:--------|:-------------|
+| **12 Domain-Mappings** | Jede Domaene hat 2 Professor-Kandidaten |
+| **Level-Zuweisung** | Beginner → geduldigerer Professor, Advanced → Experte |
+| **Daily Targets** | 15 (Beginner), 25 (Intermediate), 40 (Advanced) Fragen/Tag |
+| **PBQ-Frequenz** | Alle 2 (Advanced), 3 (Intermediate), 4 (Beginner) Tage |
+| **Tutor-Routing** | Keyword-Analyse routet Fragen zu Theory- oder Practice-Tutor |
+| **Trigger-System** | Organizer prueft Streak, Exam Readiness, Weak Domains automatisch |
+| **Personalisierte Begruessung** | 4 rotierende Nachrichten basierend auf Assignment und Wochentag |
+
+---
+
+### Exam Strategist (Detail)
+
+Umfassende Pruefungsvorbereitung mit 3 vorgefertigten Studienplaenen und Live-Countdown.
+
+**30-60-90-Tage-Studienplaene:**
+
+| Plan | Fragen/Tag | Meilensteine | Strategie |
+|:-----|:----------:|:------------:|:----------|
+| **30-Tage** | 40 | 4 Wochen | Foundation Sprint → Weakness Attack → PBQ Mastery → Exam Simulation |
+| **60-Tage** | 25 | 6 Wochen | Domain Exploration → Deep Dive → PBQ Intro → Midpoint → Advanced → Sprint |
+| **90-Tage** | 15 | 10 Wochen | Orientation → Foundation → Deep Learning → PBQ Practice → Checkpoints → Final |
+
+| Feature | Beschreibung |
+|:--------|:-------------|
+| **Live-Countdown** | Sekunden-genauer Countdown zum Pruefungsdatum (Tage/Stunden/Minuten/Sekunden) |
+| **Milestone-Tracker** | Klickbare Wochen-Meilensteine mit Fortschrittsbalken |
+| **Daily Target Card** | Heutiger Fortschritt vs. Tages-Ziel mit +5/+10 Quick-Buttons |
+| **Exam Day Tips** | 6 strategische Tipps (Zeitverteilung, PBQ-Reihenfolge, Flagging, Schlaf) |
+| **Motivations-Zitate** | Taegliches Zitat (6 rotierende, in localStorage persistiert) |
+| **Pruefungsdatum-Picker** | Datum frei waehlbar, gespeichert in localStorage |
+
+---
+
 ### Sprache & Audio
 
 | Feature | Beschreibung |
 |:--------|:-------------|
-| **Text-to-Speech** | Fragen, Antworten und Erklaerungen vorlesen (Web Speech API) |
-| **Voice Input** | Spracheingabe im Tutor per Mikrofon |
+| **ElevenLabs TTS** | Premium-Sprachausgabe ueber ElevenLabs API mit 9 professor-spezifischen Stimmen |
+| **Professor-Voices** | Jeder Professor hat eine eigene ElevenLabs-Stimme (Antoni, Domi, Rachel, Josh, Bella, Elli, Arnold) |
+| **Web Speech Fallback** | Automatischer Fallback auf Browser-TTS wenn ElevenLabs fehlschlaegt |
+| **Voice Input** | Spracheingabe im Tutor per Web Speech API (Mikrofon) |
 | **SpeakerButton** | Universelle TTS-Komponente in Quiz, Tutor, Flashcards, LPI1, Linux+ |
+| **Abort-Steuerung** | Laufende Sprachausgabe jederzeit stoppbar (AbortController) |
+
+**ElevenLabs Voice-Mapping:**
+
+| Professor | Voice | Charakter |
+|:----------|:------|:----------|
+| Professor Cipher | Antoni | Herausfordernd, maennlich |
+| Agent Shield | Domi | Ruhig, schuetzend, weiblich |
+| Dr. Recon | Arnold | Analytisch, maennlich |
+| Code Master | Josh | Praktisch, maennlich |
+| Director Sage | Rachel | Weise, weiblich |
+| Professor Fixit | Elli | Ermutigend, weiblich |
+| Professor Guardian | Bella | Vorsichtig, weiblich |
+| NetRunner | Antoni | Technisch, maennlich |
+| Benny | Josh | Geduldig, maennlich |
+
+---
+
+### Navigation (`Navbar.tsx`)
+
+Kollabierbares Seitenleisten-Menue mit Hover-Erweiterung und kontextabhaengiger Hervorhebung.
+
+| Feature | Beschreibung |
+|:--------|:-------------|
+| **Hover-Expand** | 72px kollabiert → 240px bei Maus-Hover mit Framer Motion |
+| **Active-Indicator** | Animierter gruener Balken (layoutId) zeigt aktive Route |
+| **8 Haupt-Links** | Dashboard, Classroom, Kurse, Quiz Lab, PBQ Arena, Tutor, Progress, Flashcards |
+| **CySA+ Lab** | Direktlink zu `/quiz?cert=cysa` mit pinkem Akzent |
+| **CASP+ Lab** | Direktlink zu `/quiz?cert=casp` mit teal Akzent |
+| **Linux-Sektion** | Aufklappbare Sub-Navigation mit LPI 1 und Linux+ XK0-006 |
+| **Lock-Anzeige** | Linux+ zeigt Lock-Icon + "80%" wenn LPI-1-Mastery < 80% |
+| **XP-Footer** | Aktueller XP-Stand und Level am unteren Rand |
+
+---
 
 ### 80/20 Pareto-System
 
@@ -707,22 +864,100 @@ Durchgaengiges Konzept: Die 20% des Wissens, die 80% der Pruefung abdecken.
 
 ---
 
+### Protected Routes & Guards
+
+| Feature | Beschreibung |
+|:--------|:-------------|
+| **Onboarding-Guard** | `/` und `/classroom` leiten zu `/onboarding` um wenn `trygit_onboarding_complete` nicht gesetzt |
+| **Linux+ Unlock-Gate** | `/linux-plus` zeigt Lock-Screen bis `lpi1_mastery >= 80` |
+| **Onboarding-Ausschluss** | `/onboarding` liegt ausserhalb des Layout (kein Navbar, kein Footer) |
+
+### PBQ-Details
+
+Jeder PBQ-Typ hat eigene Metadaten fuer XP, Zeitschaetzung und Schwierigkeit.
+
+| PBQ | Kategorie | Schwierigkeit | XP | Zeit |
+|:----|:----------|:-------------:|:--:|:----:|
+| Network Topology Analyzer | PenTest+ | 3/5 | 50 | 8 min |
+| Interactive Terminal | PenTest+ | 3/5 | 60 | 10 min |
+| Web Vulnerability Scanner | Security+ | 2/5 | 40 | 6 min |
+| Firewall Rule Architect | Security+ | 4/5 | 55 | 10 min |
+| Certificate Chain Validator | Security+ | 3/5 | 45 | 7 min |
+| Log Analysis Radar | Security+ | 4/5 | 55 | 10 min |
+| Wireless Attack Visualizer | PenTest+ | 3/5 | 50 | 8 min |
+| Exploit Chain Builder | PenTest+ | 5/5 | 70 | 12 min |
+
+Alle PBQ-Komponenten werden per `React.lazy()` geladen und mit `Suspense` gerendert.
+
+---
+
 ## Tech Stack
 
-```text
-Frontend          React 19 + TypeScript 5.9
-Build             Vite 7.2
-Styling           Tailwind CSS 3.4 + shadcn/ui (Radix Primitives)
-Animationen       Framer Motion 12
-Routing           React Router DOM 7.15 (HashRouter)
-State             localStorage (kein Backend)
-KI                Ollama (lokal, localhost:11434) + OpenRouter (Cloud)
-Markdown          react-markdown 10 + remark-gfm
-Charts            Recharts 2.15
-Icons             Lucide React
-TTS               Web Speech API
-Flashcards        SM-2 Spaced Repetition (eigene Implementierung)
-```
+### Core
+
+| Technologie | Version | Zweck |
+|:------------|:--------|:------|
+| **React** | 19.2.0 | UI-Framework (Client-Side SPA) |
+| **TypeScript** | 5.9.3 | Typsicheres JavaScript |
+| **Vite** | 7.2.4 | Build-Tool und Dev-Server |
+| **Tailwind CSS** | 3.4.19 | Utility-First CSS |
+| **React Router DOM** | 7.15.1 | Client-Side Routing (BrowserRouter) |
+| **Framer Motion** | 12.40.0 | Animationen und Layout-Transitionen |
+
+### UI-Bibliotheken
+
+| Paket | Version | Zweck |
+|:------|:--------|:------|
+| **shadcn/ui** | -- | Radix-basierte Komponenten (40+ Primitives) |
+| **Radix UI** | diverse | Barrierefreie Primitives (Accordion, Dialog, Tabs, Tooltip, etc.) |
+| **Lucide React** | 0.562.0 | 1.500+ SVG-Icons |
+| **cmdk** | 1.1.1 | Command-Palette (⌘K) |
+| **Sonner** | 2.0.7 | Toast-Benachrichtigungen |
+| **Vaul** | 1.1.2 | Drawer-Komponente |
+| **Embla Carousel** | 8.6.0 | Karussell-Slider |
+| **react-resizable-panels** | 4.2.2 | Anpassbare Panel-Layouts |
+| **input-otp** | 1.4.2 | OTP-Eingabefelder |
+
+### Daten & Rendering
+
+| Paket | Version | Zweck |
+|:------|:--------|:------|
+| **Recharts** | 2.15.4 | Diagramme (Bar, Line, Radar, Pie) |
+| **react-markdown** | 10.1.0 | Markdown-Rendering im Tutor-Chat |
+| **remark-gfm** | 4.0.1 | GitHub-Flavored Markdown (Tabellen, Checklisten) |
+| **react-syntax-highlighter** | 16.1.1 | Code-Syntax-Highlighting |
+| **react-day-picker** | 9.13.0 | Kalender-Datumsauswahl |
+| **date-fns** | 4.1.0 | Datumsformatierung |
+
+### Formulare & Validierung
+
+| Paket | Version | Zweck |
+|:------|:--------|:------|
+| **react-hook-form** | 7.70.0 | Formular-Handling |
+| **@hookform/resolvers** | 5.2.2 | Schema-Validierung fuer react-hook-form |
+| **Zod** | 4.3.5 | Schema-Deklaration und Validierung |
+
+### Utility
+
+| Paket | Version | Zweck |
+|:------|:--------|:------|
+| **clsx** | 2.1.1 | Bedingte CSS-Klassen |
+| **tailwind-merge** | 3.4.0 | Tailwind-Klassen-Merge ohne Konflikte |
+| **class-variance-authority** | 0.7.1 | Komponenten-Varianten (shadcn/ui) |
+| **next-themes** | 0.4.6 | Theme-Provider |
+
+### KI & Audio
+
+| Technologie | Beschreibung |
+|:------------|:-------------|
+| **Ollama** | Lokales LLM-Hosting (localhost:11434) — keine Cloud noetig |
+| **OpenRouter** | Cloud-LLM-Provider mit 6 kostenlosen Modellen |
+| **ElevenLabs** | Premium Text-to-Speech mit 9 professor-spezifischen Stimmen |
+| **Web Speech API** | Browser-native Spracheingabe (STT) und Fallback-Sprachausgabe (TTS) |
+
+### State-Management
+
+Kein globaler State-Manager — alle Nutzerdaten werden clientseitig in **localStorage** persistiert (70+ Keys). Die App funktioniert vollstaendig ohne Backend, ohne Account, ohne Internet (bei Ollama).
 
 ---
 
@@ -770,59 +1005,81 @@ npm run preview
 Cybersecurity-Gym/
 ├── app/
 │   ├── public/
-│   │   ├── courses.json              # Kurskatalog (9 Eintraege)
-│   │   ├── professors.json           # 19 Dozenten + 8 Wings + JARVIS
-│   │   ├── pt003_full_database.json  # PenTest+ PT0-003
-│   │   ├── security_plus_database.json
-│   │   ├── cysa_database.json
-│   │   ├── casp_database.json
-│   │   ├── network_plus_database.json
-│   │   ├── aplus_database.json
-│   │   ├── lpi1_database.json
-│   │   ├── xk006_database.json       # Linux+ XK0-006
-│   │   └── *.png                     # Professor-Avatare
+│   │   ├── courses.json                # Kurskatalog (9 Eintraege)
+│   │   ├── professors.json             # 19 Dozenten + 8 Wings + JARVIS
+│   │   ├── pt003_full_database.json    # PenTest+ PT0-003 (1.161 Fragen)
+│   │   ├── exam_database.json          # Allgemeine Pruefungsfragen
+│   │   ├── security_plus_database.json # Security+ SY0-701
+│   │   ├── cysa_database.json          # CySA+ CS0-003
+│   │   ├── casp_database.json          # CASP+ CAS-004
+│   │   ├── network_plus_database.json  # Network+ N10-009
+│   │   ├── aplus_database.json         # A+ 220-1201/1202
+│   │   ├── lpi1_database.json          # LPI Linux Essentials
+│   │   ├── xk006_database.json         # Linux+ XK0-006
+│   │   └── *.png                       # Professor-Avatare
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── ui/                   # shadcn/ui Basiskomponenten
-│   │   │   ├── onboarding/           # Onboarding-Wizard (3 Schritte)
-│   │   │   ├── pbq/                  # 8 PBQ-Typen + Shared
-│   │   │   ├── Navbar.tsx            # Seitennavigation mit Wings
-│   │   │   ├── Layout.tsx            # App-Layout (Navbar + Outlet)
-│   │   │   ├── Footer.tsx            # App-Footer
-│   │   │   ├── SkillAssessment.tsx   # Diagnostischer Kompetenztest
-│   │   │   ├── AdaptiveLearningPanel.tsx  # Lernempfehlungen
-│   │   │   ├── ExamStrategist.tsx    # Pruefungsstrategie-KI
-│   │   │   ├── StudyStreak.tsx       # Streak-Kalender-Heatmap
-│   │   │   ├── ClassroomTeam.tsx     # 5-Agenten-Team-Anzeige
-│   │   │   ├── ProgressExportImport.tsx  # JSON Export/Import
-│   │   │   ├── SpeakerButton.tsx     # TTS-Komponente
-│   │   │   └── AnimatedGrid.tsx      # Hintergrund-Animation
+│   │   │   ├── ui/                     # 40+ shadcn/ui Radix-Primitives
+│   │   │   ├── onboarding/
+│   │   │   │   └── OnboardingFlow.tsx  # 3-Schritte-Wizard (Vollbild)
+│   │   │   ├── pbq/
+│   │   │   │   ├── index.ts            # React.lazy() Exports (8 PBQs)
+│   │   │   │   ├── metadata.ts         # PBQ-Metadaten (XP, Difficulty, Time)
+│   │   │   │   ├── CertChainPBQ.tsx
+│   │   │   │   ├── ExploitChainPBQ.tsx
+│   │   │   │   ├── FirewallVisualPBQ.tsx
+│   │   │   │   ├── LogRadarPBQ.tsx
+│   │   │   │   ├── NetworkTopologyPBQ.tsx
+│   │   │   │   ├── TerminalPBQ.tsx
+│   │   │   │   ├── WebVulnHotspotPBQ.tsx
+│   │   │   │   ├── WirelessAttackPBQ.tsx
+│   │   │   │   └── shared/
+│   │   │   │       ├── types.ts          # PBQ-Interfaces
+│   │   │   │       ├── animations.ts     # Framer Motion Presets
+│   │   │   │       ├── FeedbackOverlay.tsx  # Richtig/Falsch-Overlay
+│   │   │   │       └── ProgressTracker.tsx  # PBQ-Fortschrittsanzeige
+│   │   │   ├── Navbar.tsx              # Seitennavigation (72px→240px)
+│   │   │   ├── Layout.tsx              # Navbar + Outlet + Footer
+│   │   │   ├── Footer.tsx              # Branding-Footer
+│   │   │   ├── SkillAssessment.tsx     # 10-Fragen Diagnostik-Test
+│   │   │   ├── AdaptiveLearningPanel.tsx  # Urgency/Readiness Empfehlungen
+│   │   │   ├── ExamStrategist.tsx      # 30/60/90-Tage Studienplaene
+│   │   │   ├── StudyStreak.tsx         # 7-Tage-Kalender-Heatmap
+│   │   │   ├── ClassroomTeam.tsx       # 5-Agenten-Team Grid
+│   │   │   ├── ProgressExportImport.tsx  # JSON Export/Import (v7.1)
+│   │   │   ├── SpeakerButton.tsx       # Universelle TTS-Komponente
+│   │   │   └── AnimatedGrid.tsx        # Hintergrund-Raster + Glow
 │   │   ├── pages/
-│   │   │   ├── Classroom.tsx         # Grand Hall (1.329 Zeilen)
-│   │   │   ├── Profile.tsx           # Profil-Dashboard (1.775 Zeilen)
-│   │   │   ├── Courses.tsx           # Kurskatalog
-│   │   │   ├── CourseDetail.tsx      # Kursdetail (7 Tabs)
-│   │   │   ├── Quiz.tsx              # Quiz Lab (1.987 Zeilen)
-│   │   │   ├── PBQ.tsx               # PBQ Arena (8 Typen)
-│   │   │   ├── Tutor.tsx             # KI-Tutor Chat (1.288 Zeilen)
-│   │   │   ├── Flashcards.tsx        # SM-2 Karteikarten
-│   │   │   ├── Progress.tsx          # Fortschritt & Analyse
-│   │   │   ├── LPI1Room.tsx          # Linux LPI 1 + Terminal
-│   │   │   └── LinuxPlusRoom.tsx     # Linux+ (ab 80% LPI 1)
+│   │   │   ├── Classroom.tsx           # Grand Hall (1.329 Zeilen)
+│   │   │   ├── Profile.tsx             # Profil-Dashboard (1.775 Zeilen)
+│   │   │   ├── Courses.tsx             # Kurskatalog (Filter, Suche)
+│   │   │   ├── CourseDetail.tsx         # Kursdetail (7 Tabs)
+│   │   │   ├── Quiz.tsx                # Quiz Lab (1.987 Zeilen)
+│   │   │   ├── PBQ.tsx                 # PBQ Arena (8 Typen)
+│   │   │   ├── Tutor.tsx               # KI-Tutor Chat (1.288 Zeilen)
+│   │   │   ├── Flashcards.tsx          # SM-2 Karteikarten
+│   │   │   ├── Progress.tsx            # Fortschritt & Analyse
+│   │   │   ├── LPI1Room.tsx            # Linux LPI 1 + Terminal
+│   │   │   ├── LinuxPlusRoom.tsx       # Linux+ (ab 80% LPI 1)
+│   │   │   └── PlaceholderPage.tsx     # Coming-Soon-Platzhalter
 │   │   ├── services/
-│   │   │   ├── ollama.ts             # Ollama LLM + 19 System-Prompts
-│   │   │   ├── openrouter.ts         # OpenRouter Cloud-API
-│   │   │   ├── llm.ts               # LLM-Abstraktionsschicht
-│   │   │   ├── rag.ts               # Retrieval-Augmented Generation
-│   │   │   ├── adaptive-learning.ts  # Adaptiver Lernalgorithmus
-│   │   │   ├── orchestrator.ts       # KI-Orchestrator (JARVIS)
-│   │   │   ├── professor-data.ts     # Dozenten-Definitionen
-│   │   │   ├── tutor-data.ts         # 16 Tutoren (Theorie + Praxis)
-│   │   │   └── organizer-data.ts     # 8 KI-Organizer
+│   │   │   ├── ollama.ts               # Ollama Streaming + 19 System-Prompts
+│   │   │   ├── openrouter.ts           # OpenRouter SSE + 6 Free Models
+│   │   │   ├── llm.ts                  # Unified LLM-Abstraktionsschicht
+│   │   │   ├── rag.ts                  # TF-IDF Keyword-Scoring (5 DBs)
+│   │   │   ├── adaptive-learning.ts    # Adaptiver Lernalgorithmus (679 Z.)
+│   │   │   ├── orchestrator.ts         # KI-Orchestrator JARVIS (357 Z.)
+│   │   │   ├── professor-data.ts       # 19 Dozenten-Definitionen
+│   │   │   ├── tutor-data.ts           # 16 Tutoren (Theorie + Praxis)
+│   │   │   └── organizer-data.ts       # 8 KI-Organizer-Definitionen
 │   │   ├── hooks/
-│   │   │   ├── useTTS.ts            # Text-to-Speech Hook
-│   │   │   └── use-mobile.ts        # Mobile-Erkennung
-│   │   └── App.tsx                   # Router (13 Routen)
+│   │   │   ├── useTTS.ts              # ElevenLabs + Web Speech API
+│   │   │   └── use-mobile.ts          # Mobile-Viewport-Erkennung
+│   │   ├── lib/
+│   │   │   └── utils.ts               # cn() — clsx + tailwind-merge
+│   │   ├── main.tsx                    # React-Root + BrowserRouter
+│   │   ├── App.tsx                     # Router (13 Routen)
+│   │   └── index.css                   # Design-Tokens + Type-Scale
 │   ├── package.json
 │   ├── tailwind.config.ts
 │   └── vite.config.ts
@@ -851,16 +1108,90 @@ Cybersecurity-Gym/
 
 ---
 
-## Design
+## Design-System
 
-| Element | Wert |
-|:--------|:-----|
-| Hintergrund | `#0a0e17` |
-| Akzent Gruen | `#00ff41` |
-| Akzent Cyan | `#00d4ff` |
-| Rahmen | `#1a2d45` |
-| Text primaer | `#ffffff` |
-| Text sekundaer | `#7da0c4` |
+### Farbpalette (Hex Design-Tokens)
+
+| Token | Hex | Zweck |
+|:------|:----|:------|
+| `--bg-primary` | `#0a0e17` | Haupthintergrund |
+| `--bg-secondary` | `#0d1526` | Karten, Navbar |
+| `--bg-tertiary` | `#111d2e` | Erhoeht (Hover) |
+| `--bg-elevated` | `#162236` | Modals, Popover |
+| `--accent-green` | `#00ff41` | Primaer-Akzent (Erfolg, XP, aktiv) |
+| `--accent-blue` | `#00d4ff` | Sekundaer-Akzent (Links, Hover) |
+| `--accent-purple` | `#8b5cf6` | PBQ, Code-Hervorhebung |
+| `--accent-orange` | `#ff7b00` | Linux-Sektion |
+| `--accent-red` | `#ff3366` | PenTest+, Fehler, Destruktiv |
+| `--text-primary` | `#e0f2fe` | Haupttext |
+| `--text-secondary` | `#7da0c4` | Sekundaertext |
+| `--text-muted` | `#4a6682` | Gedaempfter Text, Platzhalter |
+| `--border-subtle` | `#1a2d45` | Standard-Rahmen |
+| `--border-active` | `#00d4ff` | Aktiver Rahmen |
+| `--border-green` | `#00ff41` | Erfolgs-Rahmen |
+
+### HSL-Tokens (shadcn/ui Kompatibel)
+
+```text
+--background:    220 40% 5%       --primary:         145 100% 50%
+--foreground:    202 94% 94%      --secondary:       193 100% 50%
+--card:          220 35% 8%       --destructive:     345 100% 60%
+--muted:         215 30% 15%      --border:          213 35% 18%
+--accent:        215 30% 15%      --ring:            193 100% 50%
+```
+
+### Typografie
+
+4 Schriftfamilien mit 10 Utility-Klassen und responsivem Type-Scale:
+
+| Klasse | Schrift | Groesse | Gewicht |
+|:-------|:--------|:--------|:--------|
+| `.font-display` | JetBrains Mono | -- | -- |
+| `.font-body` | Inter | -- | -- |
+| `.font-terminal` | JetBrains Mono | -- | -- |
+| `.font-decorative` | Share Tech Mono | -- | -- |
+| `.text-display` | JetBrains Mono | `clamp(2.5rem, 5vw, 4.5rem)` | 800 |
+| `.text-h1` | JetBrains Mono | `clamp(2rem, 4vw, 3.5rem)` | 700 |
+| `.text-h2` | JetBrains Mono | `clamp(1.5rem, 3vw, 2.5rem)` | 700 |
+| `.text-h3` | JetBrains Mono | `clamp(1.25rem, 2vw, 1.75rem)` | 600 |
+| `.text-h4` | Inter | `1.125rem` | 600 |
+| `.text-body` | Inter | `1rem` | 400 |
+| `.text-body-sm` | Inter | `0.875rem` | 400 |
+| `.text-caption` | Inter | `0.75rem` | 500 |
+| `.text-terminal` | JetBrains Mono | `0.8125rem` | 400 |
+| `.text-xp` | JetBrains Mono | `0.875rem` | 700 |
+| `.text-badge` | JetBrains Mono | `0.6875rem` | 700 |
+
+### Easing-Variablen
+
+| Variable | Wert | Einsatz |
+|:---------|:-----|:--------|
+| `--ease-default` | `cubic-bezier(0.4, 0, 0.2, 1)` | Standard-Transitionen |
+| `--ease-bounce` | `cubic-bezier(0.68, -0.55, 0.265, 1.55)` | Bounce-Effekte (Badges, XP) |
+| `--ease-expo-out` | `cubic-bezier(0.16, 1, 0.3, 1)` | Schnelle Exits (Modals) |
+| `--ease-smooth` | `cubic-bezier(0.45, 0.05, 0.55, 0.95)` | Sanfte Uebergaenge |
+
+### Gradient-Utilities
+
+| Klasse | Beschreibung |
+|:-------|:-------------|
+| `.gradient-hero` | 3-Punkt-Verlauf fuer Hero-Bereiche |
+| `.gradient-green-glow` | Radiales gruenes Leuchten |
+| `.gradient-blue-glow` | Radiales blaues Leuchten |
+| `.gradient-card` | Karten-Hintergrund (`#0d1526` → `#111d2e`) |
+| `.gradient-terminal` | Terminal-Hintergrund (dunkel) |
+| `.gradient-progress` | Gruen-nach-Cyan Fortschrittsbalken |
+| `.gradient-rainbow` | 5-Farben-Regenbogen (Achievement-Highlights) |
+
+### Spezialeffekte
+
+| Klasse | Beschreibung |
+|:-------|:-------------|
+| `.scanlines` | CRT-Scanline-Overlay (rgba gruen, 2px Streifen) |
+| `.grid-bg` | 50px Raster-Hintergrund (Cyan-Linien) |
+| `.glitch-text` | Hover-Glitch-Effekt (Rot/Cyan Text-Shadow) |
+| `.stat-card` | Hover-animierte Statistik-Karten mit Border-Glow |
+| `.scrollbar-thin` | Schmale benutzerdefinierte Scrollbar (6px) |
 
 ---
 
