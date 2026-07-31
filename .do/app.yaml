@@ -1,0 +1,17 @@
+name: cybersecurity-gym
+region: fra
+static_sites:
+  - name: trygit-me
+    github:
+      repo: krockodog/Cybersecurity-Gym
+      branch: master
+      deploy_on_push: true
+    source_dir: app
+    build_command: npm install && npm run build
+    output_dir: dist
+    environment_slug: node-js
+    domains:
+      - domain: trygit.me
+        type: PRIMARY
+    routes:
+      - path: /
