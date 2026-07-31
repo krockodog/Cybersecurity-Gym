@@ -268,7 +268,7 @@ function WelcomeHeader({ onAssessmentClick, hasAssessment }: { onAssessmentClick
           </div>
 
           <div className="flex items-center gap-3">
-            {/* JARVIS Status */}
+            {/* krockodog Status */}
             <motion.div
               className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-[#1a2d45] bg-[#0d1526]"
               initial={{ opacity: 0, x: 20 }}
@@ -279,7 +279,7 @@ function WelcomeHeader({ onAssessmentClick, hasAssessment }: { onAssessmentClick
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00ff41] opacity-75" />
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#00ff41]" />
               </span>
-              <span className="text-xs font-mono text-[#00ff41]">JARVIS Online</span>
+              <span className="text-xs font-mono text-[#00ff41]">krockodog Online</span>
             </motion.div>
 
             {/* Skill Assessment CTA */}

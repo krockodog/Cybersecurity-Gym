@@ -1,7 +1,7 @@
 {
   "jarvis": {
-    "name": "JARVIS",
-    "title": "Academy AI",
+    "name": "krockodog",
+    "title": "Schulleiter",
     "voice_id": "JBFqnCBsd6RMkjVDRZzb",
     "voice_name": "George",
     "accent": "british",
@@ -235,7 +235,7 @@
       "voice_name": "Rachel",
       "accent": "american",
       "color": "#dc2626",
-      "avatar": "/prof-viper.png",
+      "avatar": "/prof-viper.svg",
       "specialties": ["APT Emulation", "C2 Infrastructure", "Advanced Persistence", "Anti-Forensics", "MITRE ATT&CK", "Purple Teaming"]
     },
     {
@@ -254,7 +254,7 @@
       "voice_name": "Brian",
       "accent": "american",
       "color": "#1e40af",
-      "avatar": "/prof-harden.png",
+      "avatar": "/prof-harden.svg",
       "specialties": ["SOC Architecture", "Detection Engineering", "Security Hardening", "Incident Response", "MITRE D3FEND", "Windows/Linux Hardening"]
     },
     {
@@ -273,7 +273,7 @@
       "voice_name": "Charlie",
       "accent": "australian",
       "color": "#059669",
-      "avatar": "/prof-cisco-kate.png",
+      "avatar": "/prof-cisco-kate.svg",
       "specialties": ["Cisco IOS", "Switching & Routing", "Network Security", "Wireless", "Troubleshooting", "SD-WAN"]
     },
     {
@@ -292,7 +292,7 @@
       "voice_name": "Rachel",
       "accent": "american",
       "color": "#e11d48",
-      "avatar": "/prof-tech-mom.png",
+      "avatar": "/prof-tech-mom.svg",
       "specialties": ["Hardware Troubleshooting", "Mobile Devices", "Windows/macOS/Linux", "Customer Support", "IT Operations", "Career Guidance"]
     },
     {
@@ -311,7 +311,7 @@
       "voice_name": "Rachel",
       "accent": "american",
       "color": "#7c3aed",
-      "avatar": "/prof-tux-tina.png",
+      "avatar": "/prof-tux-tina.svg",
       "specialties": ["Shell Scripting", "System Administration", "DevOps", "Kubernetes", "Package Management", "Security Hardening"]
     },
     {
@@ -330,7 +330,7 @@
       "voice_name": "Rachel",
       "accent": "american",
       "color": "#4f46e5",
-      "avatar": "/prof-hunter-x.png",
+      "avatar": "/prof-hunter-x.svg",
       "specialties": ["Threat Hunting", "MITRE ATT&CK", "SIEM Queries", "Behavioral Analytics", "IoC Management", "Purple Teaming"]
     },
     {
@@ -349,7 +349,7 @@
       "voice_name": "Rachel",
       "accent": "american",
       "color": "#0f766e",
-      "avatar": "/prof-ciso-nova.png",
+      "avatar": "/prof-ciso-nova.svg",
       "specialties": ["Security Governance", "Risk Management", "Board Reporting", "GRC", "Business Continuity", "Third-Party Risk"]
     },
     {
@@ -368,7 +368,7 @@
       "voice_name": "Rachel",
       "accent": "american",
       "color": "#0284c7",
-      "avatar": "/prof-cloud-native-nate.png",
+      "avatar": "/prof-cloud-native-nate.svg",
       "specialties": ["AWS Security", "Azure Security", "GCP Security", "Kubernetes Security", "DevSecOps", "Cloud Architecture"]
     }
   ],

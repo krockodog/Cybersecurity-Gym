@@ -1,496 +1,823 @@
 {
-  "metadata": {
-    "title": "CompTIA Linux+ XK0-006",
-    "total_questions": 32,
-    "domains": [
-      "Security",
-      "Troubleshooting",
-      "Services",
-      "System Management",
-      "Automation"
-    ],
-    "version": "1.0"
-  },
+  "version": "1.0",
+  "exam": "XK0-006",
+  "domains": [
+    { "id": "1", "title": "System Management", "weight": "23%" },
+    { "id": "2", "title": "Security", "weight": "18%" },
+    { "id": "3", "title": "Services & Users", "weight": "20%" },
+    { "id": "4", "title": "Automation & Scripting", "weight": "17%" },
+    { "id": "5", "title": "Troubleshooting", "weight": "22%" }
+  ],
   "questions": [
     {
-      "id": "xk006_1",
-      "exam": "XK0-006",
-      "domain": "System Management",
-      "type": "multiple_choice",
+      "id": 1,
+      "domain": "1",
       "question": "Which command displays the current systemd target?",
-      "options": [
-        "A. systemctl get-default",
-        "B. systemd-target",
-        "C. init-level",
-        "D. runlevel"
-      ],
-      "correct_answer": "A",
-      "explanation": "systemctl get-default shows the current systemd target (e.g., graphical.target, multi-user.target)."
+      "options": ["systemctl get-default", "systemd-target", "init-level", "runlevel"],
+      "answer": 0,
+      "explanation": "systemctl get-default shows the current systemd target (e.g., graphical.target, multi-user.target).",
+      "hint8020": "systemctl get-default = current target. systemctl set-default = change it. Targets replace runlevels in systemd."
     },
     {
-      "id": "xk006_2",
-      "exam": "XK0-006",
-      "domain": "System Management",
-      "type": "multiple_choice",
+      "id": 2,
+      "domain": "1",
       "question": "Which file stores the system's static hostname in systemd-based distributions?",
-      "options": [
-        "A. /etc/hostname",
-        "B. /etc/sysconfig/network",
-        "C. /etc/hosts",
-        "D. /proc/sys/kernel/hostname"
-      ],
-      "correct_answer": "A",
-      "explanation": "/etc/hostname stores the static hostname in systemd distributions. hostnamectl reads and writes this file."
+      "options": ["/etc/hostname", "/etc/sysconfig/network", "/etc/hosts", "/proc/sys/kernel/hostname"],
+      "answer": 0,
+      "explanation": "/etc/hostname stores the static hostname in systemd distributions. hostnamectl reads and writes this file.",
+      "hint8020": "/etc/hostname = static hostname. hostnamectl set-hostname = change it. /etc/hosts maps hostnames to IPs locally."
     },
     {
-      "id": "xk006_3",
-      "exam": "XK0-006",
-      "domain": "System Management",
-      "type": "multiple_choice",
+      "id": 3,
+      "domain": "1",
       "question": "Which command creates a new LVM logical volume named 'data' of 10GB in volume group 'vg0'?",
-      "options": [
-        "A. lvcreate -L 10G -n data vg0",
-        "B. lvmcreate -s 10G data vg0",
-        "C. mkvol -G 10G data vg0",
-        "D. volumecreate -l 10G vg0/data"
-      ],
-      "correct_answer": "A",
-      "explanation": "lvcreate -L 10G sets size, -n data names it, vg0 is the volume group."
+      "options": ["lvcreate -L 10G -n data vg0", "lvmcreate -s 10G data vg0", "mkvol -G 10G data vg0", "volumecreate -l 10G vg0/data"],
+      "answer": 0,
+      "explanation": "lvcreate -L 10G sets size, -n data names it, vg0 is the volume group.",
+      "hint8020": "LVM flow: pvcreate → vgcreate → lvcreate. -L = size, -n = name, last arg = VG. lvextend to grow, lvreduce to shrink."
     },
     {
-      "id": "xk006_4",
-      "exam": "XK0-006",
-      "domain": "System Management",
-      "type": "multiple_choice",
+      "id": 4,
+      "domain": "1",
       "question": "Which command resizes an ext4 filesystem after extending its logical volume?",
-      "options": [
-        "A. resize2fs /dev/vg0/lv_data",
-        "B. fsresize /dev/vg0/lv_data",
-        "C. lvextend --resize /dev/vg0/lv_data",
-        "D. ext4resize /dev/vg0/lv_data"
-      ],
-      "correct_answer": "A",
-      "explanation": "resize2fs resizes ext2/3/4 filesystems. For online resizing, use resize2fs on a mounted filesystem."
+      "options": ["resize2fs /dev/vg0/lv_data", "fsresize /dev/vg0/lv_data", "lvextend --resize /dev/vg0/lv_data", "ext4resize /dev/vg0/lv_data"],
+      "answer": 0,
+      "explanation": "resize2fs resizes ext2/3/4 filesystems. For online resizing, use resize2fs on a mounted filesystem.",
+      "hint8020": "resize2fs = ext2/3/4. xfs_growfs = XFS (only grow, can't shrink). Always lvextend first, then resize filesystem."
     },
     {
-      "id": "xk006_5",
-      "exam": "XK0-006",
-      "domain": "System Management",
-      "type": "multiple_choice",
+      "id": 5,
+      "domain": "1",
       "question": "Where is the EFI system partition typically mounted?",
-      "options": [
-        "A. /boot/efi",
-        "B. /efi",
-        "C. /sys/efi",
-        "D. /var/efi"
-      ],
-      "correct_answer": "A",
-      "explanation": "The EFI System Partition (ESP) is typically mounted at /boot/efi in Linux systems."
+      "options": ["/boot/efi", "/efi", "/sys/efi", "/var/efi"],
+      "answer": 0,
+      "explanation": "The EFI System Partition (ESP) is typically mounted at /boot/efi in Linux systems.",
+      "hint8020": "ESP = /boot/efi, FAT32 formatted. Contains bootloaders. BIOS uses MBR, UEFI uses GPT + ESP."
     },
     {
-      "id": "xk006_6",
-      "exam": "XK0-006",
-      "domain": "System Management",
-      "type": "multiple_choice",
+      "id": 6,
+      "domain": "1",
       "question": "Which command shows the UUID of all block devices?",
-      "options": [
-        "A. blkid",
-        "B. uuidgen",
-        "C. lsblk -o UUID",
-        "D. Both A and C"
-      ],
-      "correct_answer": "D",
-      "explanation": "blkid shows UUIDs, filesystem types, and labels. lsblk -o UUID also shows UUIDs for block devices."
+      "options": ["blkid", "uuidgen", "lsblk -o UUID", "Both blkid and lsblk -o UUID"],
+      "answer": 3,
+      "explanation": "blkid shows UUIDs, filesystem types, and labels. lsblk -o UUID also shows UUIDs for block devices.",
+      "hint8020": "blkid = quick UUID lookup. Use UUIDs in /etc/fstab instead of device names — they survive disk reordering."
     },
     {
-      "id": "xk006_7",
-      "exam": "XK0-006",
-      "domain": "System Management",
-      "type": "multiple_choice",
+      "id": 7,
+      "domain": "1",
       "question": "Which GRUB2 configuration file should be edited to make persistent boot changes?",
-      "options": [
-        "A. /etc/default/grub",
-        "B. /boot/grub2/grub.cfg",
-        "C. /etc/grub.conf",
-        "D. /boot/grub/menu.lst"
-      ],
-      "correct_answer": "A",
-      "explanation": "/etc/default/grub is the configuration file. After editing, run grub2-mkconfig to regenerate grub.cfg."
+      "options": ["/etc/default/grub", "/boot/grub2/grub.cfg", "/etc/grub.conf", "/boot/grub/menu.lst"],
+      "answer": 0,
+      "explanation": "/etc/default/grub is the configuration file. After editing, run grub2-mkconfig to regenerate grub.cfg.",
+      "hint8020": "Edit /etc/default/grub → run grub2-mkconfig (RHEL) or update-grub (Debian). Never edit grub.cfg directly."
     },
     {
-      "id": "xk006_8",
-      "exam": "XK0-006",
-      "domain": "System Management",
-      "type": "multiple_choice",
+      "id": 8,
+      "domain": "1",
       "question": "Which command regenerates the GRUB2 configuration after editing /etc/default/grub?",
-      "options": [
-        "A. grub2-mkconfig -o /boot/grub2/grub.cfg",
-        "B. update-grub",
-        "C. grub-update",
-        "D. Both A and B"
-      ],
-      "correct_answer": "D",
-      "explanation": "grub2-mkconfig (RHEL) and update-grub (Debian) both regenerate the GRUB configuration."
+      "options": ["grub2-mkconfig -o /boot/grub2/grub.cfg", "update-grub", "grub-update", "Both grub2-mkconfig and update-grub"],
+      "answer": 3,
+      "explanation": "grub2-mkconfig (RHEL) and update-grub (Debian) both regenerate the GRUB configuration.",
+      "hint8020": "RHEL = grub2-mkconfig -o /boot/grub2/grub.cfg. Debian = update-grub (wrapper script). Same result, different distro."
     },
     {
-      "id": "xk006_9",
-      "exam": "XK0-006",
-      "domain": "Security",
-      "type": "multiple_choice",
+      "id": 9,
+      "domain": "1",
+      "question": "Which command loads a kernel module manually?",
+      "options": ["modprobe modulename", "insmod /path/to/module.ko", "kmod load modulename", "Both modprobe and insmod"],
+      "answer": 3,
+      "explanation": "modprobe loads modules with dependency resolution. insmod loads a single module file without dependencies.",
+      "hint8020": "modprobe = smart (resolves deps). insmod = manual (no deps). modinfo = show module info. lsmod = list loaded modules."
+    },
+    {
+      "id": 10,
+      "domain": "1",
+      "question": "Which file defines kernel parameters to set at boot via sysctl?",
+      "options": ["/etc/sysctl.conf", "/proc/sys/kernel/config", "/etc/kernel/params", "/boot/sysctl.cfg"],
+      "answer": 0,
+      "explanation": "/etc/sysctl.conf and files in /etc/sysctl.d/ define kernel parameters loaded at boot. Apply with sysctl -p.",
+      "hint8020": "/etc/sysctl.conf = persistent kernel params. sysctl -p = reload. sysctl -w key=value = set temporarily. /proc/sys = live values."
+    },
+    {
+      "id": 11,
+      "domain": "1",
+      "question": "Which command displays the current network configuration using the iproute2 toolset?",
+      "options": ["ip addr show", "ifconfig -a", "netcfg --list", "network-show"],
+      "answer": 0,
+      "explanation": "ip addr show (or ip a) displays all network interfaces and their addresses. Part of the modern iproute2 suite.",
+      "hint8020": "ip a = addresses. ip r = routes. ip l = links. ip n = neighbors (ARP). iproute2 replaces ifconfig/route/arp."
+    },
+    {
+      "id": 12,
+      "domain": "1",
+      "question": "Which command displays the partition table of a disk using GPT format?",
+      "options": ["gdisk -l /dev/sda", "fdisk -l /dev/sda", "parted -l", "All of the above"],
+      "answer": 3,
+      "explanation": "gdisk is GPT-native, fdisk and parted can both read GPT partition tables. gdisk is preferred for GPT operations.",
+      "hint8020": "gdisk = GPT disks. fdisk = MBR (also reads GPT). parted = both MBR + GPT. sgdisk = scripting-friendly GPT tool."
+    },
+    {
+      "id": 13,
+      "domain": "2",
       "question": "Which command sets SELinux to permissive mode?",
-      "options": [
-        "A. setenforce 0",
-        "B. selinux --permissive",
-        "C. echo 0 > /selinux/enforce",
-        "D. sestatus permissive"
-      ],
-      "correct_answer": "A",
-      "explanation": "setenforce 0 sets SELinux to permissive (1=enforcing). sestatus only shows the current status."
+      "options": ["setenforce 0", "selinux --permissive", "echo 0 > /selinux/enforce", "sestatus permissive"],
+      "answer": 0,
+      "explanation": "setenforce 0 sets SELinux to permissive (1=enforcing). sestatus only shows the current status.",
+      "hint8020": "setenforce 0 = permissive (logs only). setenforce 1 = enforcing (blocks). /etc/selinux/config = persistent mode."
     },
     {
-      "id": "xk006_10",
-      "exam": "XK0-006",
-      "domain": "Security",
-      "type": "multiple_choice",
+      "id": 14,
+      "domain": "2",
       "question": "Which file contains the SELinux configuration for the permanent mode?",
-      "options": [
-        "A. /etc/selinux/config",
-        "B. /etc/sysconfig/selinux",
-        "C. /selinux/config",
-        "D. Both A and B"
-      ],
-      "correct_answer": "D",
-      "explanation": "/etc/selinux/config is the main config. /etc/sysconfig/selinux is often a symlink to it on RHEL."
+      "options": ["/etc/selinux/config", "/etc/sysconfig/selinux", "/selinux/config", "Both /etc/selinux/config and /etc/sysconfig/selinux"],
+      "answer": 3,
+      "explanation": "/etc/selinux/config is the main config. /etc/sysconfig/selinux is often a symlink to it on RHEL.",
+      "hint8020": "/etc/selinux/config sets SELINUX=enforcing|permissive|disabled. Requires reboot to switch to/from disabled."
     },
     {
-      "id": "xk006_11",
-      "exam": "XK0-006",
-      "domain": "Security",
-      "type": "multiple_choice",
+      "id": 15,
+      "domain": "2",
       "question": "Which command generates SSH key pairs?",
-      "options": [
-        "A. ssh-keygen",
-        "B. ssh-genkey",
-        "C. generate-ssh-key",
-        "D. ssh --generate-key"
-      ],
-      "correct_answer": "A",
-      "explanation": "ssh-keygen generates SSH public/private key pairs. Default location: ~/.ssh/id_rsa or id_ed25519."
+      "options": ["ssh-keygen", "ssh-genkey", "generate-ssh-key", "ssh --generate-key"],
+      "answer": 0,
+      "explanation": "ssh-keygen generates SSH public/private key pairs. Default location: ~/.ssh/id_rsa or id_ed25519.",
+      "hint8020": "ssh-keygen -t ed25519 = modern, fast. ssh-copy-id = deploy public key. ~/.ssh/authorized_keys = server-side public keys."
     },
     {
-      "id": "xk006_12",
-      "exam": "XK0-006",
-      "domain": "Security",
-      "type": "multiple_choice",
+      "id": 16,
+      "domain": "2",
       "question": "Which command displays the status of AppArmor for all profiles?",
-      "options": [
-        "A. aa-status",
-        "B. apparmor-status",
-        "C. aa-complain",
-        "D. apparmor --list"
-      ],
-      "correct_answer": "A",
-      "explanation": "aa-status shows the status of all AppArmor profiles (enforce, complain, or disabled)."
+      "options": ["aa-status", "apparmor-status", "aa-complain", "apparmor --list"],
+      "answer": 0,
+      "explanation": "aa-status shows the status of all AppArmor profiles (enforce, complain, or disabled).",
+      "hint8020": "AppArmor: aa-status = check, aa-enforce = enforce, aa-complain = log only. Profiles in /etc/apparmor.d/. Ubuntu default MAC."
     },
     {
-      "id": "xk006_13",
-      "exam": "XK0-006",
-      "domain": "Security",
-      "type": "multiple_choice",
+      "id": 17,
+      "domain": "2",
       "question": "Which nftables table family is used for IPv4 traffic?",
-      "options": [
-        "A. ip",
-        "B. inet",
-        "C. ipv4",
-        "D. net"
-      ],
-      "correct_answer": "A",
-      "explanation": "The 'ip' family in nftables handles IPv4. 'inet' handles both IPv4 and IPv6."
+      "options": ["ip", "inet", "ipv4", "net"],
+      "answer": 0,
+      "explanation": "The 'ip' family in nftables handles IPv4. 'inet' handles both IPv4 and IPv6.",
+      "hint8020": "nftables families: ip (v4), ip6 (v6), inet (both), arp, bridge. nft = command. Replaces iptables/ip6tables."
     },
     {
-      "id": "xk006_14",
-      "exam": "XK0-006",
-      "domain": "Security",
-      "type": "multiple_choice",
+      "id": 18,
+      "domain": "2",
       "question": "Which PAM module is used for password complexity requirements?",
-      "options": [
-        "A. pam_pwquality",
-        "B. pam_cracklib",
-        "C. pam_passwdqc",
-        "D. pam_complexity"
-      ],
-      "correct_answer": "A",
-      "explanation": "pam_pwquality (successor to pam_cracklib) enforces password quality requirements in PAM."
+      "options": ["pam_pwquality", "pam_cracklib", "pam_passwdqc", "pam_complexity"],
+      "answer": 0,
+      "explanation": "pam_pwquality (successor to pam_cracklib) enforces password quality requirements in PAM.",
+      "hint8020": "pam_pwquality = password rules (minlen, dcredit, ucredit). Config: /etc/security/pwquality.conf. PAM stack in /etc/pam.d/."
     },
     {
-      "id": "xk006_15",
-      "exam": "XK0-006",
-      "domain": "Security",
-      "type": "multiple_choice",
+      "id": 19,
+      "domain": "2",
       "question": "Which command shows the SELinux context of files?",
-      "options": [
-        "A. ls -Z",
-        "B. ls -C",
-        "C. selinux -l",
-        "D. sestatus -f"
-      ],
-      "correct_answer": "A",
-      "explanation": "ls -Z shows SELinux security contexts. -Z is the context flag for ls, ps, and other tools."
+      "options": ["ls -Z", "ls -C", "selinux -l", "sestatus -f"],
+      "answer": 0,
+      "explanation": "ls -Z shows SELinux security contexts. -Z is the context flag for ls, ps, and other tools.",
+      "hint8020": "ls -Z = file contexts. ps -Z = process contexts. chcon = change context temporarily. restorecon = restore default context."
     },
     {
-      "id": "xk006_16",
-      "exam": "XK0-006",
-      "domain": "Security",
-      "type": "multiple_choice",
+      "id": 20,
+      "domain": "2",
       "question": "Where are the sudo privilege rules defined?",
-      "options": [
-        "A. /etc/sudoers",
-        "B. /etc/sudo.conf",
-        "C. /etc/security/sudo",
-        "D. /var/sudo/rules"
-      ],
-      "correct_answer": "A",
-      "explanation": "/etc/sudoers contains sudo rules. Edit with visudo to ensure syntax checking."
+      "options": ["/etc/sudoers", "/etc/sudo.conf", "/etc/security/sudo", "/var/sudo/rules"],
+      "answer": 0,
+      "explanation": "/etc/sudoers contains sudo rules. Edit with visudo to ensure syntax checking.",
+      "hint8020": "/etc/sudoers = rules. ALWAYS use visudo to edit (syntax check). Drop-in files in /etc/sudoers.d/ for per-user rules."
     },
     {
-      "id": "xk006_17",
-      "exam": "XK0-006",
-      "domain": "Services",
-      "type": "multiple_choice",
+      "id": 21,
+      "domain": "2",
+      "question": "Which command encrypts a block device using LUKS?",
+      "options": ["cryptsetup luksFormat /dev/sdb1", "luks-encrypt /dev/sdb1", "dm-crypt create /dev/sdb1", "encrypt-disk /dev/sdb1"],
+      "answer": 0,
+      "explanation": "cryptsetup luksFormat initializes LUKS encryption on a partition. cryptsetup luksOpen to unlock.",
+      "hint8020": "LUKS flow: luksFormat → luksOpen → mkfs → mount. luksClose to lock. /etc/crypttab for boot-time unlock."
+    },
+    {
+      "id": 22,
+      "domain": "2",
+      "question": "Which command adds a firewall rule using ufw to allow SSH?",
+      "options": ["ufw allow ssh", "ufw add rule ssh", "ufw --permit 22", "ufw open ssh"],
+      "answer": 0,
+      "explanation": "ufw allow ssh permits SSH traffic (port 22). ufw is the Uncomplicated Firewall frontend for iptables/nftables.",
+      "hint8020": "ufw allow ssh = port 22. ufw enable = activate. ufw status verbose = show rules. ufw deny = block. Simple frontend for nftables."
+    },
+    {
+      "id": 23,
+      "domain": "3",
       "question": "Which command reloads a systemd service configuration without restarting?",
-      "options": [
-        "A. systemctl reload servicename",
-        "B. systemctl restart servicename",
-        "C. systemctl refresh servicename",
-        "D. systemctl reconfigure servicename"
-      ],
-      "correct_answer": "A",
-      "explanation": "systemctl reload reloads configuration. restart stops and starts the service."
+      "options": ["systemctl reload servicename", "systemctl restart servicename", "systemctl refresh servicename", "systemctl reconfigure servicename"],
+      "answer": 0,
+      "explanation": "systemctl reload reloads configuration. restart stops and starts the service.",
+      "hint8020": "reload = re-read config (no downtime). restart = stop + start. reload-or-restart = try reload, fall back to restart."
     },
     {
-      "id": "xk006_18",
-      "exam": "XK0-006",
-      "domain": "Services",
-      "type": "multiple_choice",
+      "id": 24,
+      "domain": "3",
       "question": "Which file configures the DNS resolver in modern systemd-based systems?",
-      "options": [
-        "A. /etc/resolv.conf",
-        "B. /etc/systemd/resolved.conf",
-        "C. /etc/nsswitch.conf",
-        "D. /etc/network/dns"
-      ],
-      "correct_answer": "B",
-      "explanation": "systemd-resolved manages DNS via /etc/systemd/resolved.conf. /etc/resolv.conf may be a symlink."
+      "options": ["/etc/resolv.conf", "/etc/systemd/resolved.conf", "/etc/nsswitch.conf", "/etc/network/dns"],
+      "answer": 1,
+      "explanation": "systemd-resolved manages DNS via /etc/systemd/resolved.conf. /etc/resolv.conf may be a symlink.",
+      "hint8020": "/etc/systemd/resolved.conf = systemd DNS. /etc/resolv.conf often symlinked to resolved. resolvectl status = check DNS."
     },
     {
-      "id": "xk006_19",
-      "exam": "XK0-006",
-      "domain": "Services",
-      "type": "multiple_choice",
+      "id": 25,
+      "domain": "3",
       "question": "Which command shows listening TCP ports with process information?",
-      "options": [
-        "A. ss -tlnp",
-        "B. netstat -tlnp",
-        "C. lsof -i TCP -sTCP:LISTEN",
-        "D. All of the above"
-      ],
-      "correct_answer": "D",
-      "explanation": "ss (modern), netstat (traditional), and lsof can all show listening ports with process info."
+      "options": ["ss -tlnp", "netstat -tlnp", "lsof -i TCP -sTCP:LISTEN", "All of the above"],
+      "answer": 3,
+      "explanation": "ss (modern), netstat (traditional), and lsof can all show listening ports with process info.",
+      "hint8020": "ss -tlnp = fastest. t=TCP, l=listening, n=numeric, p=process. ss replaces netstat. lsof -i = by protocol."
     },
     {
-      "id": "xk006_20",
-      "exam": "XK0-006",
-      "domain": "Services",
-      "type": "multiple_choice",
+      "id": 26,
+      "domain": "3",
       "question": "Which Apache configuration directive defines the document root?",
-      "options": [
-        "A. DocumentRoot",
-        "B. ServerRoot",
-        "C. RootDirectory",
-        "D. WebRoot"
-      ],
-      "correct_answer": "A",
-      "explanation": "DocumentRoot in Apache defines the directory from which web content is served."
+      "options": ["DocumentRoot", "ServerRoot", "RootDirectory", "WebRoot"],
+      "answer": 0,
+      "explanation": "DocumentRoot in Apache defines the directory from which web content is served.",
+      "hint8020": "DocumentRoot = web files. ServerRoot = Apache install. Listen = port. VirtualHost = multi-site. apachectl -t = test config."
     },
     {
-      "id": "xk006_21",
-      "exam": "XK0-006",
-      "domain": "Services",
-      "type": "multiple_choice",
-      "question": "Which command creates a systemd timer unit that runs a service weekly?",
-      "options": [
-        "A. OnCalendar=weekly in the timer unit",
-        "B. * * * * 7 in crontab",
-        "C. Weekly=yes in the service unit",
-        "D. timer=weekly in systemctl"
-      ],
-      "correct_answer": "A",
-      "explanation": "OnCalendar=weekly in a .timer unit schedules weekly execution. systemd timers replace cron."
+      "id": 27,
+      "domain": "3",
+      "question": "Which directive schedules weekly execution in a systemd timer unit?",
+      "options": ["OnCalendar=weekly", "Schedule=weekly in crontab", "Weekly=yes in the service unit", "timer=weekly in systemctl"],
+      "answer": 0,
+      "explanation": "OnCalendar=weekly in a .timer unit schedules weekly execution. systemd timers replace cron.",
+      "hint8020": "OnCalendar= in .timer files. daily, weekly, monthly, or specific: *-*-* 03:00:00. systemctl list-timers = show active timers."
     },
     {
-      "id": "xk006_22",
-      "exam": "XK0-006",
-      "domain": "Services",
-      "type": "multiple_choice",
+      "id": 28,
+      "domain": "3",
       "question": "Which directive in nginx.conf defines the server name?",
-      "options": [
-        "A. server_name",
-        "B. ServerName",
-        "C. host_name",
-        "D. virtual_host"
-      ],
-      "correct_answer": "A",
-      "explanation": "server_name in nginx defines the hostname for a virtual server."
+      "options": ["server_name", "ServerName", "host_name", "virtual_host"],
+      "answer": 0,
+      "explanation": "server_name in nginx defines the hostname for a virtual server.",
+      "hint8020": "nginx: server_name = hostname. listen = port. root = document root. location = URL routing. nginx -t = test config."
     },
     {
-      "id": "xk006_23",
-      "exam": "XK0-006",
-      "domain": "Services",
-      "type": "multiple_choice",
+      "id": 29,
+      "domain": "3",
       "question": "Which command shows the current mail queue in Postfix?",
-      "options": [
-        "A. mailq",
-        "B. postqueue -p",
-        "C. showq",
-        "D. Both A and B"
-      ],
-      "correct_answer": "D",
-      "explanation": "mailq and postqueue -p both display the Postfix mail queue."
+      "options": ["mailq", "postqueue -p", "showq", "Both mailq and postqueue -p"],
+      "answer": 3,
+      "explanation": "mailq and postqueue -p both display the Postfix mail queue.",
+      "hint8020": "mailq = show queue. postqueue -f = flush queue. postfix reload = reload config. /etc/postfix/main.cf = main config."
     },
     {
-      "id": "xk006_24",
-      "exam": "XK0-006",
-      "domain": "Services",
-      "type": "multiple_choice",
+      "id": 30,
+      "domain": "3",
       "question": "Which DHCP server configuration file is used on Debian/Ubuntu?",
-      "options": [
-        "A. /etc/dhcp/dhcpd.conf",
-        "B. /etc/dhcpd.conf",
-        "C. /etc/dhcp3/dhcpd.conf",
-        "D. /var/lib/dhcp/dhcpd.conf"
-      ],
-      "correct_answer": "A",
-      "explanation": "/etc/dhcp/dhcpd.conf is the ISC DHCP server configuration file on Debian/Ubuntu systems."
+      "options": ["/etc/dhcp/dhcpd.conf", "/etc/dhcpd.conf", "/etc/dhcp3/dhcpd.conf", "/var/lib/dhcp/dhcpd.conf"],
+      "answer": 0,
+      "explanation": "/etc/dhcp/dhcpd.conf is the ISC DHCP server configuration file on Debian/Ubuntu systems.",
+      "hint8020": "/etc/dhcp/dhcpd.conf = DHCP server config. Defines subnets, ranges, options. dhclient = client. /var/lib/dhcp/dhcpd.leases = lease db."
     },
     {
-      "id": "xk006_25",
-      "exam": "XK0-006",
-      "domain": "Automation",
-      "type": "multiple_choice",
-      "question": "Which Ansible module is used to install packages?",
-      "options": [
-        "A. package",
-        "B. apt",
-        "C. yum",
-        "D. install"
-      ],
-      "correct_answer": "A",
-      "explanation": "The 'package' module is the generic module that works across distributions (apt, yum, dnf)."
+      "id": 31,
+      "domain": "3",
+      "question": "Which command configures network connections using NetworkManager CLI?",
+      "options": ["nmcli", "nm-tool", "networkctl", "netconf"],
+      "answer": 0,
+      "explanation": "nmcli is the NetworkManager command-line interface for managing connections, devices, and profiles.",
+      "hint8020": "nmcli con show = list connections. nmcli dev status = device status. nmcli con add = create. nmtui = text UI alternative."
     },
     {
-      "id": "xk006_26",
-      "exam": "XK0-006",
-      "domain": "Automation",
-      "type": "multiple_choice",
+      "id": 32,
+      "domain": "3",
+      "question": "Which protocol does SSSD use to authenticate users against Active Directory?",
+      "options": ["LDAP and Kerberos", "RADIUS", "TACACS+", "OAuth2"],
+      "answer": 0,
+      "explanation": "SSSD uses LDAP for user/group lookup and Kerberos for authentication when joining Active Directory.",
+      "hint8020": "SSSD = System Security Services Daemon. AD join: realm join. Uses LDAP (directory) + Kerberos (auth). Config: /etc/sssd/sssd.conf."
+    },
+    {
+      "id": 33,
+      "domain": "4",
+      "question": "Which Ansible module is used to install packages across distributions?",
+      "options": ["package", "apt", "yum", "install"],
+      "answer": 0,
+      "explanation": "The 'package' module is the generic module that works across distributions (apt, yum, dnf).",
+      "hint8020": "package = distro-agnostic. apt = Debian only. yum/dnf = RHEL only. Use 'package' in playbooks for portability."
+    },
+    {
+      "id": 34,
+      "domain": "4",
       "question": "Which Ansible command runs a playbook?",
-      "options": [
-        "A. ansible-playbook playbook.yml",
-        "B. ansible -run playbook.yml",
-        "C. ansible-execute playbook.yml",
-        "D. ansible playbook.yml"
-      ],
-      "correct_answer": "A",
-      "explanation": "ansible-playbook executes Ansible playbooks. ansible runs ad-hoc commands."
+      "options": ["ansible-playbook playbook.yml", "ansible -run playbook.yml", "ansible-execute playbook.yml", "ansible playbook.yml"],
+      "answer": 0,
+      "explanation": "ansible-playbook executes Ansible playbooks. ansible runs ad-hoc commands.",
+      "hint8020": "ansible-playbook = run playbook. ansible = ad-hoc command. ansible-galaxy = roles/collections. ansible-vault = encrypt secrets."
     },
     {
-      "id": "xk006_27",
-      "exam": "XK0-006",
-      "domain": "Automation",
-      "type": "multiple_choice",
+      "id": 35,
+      "domain": "4",
       "question": "Which command traces system calls made by a process?",
-      "options": [
-        "A. strace",
-        "B. ltrace",
-        "C. ptrace",
-        "D. systrace"
-      ],
-      "correct_answer": "A",
-      "explanation": "strace traces system calls. ltrace traces library calls. Both are essential debugging tools."
+      "options": ["strace", "ltrace", "ptrace", "systrace"],
+      "answer": 0,
+      "explanation": "strace traces system calls. ltrace traces library calls. Both are essential debugging tools.",
+      "hint8020": "strace = system calls (open, read, write, fork). ltrace = library calls (printf, malloc). strace -p PID = attach to running process."
     },
     {
-      "id": "xk006_28",
-      "exam": "XK0-006",
-      "domain": "Troubleshooting",
-      "type": "multiple_choice",
+      "id": 36,
+      "domain": "4",
+      "question": "Which bash construct tests if a file exists and is a regular file?",
+      "options": ["[ -f /path/to/file ]", "[ -e /path/to/file ]", "[ -d /path/to/file ]", "[ -r /path/to/file ]"],
+      "answer": 0,
+      "explanation": "-f tests for regular file. -e tests existence (any type). -d tests for directory. -r tests if readable.",
+      "hint8020": "Test flags: -f = regular file, -d = directory, -e = exists, -r = readable, -w = writable, -x = executable, -s = non-empty."
+    },
+    {
+      "id": 37,
+      "domain": "4",
+      "question": "Which tool creates a systemd service from a script for automatic startup?",
+      "options": ["Create a .service unit file in /etc/systemd/system/", "Add to /etc/rc.local", "Use chkconfig --add", "Run systemctl add-script"],
+      "answer": 0,
+      "explanation": "Custom systemd services are defined by creating .service unit files in /etc/systemd/system/. Then enable with systemctl enable.",
+      "hint8020": "Create /etc/systemd/system/myservice.service with [Unit], [Service], [Install] sections. systemctl daemon-reload after creating."
+    },
+    {
+      "id": 38,
+      "domain": "4",
+      "question": "Which command schedules a one-time task to run at 3 AM tomorrow?",
+      "options": ["echo 'command' | at 3am tomorrow", "crontab -e 3am", "systemd-run --on-calendar='3am'", "schedule run 3am command"],
+      "answer": 0,
+      "explanation": "The 'at' command schedules one-time tasks. atq lists pending jobs. atrm removes them.",
+      "hint8020": "at = one-time jobs. cron = recurring. at 3am tomorrow, at now + 2 hours. atq = list queue. atrm = remove job."
+    },
+    {
+      "id": 39,
+      "domain": "4",
+      "question": "Which shebang line specifies a Python 3 script?",
+      "options": ["#!/usr/bin/env python3", "#!/bin/python", "#!python3", "#!/usr/python3"],
+      "answer": 0,
+      "explanation": "#!/usr/bin/env python3 uses env to find python3 in PATH, making scripts portable across installations.",
+      "hint8020": "#!/usr/bin/env python3 = portable. #!/usr/bin/python3 = fixed path. env searches PATH. Always use env for portability."
+    },
+    {
+      "id": 40,
+      "domain": "4",
+      "question": "Which Git command creates a new branch and switches to it?",
+      "options": ["git checkout -b branchname", "git branch branchname", "git switch branchname", "git create branchname"],
+      "answer": 0,
+      "explanation": "git checkout -b creates a new branch and switches to it. git switch -c is the modern equivalent.",
+      "hint8020": "git checkout -b = create + switch. git switch -c = modern equivalent. git branch = just create. git merge = integrate changes."
+    },
+    {
+      "id": 41,
+      "domain": "5",
       "question": "Which command shows the last 20 system boot messages?",
-      "options": [
-        "A. dmesg | tail -20",
-        "B. journalctl --boot",
-        "C. last boot",
-        "D. Both A and B"
-      ],
-      "correct_answer": "D",
-      "explanation": "dmesg shows kernel ring buffer messages. journalctl --boot shows boot logs from the current boot."
+      "options": ["dmesg | tail -20", "journalctl --boot", "last boot", "Both dmesg and journalctl --boot"],
+      "answer": 3,
+      "explanation": "dmesg shows kernel ring buffer messages. journalctl --boot shows boot logs from the current boot.",
+      "hint8020": "dmesg = kernel messages. journalctl -b = current boot, -b -1 = previous boot. journalctl -p err = errors only."
     },
     {
-      "id": "xk006_29",
-      "exam": "XK0-006",
-      "domain": "Troubleshooting",
-      "type": "multiple_choice",
+      "id": 42,
+      "domain": "5",
       "question": "Which command shows network interface statistics and errors?",
-      "options": [
-        "A. ip -s link",
-        "B. ifconfig -a",
-        "C. ethtool -S eth0",
-        "D. All of the above"
-      ],
-      "correct_answer": "D",
-      "explanation": "ip -s link, ifconfig, and ethtool can all display interface statistics and error counters."
+      "options": ["ip -s link", "ifconfig -a", "ethtool -S eth0", "All of the above"],
+      "answer": 3,
+      "explanation": "ip -s link, ifconfig, and ethtool can all display interface statistics and error counters.",
+      "hint8020": "ip -s link = traffic stats. ethtool -S = detailed NIC stats. ethtool eth0 = speed/duplex. Watch for TX/RX errors."
     },
     {
-      "id": "xk006_30",
-      "exam": "XK0-006",
-      "domain": "Troubleshooting",
-      "type": "multiple_choice",
+      "id": 43,
+      "domain": "5",
       "question": "Which command shows the routing table?",
-      "options": [
-        "A. ip route",
-        "B. route -n",
-        "C. netstat -r",
-        "D. All of the above"
-      ],
-      "correct_answer": "D",
-      "explanation": "ip route (modern), route -n (traditional), and netstat -r all display the routing table."
+      "options": ["ip route", "route -n", "netstat -r", "All of the above"],
+      "answer": 3,
+      "explanation": "ip route (modern), route -n (traditional), and netstat -r all display the routing table.",
+      "hint8020": "ip route = modern. Default route = gateway. ip route add = add route. ip route del = remove. 'via' = next hop."
     },
     {
-      "id": "xk006_31",
-      "exam": "XK0-006",
-      "domain": "Troubleshooting",
-      "type": "multiple_choice",
+      "id": 44,
+      "domain": "5",
       "question": "Which file contains the kernel messages log?",
-      "options": [
-        "A. /var/log/kern.log",
-        "B. /var/log/messages",
-        "C. /var/log/syslog",
-        "D. All of the above"
-      ],
-      "correct_answer": "D",
-      "explanation": "Kernel messages go to /var/log/kern.log, /var/log/messages (RHEL), or /var/log/syslog (Debian)."
+      "options": ["/var/log/kern.log", "/var/log/messages", "/var/log/syslog", "All of the above"],
+      "answer": 3,
+      "explanation": "Kernel messages go to /var/log/kern.log, /var/log/messages (RHEL), or /var/log/syslog (Debian).",
+      "hint8020": "Debian: kern.log + syslog. RHEL: messages. Both use rsyslog or journald. journalctl -k = kernel messages from journal."
     },
     {
-      "id": "xk006_32",
-      "exam": "XK0-006",
-      "domain": "Troubleshooting",
-      "type": "multiple_choice",
+      "id": 45,
+      "domain": "5",
       "question": "Which command shows the I/O statistics per block device?",
-      "options": [
-        "A. iostat",
-        "B. iotop",
-        "C. blktrace",
-        "D. All of the above"
-      ],
-      "correct_answer": "D",
-      "explanation": "iostat shows I/O statistics, iotop shows per-process I/O, blktrace traces block I/O operations."
+      "options": ["iostat", "iotop", "blktrace", "All of the above"],
+      "answer": 3,
+      "explanation": "iostat shows I/O statistics, iotop shows per-process I/O, blktrace traces block I/O operations.",
+      "hint8020": "iostat = device-level I/O. iotop = process-level I/O (like top for disk). Part of sysstat package. iostat -x = extended stats."
+    },
+    {
+      "id": 46,
+      "domain": "5",
+      "question": "Which command monitors system resource usage in real time, showing CPU, memory, and process details?",
+      "options": ["top", "htop", "vmstat 1", "All of the above"],
+      "answer": 3,
+      "explanation": "top (built-in), htop (interactive), and vmstat (snapshot) all monitor system resources in different ways.",
+      "hint8020": "top = built-in, press 1 for per-CPU. htop = interactive (F5 tree view). vmstat 1 = 1s intervals. uptime = quick load check."
+    },
+    {
+      "id": 47,
+      "domain": "5",
+      "question": "Which command checks filesystem integrity on an unmounted ext4 partition?",
+      "options": ["fsck /dev/sda1", "e2fsck /dev/sda1", "xfs_repair /dev/sda1", "Both fsck and e2fsck"],
+      "answer": 3,
+      "explanation": "fsck is the generic frontend that calls e2fsck for ext filesystems. Both work on ext2/3/4. Partition must be unmounted.",
+      "hint8020": "fsck = generic. e2fsck = ext2/3/4. xfs_repair = XFS. NEVER run on mounted filesystem. Boot to rescue mode if root partition."
+    },
+    {
+      "id": 48,
+      "domain": "5",
+      "question": "A system fails to boot and drops to an emergency shell. Which command checks for filesystem errors on the root partition?",
+      "options": ["fsck -y /dev/sda2", "mount -o remount,rw /", "systemctl default", "grub-install /dev/sda"],
+      "answer": 0,
+      "explanation": "fsck -y automatically fixes errors. In emergency mode the root filesystem is read-only, so fsck can safely run.",
+      "hint8020": "Emergency shell: root is read-only. fsck -y = auto-fix. After fix: reboot. If GRUB broken: boot from live USB, chroot, grub-install."
+    },
+    {
+      "id": 49,
+      "domain": "5",
+      "question": "Which command shows disk space usage with human-readable sizes?",
+      "options": ["df -h", "du -sh /", "lsblk -f", "fdisk -l"],
+      "answer": 0,
+      "explanation": "df -h shows filesystem disk space usage in human-readable format (KB, MB, GB).",
+      "hint8020": "df -h = filesystem usage (free space). du -sh = directory size. df -i = inode usage. 100% inodes = can't create files even with space."
+    },
+    {
+      "id": 50,
+      "domain": "5",
+      "question": "Which tool captures and analyzes network packets on a Linux system?",
+      "options": ["tcpdump", "wireshark", "tshark", "All of the above"],
+      "answer": 3,
+      "explanation": "tcpdump (CLI), wireshark (GUI), and tshark (CLI wireshark) all capture and analyze network packets.",
+      "hint8020": "tcpdump -i eth0 = capture on interface. -w file.pcap = save. wireshark = GUI analysis. tshark = CLI wireshark. Use BPF filters."
+    },
+    {
+      "id": 51,
+      "domain": "1",
+      "question": "Which command lists all physical volumes in LVM?",
+      "options": ["pvs", "pvdisplay", "pvscan", "All of the above"],
+      "answer": 3,
+      "explanation": "pvs (summary), pvdisplay (detailed), and pvscan (scan for new PVs) all list physical volumes.",
+      "hint8020": "pvs = quick list. pvdisplay = detailed. vgs/vgdisplay = volume groups. lvs/lvdisplay = logical volumes. LVM hierarchy: PV → VG → LV."
+    },
+    {
+      "id": 52,
+      "domain": "1",
+      "question": "Which command creates a RAID 5 array using mdadm?",
+      "options": ["mdadm --create /dev/md0 --level=5 --raid-devices=3 /dev/sd[b-d]1", "mdadm --build /dev/md0 --raid5 /dev/sd[b-d]1", "raidctl create md0 level5", "mkraid /dev/md0 --level 5"],
+      "answer": 0,
+      "explanation": "mdadm --create builds a new array. --level=5 sets RAID 5. --raid-devices specifies the number of disks.",
+      "hint8020": "mdadm --create = new array. --level= 0(stripe), 1(mirror), 5(parity), 6(double parity), 10(stripe+mirror). /proc/mdstat = status."
+    },
+    {
+      "id": 53,
+      "domain": "1",
+      "question": "Which file is used to configure automatic mounting of filesystems at boot?",
+      "options": ["/etc/fstab", "/etc/mtab", "/proc/mounts", "/etc/mount.conf"],
+      "answer": 0,
+      "explanation": "/etc/fstab contains filesystem mount entries that are applied at boot. /etc/mtab and /proc/mounts show currently mounted filesystems.",
+      "hint8020": "/etc/fstab columns: device, mountpoint, type, options, dump, fsck-order. Use UUID= for device identification. nofail = don't block boot."
+    },
+    {
+      "id": 54,
+      "domain": "1",
+      "question": "Which command installs packages from a .deb file including dependencies?",
+      "options": ["apt install ./package.deb", "dpkg -i package.deb", "apt-get install package.deb", "deb-install package.deb"],
+      "answer": 0,
+      "explanation": "apt install ./package.deb installs the local .deb file and resolves dependencies. dpkg -i installs but does not resolve dependencies.",
+      "hint8020": "apt install ./file.deb = install + deps. dpkg -i = install only (no deps). dpkg -l = list installed. apt-get -f install = fix broken deps."
+    },
+    {
+      "id": 55,
+      "domain": "1",
+      "question": "Which command manages DNF repository configuration on RHEL-based systems?",
+      "options": ["dnf config-manager", "yum-config-manager", "repo-manager", "Both dnf config-manager and yum-config-manager"],
+      "answer": 3,
+      "explanation": "dnf config-manager (modern) and yum-config-manager (legacy) both manage repository configuration on RHEL.",
+      "hint8020": "dnf config-manager --add-repo URL = add repo. --enable/--disable repo_id. /etc/yum.repos.d/ = repo config files. dnf repolist = show repos."
+    },
+    {
+      "id": 56,
+      "domain": "1",
+      "question": "Which systemd unit type starts a service at a specific time or interval?",
+      "options": [".timer", ".service", ".socket", ".target"],
+      "answer": 0,
+      "explanation": "A .timer unit triggers a corresponding .service unit at specified times or intervals, replacing cron for systemd.",
+      "hint8020": ".timer = schedule. .service = what to run. OnCalendar= for time-based. OnBootSec= for delay after boot. systemctl list-timers."
+    },
+    {
+      "id": 57,
+      "domain": "1",
+      "question": "Which command shows detailed hardware information on a Linux system?",
+      "options": ["lshw", "dmidecode", "hwinfo", "All of the above"],
+      "answer": 3,
+      "explanation": "lshw, dmidecode (SMBIOS/DMI), and hwinfo all display detailed hardware information in different formats.",
+      "hint8020": "lshw = full hardware tree. dmidecode = BIOS/firmware data. lscpu = CPU. lspci = PCI. lsusb = USB. lsblk = block devices."
+    },
+    {
+      "id": 58,
+      "domain": "1",
+      "question": "Which command creates a swap file and enables it?",
+      "options": ["dd, mkswap, swapon", "fallocate, swapctl, mount", "mkswapfile, enable-swap", "touch, format-swap, activate"],
+      "answer": 0,
+      "explanation": "Create with dd or fallocate, format with mkswap, activate with swapon. Add to /etc/fstab for persistence.",
+      "hint8020": "dd if=/dev/zero of=/swapfile bs=1M count=1024 → mkswap /swapfile → swapon /swapfile. chmod 600. Add to /etc/fstab with swap type."
+    },
+    {
+      "id": 59,
+      "domain": "1",
+      "question": "Which command shows the current kernel version?",
+      "options": ["uname -r", "kernel --version", "cat /proc/version", "Both uname -r and cat /proc/version"],
+      "answer": 3,
+      "explanation": "uname -r shows just the kernel release. /proc/version shows the full kernel version string including build information.",
+      "hint8020": "uname -r = release. uname -a = all info. /proc/version = detailed build info. uname -m = architecture (x86_64, aarch64)."
+    },
+    {
+      "id": 60,
+      "domain": "2",
+      "question": "Which command restores the default SELinux context on a file?",
+      "options": ["restorecon -Rv /path", "chcon --restore /path", "semanage fcontext --reset /path", "selinux-reset /path"],
+      "answer": 0,
+      "explanation": "restorecon restores SELinux contexts based on the policy. -R for recursive, -v for verbose.",
+      "hint8020": "restorecon = reset to policy default. chcon = temporary change (lost on relabel). semanage fcontext = permanent custom context."
+    },
+    {
+      "id": 61,
+      "domain": "2",
+      "question": "Which command displays failed login attempts on a Linux system?",
+      "options": ["lastb", "faillog", "journalctl -u sshd --grep='Failed'", "All of the above"],
+      "answer": 3,
+      "explanation": "lastb reads /var/log/btmp for bad logins, faillog shows failure counts, and journalctl can filter SSH failures.",
+      "hint8020": "lastb = failed logins (/var/log/btmp). last = successful logins (/var/log/wtmp). faillog = failure counts. lastlog = last login per user."
+    },
+    {
+      "id": 62,
+      "domain": "2",
+      "question": "Which file defines which users can log in to the system?",
+      "options": ["/etc/securetty", "/etc/login.defs", "/etc/security/access.conf", "/etc/nologin"],
+      "answer": 2,
+      "explanation": "/etc/security/access.conf is used by pam_access to control login access. /etc/securetty restricts root login terminals.",
+      "hint8020": "access.conf = pam_access rules (+ allow, - deny). /etc/nologin = block non-root logins. /etc/securetty = root-only terminal list."
+    },
+    {
+      "id": 63,
+      "domain": "2",
+      "question": "Which command scans for rootkits on a Linux system?",
+      "options": ["rkhunter --check", "chkrootkit", "lynis audit system", "All of the above"],
+      "answer": 3,
+      "explanation": "rkhunter and chkrootkit scan for rootkits. lynis performs a comprehensive security audit including rootkit detection.",
+      "hint8020": "rkhunter = rootkit scanner. chkrootkit = alternative scanner. lynis = full audit. aide/tripwire = file integrity monitoring."
+    },
+    {
+      "id": 64,
+      "domain": "2",
+      "question": "Which command configures an nftables rule to drop incoming traffic on port 23?",
+      "options": ["nft add rule inet filter input tcp dport 23 drop", "nft block port 23", "iptables -A INPUT -p tcp --dport 23 -j DROP", "Both nft add rule and iptables commands"],
+      "answer": 3,
+      "explanation": "nft is the native nftables command. iptables commands are still supported via the iptables-nft translation layer.",
+      "hint8020": "nft add rule inet filter input tcp dport 23 drop. inet = IPv4+IPv6. iptables-nft = compatibility layer. nft list ruleset = show all rules."
+    },
+    {
+      "id": 65,
+      "domain": "2",
+      "question": "Which command sets file capabilities to allow a binary to bind to privileged ports without root?",
+      "options": ["setcap 'cap_net_bind_service=+ep' /path/to/binary", "chmod +s /path/to/binary", "chattr +i /path/to/binary", "setfacl -m u::rwx /path/to/binary"],
+      "answer": 0,
+      "explanation": "setcap grants specific Linux capabilities. cap_net_bind_service allows binding to ports below 1024 without root.",
+      "hint8020": "setcap = fine-grained privileges. getcap = check caps. Replaces SUID for specific privileges. Capabilities: net_bind, raw, admin, sys_ptrace."
+    },
+    {
+      "id": 66,
+      "domain": "3",
+      "question": "Which command creates a new user with a home directory and specific shell?",
+      "options": ["useradd -m -s /bin/bash username", "adduser --home --shell /bin/bash username", "usermod -m -s /bin/bash username", "mkuser username /bin/bash"],
+      "answer": 0,
+      "explanation": "useradd -m creates the home directory, -s sets the login shell. adduser is a higher-level wrapper on Debian.",
+      "hint8020": "useradd -m = create home. -s = shell. -G = supplementary groups. -d = custom home path. usermod = modify existing. userdel -r = delete + home."
+    },
+    {
+      "id": 67,
+      "domain": "3",
+      "question": "Which NFS configuration file defines exported directories?",
+      "options": ["/etc/exports", "/etc/nfs.conf", "/etc/fstab", "/etc/shares"],
+      "answer": 0,
+      "explanation": "/etc/exports defines directories shared via NFS. exportfs -ra reloads the configuration.",
+      "hint8020": "/etc/exports: /shared 192.168.1.0/24(rw,sync,no_root_squash). exportfs -ra = reload. showmount -e = list exports. Client: mount -t nfs."
+    },
+    {
+      "id": 68,
+      "domain": "3",
+      "question": "Which command configures a Samba share on Linux?",
+      "options": ["Edit /etc/samba/smb.conf", "smbclient --create-share", "net share add", "sambacfg --add"],
+      "answer": 0,
+      "explanation": "/etc/samba/smb.conf is the Samba configuration file. testparm validates the configuration syntax.",
+      "hint8020": "/etc/samba/smb.conf = config. testparm = validate. smbpasswd -a user = add Samba user. smbclient = connect to shares. pdbedit = manage users."
+    },
+    {
+      "id": 69,
+      "domain": "3",
+      "question": "Which command manages user passwords including expiration and aging?",
+      "options": ["chage", "passwd --expire", "usermod -e", "Both chage and passwd"],
+      "answer": 0,
+      "explanation": "chage sets password aging policies: -M max days, -m min days, -W warning days, -I inactive days, -E expire date.",
+      "hint8020": "chage -l user = show aging. chage -M 90 = max 90 days. chage -E 2025-12-31 = account expires. /etc/login.defs = system defaults."
+    },
+    {
+      "id": 70,
+      "domain": "3",
+      "question": "Which command sets up a BIND DNS zone file?",
+      "options": ["Edit /etc/named.conf and create zone file in /var/named/", "dns-config --add-zone", "systemctl create dns-zone", "bind-setup zone"],
+      "answer": 0,
+      "explanation": "BIND DNS configuration requires editing /etc/named.conf to define zones and creating zone files in /var/named/.",
+      "hint8020": "/etc/named.conf = main config. /var/named/ = zone files. named-checkconf = verify config. named-checkzone = verify zone file. rndc reload."
+    },
+    {
+      "id": 71,
+      "domain": "3",
+      "question": "Which command creates a new group and adds an existing user to it?",
+      "options": ["groupadd groupname && usermod -aG groupname username", "addgroup groupname username", "groupmod -a username groupname", "mkgroup groupname --add username"],
+      "answer": 0,
+      "explanation": "groupadd creates the group. usermod -aG appends the user to the supplementary group without removing existing groups.",
+      "hint8020": "groupadd = create. usermod -aG = append to group (-a is critical, without it replaces all groups). id user = verify groups. newgrp = switch active group."
+    },
+    {
+      "id": 72,
+      "domain": "3",
+      "question": "Which command configures a static IP address using NetworkManager?",
+      "options": ["nmcli con mod 'connection' ipv4.addresses 192.168.1.10/24 ipv4.method manual", "ifconfig eth0 192.168.1.10 netmask 255.255.255.0", "ip addr add 192.168.1.10/24 dev eth0", "networkctl set-address eth0 192.168.1.10/24"],
+      "answer": 0,
+      "explanation": "nmcli con mod sets persistent connection properties. ifconfig and ip addr add are temporary (lost on reboot).",
+      "hint8020": "nmcli con mod = persistent config. ipv4.method manual = static. ipv4.gateway = gateway. nmcli con up = apply. ip addr add = temporary."
+    },
+    {
+      "id": 73,
+      "domain": "3",
+      "question": "Which file controls the Name Service Switch for user authentication sources?",
+      "options": ["/etc/nsswitch.conf", "/etc/resolv.conf", "/etc/pam.d/system-auth", "/etc/nss.conf"],
+      "answer": 0,
+      "explanation": "/etc/nsswitch.conf determines the order of name service sources: files, ldap, sss, nis for users, groups, hosts, etc.",
+      "hint8020": "/etc/nsswitch.conf: passwd: files sss ldap. hosts: files dns. Determines lookup order. getent = query NSS databases."
+    },
+    {
+      "id": 74,
+      "domain": "4",
+      "question": "Which bash variable holds the exit status of the last command?",
+      "options": ["$?", "$!", "$#", "$0"],
+      "answer": 0,
+      "explanation": "$? contains the exit status of the last executed command. 0 means success, non-zero means failure.",
+      "hint8020": "$? = exit status (0=success). $! = last background PID. $# = arg count. $0 = script name. $@ = all args. $$ = current PID."
+    },
+    {
+      "id": 75,
+      "domain": "4",
+      "question": "Which command finds all files larger than 100MB in the /home directory?",
+      "options": ["find /home -size +100M", "locate --size +100M /home", "du -h /home | grep 100M", "ls -lR /home | grep 100M"],
+      "answer": 0,
+      "explanation": "find -size +100M finds files larger than 100 megabytes. + means greater than, - means less than.",
+      "hint8020": "find -size +100M = over 100MB. -type f = files only. -mtime -7 = modified in 7 days. -exec rm {} \\; = delete found files. -name '*.log' = by name."
+    },
+    {
+      "id": 76,
+      "domain": "4",
+      "question": "Which cron expression runs a job every weekday at 6:30 AM?",
+      "options": ["30 6 * * 1-5", "6 30 * * 1-5", "30 6 * * 0-4", "30 6 1-5 * *"],
+      "answer": 0,
+      "explanation": "Cron format: minute hour day-of-month month day-of-week. 30 6 = 6:30 AM. 1-5 = Monday through Friday.",
+      "hint8020": "Cron: min hour dom month dow. 0=Sunday or 7=Sunday. 1-5 = Mon-Fri. */5 = every 5. crontab -e = edit. crontab -l = list."
+    },
+    {
+      "id": 77,
+      "domain": "4",
+      "question": "Which command extracts specific columns from a CSV file?",
+      "options": ["cut -d',' -f1,3 file.csv", "awk -F',' '{print $1,$3}' file.csv", "sed 's/,/ /g' file.csv", "Both cut and awk"],
+      "answer": 3,
+      "explanation": "cut -d',' -f1,3 extracts columns 1 and 3 using comma delimiter. awk -F',' does the same with more flexibility.",
+      "hint8020": "cut -d = delimiter, -f = fields. awk -F = field separator, $1 = first field. cut = simple extraction. awk = powerful processing."
+    },
+    {
+      "id": 78,
+      "domain": "4",
+      "question": "Which Ansible inventory file format is used by default?",
+      "options": ["INI format in /etc/ansible/hosts", "YAML format in /etc/ansible/hosts.yml", "JSON format in /etc/ansible/hosts.json", "Both INI and YAML formats"],
+      "answer": 3,
+      "explanation": "Ansible supports both INI and YAML inventory formats. The default location is /etc/ansible/hosts.",
+      "hint8020": "INI: [webservers] + host lines. YAML: all: hosts: children:. -i = custom inventory. Dynamic inventory = script/plugin that generates host list."
+    },
+    {
+      "id": 79,
+      "domain": "4",
+      "question": "Which command compiles and runs a container image using a Dockerfile?",
+      "options": ["docker build -t myimage . && docker run myimage", "docker create myimage", "docker compose build", "podman compile Dockerfile"],
+      "answer": 0,
+      "explanation": "docker build -t tags the image, . is the build context. docker run creates and starts a container from the image.",
+      "hint8020": "docker build -t name:tag . = build image. docker run -d -p 80:80 = detached + port map. Dockerfile: FROM, RUN, COPY, CMD, EXPOSE."
+    },
+    {
+      "id": 80,
+      "domain": "4",
+      "question": "Which command redirects both stdout and stderr to a file?",
+      "options": ["command &> output.log", "command > output.log 2>&1", "command 2> output.log", "Both &> and > 2>&1"],
+      "answer": 3,
+      "explanation": "&> redirects both streams (bash shortcut). > file 2>&1 redirects stdout to file, then stderr to stdout's destination.",
+      "hint8020": "1 = stdout, 2 = stderr. > = redirect stdout. 2>&1 = stderr to stdout. &> = both. /dev/null = discard. | = pipe stdout only. |& = pipe both."
+    },
+    {
+      "id": 81,
+      "domain": "5",
+      "question": "A user reports they cannot create new files despite having disk space available. Which command diagnoses this?",
+      "options": ["df -i", "df -h", "du -sh /", "fdisk -l"],
+      "answer": 0,
+      "explanation": "df -i shows inode usage. If inodes are exhausted (100%), no new files can be created even with free disk space.",
+      "hint8020": "df -i = inode usage. Inodes exhausted = no new files. Many small files consume inodes. find / -xdev -type f | wc -l = count files."
+    },
+    {
+      "id": 82,
+      "domain": "5",
+      "question": "Which command identifies which process is using a specific file or port?",
+      "options": ["lsof", "fuser", "ss -tlnp", "All of the above"],
+      "answer": 3,
+      "explanation": "lsof lists open files/ports by process. fuser identifies processes using files/mounts. ss shows socket/port usage.",
+      "hint8020": "lsof /path = who has file open. lsof -i :80 = who uses port 80. fuser -m /mount = processes on mount. fuser -k = kill those processes."
+    },
+    {
+      "id": 83,
+      "domain": "5",
+      "question": "Which command displays memory usage including buffers and cache?",
+      "options": ["free -h", "vmstat", "cat /proc/meminfo", "All of the above"],
+      "answer": 3,
+      "explanation": "free -h shows memory with human-readable sizes. vmstat shows virtual memory stats. /proc/meminfo has detailed breakdowns.",
+      "hint8020": "free -h: total, used, free, shared, buff/cache, available. 'available' = truly free memory. Linux uses spare RAM for cache = normal."
+    },
+    {
+      "id": 84,
+      "domain": "5",
+      "question": "A service fails to start. Which command shows the most recent log entries for that service?",
+      "options": ["journalctl -u servicename -n 50 --no-pager", "systemctl status servicename", "tail -f /var/log/syslog", "Both journalctl -u and systemctl status"],
+      "answer": 3,
+      "explanation": "journalctl -u filters by unit. systemctl status shows recent log lines. Both help diagnose service failures.",
+      "hint8020": "journalctl -u service = unit logs. -xe = end + explanations. --since '1 hour ago'. systemctl status = quick check with last few lines."
+    },
+    {
+      "id": 85,
+      "domain": "5",
+      "question": "Which command tests DNS resolution from the command line?",
+      "options": ["dig example.com", "nslookup example.com", "host example.com", "All of the above"],
+      "answer": 3,
+      "explanation": "dig (detailed), nslookup (interactive), and host (simple) all perform DNS lookups.",
+      "hint8020": "dig = most detailed (ANSWER section). nslookup = interactive mode. host = simplest. dig +short = just the answer. dig @8.8.8.8 = specific server."
+    },
+    {
+      "id": 86,
+      "domain": "5",
+      "question": "Which command traces the network path to a remote host?",
+      "options": ["traceroute", "tracepath", "mtr", "All of the above"],
+      "answer": 3,
+      "explanation": "traceroute, tracepath, and mtr all show the network path. mtr combines traceroute and ping for continuous monitoring.",
+      "hint8020": "traceroute = show hops. tracepath = no root needed. mtr = continuous traceroute + ping stats. * = hop doesn't respond (firewall)."
+    },
+    {
+      "id": 87,
+      "domain": "5",
+      "question": "A system is running slowly. Which command shows per-process CPU and memory usage sorted by CPU?",
+      "options": ["ps aux --sort=-%cpu", "top -o %CPU", "htop with F6 sort", "All of the above"],
+      "answer": 3,
+      "explanation": "ps aux --sort sorts by CPU percentage. top -o sorts columns. htop allows interactive sorting with F6.",
+      "hint8020": "ps aux --sort=-%cpu = top CPU consumers. top: press P (CPU sort), M (memory sort). load average > CPU count = overloaded."
+    },
+    {
+      "id": 88,
+      "domain": "5",
+      "question": "Which command checks if a remote port is open and accepting connections?",
+      "options": ["nc -zv host port", "nmap -p port host", "telnet host port", "All of the above"],
+      "answer": 3,
+      "explanation": "nc (netcat) with -z scans ports. nmap scans with more detail. telnet tests TCP connectivity.",
+      "hint8020": "nc -zv host 80 = quick port check. nmap -p 22,80,443 = scan specific ports. ss -tlnp on server side = verify listening."
+    },
+    {
+      "id": 89,
+      "domain": "5",
+      "question": "Which log file records authentication events on RHEL-based systems?",
+      "options": ["/var/log/secure", "/var/log/auth.log", "/var/log/messages", "/var/log/audit/audit.log"],
+      "answer": 0,
+      "explanation": "/var/log/secure on RHEL records authentication events. Debian uses /var/log/auth.log for the same purpose.",
+      "hint8020": "RHEL: /var/log/secure. Debian: /var/log/auth.log. Both log SSH, sudo, PAM events. auditd logs go to /var/log/audit/audit.log."
+    },
+    {
+      "id": 90,
+      "domain": "5",
+      "question": "Which command kills a process that is not responding to SIGTERM?",
+      "options": ["kill -9 PID", "kill -SIGKILL PID", "kill -15 PID", "Both kill -9 and kill -SIGKILL"],
+      "answer": 3,
+      "explanation": "kill -9 (SIGKILL) forcefully terminates a process that ignores SIGTERM (signal 15). Cannot be caught or ignored.",
+      "hint8020": "SIGTERM (15) = graceful stop (can be caught). SIGKILL (9) = force kill (cannot be caught). Always try SIGTERM first. killall = by name."
     }
   ]
 }

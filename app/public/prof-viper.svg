@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="vBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a0a0a"/>
+      <stop offset="100%" stop-color="#0a0e17"/>
+    </radialGradient>
+    <linearGradient id="vGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dc2626" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#ff4444" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#dc2626" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="vBlur">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="vGlowF">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="vCircle"><circle cx="256" cy="256" r="250"/></clipPath>
+  </defs>
+  <rect width="512" height="512" fill="url(#vBg)"/>
+  <!-- Circuit snake pattern -->
+  <g opacity="0.15" clip-path="url(#vCircle)">
+    <path d="M50,400 Q100,350 150,370 Q200,390 220,340 Q240,290 280,310 Q320,330 340,280 Q360,230 400,250 Q440,270 460,220 Q480,170 500,180" stroke="#dc2626" stroke-width="2" fill="none"/>
+    <path d="M30,450 Q80,400 130,420 Q180,440 200,390 Q220,340 260,360 Q300,380 320,330 Q340,280 380,300 Q420,320 440,270 Q460,220 490,230" stroke="#dc2626" stroke-width="1.5" fill="none"/>
+    <path d="M60,350 Q110,300 160,320 Q210,340 230,290 Q250,240 290,260 Q330,280 350,230 Q370,180 410,200 Q450,220 470,170" stroke="#ff4444" stroke-width="1" fill="none" opacity="0.5"/>
+    <!-- Circuit nodes on snake path -->
+    <circle cx="150" cy="370" r="4" fill="#dc2626"/>
+    <circle cx="280" cy="310" r="4" fill="#dc2626"/>
+    <circle cx="400" cy="250" r="4" fill="#dc2626"/>
+    <rect x="218" y="338" width="6" height="6" fill="#dc2626" transform="rotate(45 221 341)"/>
+    <rect x="338" y="278" width="6" height="6" fill="#dc2626" transform="rotate(45 341 281)"/>
+  </g>
+  <!-- Glowing red aura behind head -->
+  <ellipse cx="256" cy="210" rx="120" ry="130" fill="#dc2626" opacity="0.08" filter="url(#vBlur)"/>
+  <!-- Head silhouette - sharp angular features -->
+  <path d="M256,100 L210,140 L195,180 L190,220 L195,260 L210,290 L220,310 L230,340 L226,380 L200,420 L180,460 L330,460 L310,420 L286,380 L282,340 L292,310 L302,290 L317,260 L322,220 L317,180 L302,140 Z" fill="#0d1117" stroke="#dc2626" stroke-width="0.5" opacity="0.9"/>
+  <!-- Viper eye - left -->
+  <g filter="url(#vGlowF)">
+    <path d="M218,200 Q240,185 260,200 Q240,210 218,200Z" fill="#dc2626" opacity="0.9"/>
+    <ellipse cx="242" cy="200" rx="8" ry="5" fill="#0a0e17"/>
+    <ellipse cx="242" cy="200" rx="2" ry="5" fill="#dc2626"/>
+  </g>
+  <!-- Viper eye - right -->
+  <g filter="url(#vGlowF)">
+    <path d="M294,200 Q272,185 252,200 Q272,210 294,200Z" fill="#dc2626" opacity="0.9"/>
+    <ellipse cx="270" cy="200" rx="8" ry="5" fill="#0a0e17"/>
+    <ellipse cx="270" cy="200" rx="2" ry="5" fill="#dc2626"/>
+  </g>
+  <!-- Angular jaw line accent -->
+  <line x1="210" y1="290" x2="256" y2="330" stroke="#dc2626" stroke-width="1" opacity="0.4"/>
+  <line x1="302" y1="290" x2="256" y2="330" stroke="#dc2626" stroke-width="1" opacity="0.4"/>
+  <!-- Digital snake silhouette wrapping around -->
+  <g opacity="0.3" filter="url(#vGlowF)">
+    <path d="M140,180 Q120,160 130,130 Q140,100 170,110 Q185,115 180,140 Q175,160 160,170 Q150,178 145,190 Q140,210 150,230 Q160,250 175,240" stroke="#dc2626" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- Snake head -->
+    <path d="M125,128 L140,120 L138,135Z" fill="#dc2626"/>
+  </g>
+  <g opacity="0.25" filter="url(#vGlowF)">
+    <path d="M372,180 Q392,160 382,130 Q372,100 342,110 Q327,115 332,140 Q337,160 352,170 Q362,178 367,190 Q372,210 362,230 Q352,250 337,240" stroke="#dc2626" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M387,128 L372,120 L374,135Z" fill="#dc2626"/>
+  </g>
+  <!-- Horizontal scan lines -->
+  <g opacity="0.05">
+    <line x1="0" y1="150" x2="512" y2="150" stroke="#dc2626" stroke-width="1"/>
+    <line x1="0" y1="200" x2="512" y2="200" stroke="#dc2626" stroke-width="1"/>
+    <line x1="0" y1="250" x2="512" y2="250" stroke="#dc2626" stroke-width="1"/>
+    <line x1="0" y1="300" x2="512" y2="300" stroke="#dc2626" stroke-width="1"/>
+    <line x1="0" y1="350" x2="512" y2="350" stroke="#dc2626" stroke-width="1"/>
+  </g>
+  <!-- Name -->
+  <text x="256" y="475" text-anchor="middle" font-family="monospace" font-size="11" fill="#dc2626" opacity="0.3" letter-spacing="6">VIPER</text>
+</svg>

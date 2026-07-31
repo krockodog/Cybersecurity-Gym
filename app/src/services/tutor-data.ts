@@ -32,7 +32,7 @@ export const tutors: TutorData[] = [
   },
   {
     id: 'tutor-practice-pentest',
-    name: 'Kyle Hackwright',
+    name: 'You-did',
     title: 'Lab Tutor — PenTest+',
     type: 'practice',
     certification: 'PT0-003',
@@ -197,6 +197,32 @@ export const tutors: TutorData[] = [
     bio: 'I guide you through enterprise security design labs — Zero Trust implementations, cloud architecture reviews, and risk assessment exercises. Real enterprise scenarios, real decisions.',
     specialties: ['Zero Trust Labs', 'Cloud Architecture', 'Risk Assessment', 'Security Design'],
     teachingStyle: 'Enterprise scenario simulations with decision trees.',
+  },
+
+  // Linux+ (XK0-006) Tutors
+  {
+    id: 'tutor-theory-linuxplus',
+    name: 'Hana Kernelstein',
+    title: 'Concept Tutor — Linux+',
+    type: 'theory',
+    certification: 'XK0-006',
+    color: '#ff9500',
+    catchphrase: 'Know the kernel, master the system.',
+    bio: 'I teach you the deeper Linux concepts that separate a user from an administrator — kernel modules, storage architectures, security frameworks, and system internals.',
+    specialties: ['Kernel Architecture', 'Storage Concepts', 'Security Frameworks', 'System Design'],
+    teachingStyle: 'Layered explanations — from concept to implementation.',
+  },
+  {
+    id: 'tutor-practice-linuxplus',
+    name: 'Root Riley',
+    title: 'Lab Tutor — Linux+',
+    type: 'practice',
+    certification: 'XK0-006',
+    color: '#e07600',
+    catchphrase: 'sudo is not a suggestion — it is a responsibility.',
+    bio: 'I guide you through advanced Linux labs — LVM, systemd, containers, firewall rules, and automation scripts. Every command you run has a purpose, and I make sure you understand it.',
+    specialties: ['LVM Management', 'Systemd Administration', 'Container Operations', 'Firewall Configuration'],
+    teachingStyle: 'Scenario-driven labs with production-grade complexity.',
   },
 
   // Cloud+ Tutors

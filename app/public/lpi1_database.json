@@ -5,7 +5,7 @@
       "101-500",
       "102-500"
     ],
-    "total_questions": 64,
+    "total_questions": 90,
     "domains": [
       "Systemarchitektur",
       "Systemadministration",
@@ -979,6 +979,396 @@
       ],
       "correct_answer": "A",
       "explanation": "hostname ändert temporär. hostnamectl set-hostname ändert permanent (persistiert)."
+    },
+    {
+      "id": "lpi1_108_1",
+      "exam": "LPI-1 101-500",
+      "domain": "Systemarchitektur",
+      "type": "multiple_choice",
+      "question": "Welcher Befehl zeigt die aktuell geladenen Kernel-Module an?",
+      "options": [
+        "A. lsmod",
+        "B. modinfo",
+        "C. modprobe -l",
+        "D. insmod --list"
+      ],
+      "correct_answer": "A",
+      "explanation": "lsmod zeigt alle aktuell geladenen Kernel-Module, deren Groesse und Abhaengigkeiten an."
+    },
+    {
+      "id": "lpi1_108_2",
+      "exam": "LPI-1 101-500",
+      "domain": "Systemarchitektur",
+      "type": "multiple_choice",
+      "question": "In welchem Verzeichnis befinden sich die Kernel-Module?",
+      "options": [
+        "A. /lib/modules/$(uname -r)/",
+        "B. /etc/modules/",
+        "C. /usr/lib/kernel/",
+        "D. /boot/modules/"
+      ],
+      "correct_answer": "A",
+      "explanation": "/lib/modules/$(uname -r)/ enthaelt die Module fuer die aktuelle Kernel-Version. Jede Kernel-Version hat ein eigenes Unterverzeichnis."
+    },
+    {
+      "id": "lpi1_108_3",
+      "exam": "LPI-1 101-500",
+      "domain": "Systemarchitektur",
+      "type": "multiple_choice",
+      "question": "Welches Pseudodateisystem liefert Informationen ueber laufende Prozesse?",
+      "options": [
+        "A. /proc",
+        "B. /sys",
+        "C. /dev",
+        "D. /run"
+      ],
+      "correct_answer": "A",
+      "explanation": "/proc ist ein virtuelles Dateisystem, das Prozess- und Kernelinformationen zur Laufzeit bereitstellt."
+    },
+    {
+      "id": "lpi1_108_4",
+      "exam": "LPI-1 101-500",
+      "domain": "Systemarchitektur",
+      "type": "multiple_choice",
+      "question": "Welcher Befehl zeigt die UEFI-Boot-Eintraege an?",
+      "options": [
+        "A. efibootmgr",
+        "B. grub2-mkconfig",
+        "C. lsboot",
+        "D. bootctl list"
+      ],
+      "correct_answer": "A",
+      "explanation": "efibootmgr verwaltet die UEFI-Boot-Eintraege. Er kann Boot-Reihenfolge anzeigen und aendern."
+    },
+    {
+      "id": "lpi1_109_1",
+      "exam": "LPI-1 101-500",
+      "domain": "GNU-Unix-Befehle",
+      "type": "multiple_choice",
+      "question": "Welcher Befehl zaehlt Zeilen, Woerter und Zeichen in einer Datei?",
+      "options": [
+        "A. wc",
+        "B. count",
+        "C. stat",
+        "D. nl"
+      ],
+      "correct_answer": "A",
+      "explanation": "wc (word count) zaehlt Zeilen (-l), Woerter (-w) und Bytes/Zeichen (-c/-m) in Dateien."
+    },
+    {
+      "id": "lpi1_109_2",
+      "exam": "LPI-1 101-500",
+      "domain": "GNU-Unix-Befehle",
+      "type": "multiple_choice",
+      "question": "Welcher Befehl sucht rekursiv nach einem Muster in Dateien?",
+      "options": [
+        "A. grep -r 'muster' /pfad/",
+        "B. find /pfad/ -text 'muster'",
+        "C. search 'muster' /pfad/",
+        "D. locate 'muster'"
+      ],
+      "correct_answer": "A",
+      "explanation": "grep -r durchsucht rekursiv alle Dateien ab dem angegebenen Verzeichnis nach dem Muster."
+    },
+    {
+      "id": "lpi1_109_3",
+      "exam": "LPI-1 101-500",
+      "domain": "GNU-Unix-Befehle",
+      "type": "multiple_choice",
+      "question": "Welcher Befehl sortiert die Ausgabe numerisch?",
+      "options": [
+        "A. sort -n",
+        "B. sort -a",
+        "C. order -n",
+        "D. sort --numeric"
+      ],
+      "correct_answer": "A",
+      "explanation": "sort -n sortiert numerisch statt alphabetisch. -r fuer umgekehrte Reihenfolge, -k fuer bestimmte Spalte."
+    },
+    {
+      "id": "lpi1_109_4",
+      "exam": "LPI-1 101-500",
+      "domain": "GNU-Unix-Befehle",
+      "type": "multiple_choice",
+      "question": "Welcher Befehl zeigt die letzten 20 Zeilen einer Datei an?",
+      "options": [
+        "A. tail -n 20 datei",
+        "B. head -n 20 datei",
+        "C. last 20 datei",
+        "D. end -20 datei"
+      ],
+      "correct_answer": "A",
+      "explanation": "tail -n 20 zeigt die letzten 20 Zeilen. tail -f verfolgt Aenderungen in Echtzeit (nuetzlich fuer Logdateien)."
+    },
+    {
+      "id": "lpi1_110_1",
+      "exam": "LPI-1 101-500",
+      "domain": "Shells und Skripte",
+      "type": "multiple_choice",
+      "question": "Welche Variable enthaelt den Rueckgabewert des letzten Befehls?",
+      "options": [
+        "A. $?",
+        "B. $!",
+        "C. $#",
+        "D. $0"
+      ],
+      "correct_answer": "A",
+      "explanation": "$? enthaelt den Exit-Code des zuletzt ausgefuehrten Befehls. 0 bedeutet Erfolg, ungleich 0 bedeutet Fehler."
+    },
+    {
+      "id": "lpi1_110_2",
+      "exam": "LPI-1 101-500",
+      "domain": "Shells und Skripte",
+      "type": "multiple_choice",
+      "question": "Welcher Operator leitet die Standardfehlerausgabe in eine Datei um?",
+      "options": [
+        "A. 2>",
+        "B. 1>",
+        "C. &>",
+        "D. >>"
+      ],
+      "correct_answer": "A",
+      "explanation": "2> leitet stderr (Dateideskriptor 2) in eine Datei um. 1> oder > leitet stdout um. &> leitet beides um."
+    },
+    {
+      "id": "lpi1_110_3",
+      "exam": "LPI-1 101-500",
+      "domain": "Shells und Skripte",
+      "type": "multiple_choice",
+      "question": "Welcher Befehl setzt eine Umgebungsvariable dauerhaft fuer alle Benutzer?",
+      "options": [
+        "A. Eintrag in /etc/environment",
+        "B. export VAR=wert",
+        "C. setenv VAR wert",
+        "D. env VAR=wert"
+      ],
+      "correct_answer": "A",
+      "explanation": "/etc/environment wird beim Login gelesen und setzt Variablen systemweit. export setzt sie nur fuer die aktuelle Shell-Sitzung."
+    },
+    {
+      "id": "lpi1_110_4",
+      "exam": "LPI-1 101-500",
+      "domain": "Shells und Skripte",
+      "type": "multiple_choice",
+      "question": "Welche Datei wird beim Start einer interaktiven Bash-Login-Shell ausgefuehrt?",
+      "options": [
+        "A. ~/.bash_profile oder ~/.profile",
+        "B. ~/.bashrc",
+        "C. /etc/bash.bashrc",
+        "D. ~/.bash_logout"
+      ],
+      "correct_answer": "A",
+      "explanation": "Bei einer Login-Shell werden ~/.bash_profile, ~/.bash_login oder ~/.profile in dieser Reihenfolge gesucht. ~/.bashrc wird bei interaktiven Nicht-Login-Shells gelesen."
+    },
+    {
+      "id": "lpi1_111_1",
+      "exam": "LPI-1 101-500",
+      "domain": "Dateisysteme",
+      "type": "multiple_choice",
+      "question": "Welcher Befehl erstellt ein ext4-Dateisystem auf einer Partition?",
+      "options": [
+        "A. mkfs.ext4 /dev/sdb1",
+        "B. format ext4 /dev/sdb1",
+        "C. fsck.ext4 /dev/sdb1",
+        "D. newfs /dev/sdb1"
+      ],
+      "correct_answer": "A",
+      "explanation": "mkfs.ext4 (oder mkfs -t ext4) erstellt ein ext4-Dateisystem. Die Partition darf dabei nicht eingehaengt sein."
+    },
+    {
+      "id": "lpi1_111_2",
+      "exam": "LPI-1 101-500",
+      "domain": "Dateisysteme",
+      "type": "multiple_choice",
+      "question": "Welcher Befehl zeigt die Inode-Nutzung eines Dateisystems an?",
+      "options": [
+        "A. df -i",
+        "B. du -i",
+        "C. stat -i",
+        "D. ls -i"
+      ],
+      "correct_answer": "A",
+      "explanation": "df -i zeigt die Inode-Nutzung pro Dateisystem. Wenn alle Inodes belegt sind, koennen keine neuen Dateien erstellt werden."
+    },
+    {
+      "id": "lpi1_111_3",
+      "exam": "LPI-1 101-500",
+      "domain": "Dateisysteme",
+      "type": "multiple_choice",
+      "question": "Welcher Befehl erstellt einen symbolischen Link?",
+      "options": [
+        "A. ln -s ziel linkname",
+        "B. link -s ziel linkname",
+        "C. ln ziel linkname",
+        "D. symlink ziel linkname"
+      ],
+      "correct_answer": "A",
+      "explanation": "ln -s erstellt einen symbolischen (Soft-)Link. Ohne -s wird ein Hardlink erstellt, der nur auf derselben Partition funktioniert."
+    },
+    {
+      "id": "lpi1_111_4",
+      "exam": "LPI-1 101-500",
+      "domain": "Dateisysteme",
+      "type": "multiple_choice",
+      "question": "Welche Datei definiert die automatische Einhaengung von Dateisystemen beim Systemstart?",
+      "options": [
+        "A. /etc/fstab",
+        "B. /etc/mtab",
+        "C. /etc/mounts",
+        "D. /etc/mount.conf"
+      ],
+      "correct_answer": "A",
+      "explanation": "/etc/fstab enthaelt die Konfiguration fuer automatisches Einhaengen. Spalten: Geraet, Einhängepunkt, Typ, Optionen, Dump, Pass."
+    },
+    {
+      "id": "lpi1_112_1",
+      "exam": "LPI-1 101-500",
+      "domain": "Benutzerverwaltung",
+      "type": "multiple_choice",
+      "question": "Welcher Befehl aendert die primaere Gruppe eines Benutzers?",
+      "options": [
+        "A. usermod -g gruppenname benutzer",
+        "B. groupmod -u benutzer gruppenname",
+        "C. chgrp benutzer gruppenname",
+        "D. usermod -G gruppenname benutzer"
+      ],
+      "correct_answer": "A",
+      "explanation": "usermod -g aendert die primaere Gruppe. -G (Grossbuchstabe) setzt die zusaetzlichen Gruppen. -aG haengt eine Gruppe an."
+    },
+    {
+      "id": "lpi1_112_2",
+      "exam": "LPI-1 101-500",
+      "domain": "Benutzerverwaltung",
+      "type": "multiple_choice",
+      "question": "In welcher Datei werden die verschluesselten Passwoerter gespeichert?",
+      "options": [
+        "A. /etc/shadow",
+        "B. /etc/passwd",
+        "C. /etc/security/passwd",
+        "D. /etc/login.defs"
+      ],
+      "correct_answer": "A",
+      "explanation": "/etc/shadow enthaelt die gehashten Passwoerter und ist nur fuer root lesbar. /etc/passwd enthaelt Benutzerdaten, aber keine Passwoerter mehr."
+    },
+    {
+      "id": "lpi1_112_3",
+      "exam": "LPI-1 101-500",
+      "domain": "Benutzerverwaltung",
+      "type": "multiple_choice",
+      "question": "Welcher Befehl sperrt ein Benutzerkonto?",
+      "options": [
+        "A. usermod -L benutzername",
+        "B. passwd -d benutzername",
+        "C. userdel benutzername",
+        "D. chage -E 0 benutzername"
+      ],
+      "correct_answer": "A",
+      "explanation": "usermod -L sperrt das Konto durch ein Ausrufezeichen vor dem Passwort-Hash in /etc/shadow. -U entsperrt es wieder."
+    },
+    {
+      "id": "lpi1_112_4",
+      "exam": "LPI-1 101-500",
+      "domain": "Benutzerverwaltung",
+      "type": "multiple_choice",
+      "question": "Welcher Befehl zeigt alle Gruppen eines Benutzers an?",
+      "options": [
+        "A. id benutzername",
+        "B. groups benutzername",
+        "C. getent group benutzername",
+        "D. Sowohl id als auch groups"
+      ],
+      "correct_answer": "D",
+      "explanation": "id zeigt UID, GID und alle Gruppen. groups zeigt nur die Gruppennamen. Beide zeigen die Gruppenzugehoerigkeit an."
+    },
+    {
+      "id": "lpi1_113_1",
+      "exam": "LPI-1 101-500",
+      "domain": "Linux-Installation",
+      "type": "multiple_choice",
+      "question": "Welcher Befehl aktualisiert die Paketliste auf Debian-basierten Systemen?",
+      "options": [
+        "A. apt update",
+        "B. apt upgrade",
+        "C. dpkg --update",
+        "D. apt-cache update"
+      ],
+      "correct_answer": "A",
+      "explanation": "apt update aktualisiert die Paketlisten aus den Repositories. apt upgrade installiert dann die verfuegbaren Aktualisierungen."
+    },
+    {
+      "id": "lpi1_113_2",
+      "exam": "LPI-1 101-500",
+      "domain": "Linux-Installation",
+      "type": "multiple_choice",
+      "question": "Welche Datei definiert die APT-Paketquellen auf Debian/Ubuntu?",
+      "options": [
+        "A. /etc/apt/sources.list",
+        "B. /etc/yum.repos.d/",
+        "C. /etc/apt/packages.conf",
+        "D. /etc/dpkg/sources"
+      ],
+      "correct_answer": "A",
+      "explanation": "/etc/apt/sources.list und Dateien in /etc/apt/sources.list.d/ definieren die Paketquellen fuer APT."
+    },
+    {
+      "id": "lpi1_113_3",
+      "exam": "LPI-1 101-500",
+      "domain": "Linux-Installation",
+      "type": "multiple_choice",
+      "question": "Welcher Befehl zeigt Informationen ueber ein installiertes RPM-Paket an?",
+      "options": [
+        "A. rpm -qi paketname",
+        "B. rpm -iv paketname",
+        "C. yum describe paketname",
+        "D. dnf show paketname"
+      ],
+      "correct_answer": "A",
+      "explanation": "rpm -qi zeigt detaillierte Informationen ueber ein installiertes Paket. -ql listet die enthaltenen Dateien."
+    },
+    {
+      "id": "lpi1_113_4",
+      "exam": "LPI-1 101-500",
+      "domain": "Linux-Installation",
+      "type": "multiple_choice",
+      "question": "Welcher Befehl entfernt ein Paket einschliesslich der Konfigurationsdateien auf Debian?",
+      "options": [
+        "A. apt purge paketname",
+        "B. apt remove paketname",
+        "C. dpkg --remove paketname",
+        "D. apt autoremove paketname"
+      ],
+      "correct_answer": "A",
+      "explanation": "apt purge entfernt das Paket und seine Konfigurationsdateien. apt remove behaelt die Konfigurationsdateien."
+    },
+    {
+      "id": "lpi1_114_1",
+      "exam": "LPI-1 101-500",
+      "domain": "Systemadministration",
+      "type": "multiple_choice",
+      "question": "Welcher Befehl zeigt den aktuellen Runlevel (Systemd-Target) an?",
+      "options": [
+        "A. systemctl get-default",
+        "B. runlevel",
+        "C. who -r",
+        "D. Alle oben genannten"
+      ],
+      "correct_answer": "D",
+      "explanation": "systemctl get-default zeigt das Standard-Target. runlevel und who -r zeigen den traditionellen Runlevel (Kompatibilitaet)."
+    },
+    {
+      "id": "lpi1_114_2",
+      "exam": "LPI-1 101-500",
+      "domain": "Systemadministration",
+      "type": "multiple_choice",
+      "question": "Welcher Befehl zeigt die Systemzeit und die Zeitzonen-Einstellung an?",
+      "options": [
+        "A. timedatectl",
+        "B. date -z",
+        "C. hwclock --show",
+        "D. tzconfig"
+      ],
+      "correct_answer": "A",
+      "explanation": "timedatectl zeigt die Systemzeit, Hardware-Uhr, Zeitzone und NTP-Status an. timedatectl set-timezone aendert die Zeitzone."
     }
   ]
 }
