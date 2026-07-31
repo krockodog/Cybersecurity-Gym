@@ -2,6 +2,8 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import Layout from './components/Layout'
 import Profile from './pages/Profile'
 import Classroom from './pages/Classroom'
+import Courses from './pages/Courses'
+import CourseDetail from './pages/CourseDetail'
 import Quiz from './pages/Quiz'
 import PBQ from './pages/PBQ'
 import Tutor from './pages/Tutor'
@@ -49,6 +51,8 @@ export default function App() {
           }
         />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/courses/:courseId" element={<CourseDetail />} />
         <Route path="/quiz" element={<Quiz />} />
         <Route path="/pbq" element={<PBQ />} />
         <Route path="/tutor" element={<Tutor />} />
