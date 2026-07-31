@@ -92,6 +92,7 @@ const WING_TABS = [
   { id: 'aplus', label: 'A+', color: '#ffaa00', icon: Wrench },
   { id: 'cybersecurity-analyst', label: 'CySA+', color: '#ec4899', icon: Search },
   { id: 'advanced-security', label: 'CASP+', color: '#14b8a6', icon: Lock },
+  { id: 'cloud', label: 'Cloud+', color: '#0ea5e9', icon: Globe },
 ];
 
 const easeExpoOut = [0.16, 1, 0.3, 1] as [number, number, number, number];
@@ -428,8 +429,8 @@ function QuickStatsRow() {
   const stats = [
     { icon: <Target size={22} className="text-[#00d4ff]" />, value: answered || 0, label: 'Questions', color: '#00d4ff' },
     { icon: <TrendingUp size={22} className="text-[#00ff41]" />, value: 70, label: 'Correct Rate', suffix: '%', color: '#00ff41' },
-    { icon: <BookOpen size={22} className="text-[#ffaa00]" />, value: 5, label: 'Wings Active', color: '#ffaa00' },
-    { icon: <Users size={22} className="text-[#8b5cf6]" />, value: 11, label: 'Professors', color: '#8b5cf6' },
+    { icon: <BookOpen size={22} className="text-[#ffaa00]" />, value: 9, label: 'Wings Active', color: '#ffaa00' },
+    { icon: <Users size={22} className="text-[#8b5cf6]" />, value: 19, label: 'Professors', color: '#8b5cf6' },
   ];
 
   return (
@@ -1057,16 +1058,6 @@ export default function Classroom() {
 
   return (
     <main className="min-h-screen bg-[#0a0e17]">
-      {/* Study Streak */}
-      <section className="px-4 sm:px-6 lg:px-8 py-6 max-w-7xl mx-auto">
-        <StudyStreak />
-      </section>
-
-      {/* Adaptive Learning Intelligence */}
-      <section className="px-4 sm:px-6 lg:px-8 py-6 max-w-7xl mx-auto">
-        <AdaptiveLearningPanel />
-      </section>
-
       {/* ── Assessment Modal ── */}
       <AssessmentModal
         isOpen={showAssessment}
@@ -1075,52 +1066,7 @@ export default function Classroom() {
       />
 
       {/* ============================================================ */}
-      {/*  Section 1: Welcome Header                                   */}
-      {/* ============================================================ */}
-      <WelcomeHeader
-        onAssessmentClick={() => setShowAssessment(true)}
-        hasAssessment={!!assessmentResult}
-      />
-
-      {/* ============================================================ */}
-      {/*  Section 2: Quick Stats                                      */}
-      {/* ============================================================ */}
-      <QuickStatsRow />
-
-      {/* ============================================================ */}
-      {/*  Section 3: Assessment Banner / Summary                      */}
-      {/* ============================================================ */}
-      {!assessmentResult && <AssessmentBanner onStart={() => setShowAssessment(true)} />}
-      {assessmentResult && (
-        <AssessmentSummary
-          result={assessmentResult}
-          onRetake={() => setShowAssessment(true)}
-        />
-      )}
-
-      {/* ============================================================ */}
-      {/*  Section 4: Recommended Professor (based on assessment)       */}
-      {/* ============================================================ */}
-      {recommendedProfessor && (
-        <section className="px-4 sm:px-8 py-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: easeExpoOut }}
-            className="flex items-center gap-3 mb-3"
-          >
-            <div className="w-1 h-6 bg-[#00d4ff] rounded-full" />
-            <h2 className="text-xl font-bold text-[#e0f2fe]">Recommended for You</h2>
-            <span className="text-xs text-[#7da0c4]">Based on your assessment</span>
-          </motion.div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <ProfessorCard professor={recommendedProfessor} index={0} />
-          </div>
-        </section>
-      )}
-
-      {/* ============================================================ */}
-      {/*  Section 5: Professor Grid Hero                              */}
+      {/*  Section 1: Professor Grid Hero (FIRST)                      */}
       {/* ============================================================ */}
       <section className="relative overflow-hidden pt-8 pb-6">
         <div className="absolute inset-0">
@@ -1245,7 +1191,66 @@ export default function Classroom() {
       </AnimatePresence>
 
       {/* ============================================================ */}
-      {/*  Section 7: Wing Overview                                     */}
+      {/*  Study Streak                                                */}
+      {/* ============================================================ */}
+      <section className="px-4 sm:px-6 lg:px-8 py-6 max-w-7xl mx-auto">
+        <StudyStreak />
+      </section>
+
+      {/* ============================================================ */}
+      {/*  Adaptive Learning Intelligence                              */}
+      {/* ============================================================ */}
+      <section className="px-4 sm:px-6 lg:px-8 py-6 max-w-7xl mx-auto">
+        <AdaptiveLearningPanel />
+      </section>
+
+      {/* ============================================================ */}
+      {/*  Welcome Header                                              */}
+      {/* ============================================================ */}
+      <WelcomeHeader
+        onAssessmentClick={() => setShowAssessment(true)}
+        hasAssessment={!!assessmentResult}
+      />
+
+      {/* ============================================================ */}
+      {/*  Quick Stats                                                 */}
+      {/* ============================================================ */}
+      <QuickStatsRow />
+
+      {/* ============================================================ */}
+      {/*  Assessment Banner / Summary                                 */}
+      {/* ============================================================ */}
+      {!assessmentResult && <AssessmentBanner onStart={() => setShowAssessment(true)} />}
+      {assessmentResult && (
+        <AssessmentSummary
+          result={assessmentResult}
+          onRetake={() => setShowAssessment(true)}
+        />
+      )}
+
+      {/* ============================================================ */}
+      {/*  Recommended Professor (based on assessment)                 */}
+      {/* ============================================================ */}
+      {recommendedProfessor && (
+        <section className="px-4 sm:px-8 py-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: easeExpoOut }}
+            className="flex items-center gap-3 mb-3"
+          >
+            <div className="w-1 h-6 bg-[#00d4ff] rounded-full" />
+            <h2 className="text-xl font-bold text-[#e0f2fe]">Recommended for You</h2>
+            <span className="text-xs text-[#7da0c4]">Based on your assessment</span>
+          </motion.div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <ProfessorCard professor={recommendedProfessor} index={0} />
+          </div>
+        </section>
+      )}
+
+      {/* ============================================================ */}
+      {/*  Wing Overview                                               */}
       {/* ============================================================ */}
       <section className="max-w-[1280px] mx-auto px-6 md:px-8 pb-16 pt-8">
         <motion.div
@@ -1260,7 +1265,7 @@ export default function Classroom() {
             <h2 className="text-2xl md:text-3xl font-bold text-[#e0f2fe]">Wing Overview</h2>
           </div>
           <p className="text-sm text-[#5a7a9a] ml-4">
-            Seven specialized wings. Each leads to a different certification path.
+            Nine specialized wings. Each leads to a different certification path.
           </p>
         </motion.div>
 
