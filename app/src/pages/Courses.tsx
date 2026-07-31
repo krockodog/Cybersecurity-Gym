@@ -81,6 +81,7 @@ const CATEGORIES = ['All', 'Offensive Security', 'Defensive Security', 'Blue Tea
 export default function Courses() {
   const [courses, setCourses] = useState<Course[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [sortBy, setSortBy] = useState<'alphabetical' | 'students' | 'questions'>('alphabetical');
@@ -93,7 +94,7 @@ export default function Courses() {
         setCourses(data.courses);
         setLoading(false);
       })
-      .catch(() => setLoading(false));
+      .catch(() => { setError(true); setLoading(false); });
   }, []);
 
   const filteredCourses = useMemo(() => {
@@ -238,6 +239,13 @@ export default function Courses() {
                 <motion.div
                   key={course.id}
                   layout
+                  role={!isComingSoon ? 'button' : undefined}
+                  tabIndex={!isComingSoon ? 0 : undefined}
+                  onKeyDown={(e) => {
+                    if (!isComingSoon && (e.key === 'Enter' || e.key === ' ')) {
+                      navigate(`/courses/${course.id}`);
+                    }
+                  }}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.95 }}
@@ -327,7 +335,7 @@ export default function Courses() {
                         <Star size={14} className="text-[#f59e0b] fill-[#f59e0b]" />
                         <span className="text-[#f59e0b] text-sm font-display font-bold">{course.rating}</span>
                         <span className="text-[#4a6682] text-xs font-body ml-1">
-                          ({(course.enrolled_students / 1000).toFixed(0)}K+ Students)
+                          ({(course.enrolled_students / 1000).toFixed(0)}K+ Studenten)
                         </span>
                       </div>
                       {!isComingSoon && (
@@ -344,7 +352,13 @@ export default function Courses() {
           </AnimatePresence>
         </div>
 
-        {filteredCourses.length === 0 && (
+        {error && (
+          <div className="text-center py-16">
+            <BookOpen size={48} className="text-[#1a2d45] mx-auto mb-4" />
+            <p className="text-[#4a6682] font-body">Kursdaten konnten nicht geladen werden. Bitte versuche es erneut.</p>
+          </div>
+        )}
+        {!error && filteredCourses.length === 0 && (
           <div className="text-center py-16">
             <Search size={48} className="text-[#1a2d45] mx-auto mb-4" />
             <p className="text-[#4a6682] font-body">Keine Kurse gefunden. Versuch andere Suchbegriffe.</p>

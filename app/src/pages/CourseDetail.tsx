@@ -3,6 +3,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import {
   BookOpen,
   ChevronLeft,
@@ -140,14 +141,17 @@ export default function CourseDetail() {
   const [expandedCheatsheet, setExpandedCheatsheet] = useState<string | null>(null);
 
   useEffect(() => {
+    let ignore = false;
     fetch('/courses.json')
       .then(r => r.json())
       .then(data => {
+        if (ignore) return;
         const found = data.courses.find((c: Course) => c.id === courseId);
         setCourse(found || null);
         setLoading(false);
       })
-      .catch(() => setLoading(false));
+      .catch(() => { if (!ignore) setLoading(false); });
+    return () => { ignore = true; };
   }, [courseId]);
 
   const tabs = useMemo<TabDef[]>(() => {
@@ -183,7 +187,12 @@ export default function CourseDetail() {
   }
 
   const IconComponent = ICON_MAP[course.icon] || BookOpen;
-  const progress = JSON.parse(localStorage.getItem(`trygit-quiz-progress-${course.quiz_cert_key}`) || '{}');
+  let progress: { totalAnswered?: number; totalCorrect?: number } = {};
+  try {
+    progress = JSON.parse(localStorage.getItem(`trygit-quiz-progress-${course.quiz_cert_key}`) || '{}');
+  } catch {
+    progress = {};
+  }
   const questionsAnswered = progress.totalAnswered || 0;
   const correctRate = progress.totalCorrect && progress.totalAnswered
     ? Math.round((progress.totalCorrect / progress.totalAnswered) * 100)
@@ -267,13 +276,15 @@ export default function CourseDetail() {
                     Quiz starten
                   </button>
                 )}
-                <button
-                  onClick={() => navigate(`/tutor?professor=${course.professors[0]}`)}
-                  className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#162236] text-white font-body font-semibold text-sm border border-[#1a2d45] hover:border-[#2a4a6b] transition-all duration-200"
-                >
-                  <MessageSquare size={16} />
-                  KI-Tutor
-                </button>
+                {course.professors[0] && (
+                  <button
+                    onClick={() => navigate(`/tutor?professor=${course.professors[0]}`)}
+                    className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#162236] text-white font-body font-semibold text-sm border border-[#1a2d45] hover:border-[#2a4a6b] transition-all duration-200"
+                  >
+                    <MessageSquare size={16} />
+                    KI-Tutor
+                  </button>
+                )}
                 <button
                   onClick={() => navigate('/flashcards')}
                   className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#162236] text-white font-body font-semibold text-sm border border-[#1a2d45] hover:border-[#2a4a6b] transition-all duration-200"
@@ -491,14 +502,16 @@ export default function CourseDetail() {
                       <Trophy size={12} />
                       <span>Bestehen: {course.passing_score}</span>
                     </div>
-                    <button
-                      onClick={() => navigate(`/quiz?cert=${course.quiz_cert_key}&mode=simulator`)}
-                      className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg font-body font-semibold text-sm transition-all duration-200 hover:brightness-110"
-                      style={{ backgroundColor: course.color, color: '#fff' }}
-                    >
-                      <Play size={14} />
-                      Simulator starten
-                    </button>
+                    {course.quiz_cert_key && (
+                      <button
+                        onClick={() => navigate(`/quiz?cert=${course.quiz_cert_key}&mode=simulator`)}
+                        className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg font-body font-semibold text-sm transition-all duration-200 hover:brightness-110"
+                        style={{ backgroundColor: course.color, color: '#fff' }}
+                      >
+                        <Play size={14} />
+                        Simulator starten
+                      </button>
+                    )}
                   </div>
                 ))}
                 {course.modules.exam_simulators.length === 0 && (
@@ -526,7 +539,7 @@ export default function CourseDetail() {
                 {course.modules.domain_practice.map((dp, i) => (
                   <button
                     key={dp.id}
-                    onClick={() => navigate(`/quiz?cert=${course.quiz_cert_key}&domain=${encodeURIComponent(dp.domain_filter)}`)}
+                    onClick={() => course.quiz_cert_key && navigate(`/quiz?cert=${course.quiz_cert_key}&domain=${encodeURIComponent(dp.domain_filter)}`)}
                     className="w-full flex items-center gap-4 p-4 rounded-xl border border-[#1a2d45] bg-[#0d1526] hover:border-[#2a4a6b] transition-all duration-200 text-left group"
                   >
                     <div
@@ -538,7 +551,7 @@ export default function CourseDetail() {
                     <div className="flex-1 min-w-0">
                       <div className="text-white font-body text-sm font-medium">{dp.name}</div>
                       <div className="text-[#4a6682] text-xs font-terminal mt-0.5">
-                        {course.domains[i]?.weight || ''} of exam
+                        {course.domains.find(d => d.name === dp.domain_filter)?.weight || ''} of exam
                       </div>
                     </div>
                     <ArrowRight size={16} className="text-[#4a6682] group-hover:text-[#00ff41] transition-colors flex-shrink-0" />
@@ -608,14 +621,16 @@ export default function CourseDetail() {
                                   </li>
                                 ))}
                               </ul>
-                              <button
-                                onClick={() => navigate(`/tutor?professor=${course.professors[0]}&topic=${encodeURIComponent(chapter.title)}`)}
-                                className="mt-4 flex items-center gap-2 text-xs font-body font-semibold transition-colors hover:brightness-125"
-                                style={{ color: course.color }}
-                              >
-                                <Brain size={14} />
-                                Mit KI-Tutor vertiefen
-                              </button>
+                              {course.professors[0] && (
+                                <button
+                                  onClick={() => navigate(`/tutor?professor=${course.professors[0]}&topic=${encodeURIComponent(chapter.title)}`)}
+                                  className="mt-4 flex items-center gap-2 text-xs font-body font-semibold transition-colors hover:brightness-125"
+                                  style={{ color: course.color }}
+                                >
+                                  <Brain size={14} />
+                                  Mit KI-Tutor vertiefen
+                                </button>
+                              )}
                             </div>
                           </motion.div>
                         )}
@@ -762,7 +777,7 @@ export default function CourseDetail() {
                               [&_ol]:text-[#7da0c4] [&_ol]:text-sm
                               [&_li]:text-[#7da0c4] [&_li]:text-sm
                             ">
-                              <ReactMarkdown>{cs.content}</ReactMarkdown>
+                              <ReactMarkdown remarkPlugins={[remarkGfm]}>{cs.content}</ReactMarkdown>
                             </div>
                           </motion.div>
                         )}

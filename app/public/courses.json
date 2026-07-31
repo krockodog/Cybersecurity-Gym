@@ -15,7 +15,7 @@
       "color": "#ff3366",
       "icon": "Crosshair",
       "instructor": "CramWise",
-      "description": "Master penetration testing with 1200+ practice questions, interactive PBQs, and AI-powered tutoring. Covers all 5 PT0-003 domains from engagement management to post-exploitation.",
+      "description": "Master penetration testing with 1161+ practice questions, interactive PBQs, and AI-powered tutoring. Covers all 5 PT0-003 domains from engagement management to post-exploitation.",
       "level": "Intermediate",
       "category": "Offensive Security",
       "enrolled_students": 52259,
@@ -79,7 +79,7 @@
         ]
       },
       "professors": ["cipher", "shield", "recon", "code", "sage", "viper"],
-      "includes": ["1200+ Practice Questions", "8 Interactive PBQs", "400+ Flashcards", "Study Guide", "Cheatsheets", "AI Tutoring", "Certificate of Completion"]
+      "includes": ["1161+ Practice Questions", "8 Interactive PBQs", "400+ Flashcards", "Study Guide", "Cheatsheets", "AI Tutoring", "Certificate of Completion"]
     },
     {
       "id": "security-plus",
@@ -414,10 +414,11 @@
         ],
         "domain_practice": [
           { "id": "dom-1", "name": "System Architecture", "domain_filter": "System Architecture" },
-          { "id": "dom-2", "name": "Installation & Packages", "domain_filter": "Installation" },
-          { "id": "dom-3", "name": "GNU Commands", "domain_filter": "GNU Commands" },
-          { "id": "dom-4", "name": "Filesystems", "domain_filter": "Filesystems" },
-          { "id": "dom-5", "name": "Shell Scripting", "domain_filter": "Shell Scripting" }
+          { "id": "dom-2", "name": "Installation & Packages", "domain_filter": "Linux Installation & Package Management" },
+          { "id": "dom-3", "name": "GNU & Unix Commands", "domain_filter": "GNU & Unix Commands" },
+          { "id": "dom-4", "name": "Devices, Filesystems, FHS", "domain_filter": "Devices, Filesystems, FHS" },
+          { "id": "dom-5", "name": "Shell Scripting", "domain_filter": "Shells & Shell Scripting" },
+          { "id": "dom-6", "name": "User Interfaces & Desktops", "domain_filter": "User Interfaces & Desktops" }
         ],
         "study_guide": [
           { "id": "ch-1", "title": "Kapitel 1: Systemarchitektur", "topics": ["Hardware-Einstellungen bestimmen und konfigurieren", "Das System booten", "Runlevels / Boot-Targets wechseln", "Das System herunterfahren und neu starten"] },
