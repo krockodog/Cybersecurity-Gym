@@ -17,6 +17,7 @@ import {
   ChevronDown,
   ChevronRight,
   Search,
+  BookOpen,
 } from 'lucide-react';
 import type { ReactNode } from 'react';
 
@@ -30,6 +31,7 @@ interface NavItem {
 const mainNavItems: NavItem[] = [
   { icon: <LayoutDashboard size={20} />, label: 'Dashboard', route: '/profile' },
   { icon: <GraduationCap size={20} />, label: 'Classroom', route: '/classroom' },
+  { icon: <BookOpen size={20} />, label: 'Kurse', route: '/courses' },
   { icon: <FlaskConical size={20} />, label: 'Quiz Lab', route: '/quiz' },
   { icon: <Cpu size={20} />, label: 'PBQ Arena', route: '/pbq' },
   { icon: <MessageSquare size={20} />, label: 'Tutor', route: '/tutor' },
