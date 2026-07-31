@@ -32,7 +32,7 @@
 
 Eine vollstaendige **Single-Page-Application** fuer die Vorbereitung auf CompTIA- und Linux-Zertifizierungen. Die Plattform kombiniert echte Pruefungsfragen mit KI-Tutoring, interaktiven Labs und einem Gamification-System — alles im Browser, ohne Backend.
 
-```
+```text
  +-----------+     +-------------+     +-----------+     +-------------+
  |  Kurse    | --> | Exam        | --> | KI-Tutor  | --> | Fortschritt |
  |  Katalog  |     | Simulator   |     | 1-zu-1    |     | & Analyse   |
@@ -166,7 +166,7 @@ Jeder Dozent besitzt eine einzigartige Persoenlichkeit, 20+ Jahre Fachexpertise 
 
 ## Tech Stack
 
-```
+```text
 Frontend          React 19 + TypeScript 5.9
 Build             Vite 7.2
 Styling           Tailwind CSS 3.4 + shadcn/ui (Radix Primitives)
@@ -208,7 +208,7 @@ npm run preview
 
 ## Projektstruktur
 
-```
+```text
 Cybersecurity-Gym/
 ├── app/
 │   ├── public/
@@ -255,7 +255,7 @@ Cybersecurity-Gym/
 | `/` | Grand Hall | Dashboard mit Kursueberblick |
 | `/classroom` | Klassenzimmer | Dozenten-Directory |
 | `/courses` | Kurskatalog | Alle 8 Kurse filtern & durchsuchen |
-| `/courses/:id` | Kursdetails | Module, Domains, Cheatsheets |
+| `/courses/:courseId` | Kursdetails | Module, Domains, Cheatsheets |
 | `/quiz` | Exam Simulator | Pruefungssimulation mit Timer |
 | `/pbq` | PBQ Arena | Interaktive Labs |
 | `/tutor` | KI-Tutor | 1-zu-1 Chat mit Dozenten |
@@ -288,7 +288,7 @@ Die App nutzt ein dunkles Cybersecurity-Theme:
 
 Alle Nutzerdaten werden clientseitig in `localStorage` gespeichert — kein Backend, kein Account noetig.
 
-```
+```text
 localStorage Keys:
 ├── trygit_onboarding_complete     # Onboarding-Status
 ├── trygit-quiz-progress-{cert}    # Quiz-Fortschritt pro Kurs
