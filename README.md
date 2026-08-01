@@ -770,7 +770,7 @@ JARVIS weist jedem Studenten basierend auf dem Skill Assessment ein optimales 5-
  │  Professor 2:  Red Viper (Support)                  │
  │  Tutor 1:      Iris Thinkwell (Theorie)             │
  │  Tutor 2:      Kyle Hackwright (Praxis)             │
- │  Organizer:    Oracle Pentest (automatisch)          │
+ │  Organizer:    Oracle Pentest (automatisch)         │
  └─────────────────────────────────────────────────────┘
 ```
 
